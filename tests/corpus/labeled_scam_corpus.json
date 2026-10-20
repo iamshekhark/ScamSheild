@@ -1,0 +1,234 @@
+{
+  "description": "ScamShield Phase 6 Labeled Test Corpus — Safe, non-executing fixtures for benchmark detection measurement",
+  "version": "1.0.0",
+  "urls": [
+    {
+      "id": "url_phish_01",
+      "content": "https://paypa1.com/login-verify",
+      "expectedLabel": "PHISHING",
+      "expectedCategory": "BRAND_IMPERSONATION",
+      "description": "Paypal homoglyph typosquat with '1' instead of 'l'"
+    },
+    {
+      "id": "url_phish_02",
+      "content": "http://192.168.1.100/secure/bank/login",
+      "expectedLabel": "PHISHING",
+      "expectedCategory": "SUSPICIOUS_IP_URL",
+      "description": "Raw IP address host with banking path"
+    },
+    {
+      "id": "url_phish_03",
+      "content": "https://amazon.com@attacker-portal.xyz/login",
+      "expectedLabel": "PHISHING",
+      "expectedCategory": "USERINFO_SPOOFING",
+      "description": "Userinfo credential spoofing with risky TLD"
+    },
+    {
+      "id": "url_phish_04",
+      "content": "https://xn--pple-43a.com/verify-id",
+      "expectedLabel": "PHISHING",
+      "expectedCategory": "PUNYCODE_LOOKALIKE",
+      "description": "Punycode internationalized domain imitating Apple"
+    },
+    {
+      "id": "url_phish_05",
+      "content": "http://sbi-reward-points-claim.xyz/update-kyc",
+      "expectedLabel": "PHISHING",
+      "expectedCategory": "BRAND_IMPERSONATION",
+      "description": "SBI brand lookalike with risky TLD and suspicious path"
+    },
+    {
+      "id": "url_phish_06",
+      "content": "https://netflix-login-billing.click/account",
+      "expectedLabel": "PHISHING",
+      "expectedCategory": "BRAND_IMPERSONATION",
+      "description": "Netflix brand imitation on .click TLD"
+    },
+    {
+      "id": "url_phish_07",
+      "content": "https://hdfc-netbanking-verify.support/login",
+      "expectedLabel": "PHISHING",
+      "expectedCategory": "BRAND_IMPERSONATION",
+      "description": "HDFC bank impersonation with multiple hyphens"
+    },
+    {
+      "id": "url_phish_08",
+      "content": "javascript:alert(document.cookie)",
+      "expectedLabel": "PHISHING",
+      "expectedCategory": "UNSAFE_SCHEME",
+      "description": "Executable JavaScript scheme URL"
+    },
+    {
+      "id": "url_legit_01",
+      "content": "https://www.google.com/search?q=cybersecurity",
+      "expectedLabel": "LEGITIMATE",
+      "expectedCategory": "NONE",
+      "description": "Official Google HTTPS search"
+    },
+    {
+      "id": "url_legit_02",
+      "content": "https://onlinesbi.sbi/portal/login.html",
+      "expectedLabel": "LEGITIMATE",
+      "expectedCategory": "NONE",
+      "description": "Official State Bank of India portal"
+    },
+    {
+      "id": "url_legit_03",
+      "content": "https://www.amazon.in/gp/bestsellers",
+      "expectedLabel": "LEGITIMATE",
+      "expectedCategory": "NONE",
+      "description": "Official Amazon India store"
+    },
+    {
+      "id": "url_legit_04",
+      "content": "https://github.com/torvalds/linux",
+      "expectedLabel": "LEGITIMATE",
+      "expectedCategory": "NONE",
+      "description": "Official GitHub repository URL"
+    },
+    {
+      "id": "url_legit_05",
+      "content": "https://www.hdfcbank.com/personal/ways-to-bank/online-banking",
+      "expectedLabel": "LEGITIMATE",
+      "expectedCategory": "NONE",
+      "description": "Official HDFC Bank NetBanking portal"
+    },
+    {
+      "id": "url_legit_06",
+      "content": "https://www.netflix.com/browse",
+      "expectedLabel": "LEGITIMATE",
+      "expectedCategory": "NONE",
+      "description": "Official Netflix streaming site"
+    },
+    {
+      "id": "url_legit_07",
+      "content": "https://apple.com/iphone-16-pro",
+      "expectedLabel": "LEGITIMATE",
+      "expectedCategory": "NONE",
+      "description": "Official Apple product portal"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg_scam_01",
+      "content": "Urgent: You are placed under Digital Arrest by CBI. Join Skype interrogation immediately or warrant will be executed.",
+      "expectedLabel": "SCAM_MESSAGE",
+      "expectedCategory": "DIGITAL_ARREST_EXTORTION",
+      "description": "Coercive digital arrest legal extortion"
+    },
+    {
+      "id": "msg_scam_02",
+      "content": "Dear Customer, Your SBI YONO Account will be blocked today. Please click http://sbi-kyc.xyz and update your PAN immediately.",
+      "expectedLabel": "SCAM_MESSAGE",
+      "expectedCategory": "KYC_PHISHING",
+      "description": "KYC bank account suspension threat with malicious link"
+    },
+    {
+      "id": "msg_scam_03",
+      "content": "Bhai jaldi se otp batao, delivery boy gate pe khada hai, OTP de do please.",
+      "expectedLabel": "SCAM_MESSAGE",
+      "expectedCategory": "OTP_REQUEST",
+      "description": "Hinglish delivery pretext OTP harvesting"
+    },
+    {
+      "id": "msg_scam_04",
+      "content": "Congratulations! You have won an iPhone 16 Pro in KBC Lucky Draw. Deposit Rs 1,500 registration fee to claim your prize.",
+      "expectedLabel": "SCAM_MESSAGE",
+      "expectedCategory": "PRIZE_ADVANCE_FEE",
+      "description": "Advance-fee lottery reward lure"
+    },
+    {
+      "id": "msg_scam_05",
+      "content": "India Post alert: Your parcel #IN849204 has been seized by customs for duty charges. Pay release fee immediately.",
+      "expectedLabel": "SCAM_MESSAGE",
+      "expectedCategory": "COURIER_CUSTOMS",
+      "description": "Customs parcel detention fee extortion"
+    },
+    {
+      "id": "msg_scam_06",
+      "content": "Work from home part-time job! Like 3 YouTube videos and earn Rs 3500 daily. Join Telegram prepaid task group.",
+      "expectedLabel": "SCAM_MESSAGE",
+      "expectedCategory": "JOB_TASK_FRAUD",
+      "description": "Prepaid task fraud / fake part-time job scheme"
+    },
+    {
+      "id": "msg_benign_01",
+      "content": "Your one-time password (OTP) is 482910 for transaction on Amazon. NEVER share your OTP with anyone, including bank staff.",
+      "expectedLabel": "BENIGN_MESSAGE",
+      "expectedCategory": "NONE",
+      "description": "Authentic transactional OTP alert with clear safety negation"
+    },
+    {
+      "id": "msg_benign_02",
+      "content": "Hi Team, reminder for our project sync meeting tomorrow at 10:30 AM via Google Meet. Agenda is attached.",
+      "expectedLabel": "BENIGN_MESSAGE",
+      "expectedCategory": "NONE",
+      "description": "Standard work meeting notification"
+    },
+    {
+      "id": "msg_benign_03",
+      "content": "Your monthly utility bill of Rs 1,420 has been generated. Payment due date is November 15, 2026. Thank you for using online billing.",
+      "expectedLabel": "BENIGN_MESSAGE",
+      "expectedCategory": "NONE",
+      "description": "Routine electricity billing statement with realistic future due date"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay_scam_01",
+      "type": "qr_code",
+      "content": "upi://pay?pa=support-refund@okhdfcbank&pn=Amazon+Customer+Refund&tn=Enter+UPI+PIN+to+receive+Rs+4500+refund",
+      "expectedLabel": "PAYMENT_SCAM",
+      "expectedCategory": "REVERSE_COLLECT_FRAUD",
+      "description": "Reverse collect fraud urging victim to enter PIN to receive refund"
+    },
+    {
+      "id": "pay_scam_02",
+      "type": "upi_id",
+      "content": "paytm-nodal-support@ybl",
+      "expectedLabel": "PAYMENT_SCAM",
+      "expectedCategory": "BRAND_IMPERSONATION",
+      "description": "Deceptive UPI handle impersonating Paytm nodal support"
+    },
+    {
+      "id": "pay_scam_03",
+      "type": "message",
+      "content": "Electricity bill unpaid! Power will be disconnected tonight at 9:30 PM. Call Electricity Officer immediately and install AnyDesk to verify.",
+      "expectedLabel": "PAYMENT_SCAM",
+      "expectedCategory": "REMOTE_ACCESS_TOOL",
+      "description": "Electricity power cut extortion combined with AnyDesk remote access trap"
+    },
+    {
+      "id": "pay_scam_04",
+      "type": "qr_code",
+      "content": "upi://pay?pa=9876543210@paytm&pn=Official+PhonePe+Helpdesk&am=1",
+      "expectedLabel": "PAYMENT_SCAM",
+      "expectedCategory": "PAYEE_MISMATCH",
+      "description": "Official corporate helpdesk name paired with personal phone VPA"
+    },
+    {
+      "id": "pay_legit_01",
+      "type": "upi_id",
+      "content": "swiggy@axisbank",
+      "expectedLabel": "BENIGN_PAYMENT",
+      "expectedCategory": "NONE",
+      "description": "Authentic corporate merchant handle"
+    },
+    {
+      "id": "pay_legit_02",
+      "type": "qr_code",
+      "content": "upi://pay?pa=zomato@icici&pn=Zomato+Limited&am=420&cu=INR",
+      "expectedLabel": "BENIGN_PAYMENT",
+      "expectedCategory": "NONE",
+      "description": "Authentic standard UPI merchant checkout QR"
+    },
+    {
+      "id": "pay_legit_03",
+      "type": "upi_id",
+      "content": "rahul.sharma@oksbi",
+      "expectedLabel": "BENIGN_PAYMENT",
+      "expectedCategory": "NONE",
+      "description": "Standard personal P2P handle on authentic SBI PSP"
+    }
+  ]
+}

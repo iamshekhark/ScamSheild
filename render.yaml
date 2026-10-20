@@ -1,0 +1,51 @@
+services:
+  # 1. ScamShield Backend Mail & OAuth Microservice
+  - type: web
+    name: scamshield-mail-service
+    env: node
+    plan: free
+    region: singapore
+    rootDir: mail-service
+    buildCommand: npm install
+    startCommand: node src/server.js
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: NODE_ENV
+        value: production
+      - key: MAIL_SERVICE_API_KEY
+        generateValue: true
+      - key: TOKEN_ENCRYPTION_KEY
+        generateValue: true
+      - key: SMTP_HOST
+        sync: false
+      - key: SMTP_PORT
+        sync: false
+      - key: SMTP_SECURE
+        sync: false
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASS
+        sync: false
+      - key: FROM_EMAIL
+        sync: false
+
+  # 2. ScamShield SOC Command Center Dashboard (Static Web App)
+  - type: web
+    name: scamshield-dashboard
+    env: static
+    plan: free
+    region: singapore
+    rootDir: dashboard
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_SUPABASE_URL
+        value: https://twrdubnndhgbqlaeeabl.supabase.co
+      - key: VITE_SUPABASE_ANON_KEY
+        value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR3cmR1Ym5uZGhnYnFsYWVlYWJsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM2NjM2MzgsImV4cCI6MjA4OTIzOTYzOH0.fEcGaBRyXY1ke8byd74XddM0zmBWQ5FWyH4u8eJgTs0

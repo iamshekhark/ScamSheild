@@ -1,0 +1,27 @@
+{
+  "name": "scamshield-platform",
+  "version": "2.0.0",
+  "description": "ScamShield — Autonomous Cyber Fraud Defense: Chrome Extension MV3, Dark SOC Dashboard & Supabase Cloud",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "test:phase2:supabase": "node --test tests/supabase_phase2_live.test.js",
+    "test:mail": "node --test tests/mail_service.test.js",
+    "start:mail": "npm --prefix mail-service start",
+    "dev:dashboard": "npm --prefix dashboard run dev",
+    "check": "node --check extension/popup.js extension/rules.js extension/api.js extension/auth.js extension/storage.js extension/background.js",
+    "package:extension": "node scripts/package-extension.js",
+    "package:source": "node scripts/package-source-release.js",
+    "build:dashboard": "npm --prefix dashboard run build",
+    "build": "npm run build:dashboard && npm run package:extension && npm run package:source"
+  },
+  "keywords": [
+    "cybersecurity",
+    "chrome-extension",
+    "phishing-detection",
+    "upi-fraud-detection",
+    "manifest-v3",
+    "soc-dashboard"
+  ],
+  "author": "ScamShield Team",
+  "license": "MIT"
+}

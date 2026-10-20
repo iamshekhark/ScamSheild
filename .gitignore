@@ -1,0 +1,29 @@
+# Environment files containing secrets
+.env
+.env.local
+.env.*.local
+*.env
+**/.env
+**/.env.local
+!**/.env.example
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Production build and distribution packages
+dist/
+**/dist/
+.next/
+**/.next/
+
+# Logs and runtime files
+*.log
+npm-debug.log*
+.token_cache.json
+**/.token_cache.json
+mail-service/.token_cache.json
+
+# OS artifacts
+.DS_Store
+Thumbs.db

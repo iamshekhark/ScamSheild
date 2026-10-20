@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScamShield — Cyber Threat Defender</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="brand">
+        <svg class="brand-shield-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <path d="M9 12l2 2 4-4"/>
+        </svg>
+        <div>
+          <h1 class="brand-title">ScamShield</h1>
+          <p class="brand-subtitle">SOC Threat Defender</p>
+        </div>
+      </div>
+      <div class="header-right">
+        <span class="engine-badge" id="engine-badge">⚡ Local Engine</span>
+        <button id="user-status-btn" class="user-pill" title="Account Status">Guest</button>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-tabs" role="tablist">
+      <button class="tab-btn active" data-tab="tab-scan" role="tab" aria-selected="true">
+        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/>
+        </svg>
+        <span>Scanner</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-history" role="tab" aria-selected="false">
+        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+        </svg>
+        <span>History</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-account" role="tab" aria-selected="false">
+        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+        </svg>
+        <span>Account</span>
+      </button>
+      <button class="tab-btn" data-tab="tab-settings" role="tab" aria-selected="false">
+        <svg class="tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+        </svg>
+        <span>Settings</span>
+      </button>
+    </nav>
+
+    <!-- ==================== TAB 1: SCANNER ==================== -->
+    <div id="tab-scan" class="tab-pane active" role="tabpanel">
+      <!-- Primary Current Page Card -->
+      <div id="sub-page" class="sub-pane active">
+        <div class="card card-hero">
+          <div class="hero-label-row">
+            <span class="section-label">ACTIVE BROWSER TAB</span>
+            <span class="live-pulse-dot" title="Active Inspection Ready"></span>
+          </div>
+          <div class="current-url-box" id="current-page-url">Reading active tab…</div>
+          <button id="btn-scan-current" class="btn btn-primary btn-hero">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <span>Scan Current Page</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Secondary Scan Mode Tabs & Panels -->
+      <div class="secondary-modes-wrap">
+        <div class="secondary-header">
+          <span class="section-label">OTHER THREAT CHECKS</span>
+        </div>
+
+        <div class="sub-nav-tabs" role="tablist">
+          <button class="sub-tab-btn active" data-sub="sub-page" role="tab" aria-selected="true">Tab</button>
+          <button class="sub-tab-btn" data-sub="sub-url" role="tab" aria-selected="false">Check Link</button>
+          <button class="sub-tab-btn" data-sub="sub-text" role="tab" aria-selected="false">Message / SMS</button>
+          <button class="sub-tab-btn" data-sub="sub-email" role="tab" aria-selected="false">Email</button>
+          <button class="sub-tab-btn" data-sub="sub-payment" role="tab" aria-selected="false">💳 Pay / UPI</button>
+        </div>
+
+        <!-- Sub: Custom URL -->
+        <div id="sub-url" class="sub-pane">
+          <div class="card sub-card">
+            <label for="input-url" class="section-label">Paste Suspicious Web Link</label>
+            <input type="text" id="input-url" class="field" placeholder="https://paytrn-security.xyz/login" />
+            
+            <details class="sample-disclosure">
+              <summary class="sample-toggle">🧪 Try a sample...</summary>
+              <div class="sample-chips">
+                <button type="button" class="chip chip-danger" data-sample-url="http://paytrn-security.xyz/login">Look-alike</button>
+                <button type="button" class="chip chip-danger" data-sample-url="http://192.168.1.50/verify">Raw IP</button>
+                <button type="button" class="chip chip-safe" data-sample-url="https://www.google.com">Safe Site</button>
+              </div>
+            </details>
+
+            <button id="btn-scan-url" class="btn btn-primary mt-3">Analyze Link</button>
+          </div>
+        </div>
+
+        <!-- Sub: Custom Text -->
+        <div id="sub-text" class="sub-pane">
+          <div class="card sub-card">
+            <label for="input-text" class="section-label">Paste SMS, Extortion, or Message</label>
+            <textarea id="input-text" class="field field-area" placeholder="Your account will be blocked today. Share your OTP immediately."></textarea>
+            
+            <details class="sample-disclosure">
+              <summary class="sample-toggle">🧪 Try a sample...</summary>
+              <div class="sample-chips">
+                <button type="button" class="chip chip-danger" data-sample-text="URGENT: Your bank account will be suspended today. Share your OTP immediately at http://192.168.1.50/verify to restore access.">Scam OTP</button>
+                <button type="button" class="chip chip-safe" data-sample-text="Hey, let's meet at 5 PM for coffee.">Safe Text</button>
+              </div>
+            </details>
+
+            <button id="btn-scan-text" class="btn btn-primary mt-3">Analyze Message</button>
+          </div>
+        </div>
+
+        <!-- Sub: Check Email -->
+        <div id="sub-email" class="sub-pane">
+          <div class="card sub-card">
+            <label for="input-email-sender" class="section-label">Sender (From Header)</label>
+            <input type="text" id="input-email-sender" class="field field-sm" placeholder="Support <alerts@paytrn-security.xyz>" />
+
+            <label for="input-email-subject" class="section-label mt-2">Subject</label>
+            <input type="text" id="input-email-subject" class="field field-sm" placeholder="URGENT: Re-verify OTP to unblock account" />
+
+            <label for="input-email-body" class="section-label mt-2">Email Body / Links</label>
+            <textarea id="input-email-body" class="field field-area" style="height: 60px;" placeholder="Paste email content or extortion message here…"></textarea>
+
+            <details class="sample-disclosure">
+              <summary class="sample-toggle">🧪 Try a sample...</summary>
+              <div class="sample-chips">
+                <button type="button" class="chip chip-danger" data-sample-email="paytm">Paytm Spoof</button>
+                <button type="button" class="chip chip-danger" data-sample-email="invoice">Invoice Fraud</button>
+                <button type="button" class="chip chip-safe" data-sample-email="safe">Safe Email</button>
+              </div>
+            </details>
+
+            <button id="btn-scan-email" class="btn btn-primary mt-3">Analyze Email Threat</button>
+          </div>
+        </div>
+
+        <!-- Sub: Payment / UPI Verification -->
+        <div id="sub-payment" class="sub-pane">
+          <div class="card sub-card">
+            <label for="input-payment" class="section-label">UPI ID, QR URI, or Payment Instruction</label>
+            <input type="text" id="input-payment" class="field" placeholder="e.g. upi://pay?pa=... or refund-sbi@ybl" />
+
+            <details class="sample-disclosure">
+              <summary class="sample-toggle">🧪 Try a sample...</summary>
+              <div class="sample-chips">
+                <button type="button" class="chip chip-danger" data-sample-pay="vpa">Fake Support UPI</button>
+                <button type="button" class="chip chip-danger" data-sample-pay="qr">PIN Collect Scam</button>
+                <button type="button" class="chip chip-safe" data-sample-pay="safe">Legit Merchant</button>
+              </div>
+            </details>
+
+            <button id="btn-scan-payment" class="btn btn-primary mt-3">💳 Verify Payment Risk</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Display Section -->
+      <section id="result-container" class="result-section hidden mt-3">
+        <div class="result-card">
+          <div class="result-header">
+            <div>
+              <div class="result-meta-row">
+                <span class="result-type-tag" id="res-type">URL Scan</span>
+                <span class="method-tag" id="res-method">Rules</span>
+              </div>
+              <div class="result-score-wrap">
+                <span class="score-number" id="res-score">0</span>
+                <span class="score-max">/100</span>
+              </div>
+            </div>
+            <span class="level-pill" id="res-level">SAFE</span>
+          </div>
+
+          <div class="score-bar-bg">
+            <div class="score-bar-fill" id="res-bar"></div>
+          </div>
+
+          <!-- Explanation -->
+          <div class="explanation-box" id="res-explanation">No suspicious patterns detected.</div>
+
+          <!-- Evidence List -->
+          <div class="section-block">
+            <p class="section-heading">Detected Risk Indicators</p>
+            <ul class="evidence-list" id="res-evidence"></ul>
+          </div>
+
+          <!-- Recommendations -->
+          <div class="section-block">
+            <p class="section-heading">Defensive Recommendations</p>
+            <ul class="recommendation-list" id="res-recs"></ul>
+          </div>
+
+          <!-- Feedback block -->
+          <div class="feedback-block" id="feedback-block">
+            <span class="feedback-title">Rate Detection Accuracy:</span>
+            <div class="feedback-btns">
+              <button class="btn-fb" data-fb="correct">👍 Accurate</button>
+              <button class="btn-fb" data-fb="false_positive">⚠️ False Alarm</button>
+              <button class="btn-fb" data-fb="false_negative">❌ Missed Scam</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== TAB 2: HISTORY ==================== -->
+    <div id="tab-history" class="tab-pane" role="tabpanel">
+      <div class="card">
+        <div class="flex-between mb-2">
+          <span class="section-label">SAVED TELEMETRY SCANS</span>
+          <button id="btn-refresh-history" class="icon-btn" title="Refresh">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+            </svg>
+          </button>
+        </div>
+        <div id="history-container" class="history-list">
+          <p class="empty-state">Loading scan history…</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== TAB 3: ACCOUNT ==================== -->
+    <div id="tab-account" class="tab-pane" role="tabpanel">
+      <!-- Unauthenticated View -->
+      <div id="auth-forms" class="card">
+        <div class="auth-toggle-row">
+          <button id="toggle-login-btn" class="auth-toggle-btn active">Sign In</button>
+          <button id="toggle-register-btn" class="auth-toggle-btn">Register</button>
+        </div>
+
+        <form id="form-auth" class="auth-form mt-3">
+          <div id="field-displayname-wrap" class="hidden mb-2">
+            <label for="auth-name" class="label-xs">Full Name</label>
+            <input type="text" id="auth-name" class="field field-sm" placeholder="Security Analyst" />
+          </div>
+
+          <div class="mb-2">
+            <label for="auth-email" class="label-xs">Email Address</label>
+            <input type="email" id="auth-email" class="field field-sm" placeholder="you@example.com" required />
+          </div>
+
+          <div class="mb-2">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+              <label for="auth-password" class="label-xs">Password</label>
+              <button type="button" id="btn-forgot-password-link" class="link-text-xs">Forgot Password?</button>
+            </div>
+            <input type="password" id="auth-password" class="field field-sm" placeholder="••••••••" required />
+          </div>
+
+          <p id="auth-error" class="error-text hidden"></p>
+          <p id="auth-success" class="success-text hidden"></p>
+
+          <button type="submit" id="btn-auth-submit" class="btn btn-primary mt-2">Sign In</button>
+        </form>
+
+        <!-- Forgot Password Panel -->
+        <div id="auth-forgot-panel" class="hidden mt-3">
+          <p class="section-label">Reset Account Password</p>
+          <div class="mb-2">
+            <label for="forgot-email" class="label-xs">Registered Email Address</label>
+            <input type="email" id="forgot-email" class="field field-sm" placeholder="you@example.com" />
+          </div>
+          <div class="mb-2">
+            <label for="forgot-new-password" class="label-xs">New Password (min 6 characters)</label>
+            <input type="password" id="forgot-new-password" class="field field-sm" placeholder="••••••••" />
+          </div>
+
+          <p id="forgot-error" class="error-text hidden"></p>
+          <p id="forgot-success" class="success-text hidden"></p>
+
+          <button type="button" id="btn-submit-forgot" class="btn btn-primary mt-2">Reset Password & Sign In</button>
+          <button type="button" id="btn-back-to-login" class="btn btn-ghost mt-1">← Back to Sign In</button>
+        </div>
+      </div>
+
+      <!-- Authenticated Profile View -->
+      <div id="auth-profile" class="card hidden">
+        <div class="profile-header">
+          <div class="avatar-circle">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <div>
+            <h3 id="profile-name" class="font-bold">User Name</h3>
+            <p id="profile-email" class="text-xs text-muted">user@example.com</p>
+          </div>
+        </div>
+
+        <div class="profile-actions mt-3">
+          <a id="link-dashboard-profile" href="http://localhost:5173" target="_blank" class="btn btn-primary btn-dash">📊 Open Web Insights Dashboard</a>
+          <button id="btn-logout" class="btn btn-ghost mt-2">Sign Out</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== TAB 4: SETTINGS ==================== -->
+    <div id="tab-settings" class="tab-pane" role="tabpanel">
+      <div class="card space-y-3">
+        <div>
+          <label for="setting-engine" class="section-label">Detection Engine</label>
+          <select id="setting-engine" class="field field-sm">
+            <option value="offline">⚡ Local Engine (Zero Network Latency)</option>
+            <option value="server">🌐 Cloud Server (Supabase + Hybrid AI)</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="setting-supabase-url" class="section-label">Supabase API Base URL</label>
+          <input type="text" id="setting-supabase-url" class="field field-sm" placeholder="https://your-project.supabase.co" />
+        </div>
+
+        <div>
+          <label for="setting-dashboard-url" class="section-label">Web Dashboard URL</label>
+          <input type="text" id="setting-dashboard-url" class="field field-sm" placeholder="http://localhost:5173" />
+        </div>
+
+        <div class="setting-check">
+          <input type="checkbox" id="setting-allow-ai" checked />
+          <label for="setting-allow-ai" class="text-xs">Allow server-side AI scam explanations</label>
+        </div>
+
+        <div class="setting-check">
+          <input type="checkbox" id="setting-save-history" checked />
+          <label for="setting-save-history" class="text-xs">Save authenticated scans to database</label>
+        </div>
+
+        <button id="btn-save-settings" class="btn btn-primary mt-2">Save Preferences</button>
+      </div>
+
+      <div class="meta-footer-box mt-2">
+        <span>ScamShield MV3 v2.0.0</span>
+        <span>•</span>
+        <span>Zero-Trust Privacy</span>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a id="link-dashboard-footer" href="http://localhost:5173" target="_blank" class="link-btn">Command Center ↗</a>
+      <button id="btn-clear" class="link-btn">Clear Screen</button>
+    </footer>
+  </div>
+
+  <script src="storage.js"></script>
+  <script src="rules.js"></script>
+  <script src="auth.js"></script>
+  <script src="api.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

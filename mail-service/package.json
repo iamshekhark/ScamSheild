@@ -1,0 +1,26 @@
+{
+  "name": "scamshield-mail-service",
+  "version": "1.0.0",
+  "description": "ScamShield Nodemailer SMTP transactional mail service with API-key authentication, rate limiting, and branded security templates",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.13",
+    "dotenv": "^16.4.5"
+  },
+  "keywords": [
+    "scamshield",
+    "nodemailer",
+    "smtp",
+    "transactional-email",
+    "otp-verification",
+    "security-alerts"
+  ],
+  "author": "ScamShield Team",
+  "license": "MIT"
+}

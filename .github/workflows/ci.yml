@@ -1,0 +1,63 @@
+name: ScamShield Platform CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify-and-build:
+    name: Build & Verify (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ ubuntu-latest, windows-latest ]
+        node-version: [ 20.x ]
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+          cache-dependency-path: |
+            dashboard/package-lock.json
+            mail-service/package-lock.json
+
+      - name: Install Dashboard Dependencies
+        run: npm --prefix dashboard ci
+
+      - name: Install Mail Service Dependencies
+        run: npm --prefix mail-service ci
+
+      - name: Verify Extension JavaScript Syntax
+        run: npm run check
+
+      - name: Execute Full Automated Test Suite (85+ Tests)
+        run: npm test
+
+      - name: Execute Mail Service Unit Tests
+        run: npm --prefix mail-service test
+
+      - name: Build SOC Command Center Dashboard (Vite + TypeScript)
+        run: npm run build:dashboard
+
+      - name: Package Chrome MV3 Extension
+        run: npm run package:extension
+
+      - name: Package Sanitized Source Release
+        run: npm run package:source
+
+      - name: Verify Distribution Artifacts & Checksums
+        shell: bash
+        run: |
+          ls -lh dist/
+          echo "Verifying extension zip..."
+          test -f dist/scamshield-extension-v2.0.0.zip
+          echo "Verifying source release zip..."
+          test -f dist/scamshield-source-release-v2.0.0.zip

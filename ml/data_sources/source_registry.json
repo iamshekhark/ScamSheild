@@ -1,0 +1,86 @@
+{
+  "version": "2.0.0",
+  "registry_updated_at": "2026-10-31T20:30:00Z",
+  "sources": {
+    "mitchellkrogza_phishing": {
+      "name": "Mitchell Krogza Phishing.Database",
+      "url": "https://raw.githubusercontent.com/mitchellkrogza/Phishing.Database/master/phishing-links-ACTIVE.txt",
+      "task": "url",
+      "license": "MIT",
+      "collection_date": "2026-10-31",
+      "description": "Continuous automated repository of live, active verified phishing URLs and malicious domains.",
+      "mapped_label": "phishing",
+      "preprocessing": "URL parsing, scheme normalization, whitespace stripping, domain extraction, deduplication."
+    },
+    "openphish_feed": {
+      "name": "OpenPhish Community Feed",
+      "url": "https://openphish.com/feed.txt",
+      "task": "url",
+      "license": "CC-BY-NC 4.0",
+      "collection_date": "2026-10-31",
+      "description": "Autonomous zero-day phishing feed identifying active brand impersonation and credential phishing.",
+      "mapped_label": "phishing",
+      "preprocessing": "Validation of URL format, scheme normalization, domain extraction, deduplication."
+    },
+    "tranco_top_1m": {
+      "name": "Tranco Research Top 1M Domains",
+      "url": "https://tranco-list.eu/top-1m.csv.zip",
+      "task": "url",
+      "license": "Open Research Data",
+      "collection_date": "2026-10-31",
+      "description": "Hardened top 1M ranking of the web's most visited and verified legitimate domains (Pochat et al., NDSS 2019).",
+      "mapped_label": "legitimate",
+      "preprocessing": "Top tier domain selection (ranks 1-20000), protocol synthesis (https://), subpage synthesis, deduplication."
+    },
+    "uci_sms_spam": {
+      "name": "UCI SMS Spam Collection",
+      "url": "https://raw.githubusercontent.com/justmarkham/DAT8/master/data/sms.tsv",
+      "task": "text_email",
+      "license": "Open Data Commons / CC-BY",
+      "collection_date": "2026-10-31",
+      "description": "Benchmark mobile message corpus categorized into legitimate ham and unsolicited spam.",
+      "mapped_label": {
+        "ham": "legitimate",
+        "spam": "spam"
+      },
+      "preprocessing": "Tab-delimited text extraction, encoding normalization, label mapping, duplicate removal."
+    },
+    "huggingface_phishing_email": {
+      "name": "HuggingFace Phishing Email Dataset",
+      "url": "https://huggingface.co/datasets/zefang-liu/phishing-email-dataset/resolve/main/Phishing_Email.csv",
+      "task": "text_email",
+      "license": "Open Cybersecurity Research",
+      "collection_date": "2026-10-31",
+      "description": "Consolidated corpus of safe emails and phishing attacks derived from SpamAssassin, Nazario, and Enron collections.",
+      "mapped_label": {
+        "Phishing Email": "phishing",
+        "Safe Email": "legitimate"
+      },
+      "preprocessing": "CSV row cleaning, NaN body handling, header stripping, length truncation (1000 chars), label mapping."
+    },
+    "cert_in_i4c_curated_threats": {
+      "name": "CERT-In & I4C Documented Threat Patterns",
+      "url": "internal://scamshield/curated/cert_in_i4c_patterns.json",
+      "task": "text_email",
+      "license": "ScamShield Project Open Source",
+      "collection_date": "2026-10-31",
+      "description": "Reviewed modern Indian cyber fraud patterns: Digital Arrests, Hinglish OTP theft, Electricity bill disconnection, Part-time Telegram tasks, Fake loan app extortion.",
+      "mapped_label": "scam",
+      "preprocessing": "Pattern normalization, syntax deduplication, human expert review."
+    },
+    "npci_upi_curated_payments": {
+      "name": "NPCI UPI Corporate Handles & Documented Payment Fraud Vectors",
+      "url": "internal://scamshield/curated/upi_payment_patterns.json",
+      "task": "payment",
+      "license": "ScamShield Project Open Source",
+      "collection_date": "2026-10-31",
+      "description": "Verified official merchant VPAs and banking handles vs known fraudulent reverse-collect lures, lottery fees, and QR code traps.",
+      "mapped_label": {
+        "legitimate": "legitimate",
+        "suspicious": "suspicious",
+        "fraudulent": "fraudulent"
+      },
+      "preprocessing": "VPA validation, canonical string structuring, duplicate removal."
+    }
+  }
+}

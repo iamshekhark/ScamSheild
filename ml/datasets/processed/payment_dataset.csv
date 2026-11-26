@@ -1,0 +1,67 @@
+content,label,group,split
+refund-desk-googlepay@okaxis | 9999.0 | Enter UPI PIN to receive Rs 9999 cash refund from Google Pay customer care,fraudulent,okaxis,train
+crypto-bot-binance-earn@okaxis | 50000.0 | VIP trading signal bot deposit. Guaranteed 300% daily profit return,fraudulent,okaxis,train
+bajaj-finance-noc-fee@okaxis | 3500.0 | Loan cancellation NOC charge. Immediate transfer required to close loan,fraudulent,okaxis,train
+crypto-vip-signals@okaxis | 8000.0 | Lifetime trading group access subscription,suspicious,okaxis,train
+rohit.sharma@okaxis | 2500.0 | Dinner split weekend cafe,legitimate,okaxis,train
+phonepe-cashback-claim@ybl | 4999.0 | Pay 4999 to claim 100000 scratch card jackpot reward instantly into bank,fraudulent,ybl,train
+electricity-bill-urgent-clear@ybl | 12.0 | Bijli bill arrears update surcharge to prevent power cut tonight,fraudulent,ybl,train
+paytm-nodal-support@ybl | 18000.0 | Security deposit for level 2 clearance task,fraudulent,ybl,train
+admin928371@ybl | 8500.0 | Immediate urgent transfer required urgently without invoice,suspicious,ybl,train
+giftcard-exchange-desk@ybl | 4500.0 | Convert Amazon gift vouchers to instant cash,suspicious,ybl,train
+vikram.aditya@ybl | 650.0 | Movie ticket share,legitimate,ybl,train
+randomguy99@postbank | 49000.0 | Government lottery registration fee processing,suspicious,postbank,train
+support-refund@okhdfcbank | 4500.0 | Enter UPI PIN to receive Amazon refund credit into bank,fraudulent,okhdfcbank,train
+flipkart@axisbank | 3499.0 | Electronics purchase FK82910,legitimate,axisbank,train
+ola@axisbank | 210.0 | Cab trip settlement,legitimate,axisbank,train
+cred.bill@axisbank | 35200.0 | Credit card bill payment HDFC Regalia,legitimate,axisbank,train
+apollo.pharmacy@axisbank | 890.0 | Prescription medicines delivery order,legitimate,axisbank,train
+bescom@kbl | 2100.0 | Bangalore power utility bill payment,legitimate,kbl,train
+tatapower@yesbank | 1840.0 | Electricity bill CA-891023,legitimate,yesbank,train
+sbi-kyc-reactivation-fee@barodampay | 5.0 | Bank biometric verification fee. Enter 6-digit MPIN to unlock savings account,fraudulent,barodampay,train
+support-verification928@okbizaxis | 1500.0 | Profile KYC fee re-attempt,suspicious,okbizaxis,train
+rbi-security-vault-audit@icici | 95000.0 | CBI digital arrest bail bond deposit. Fund verification fee refundable,fraudulent,icici,train
+merchant-settlement-temp@icici | 12000.0 | Vendor payout adjustment,suspicious,icici,train
+swiggy@icici | 450.0 | Food delivery order #482910,legitimate,icici,train
+netflix@icici | 649.0 | Monthly subscription auto-debit,legitimate,icici,train
+make_my_trip@icici | 8450.0 | Flight ticket DEL-BOM booking,legitimate,icici,train
+blinkit@icici | 380.0 | Instant delivery snacks & essentials,legitimate,icici,train
+bookmyshow@kotak | 890.0 | Cinema tickets 2x IMAX 3D,legitimate,kotak,train
+olx-army-officer-buy@oksbi | 25000.0 | Scan QR and accept collect request to receive advance payment for furniture,fraudulent,oksbi,train
+quikr-buyer-advance-scan@oksbi | 12000.0 | Scan QR to receive car deposit advance into Google Pay,fraudulent,oksbi,train
+priya.nair@oksbi | 12000.0 | Flat rent November share,legitimate,oksbi,train
+zomato@hdfcbank | 620.0 | Order ZOM-892134,legitimate,hdfcbank,train
+uber@hdfcbank | 320.0 | Ride fare Bangalore airport,legitimate,hdfcbank,train
+cultfit@hdfcbank | 12500.0 | Annual fitness gym membership,legitimate,hdfcbank,train
+bigbasket@hdfcbank | 1420.0 | Grocery delivery order BB-90182,legitimate,hdfcbank,train
+upi://pay?pa=support-refund@okhdfcbank&pn=Amazon+Customer+Refund&tn=Enter+UPI+PIN+to+receive+Rs+4500+refund,fraudulent,generic_payment,validation
+upi://pay?pa=claim-cashback@ybl&pn=GooglePay+Rewards&tn=Authorize+PIN+to+credit+Rs+2000,fraudulent,generic_payment,validation
+paytm-nodal-support@ybl,fraudulent,generic_payment,validation
+sbi-kyc-verification@icici,fraudulent,generic_payment,validation
+Electricity bill unpaid! Power will be disconnected tonight at 9:30 PM. Call Electricity Officer immediately and install AnyDesk to verify.,fraudulent,generic_payment,validation
+Urgent: Gas cylinder booking suspended. Send Rs 5 to gas-officer@paytm and share TeamViewer session code to clear block.,fraudulent,generic_payment,validation
+upi://pay?pa=9876543210@paytm&pn=Official+PhonePe+Helpdesk&am=1,fraudulent,generic_payment,validation
+upi://pay?pa=8823910293@ibl&pn=Airtel+Customer+Care&am=10,fraudulent,generic_payment,validation
+upi://pay?pa=emergency-fund99@axl&pn=Urgent+Hospital+Relief&am=25000,suspicious,generic_payment,validation
+https://secure-pay-checkout-fast.site/pay?order=9841,suspicious,generic_payment,validation
+upi://pay?pa=quicktrade-p2p@airtel&pn=P2P+Escrow+Agent&am=50000,suspicious,generic_payment,validation
+swiggy@axisbank,legitimate,generic_payment,validation
+upi://pay?pa=zomato@icici&pn=Zomato+Limited&am=420&cu=INR,legitimate,generic_payment,validation
+amazonpay@apl,legitimate,generic_payment,validation
+rahul.sharma@oksbi,legitimate,generic_payment,validation
+priya.nair@okhdfcbank,legitimate,generic_payment,validation
+upi://pay?pa=tatapower@yesbank&pn=Tata+Power+Mumbai&am=1850&cu=INR,legitimate,generic_payment,validation
+upi://pay?pa=refund-agent@icici&pn=Refund+Desk&tn=Enter+PIN+to+receive+credit,fraudulent,generic_payment,validation
+upi://pay?pa=support-refund@okhdfcbank&pn=Amazon+Refund&tn=Enter+UPI+PIN+to+receive+Rs+4500,fraudulent,generic_payment,validation
+swiggy@axisbank | 450.0 | Food delivery order #482910,legitimate,generic_payment,validation
+paytm-nodal-support@ybl | 25000.0 | Security deposit for task clearance,fraudulent,generic_payment,validation
+rahul.sharma@oksbi | 1500.0 | Dinner split cafe,legitimate,generic_payment,validation
+fastag-recharge-failed-refund@airtel | 2999.0 | FASTag balance refund. Approve collect request to get money in wallet,fraudulent,airtel,test
+airtel.bill@airtel | 799.0 | Broadband postpaid recharge,legitimate,airtel,test
+irctc@sbi | 2150.0 | Train booking PNR 4920194821,legitimate,sbi,test
+telegram-task-recharge@paytm | 15000.0 | Prepaid task deposit level 3. Payout Rs 48000 after transaction confirmation,fraudulent,paytm,test
+kbc-lottery-tax-clearance@paytm | 25000.0 | TDS clearance for 25 Lakh KBC lottery reward payout,fraudulent,paytm,test
+hr-recruitment-onboarding@apl | 3500.0 | Laptop security deposit for home onboarding kit,suspicious,apl,test
+amazonpay@apl | 1299.0 | Amazon Prime annual renewal,legitimate,apl,test
+jio.recharge@jio | 349.0 | Prepaid 28-day 2GB daily pack,legitimate,jio,test
+customs-duty-release-officer@axl | 28500.0 | Narcotics parcel clearance customs tariff penalty settlement,fraudulent,axl,test

@@ -26,15 +26,16 @@ const ScamApi = {
     if (functionsUrl) this.functionsBaseUrl = functionsUrl.replace(/\/$/, "");
   },
 
-  async scan({ content, type = "url", allowAi = true, engineMode = "offline" }) {
+  async scan({ content, type = "url", allowAi = true, engineMode = "offline", allowExperimental = false, context = null }) {
     const engine = getEngine();
+    const scanOptions = context ? { allowExperimental, context } : { allowExperimental };
 
     // 1. If configured to run offline or network unavailable, use built-in engine
     if (engineMode === "offline" || !engine) {
-      const result = type === "url" ? engine?.scanUrl(content) : engine?.scanText(content);
+      const result = type === "url" ? engine?.scanUrl(content, scanOptions) : engine?.scanText(content, scanOptions);
       return {
         ...result,
-        detection_method: "rules",
+        detection_method: result?.detection_method || "rules",
         is_offline: true
       };
     }
@@ -70,23 +71,24 @@ const ScamApi = {
     } catch (err) {
       console.warn("Server analysis unavailable, falling back to local engine:", err);
       // Graceful fallback to local engine
-      const local = type === "url" ? engine.scanUrl(content) : engine.scanText(content);
+      const local = type === "url" ? engine.scanUrl(content, scanOptions) : engine.scanText(content, scanOptions);
       return {
         ...local,
-        detection_method: "rules",
+        detection_method: local?.detection_method || "rules",
         is_fallback: true
       };
     }
   },
 
-  async verifyPayment({ content, type = "upi_id", allowAi = true, engineMode = "offline" }) {
+  async verifyPayment({ content, type = "upi_id", allowAi = true, engineMode = "offline", allowExperimental = false }) {
     const engine = getEngine();
+    const scanOptions = { allowExperimental };
 
     if (engineMode === "offline" || !engine) {
-      const result = engine?.scanPayment(content, type);
+      const result = engine?.scanPayment(content, type, scanOptions);
       return {
         ...result,
-        detection_method: "rules",
+        detection_method: result?.detection_method || "rules",
         is_offline: true
       };
     }
@@ -117,10 +119,10 @@ const ScamApi = {
       return await res.json();
     } catch (err) {
       console.warn("Payment verification backend unavailable, falling back to local engine:", err);
-      const local = engine.scanPayment(content, type);
+      const local = engine.scanPayment(content, type, scanOptions);
       return {
         ...local,
-        detection_method: "rules",
+        detection_method: local?.detection_method || "rules",
         is_fallback: true
       };
     }

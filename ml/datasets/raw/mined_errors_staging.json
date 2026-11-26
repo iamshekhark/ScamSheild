@@ -1,0 +1,1704 @@
+{
+  "false_positives": {
+    "url": [
+      {
+        "sample": "https://onlinesbi.sbi/portal/login.html",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.8761,
+        "probabilities": {
+          "legitimate": 0.1235,
+          "malicious": 0.0004,
+          "phishing": 0.8761
+        }
+      },
+      {
+        "sample": "https://www.amazon.in/gp/bestsellers",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.7341,
+        "probabilities": {
+          "legitimate": 0.2645,
+          "malicious": 0.0014,
+          "phishing": 0.7341
+        }
+      }
+    ],
+    "text_email": [
+      {
+        "sample": "re : ees @ silicon valley power ( city of santa clara ) another little adder to this concept . whether it ' s wholesale or retail , the offer for this product would come from me - - either by way of b",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.7653,
+        "probabilities": {
+          "legitimate": 0.2338,
+          "phishing": 0.7653,
+          "scam": 0.0001,
+          "spam": 0.0008
+        }
+      },
+      {
+        "sample": "K..u also dont msg or reply to his msg..",
+        "true_label": "legitimate",
+        "predicted_label": "spam",
+        "confidence": 0.7403,
+        "probabilities": {
+          "legitimate": 0.2588,
+          "phishing": 0.0006,
+          "scam": 0.0003,
+          "spam": 0.7403
+        }
+      },
+      {
+        "sample": "fw : - - - - - original message - - - - - from : kitchen , louise sent : tuesday , august 28 , 2001 8 : 22 am to : kitchen , louise subject : fw : q 3 - above 50 % probability deals over $ 1 mm . tota",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.814,
+        "probabilities": {
+          "legitimate": 0.1855,
+          "phishing": 0.814,
+          "scam": 0.0002,
+          "spam": 0.0003
+        }
+      },
+      {
+        "sample": "re : netco - benefits comparison lets discuss again after we have nailed whether there are any large differences in medical insurance costs . bottom - line , we won ' t people to sign new offer letter",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.5526,
+        "probabilities": {
+          "legitimate": 0.4472,
+          "phishing": 0.5526,
+          "scam": 0.0001,
+          "spam": 0.0001
+        }
+      },
+      {
+        "sample": "opportunity for you to be interviewed by authors of a deloitte i work for epmi in nepool with john llodra and report to ed baughman . i am writing to ask if you would speak with my brother - in - law ",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.8955,
+        "probabilities": {
+          "legitimate": 0.1044,
+          "phishing": 0.8955,
+          "scam": 0.0,
+          "spam": 0.0001
+        }
+      },
+      {
+        "sample": "ethink about it : november 13 , 2000 have you lost your competitive mind ? find it on the edge . if you ' re looking for competitive intelligence from recent articles , press releases or trends , find",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.9091,
+        "probabilities": {
+          "legitimate": 0.0908,
+          "phishing": 0.9091,
+          "scam": 0.0,
+          "spam": 0.0001
+        }
+      },
+      {
+        "sample": "ethink about it : november 13 , 2000 have you lost your competitive mind ? find it on the edge . if you ' re looking for competitive intelligence from recent articles , press releases or trends , find",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.6056,
+        "probabilities": {
+          "legitimate": 0.3796,
+          "phishing": 0.6056,
+          "scam": 0.0006,
+          "spam": 0.0143
+        }
+      },
+      {
+        "sample": "hea sporting clays tournament - august 15 , 2000 hea ' s annual sporting clays tournament is just around the corner , august 15 , 2000 at the american shooting centers . watch your fax for all the det",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.932,
+        "probabilities": {
+          "legitimate": 0.0653,
+          "phishing": 0.932,
+          "scam": 0.001,
+          "spam": 0.0017
+        }
+      },
+      {
+        "sample": "job : montreal poste de professeur , e regulier , ere en phonologie le departement de linguistique de l ' uqam sollicite des candidatures pour un poste regulier a temps complet en phonologie profil de",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.9495,
+        "probabilities": {
+          "legitimate": 0.05,
+          "phishing": 0.9495,
+          "scam": 0.0004,
+          "spam": 0.0001
+        }
+      },
+      {
+        "sample": "restricted stock louise , i never thanked you for looking out for our interests re restricted stock . so , thank - you . i ' ve really enjoyed working with you this year . have a great christmas if i ",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.5366,
+        "probabilities": {
+          "legitimate": 0.4543,
+          "phishing": 0.5366,
+          "scam": 0.0005,
+          "spam": 0.0086
+        }
+      },
+      {
+        "sample": "Your dad is back in ph?",
+        "true_label": "legitimate",
+        "predicted_label": "spam",
+        "confidence": 0.7416,
+        "probabilities": {
+          "legitimate": 0.2001,
+          "phishing": 0.0534,
+          "scam": 0.0049,
+          "spam": 0.7416
+        }
+      },
+      {
+        "sample": "natural language processing please find below the second call for papers for taln ' 99 ( traitement automatique du langage naturel ) ( french and english versions ) . thank you . * * * * * * * * * * *",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.7776,
+        "probabilities": {
+          "legitimate": 0.2207,
+          "phishing": 0.7776,
+          "scam": 0.0003,
+          "spam": 0.0014
+        }
+      },
+      {
+        "sample": "> Special Bonus with your order, you will receive > 10 Original 1980 Topps Star Wars/Empire Strikes > Back Collector Cards Absultely Free! > These are Original 1980 Topps Star Wars/Empire > Strikes Ba",
+        "true_label": "legitimate",
+        "predicted_label": "spam",
+        "confidence": 0.4785,
+        "probabilities": {
+          "legitimate": 0.1094,
+          "phishing": 0.4093,
+          "scam": 0.0028,
+          "spam": 0.4785
+        }
+      },
+      {
+        "sample": "How long before you get reply, just defer admission til next semester",
+        "true_label": "legitimate",
+        "predicted_label": "spam",
+        "confidence": 0.5815,
+        "probabilities": {
+          "legitimate": 0.3193,
+          "phishing": 0.0988,
+          "scam": 0.0004,
+          "spam": 0.5815
+        }
+      },
+      {
+        "sample": "california prices have fun !",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.5427,
+        "probabilities": {
+          "legitimate": 0.3685,
+          "phishing": 0.5427,
+          "scam": 0.0016,
+          "spam": 0.0872
+        }
+      },
+      {
+        "sample": "Ah yes..Yet another case where 'marriage' is actually an inappropriate word for these guys. What they want is 'housekeeper' 'dog' and 'prostitute'.All I can say, is I hope these girls come out, take t",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.5067,
+        "probabilities": {
+          "legitimate": 0.4933,
+          "phishing": 0.5067,
+          "scam": 0.0,
+          "spam": 0.0001
+        }
+      },
+      {
+        "sample": "re : 3 . 420 fyi : morphology , concordance many thanks to henry churchyard for the speech error . any others sent either directly to me ( iyo1vaf @ uclamvs ) would be much appreciated . please give t",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.5312,
+        "probabilities": {
+          "legitimate": 0.4686,
+          "phishing": 0.5312,
+          "scam": 0.0,
+          "spam": 0.0001
+        }
+      },
+      {
+        "sample": "Download Dispatch - PC Edition Downloads All CNET The Web In Utilities: CloneCD 4.0 In Audio: Sound Forge 6.0a build 150 Media Jukebox 8.0.32 In Internet: Accelerate 2K2 3 In Multimedia: FotoTime Foto",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.9949,
+        "probabilities": {
+          "legitimate": 0.0046,
+          "phishing": 0.9949,
+          "scam": 0.0001,
+          "spam": 0.0004
+        }
+      },
+      {
+        "sample": "Please protect yourself from e-threats. SIB never asks for sensitive information like Passwords,ATM/SMS PIN thru email. Never share your password with anybody.",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.5128,
+        "probabilities": {
+          "legitimate": 0.3195,
+          "phishing": 0.5128,
+          "scam": 0.0136,
+          "spam": 0.1541
+        }
+      },
+      {
+        "sample": "quickie one morning dick cheney and george w . bush were having brunch at a restaurant . the attractive waitress asks cheney what he would like and he replies , \" i ' ll have a bowl of oatmeal and som",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.7699,
+        "probabilities": {
+          "legitimate": 0.2297,
+          "phishing": 0.7699,
+          "scam": 0.0,
+          "spam": 0.0004
+        }
+      },
+      {
+        "sample": "Amazon India: Your order #[PHONE]-192831 has been dispatched via ATS and will be delivered tomorrow by 8 PM. Track at amazon.in/orders",
+        "true_label": "legitimate",
+        "predicted_label": "spam",
+        "confidence": 0.9813,
+        "probabilities": {
+          "legitimate": 0.0029,
+          "phishing": 0.0014,
+          "scam": 0.0144,
+          "spam": 0.9813
+        }
+      },
+      {
+        "sample": "\"Hunt, Bryan\" stated the following: > > you need to do a \"fdisk /mbr\" from a bootable windoze floppy > alternatively boot from linux boot disk and do fdisk, delete all partitions.I need to ask a quest",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.5618,
+        "probabilities": {
+          "legitimate": 0.2874,
+          "phishing": 0.5618,
+          "scam": 0.0013,
+          "spam": 0.1495
+        }
+      },
+      {
+        "sample": "Have a safe trip to Nigeria. Wish you happiness and very soon company to share moments with",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.6998,
+        "probabilities": {
+          "legitimate": 0.2921,
+          "phishing": 0.6998,
+          "scam": 0.0003,
+          "spam": 0.0079
+        }
+      },
+      {
+        "sample": "us news archive @ ft . com reliable country intelligence for a challenging world with country reports supporting your decisions , you \u000f ' re working with the best source of country intelligence availa",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.999,
+        "probabilities": {
+          "legitimate": 0.001,
+          "phishing": 0.999,
+          "scam": 0.0,
+          "spam": 0.0
+        }
+      },
+      {
+        "sample": "Interesting take...\"But the more I think about it, the more you I realize that having governments specify software licensing policies is a bad idea.\"http://www.oreillynet.com/pub/wlg/1840-- Irish Linu",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.5138,
+        "probabilities": {
+          "legitimate": 0.4835,
+          "phishing": 0.5138,
+          "scam": 0.0001,
+          "spam": 0.0026
+        }
+      },
+      {
+        "sample": "(That said can you text him one more time?)",
+        "true_label": "legitimate",
+        "predicted_label": "spam",
+        "confidence": 0.9153,
+        "probabilities": {
+          "legitimate": 0.0686,
+          "phishing": 0.0159,
+          "scam": 0.0002,
+          "spam": 0.9153
+        }
+      },
+      {
+        "sample": "cultural identities = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = call for papers \" rethinking",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.7111,
+        "probabilities": {
+          "legitimate": 0.2863,
+          "phishing": 0.7111,
+          "scam": 0.0006,
+          "spam": 0.002
+        }
+      },
+      {
+        "sample": "> ... > At the other extreme, training on half my ham&spam, and scoring aginst > the other half > ... > false positive rate: 0.0100% > false negative rate: 0.3636% > ... > Alas, all 4 of the 0.99 clue",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.5095,
+        "probabilities": {
+          "legitimate": 0.3039,
+          "phishing": 0.5095,
+          "scam": 0.002,
+          "spam": 0.1846
+        }
+      },
+      {
+        "sample": "So u wan 2 come for our dinner tonight a not?",
+        "true_label": "legitimate",
+        "predicted_label": "spam",
+        "confidence": 0.5577,
+        "probabilities": {
+          "legitimate": 0.4057,
+          "phishing": 0.0354,
+          "scam": 0.0012,
+          "spam": 0.5577
+        }
+      },
+      {
+        "sample": "I wonder how you got online, my love ? Had you gone to the net cafe ? Did you get your phone recharged ? Were you on a friends net ? I think of you, boytoy",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.6461,
+        "probabilities": {
+          "legitimate": 0.2509,
+          "phishing": 0.6461,
+          "scam": 0.001,
+          "spam": 0.102
+        }
+      },
+      {
+        "sample": "free trial : europe and asia energy information ! dear colleague : energy argus has just launched two new bi - monthly publications that focus on the european and asian energy markets - argus power eu",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.9828,
+        "probabilities": {
+          "legitimate": 0.0167,
+          "phishing": 0.9828,
+          "scam": 0.0,
+          "spam": 0.0004
+        }
+      },
+      {
+        "sample": "fw : california capacity report for week of 6 / 11 - 6 / 15 transwestern ' s average deliveries to california were 1032 mmbtu / d ( 95 % ) , with san juan lateral throughput at 873 mmbtu / d and rio p",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.8948,
+        "probabilities": {
+          "legitimate": 0.105,
+          "phishing": 0.8948,
+          "scam": 0.0,
+          "spam": 0.0002
+        }
+      },
+      {
+        "sample": "fw : california capacity report for week of 9 / 10 - 9 / 14 transwestern ' s average deliveries to california were 972 mmbtu / d ( 89 % ) , with san juan lateral throughput at 800 mmbtu / d . total ea",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.605,
+        "probabilities": {
+          "legitimate": 0.3949,
+          "phishing": 0.605,
+          "scam": 0.0,
+          "spam": 0.0001
+        }
+      },
+      {
+        "sample": "hoston hoop - it - up 6 weeks away ! dear daren : did you mark on your sporting event calendar to be in houston on may 5 th - 6 th at greenspoint mall for the largest 3 - on - 3 basketball action in t",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.91,
+        "probabilities": {
+          "legitimate": 0.0894,
+          "phishing": 0.91,
+          "scam": 0.0,
+          "spam": 0.0005
+        }
+      },
+      {
+        "sample": "---------------------------------------------------------------------- 1. iSilo(TM) 3.2 for Palm OS and Pocket PC enters beta1 2. iSilo(TM) 3.2 for Windows enters beta1 3. iSiloX 3.2 for Windows and M",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.5674,
+        "probabilities": {
+          "legitimate": 0.4317,
+          "phishing": 0.5674,
+          "scam": 0.0002,
+          "spam": 0.0007
+        }
+      },
+      {
+        "sample": "I wonder if you'll get this text?",
+        "true_label": "legitimate",
+        "predicted_label": "spam",
+        "confidence": 0.6849,
+        "probabilities": {
+          "legitimate": 0.3103,
+          "phishing": 0.0046,
+          "scam": 0.0002,
+          "spam": 0.6849
+        }
+      },
+      {
+        "sample": "european language resources association elra news * * * price cuts on the m2vts database * * * following all the requests regarding the speech database m2vts ( ref . elra-s0021 ) , we are happy to ann",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.9452,
+        "probabilities": {
+          "legitimate": 0.0546,
+          "phishing": 0.9452,
+          "scam": 0.0,
+          "spam": 0.0001
+        }
+      },
+      {
+        "sample": "Just now saw your message.it k da:)",
+        "true_label": "legitimate",
+        "predicted_label": "spam",
+        "confidence": 0.876,
+        "probabilities": {
+          "legitimate": 0.1164,
+          "phishing": 0.0073,
+          "scam": 0.0002,
+          "spam": 0.876
+        }
+      },
+      {
+        "sample": "Oh and by the way you do have more food in your fridge! Want to go out for a meal tonight?",
+        "true_label": "legitimate",
+        "predicted_label": "spam",
+        "confidence": 0.4465,
+        "probabilities": {
+          "legitimate": 0.2628,
+          "phishing": 0.2902,
+          "scam": 0.0005,
+          "spam": 0.4465
+        }
+      },
+      {
+        "sample": "a message from jim jim has visited msn womencentral at http : / / womencentral . msn . com and has asked us to send this message to you so you can check out the following page : maximizing your child ",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.9742,
+        "probabilities": {
+          "legitimate": 0.0242,
+          "phishing": 0.9742,
+          "scam": 0.0001,
+          "spam": 0.0014
+        }
+      },
+      {
+        "sample": "ny event w / pec & keyspan louise , it is my understanding that you have represented discomfort in signing the ny event expenditure approval form . i appreciate that a \" holiday event \" or spending an",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.5435,
+        "probabilities": {
+          "legitimate": 0.4554,
+          "phishing": 0.5435,
+          "scam": 0.0004,
+          "spam": 0.0007
+        }
+      },
+      {
+        "sample": "CNET Cool GearElectronics All CNET The Web \u00c2 Toshiba Pocket PC e310 In HandheldsOnkyo TX-DS797 In ElectronicsCanon PowerShot G2 In CamerasPioneer HTS-910DV In ElectronicsCreative Labs Nomad Jukebox 3 ",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.5442,
+        "probabilities": {
+          "legitimate": 0.305,
+          "phishing": 0.5442,
+          "scam": 0.0025,
+          "spam": 0.1483
+        }
+      },
+      {
+        "sample": "3 new eim acquisitions the following entities were acquired on march 30 , 2001 : daishowa forest products ltd . , a canada federal corporation : parent company : eim holdings ( canada ) co . - 100 % b",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.9933,
+        "probabilities": {
+          "legitimate": 0.0063,
+          "phishing": 0.9933,
+          "scam": 0.0004,
+          "spam": 0.0
+        }
+      },
+      {
+        "sample": "I am in your office na.",
+        "true_label": "legitimate",
+        "predicted_label": "scam",
+        "confidence": 0.5925,
+        "probabilities": {
+          "legitimate": 0.2563,
+          "phishing": 0.092,
+          "scam": 0.5925,
+          "spam": 0.0591
+        }
+      },
+      {
+        "sample": "== http://siliconvalley.internet.com/news/article.php/10862_1460701Microsoft Tuesday said it has purchased a Mountain View, Calif.-based security company to better secure its core file services includ",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.8164,
+        "probabilities": {
+          "legitimate": 0.1824,
+          "phishing": 0.8164,
+          "scam": 0.0001,
+          "spam": 0.0011
+        }
+      },
+      {
+        "sample": "== http://siliconvalley.internet.com/news/article.php/10862_1460701Microsoft Tuesday said it has purchased a Mountain View, Calif.-based security company to better secure its core file services includ",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.5092,
+        "probabilities": {
+          "legitimate": 0.4573,
+          "phishing": 0.5092,
+          "scam": 0.0031,
+          "spam": 0.0305
+        }
+      },
+      {
+        "sample": "Sounds like you have many talents! would you like to go on a dinner date next week?",
+        "true_label": "legitimate",
+        "predicted_label": "spam",
+        "confidence": 0.7442,
+        "probabilities": {
+          "legitimate": 0.2524,
+          "phishing": 0.0029,
+          "scam": 0.0004,
+          "spam": 0.7442
+        }
+      },
+      {
+        "sample": "fortune here ' s the fortune link . . .",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.6952,
+        "probabilities": {
+          "legitimate": 0.3045,
+          "phishing": 0.6952,
+          "scam": 0.0,
+          "spam": 0.0002
+        }
+      },
+      {
+        "sample": "caiso notification : demand relief program settlement charge types this is a reminder that the summer 2001 iso demand relief program charges are reflected on the june 30 statements and june invoices .",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.7271,
+        "probabilities": {
+          "legitimate": 0.2688,
+          "phishing": 0.7271,
+          "scam": 0.0031,
+          "spam": 0.0009
+        }
+      },
+      {
+        "sample": "re : site license for power world i concur .",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.7463,
+        "probabilities": {
+          "legitimate": 0.2389,
+          "phishing": 0.7463,
+          "scam": 0.0112,
+          "spam": 0.0036
+        }
+      },
+      {
+        "sample": "No dear i do have free messages without any recharge. Hi hi hi",
+        "true_label": "legitimate",
+        "predicted_label": "spam",
+        "confidence": 0.5117,
+        "probabilities": {
+          "legitimate": 0.4634,
+          "phishing": 0.0218,
+          "scam": 0.003,
+          "spam": 0.5117
+        }
+      },
+      {
+        "sample": "Cheers, Adam.Perhaps people are starting to notice how profit motive drains the meaning out of their lives. Kinda sucks to be an ant farming for the corporate lords. Funny how most of the rest of the ",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.7956,
+        "probabilities": {
+          "legitimate": 0.2037,
+          "phishing": 0.7956,
+          "scam": 0.0,
+          "spam": 0.0007
+        }
+      },
+      {
+        "sample": "seac / hpl - freeport meter # 98 - 0435 the following deals have been created and entered in sitara effective 11 / 1 / 00 at meter # 98 - 0435 : counterparty deal # nom price ( ifhsc less ) amerada he",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.9024,
+        "probabilities": {
+          "legitimate": 0.0964,
+          "phishing": 0.9024,
+          "scam": 0.0001,
+          "spam": 0.001
+        }
+      },
+      {
+        "sample": "Your Amazon order #[PHONE]-1928374 has been shipped and will arrive on Friday. Track your delivery in the app.",
+        "true_label": "legitimate",
+        "predicted_label": "spam",
+        "confidence": 0.9961,
+        "probabilities": {
+          "legitimate": 0.001,
+          "phishing": 0.0008,
+          "scam": 0.0022,
+          "spam": 0.9961
+        }
+      },
+      {
+        "sample": "Armand says get your ass over to epsilon",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.4841,
+        "probabilities": {
+          "legitimate": 0.3342,
+          "phishing": 0.4841,
+          "scam": 0.0062,
+          "spam": 0.1756
+        }
+      },
+      {
+        "sample": "I cant pick the phone right now. Pls send a message",
+        "true_label": "legitimate",
+        "predicted_label": "spam",
+        "confidence": 0.6673,
+        "probabilities": {
+          "legitimate": 0.3314,
+          "phishing": 0.0013,
+          "scam": 0.0001,
+          "spam": 0.6673
+        }
+      },
+      {
+        "sample": "netcoonline launch plans we are getting ready for the launch of \" netcoonline \" and have been preparing new documentation , a refreshed site design and cleaned products to reflect our gas and power fo",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.5457,
+        "probabilities": {
+          "legitimate": 0.4499,
+          "phishing": 0.5457,
+          "scam": 0.0001,
+          "spam": 0.0043
+        }
+      },
+      {
+        "sample": "Your one-time password (OTP) is 482910 for transaction on Amazon. NEVER share your OTP with anyone, including bank staff.",
+        "true_label": "legitimate",
+        "predicted_label": "scam",
+        "confidence": 0.4655,
+        "probabilities": {
+          "legitimate": 0.155,
+          "phishing": 0.121,
+          "scam": 0.4655,
+          "spam": 0.2585
+        }
+      },
+      {
+        "sample": "Your one-time password (OTP) is 482910 for transaction on Amazon. NEVER share your OTP with anyone. Bank officials will never ask for your OTP.",
+        "true_label": "legitimate",
+        "predicted_label": "scam",
+        "confidence": 0.8925,
+        "probabilities": {
+          "legitimate": 0.0194,
+          "phishing": 0.0309,
+          "scam": 0.8925,
+          "spam": 0.0572
+        }
+      },
+      {
+        "sample": "-----BEGIN PGP SIGNED MESSAGE----- Hash: SHA1Your actual serial number is [PHONE] - from a dig I've just done.Try resetting the zone number to [PHONE] - some of your secondaries seem to have a serial ",
+        "true_label": "legitimate",
+        "predicted_label": "spam",
+        "confidence": 0.5554,
+        "probabilities": {
+          "legitimate": 0.4192,
+          "phishing": 0.0187,
+          "scam": 0.0068,
+          "spam": 0.5554
+        }
+      },
+      {
+        "sample": "tw rofr postings legale - in toby ' s absence , would you please post these 2 rofr notices on transwestern ' s internet site under available capacity today and remove them on 7 / 31 / 00 ? please call",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.5188,
+        "probabilities": {
+          "legitimate": 0.4808,
+          "phishing": 0.5188,
+          "scam": 0.0003,
+          "spam": 0.0001
+        }
+      },
+      {
+        "sample": "california update 7 / 31 / 01 there is a serious effort currently underway in california to unseat senator burton ( d - san francisco ) , president pro tem . even though the chances of this happening ",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.5312,
+        "probabilities": {
+          "legitimate": 0.4682,
+          "phishing": 0.5312,
+          "scam": 0.0003,
+          "spam": 0.0003
+        }
+      },
+      {
+        "sample": "James Raftery wrote: > > Hi, > > Four of the IE nameservers are publishing out of date DNS information. > The four listed below are publishing the IE zone from last Friday. > They are six days behind ",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.6041,
+        "probabilities": {
+          "legitimate": 0.3003,
+          "phishing": 0.6041,
+          "scam": 0.0013,
+          "spam": 0.0943
+        }
+      },
+      {
+        "sample": "eia ' s updated heating costs forecast home heating costs to soar this winter americans can expect home heating prices to jump as much as 44 % this winter because of strong economic growth and high cr",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.9797,
+        "probabilities": {
+          "legitimate": 0.0192,
+          "phishing": 0.9797,
+          "scam": 0.0002,
+          "spam": 0.0009
+        }
+      },
+      {
+        "sample": "beaumont methanol this is to confirm that we need to take our delivery to hpl meter # 1428 to zero ! ! beaumont methanol started a controlled shut - down last night ( they will be down in deco 0 due t",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.59,
+        "probabilities": {
+          "legitimate": 0.4076,
+          "phishing": 0.59,
+          "scam": 0.0003,
+          "spam": 0.0021
+        }
+      },
+      {
+        "sample": "summary : half a day dear readers , many thanks to all respondents ( 51 ) who sent replies to my query about time phrases and native-speaker judgments . there were too many replies to acknowledge indi",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.6664,
+        "probabilities": {
+          "legitimate": 0.3335,
+          "phishing": 0.6664,
+          "scam": 0.0,
+          "spam": 0.0001
+        }
+      },
+      {
+        "sample": "home page - new - risk solutions ( http : / / www . marshweb . com / home / ho mepg . nsf / alldo > dear vincent , hope all is well across the atlantic . you may have seen this already but thought i w",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.7211,
+        "probabilities": {
+          "legitimate": 0.2786,
+          "phishing": 0.7211,
+          "scam": 0.0001,
+          "spam": 0.0002
+        }
+      },
+      {
+        "sample": "May 7, 2002 Dear [EMAIL]: Congratulations! On behalf of Frito-Lay, Inc., we are pleased to advise you that you've won Fourth Prize in the 3D's(R) Malcolm in the Middle(TM) Sweepstakes. Fourth Prize co",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.8424,
+        "probabilities": {
+          "legitimate": 0.1514,
+          "phishing": 0.8424,
+          "scam": 0.0021,
+          "spam": 0.0041
+        }
+      },
+      {
+        "sample": "Hey ! I want you ! I crave you ! I miss you ! I need you ! I love you, Ahmad Saeed al Hallaq ...",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.8241,
+        "probabilities": {
+          "legitimate": 0.1741,
+          "phishing": 0.8241,
+          "scam": 0.0001,
+          "spam": 0.0017
+        }
+      },
+      {
+        "sample": "western update 8 / 20 / 01 market update a pair of new pacific northwest power plants is coming online this month . the klamath cogeneration project in klamath falls , oregon , will start feeding 486 ",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.9384,
+        "probabilities": {
+          "legitimate": 0.0595,
+          "phishing": 0.9384,
+          "scam": 0.0021,
+          "spam": 0.0
+        }
+      },
+      {
+        "sample": "ena analyst and associate \" brownbag \" presentations it is the intent of the office of the chairman to maintain a high quality flow of analysts and associates rotating through enron north america as w",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.5921,
+        "probabilities": {
+          "legitimate": 0.4051,
+          "phishing": 0.5921,
+          "scam": 0.0007,
+          "spam": 0.002
+        }
+      },
+      {
+        "sample": "rendez - vous reporter : tuesday 5 th september 2000 > tuesday 5 th september 2000 > > the monte carlo rendez - vous reporter from reactions , in association with > guy carpenter [ http : / / www . gu",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.5013,
+        "probabilities": {
+          "legitimate": 0.4976,
+          "phishing": 0.5013,
+          "scam": 0.0004,
+          "spam": 0.0007
+        }
+      },
+      {
+        "sample": "Yeah so basically any time next week you can get away from your mom &amp; get up before 3",
+        "true_label": "legitimate",
+        "predicted_label": "spam",
+        "confidence": 0.718,
+        "probabilities": {
+          "legitimate": 0.2509,
+          "phishing": 0.0309,
+          "scam": 0.0002,
+          "spam": 0.718
+        }
+      },
+      {
+        "sample": "sap id - here it is ! ! ! ! ! the following sap id and password allows you to access pay , benefit , and personal data via ehronline . do not provide this id / password to anyone as it enables modific",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.8492,
+        "probabilities": {
+          "legitimate": 0.1501,
+          "phishing": 0.8492,
+          "scam": 0.0005,
+          "spam": 0.0002
+        }
+      },
+      {
+        "sample": "london visit i understand that you will be in london around 20 september . tom lewthwaite has asked me to arrange a meeting between you , tom and julian leake . i understand that you have met tom and ",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.6107,
+        "probabilities": {
+          "legitimate": 0.3884,
+          "phishing": 0.6107,
+          "scam": 0.0004,
+          "spam": 0.0006
+        }
+      },
+      {
+        "sample": "metaphor / artificial intelligence and cognition symposium on metaphor , ai and cognition = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = at the aisb ' 99 convention , 6t",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.805,
+        "probabilities": {
+          "legitimate": 0.1949,
+          "phishing": 0.805,
+          "scam": 0.0001,
+          "spam": 0.0001
+        }
+      },
+      {
+        "sample": "semcom : webnet journal : announcement & call for participation webnet journal : internet technologies , issues , business & education * * http : / / www . aace . org / pubs / webnet * * > > 1st annou",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.9377,
+        "probabilities": {
+          "legitimate": 0.062,
+          "phishing": 0.9377,
+          "scam": 0.0002,
+          "spam": 0.0001
+        }
+      },
+      {
+        "sample": "I'll text you when I drop x off",
+        "true_label": "legitimate",
+        "predicted_label": "spam",
+        "confidence": 0.7129,
+        "probabilities": {
+          "legitimate": 0.2868,
+          "phishing": 0.0003,
+          "scam": 0.0001,
+          "spam": 0.7129
+        }
+      },
+      {
+        "sample": "As in i want custom officer discount oh.",
+        "true_label": "legitimate",
+        "predicted_label": "scam",
+        "confidence": 0.927,
+        "probabilities": {
+          "legitimate": 0.0654,
+          "phishing": 0.0032,
+          "scam": 0.927,
+          "spam": 0.0044
+        }
+      },
+      {
+        "sample": "news from the ippe ( 08 mar 95 ) = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = news from the ippe - - 7 mar 95 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = - - - - - - - -",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.8961,
+        "probabilities": {
+          "legitimate": 0.1035,
+          "phishing": 0.8961,
+          "scam": 0.0,
+          "spam": 0.0004
+        }
+      },
+      {
+        "sample": "I (Career Tel) have added u as a contact on INDYAROCKS.COM to send FREE SMS. To remove from phonebook - sms NO to &lt;#&gt;",
+        "true_label": "legitimate",
+        "predicted_label": "spam",
+        "confidence": 0.9918,
+        "probabilities": {
+          "legitimate": 0.003,
+          "phishing": 0.0036,
+          "scam": 0.0016,
+          "spam": 0.9918
+        }
+      },
+      {
+        "sample": "ZDNet AnchorDesk Daily NewsletterAcer brings P4 power to the people--read the review at ZDNet. Download Builder.com's 'Remedial XML' series. Need a memory upgrade? Find out with CNET's Memory Configur",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.912,
+        "probabilities": {
+          "legitimate": 0.0713,
+          "phishing": 0.912,
+          "scam": 0.0009,
+          "spam": 0.0158
+        }
+      },
+      {
+        "sample": "Was actually about to send you a reminder today. Have a wonderful weekend",
+        "true_label": "legitimate",
+        "predicted_label": "spam",
+        "confidence": 0.7435,
+        "probabilities": {
+          "legitimate": 0.2522,
+          "phishing": 0.0041,
+          "scam": 0.0003,
+          "spam": 0.7435
+        }
+      },
+      {
+        "sample": "Colin Nevin wrote: > > Hi All, > The modem handshake works at slightly higher speeds (4800bps to > ~57600bps) but that is no good for tx/rx'ing data to the remote server > as it insists at talking at ",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.5559,
+        "probabilities": {
+          "legitimate": 0.2902,
+          "phishing": 0.5559,
+          "scam": 0.0014,
+          "spam": 0.1525
+        }
+      },
+      {
+        "sample": "re : q : identifying ungrammatical sentences we have designed and developed an incremental parsing system called screen which processes spoken language using a hybrid learning architecture . the syste",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.7458,
+        "probabilities": {
+          "legitimate": 0.2534,
+          "phishing": 0.7458,
+          "scam": 0.0003,
+          "spam": 0.0005
+        }
+      },
+      {
+        "sample": "Hallo Xxxxxxxxx Yyyyyyy,HEUTE, 03. Juli, ist monatlicher Messetag der virtuellen 3D-Job-Messe!! Ihre Chance, die Weichen fuer einen erfolgreichen Berufsein- und Karriereaufstieg zu stellen. Zwischen 1",
+        "true_label": "legitimate",
+        "predicted_label": "phishing",
+        "confidence": 0.9445,
+        "probabilities": {
+          "legitimate": 0.0549,
+          "phishing": 0.9445,
+          "scam": 0.0002,
+          "spam": 0.0004
+        }
+      },
+      {
+        "sample": "Can u get pic msgs to your phone?",
+        "true_label": "legitimate",
+        "predicted_label": "spam",
+        "confidence": 0.9866,
+        "probabilities": {
+          "legitimate": 0.01,
+          "phishing": 0.0023,
+          "scam": 0.0011,
+          "spam": 0.9866
+        }
+      },
+      {
+        "sample": "Tee hee. Off to lecture, cheery bye bye.",
+        "true_label": "legitimate",
+        "predicted_label": "spam",
+        "confidence": 0.4939,
+        "probabilities": {
+          "legitimate": 0.4876,
+          "phishing": 0.0131,
+          "scam": 0.0054,
+          "spam": 0.4939
+        }
+      }
+    ],
+    "payment": [
+      {
+        "sample": "airtel.bill@airtel | 799.0 | Broadband postpaid recharge",
+        "true_label": "legitimate",
+        "predicted_label": "fraudulent",
+        "confidence": 0.4354,
+        "probabilities": {
+          "fraudulent": 0.4354,
+          "legitimate": 0.4055,
+          "suspicious": 0.1592
+        }
+      },
+      {
+        "sample": "amazonpay@apl | 1299.0 | Amazon Prime annual renewal",
+        "true_label": "legitimate",
+        "predicted_label": "suspicious",
+        "confidence": 0.3763,
+        "probabilities": {
+          "fraudulent": 0.3203,
+          "legitimate": 0.3034,
+          "suspicious": 0.3763
+        }
+      },
+      {
+        "sample": "jio.recharge@jio | 349.0 | Prepaid 28-day 2GB daily pack",
+        "true_label": "legitimate",
+        "predicted_label": "fraudulent",
+        "confidence": 0.4762,
+        "probabilities": {
+          "fraudulent": 0.4762,
+          "legitimate": 0.3461,
+          "suspicious": 0.1777
+        }
+      }
+    ]
+  },
+  "false_negatives": {
+    "url": [
+      {
+        "sample": "https://buto25802-star.github.io/Instagram/",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.974,
+        "probabilities": {
+          "legitimate": 0.974,
+          "malicious": 0.0003,
+          "phishing": 0.0257
+        }
+      },
+      {
+        "sample": "https://couriersplease.addlik.com/",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.996,
+        "probabilities": {
+          "legitimate": 0.996,
+          "malicious": 0.0001,
+          "phishing": 0.004
+        }
+      },
+      {
+        "sample": "https://sanjanacodes16.github.io/Clone/",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.7201,
+        "probabilities": {
+          "legitimate": 0.7201,
+          "malicious": 0.0009,
+          "phishing": 0.279
+        }
+      },
+      {
+        "sample": "https://mfacebocks.com.vn/elcfvqvdam?q4",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.9461,
+        "probabilities": {
+          "legitimate": 0.9461,
+          "malicious": 0.0004,
+          "phishing": 0.0534
+        }
+      },
+      {
+        "sample": "http://data:text/html",
+        "true_label": "malicious",
+        "predicted_label": "phishing",
+        "confidence": 0.9947,
+        "probabilities": {
+          "legitimate": 0.0018,
+          "malicious": 0.0035,
+          "phishing": 0.9947
+        }
+      },
+      {
+        "sample": "https://tokevim-cdn-hk0.homes/",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.9713,
+        "probabilities": {
+          "legitimate": 0.9713,
+          "malicious": 0.0013,
+          "phishing": 0.0274
+        }
+      },
+      {
+        "sample": "https://g00gle-security-alerts.top/login",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.768,
+        "probabilities": {
+          "legitimate": 0.768,
+          "malicious": 0.0038,
+          "phishing": 0.2282
+        }
+      },
+      {
+        "sample": "https://amazon.com@attacker-portal.xyz/login",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.6114,
+        "probabilities": {
+          "legitimate": 0.6114,
+          "malicious": 0.0011,
+          "phishing": 0.3875
+        }
+      },
+      {
+        "sample": "https://client.tkchost.com/",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.9603,
+        "probabilities": {
+          "legitimate": 0.9603,
+          "malicious": 0.0014,
+          "phishing": 0.0382
+        }
+      },
+      {
+        "sample": "https://xn--pple-43a.com/verify-id",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.7115,
+        "probabilities": {
+          "legitimate": 0.7115,
+          "malicious": 0.0008,
+          "phishing": 0.2877
+        }
+      },
+      {
+        "sample": "https://www.robloc2021pro14.blogspot.com/",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.7627,
+        "probabilities": {
+          "legitimate": 0.7627,
+          "malicious": 0.0017,
+          "phishing": 0.2356
+        }
+      }
+    ],
+    "text_email": [
+      {
+        "sample": "we haven ' t been introduced . . . : ) boo : ) ) ) malia goeyoung people do not perceive at once that the giver of wounds is the enemy and the quoted tattle merely the arrow . to succeed is nothing - ",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.5158,
+        "probabilities": {
+          "legitimate": 0.5158,
+          "phishing": 0.4841,
+          "scam": 0.0,
+          "spam": 0.0001
+        }
+      },
+      {
+        "sample": "webcam dating is hot - - - - - - - - - - - - - - - - please no more",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.958,
+        "probabilities": {
+          "legitimate": 0.958,
+          "phishing": 0.0413,
+          "scam": 0.0,
+          "spam": 0.0006
+        }
+      },
+      {
+        "sample": "---------------------------------------------------------- >> GiftCD Offer Newsletter Confirmation August 8th, 2002 ----------------------------------------------------------Thank you for your subscri",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.7773,
+        "probabilities": {
+          "legitimate": 0.7773,
+          "phishing": 0.2205,
+          "scam": 0.0003,
+          "spam": 0.0019
+        }
+      },
+      {
+        "sample": "cvs micros 0 ft for pennies check ' em out duration punctuate atlas caulk perturbate virtuosi greenery knock forthwith tom dairy sumerian dogtooth cannister australis felicia anthology",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.5224,
+        "probabilities": {
+          "legitimate": 0.5224,
+          "phishing": 0.4558,
+          "scam": 0.0122,
+          "spam": 0.0096
+        }
+      },
+      {
+        "sample": "Call Germany for only 1 pence per minute! Call from a fixed line via access number 0844 861 85 85. No prepayment. Direct access!",
+        "true_label": "spam",
+        "predicted_label": "legitimate",
+        "confidence": 0.5366,
+        "probabilities": {
+          "legitimate": 0.5366,
+          "phishing": 0.121,
+          "scam": 0.0133,
+          "spam": 0.3291
+        }
+      },
+      {
+        "sample": "need a laptop ? get a free ibm thinkpad !",
+        "true_label": "phishing",
+        "predicted_label": "spam",
+        "confidence": 0.527,
+        "probabilities": {
+          "legitimate": 0.0459,
+          "phishing": 0.4269,
+          "scam": 0.0001,
+          "spam": 0.527
+        }
+      },
+      {
+        "sample": "Email AlertFrom: Jeri StewartSize: 2KBSubject: Low-cost prescripiton drvgsTo listen to email call 123",
+        "true_label": "spam",
+        "predicted_label": "legitimate",
+        "confidence": 0.496,
+        "probabilities": {
+          "legitimate": 0.496,
+          "phishing": 0.4916,
+          "scam": 0.0019,
+          "spam": 0.0106
+        }
+      },
+      {
+        "sample": "YES! The only place in town to meet exciting adult singles is now in the UK. Txt CHAT to 86688 now! 150p/Msg.",
+        "true_label": "spam",
+        "predicted_label": "legitimate",
+        "confidence": 0.639,
+        "probabilities": {
+          "legitimate": 0.639,
+          "phishing": 0.002,
+          "scam": 0.0,
+          "spam": 0.359
+        }
+      },
+      {
+        "sample": "get your rocks off tonight ! ! for the biggest , boldest , and dirtiest adult site on the net . . . * cum shots * wild orgies * deep throat blow jobs * lesbian action * gays * bondage * fetishes * voy",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.6144,
+        "probabilities": {
+          "legitimate": 0.6144,
+          "phishing": 0.3853,
+          "scam": 0.0,
+          "spam": 0.0003
+        }
+      },
+      {
+        "sample": "re [ 1 ] cup of tea in 1809 in 1906 the holocaustplayboy in 1852",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.9901,
+        "probabilities": {
+          "legitimate": 0.9901,
+          "phishing": 0.0079,
+          "scam": 0.0002,
+          "spam": 0.0018
+        }
+      },
+      {
+        "sample": "Do you ever notice that when you're driving, anyone going slower than you is an idiot and everyone driving faster than you is a maniac?",
+        "true_label": "spam",
+        "predicted_label": "legitimate",
+        "confidence": 0.9701,
+        "probabilities": {
+          "legitimate": 0.9701,
+          "phishing": 0.0294,
+          "scam": 0.0003,
+          "spam": 0.0003
+        }
+      },
+      {
+        "sample": "Untitled DocumentThis is what are customers are saying\u00e2\u20ac\u0153I was shocked. I can't believe how low the prices are, and the quality of the product is great. I will recommend your site to everyone I know.\u00e2",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.6505,
+        "probabilities": {
+          "legitimate": 0.6505,
+          "phishing": 0.348,
+          "scam": 0.0003,
+          "spam": 0.0012
+        }
+      },
+      {
+        "sample": "- claim your large screen tv",
+        "true_label": "phishing",
+        "predicted_label": "spam",
+        "confidence": 0.787,
+        "probabilities": {
+          "legitimate": 0.0083,
+          "phishing": 0.1976,
+          "scam": 0.007,
+          "spam": 0.787
+        }
+      },
+      {
+        "sample": "? ? ? ? ? ? ? ? ? ? ? ? ? \u00b0 ? ? y? \u00bb \u00a3 ??????? ? ? ???? ? ? ? ??? ? ?? ? ???? ? \u00ab ? ? ????????ie ? ? ?? ? ????? 2 ?? \u00a7 ?? ? ? \u00b0 ? ? y? \u00bb \u00a3 ? ? ? ???? ? ? ?? ? ? ? ??? ? ?? ? ???? ? \u00ab ? ? [ ? ? 3 ? \u00b1 3",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.5613,
+        "probabilities": {
+          "legitimate": 0.5613,
+          "phishing": 0.4267,
+          "scam": 0.0013,
+          "spam": 0.0107
+        }
+      },
+      {
+        "sample": "dating:i have had two of these. Only started after i sent a text to talk sport radio last week. Any connection do you think or coincidence?",
+        "true_label": "spam",
+        "predicted_label": "legitimate",
+        "confidence": 0.6032,
+        "probabilities": {
+          "legitimate": 0.6032,
+          "phishing": 0.0018,
+          "scam": 0.0002,
+          "spam": 0.3948
+        }
+      },
+      {
+        "sample": "test & keep a nintendo ds - panel members wanted",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.7726,
+        "probabilities": {
+          "legitimate": 0.7726,
+          "phishing": 0.1366,
+          "scam": 0.0022,
+          "spam": 0.0886
+        }
+      },
+      {
+        "sample": "Win the newest \u201cHarry Potter and the Order of the Phoenix (Book 5) reply HARRY, answer 5 questions - chance to be the first among readers!",
+        "true_label": "spam",
+        "predicted_label": "legitimate",
+        "confidence": 0.7299,
+        "probabilities": {
+          "legitimate": 0.7299,
+          "phishing": 0.0317,
+          "scam": 0.0004,
+          "spam": 0.2381
+        }
+      },
+      {
+        "sample": "Win the newest \u0093Harry Potter and the Order of the Phoenix (Book 5) reply HARRY, answer 5 questions - chance to be the first among readers!",
+        "true_label": "spam",
+        "predicted_label": "legitimate",
+        "confidence": 0.7299,
+        "probabilities": {
+          "legitimate": 0.7299,
+          "phishing": 0.0317,
+          "scam": 0.0004,
+          "spam": 0.2381
+        }
+      },
+      {
+        "sample": "FedEx Delivery Alert: Delivery failed as door was locked. Confirm alternate delivery date and pay Rs 18 reschedule fee at http://fedex-express-delivery.site",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.9027,
+        "probabilities": {
+          "legitimate": 0.9027,
+          "phishing": 0.0891,
+          "scam": 0.0053,
+          "spam": 0.0029
+        }
+      },
+      {
+        "sample": "re [ 10 ] : i trust you at six male paranormalhold on matrix",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.8952,
+        "probabilities": {
+          "legitimate": 0.8952,
+          "phishing": 0.0878,
+          "scam": 0.0099,
+          "spam": 0.0071
+        }
+      },
+      {
+        "sample": "shy amateur slut on camrea how ' re you doing ? shy amateur tenes nude love is like an hourglass , with the heart filling up as the brain epmties . hearty laugehtr is a good way to jog inrtenally with",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.7807,
+        "probabilities": {
+          "legitimate": 0.7807,
+          "phishing": 0.2157,
+          "scam": 0.0008,
+          "spam": 0.0027
+        }
+      },
+      {
+        "sample": "In The Simpsons Movie released in July 2007 name the band that died at the start of the film? A-Green Day, B-Blue Day, C-Red Day. (Send A, B or C)",
+        "true_label": "spam",
+        "predicted_label": "legitimate",
+        "confidence": 0.9909,
+        "probabilities": {
+          "legitimate": 0.9909,
+          "phishing": 0.0044,
+          "scam": 0.0,
+          "spam": 0.0047
+        }
+      },
+      {
+        "sample": "----------------------------------------------------------- http://www.webheadsweekly.com/babes-shaved/karsten/babes.html -----------------------------------------------------------Shaved Sweeties----",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.8259,
+        "probabilities": {
+          "legitimate": 0.8259,
+          "phishing": 0.1723,
+          "scam": 0.0003,
+          "spam": 0.0015
+        }
+      },
+      {
+        "sample": "ringtoneking 84484",
+        "true_label": "spam",
+        "predicted_label": "legitimate",
+        "confidence": 0.9686,
+        "probabilities": {
+          "legitimate": 0.9686,
+          "phishing": 0.0018,
+          "scam": 0.0006,
+          "spam": 0.0291
+        }
+      },
+      {
+        "sample": "start shopping at costco today with a complimentary gold membership . ( area ) start shopping at costco today with a free gold membership . we ' re giving away gold memberships in your area now . akfg",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.8064,
+        "probabilities": {
+          "legitimate": 0.8064,
+          "phishing": 0.1379,
+          "scam": 0.0002,
+          "spam": 0.0556
+        }
+      },
+      {
+        "sample": "start shopping at costco today with a complimentary gold membership . start shopping at costco today with a free gold membership . free gold membership or upgrade and extend your existing membership .",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.693,
+        "probabilities": {
+          "legitimate": 0.693,
+          "phishing": 0.1262,
+          "scam": 0.0003,
+          "spam": 0.1805
+        }
+      },
+      {
+        "sample": "start shopping at costco today with a complimentary gold membership . ( area ) start shopping at costco today with a free gold membership . we ' re giving away gold memberships in your area now . akfg",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.8064,
+        "probabilities": {
+          "legitimate": 0.8064,
+          "phishing": 0.1379,
+          "scam": 0.0002,
+          "spam": 0.0556
+        }
+      },
+      {
+        "sample": "start shopping at costco today with a complimentary gold membership . start shopping at costco today with a free gold membership . free gold membership or upgrade and extend your existing membership .",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.6401,
+        "probabilities": {
+          "legitimate": 0.6401,
+          "phishing": 0.1434,
+          "scam": 0.0003,
+          "spam": 0.2162
+        }
+      },
+      {
+        "sample": "Tired of paying big bucks for satellite t.v.?THEN DONT!For as low as $97 you can buy the programming card that will give you all the channels. YES ALL OF THEM, including pay channels and pay per view.",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.5168,
+        "probabilities": {
+          "legitimate": 0.5168,
+          "phishing": 0.3699,
+          "scam": 0.0031,
+          "spam": 0.1102
+        }
+      },
+      {
+        "sample": "Tired of paying big bucks for satellite t.v.?THEN DONT!For as low as $97 you can buy the programming card that will give you all the channels. YES ALL OF THEM, including pay channels and pay per view.",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.9497,
+        "probabilities": {
+          "legitimate": 0.9497,
+          "phishing": 0.0462,
+          "scam": 0.0008,
+          "spam": 0.0032
+        }
+      },
+      {
+        "sample": "We are desperately looking for 100 lazy people who wish to make lots of money without working. We are not looking for people who are self-motivated. We are not looking for people who join every 'get r",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.7626,
+        "probabilities": {
+          "legitimate": 0.7626,
+          "phishing": 0.2319,
+          "scam": 0.0001,
+          "spam": 0.0053
+        }
+      },
+      {
+        "sample": "free trial membership the latest in adult technology ! ! ! brand new xxx adult site free trial membership please visit the latest in live video conferencing . 1000 channels of hardcore ! ! live rooms ",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.8654,
+        "probabilities": {
+          "legitimate": 0.8654,
+          "phishing": 0.1024,
+          "scam": 0.0015,
+          "spam": 0.0306
+        }
+      },
+      {
+        "sample": "Bhai jaldi se otp batao, delivery boy gate pe khada hai, OTP de do please.",
+        "true_label": "scam",
+        "predicted_label": "legitimate",
+        "confidence": 0.9415,
+        "probabilities": {
+          "legitimate": 0.9415,
+          "phishing": 0.0515,
+          "scam": 0.003,
+          "spam": 0.0039
+        }
+      },
+      {
+        "sample": "Hi its LUCY Hubby at meetins all day Fri & I will B alone at hotel U fancy cumin over? Pls leave msg 2day [PHONE] Lucy x Calls\u00a31/minMobsmoreLKPOBOX177HP51FL",
+        "true_label": "spam",
+        "predicted_label": "legitimate",
+        "confidence": 0.5813,
+        "probabilities": {
+          "legitimate": 0.5813,
+          "phishing": 0.001,
+          "scam": 0.004,
+          "spam": 0.4137
+        }
+      },
+      {
+        "sample": "Newest Universal Cable Descrambler Box: ViewMaster 4000 + *** Watch ALL channels your local cable company offer. *** Fully Tested and Compatible with 98% of US cable network. *** 90 days money back gu",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.6177,
+        "probabilities": {
+          "legitimate": 0.6177,
+          "phishing": 0.3799,
+          "scam": 0.0004,
+          "spam": 0.0021
+        }
+      },
+      {
+        "sample": "Financial Services Company will pay a minimum of $250.00 (max. of $1000.00) for every lead that results in a sale. Currently many of our Telemarketers are earning more than $5000.00 a month!For more i",
+        "true_label": "phishing",
+        "predicted_label": "legitimate",
+        "confidence": 0.5021,
+        "probabilities": {
+          "legitimate": 0.5021,
+          "phishing": 0.4972,
+          "scam": 0.0002,
+          "spam": 0.0005
+        }
+      }
+    ],
+    "payment": [
+      {
+        "sample": "hr-recruitment-onboarding@apl | 3500.0 | Laptop security deposit for home onboarding kit",
+        "true_label": "suspicious",
+        "predicted_label": "fraudulent",
+        "confidence": 0.6108,
+        "probabilities": {
+          "fraudulent": 0.6108,
+          "legitimate": 0.1984,
+          "suspicious": 0.1908
+        }
+      },
+      {
+        "sample": "customs-duty-release-officer@axl | 28500.0 | Narcotics parcel clearance customs tariff penalty settlement",
+        "true_label": "fraudulent",
+        "predicted_label": "suspicious",
+        "confidence": 0.3559,
+        "probabilities": {
+          "fraudulent": 0.3394,
+          "legitimate": 0.3046,
+          "suspicious": 0.3559
+        }
+      }
+    ]
+  }
+}

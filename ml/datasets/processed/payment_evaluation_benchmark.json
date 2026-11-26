@@ -1,0 +1,97 @@
+[
+  {
+    "content": "swiggy@icici | 320.0 | Food order settlement",
+    "label": "legitimate",
+    "category": "OFFICIAL_MERCHANT"
+  },
+  {
+    "content": "zomato@hdfcbank | 550.0 | Dinner order payment",
+    "label": "legitimate",
+    "category": "OFFICIAL_MERCHANT"
+  },
+  {
+    "content": "flipkart@axisbank | 1899.0 | Footwear purchase",
+    "label": "legitimate",
+    "category": "OFFICIAL_MERCHANT"
+  },
+  {
+    "content": "tatapower@yesbank | 2450.0 | Electricity utility bill",
+    "label": "legitimate",
+    "category": "UTILITY_BILL"
+  },
+  {
+    "content": "bescom@kbl | 1920.0 | Power bill payment",
+    "label": "legitimate",
+    "category": "UTILITY_BILL"
+  },
+  {
+    "content": "airtel.bill@airtel | 699.0 | Fiber postpaid payment",
+    "label": "legitimate",
+    "category": "UTILITY_BILL"
+  },
+  {
+    "content": "irctc@sbi | 3120.0 | Train tickets 2x 2A CNF",
+    "label": "legitimate",
+    "category": "OFFICIAL_MERCHANT"
+  },
+  {
+    "content": "ananya.sen@okhdfcbank | 1500.0 | Weekend brunch share",
+    "label": "legitimate",
+    "category": "P2P_TRANSFER"
+  },
+  {
+    "content": "rahul.verma@paytm | 2000.0 | Society sports fund",
+    "label": "legitimate",
+    "category": "P2P_TRANSFER"
+  },
+  {
+    "content": "deepak.joshi@sbi | 850.0 | Books purchase contribution",
+    "label": "legitimate",
+    "category": "P2P_TRANSFER"
+  },
+  {
+    "content": "refund-desk-googlepay@okaxis | 9999.0 | Enter UPI PIN to receive Rs 9999 cash refund from Google Pay customer care",
+    "label": "fraudulent",
+    "category": "REVERSE_COLLECT_FRAUD"
+  },
+  {
+    "content": "phonepe-cashback-claim@ybl | 4999.0 | Pay 4999 to claim 100000 scratch card jackpot reward instantly into bank",
+    "label": "fraudulent",
+    "category": "REVERSE_COLLECT_FRAUD"
+  },
+  {
+    "content": "olx-army-officer-buy@oksbi | 25000.0 | Scan QR and accept collect request to receive advance payment for furniture",
+    "label": "fraudulent",
+    "category": "QR_CODE_EXTORTION"
+  },
+  {
+    "content": "rbi-security-vault-audit@icici | 95000.0 | CBI digital arrest bail bond deposit. Fund verification fee refundable",
+    "label": "fraudulent",
+    "category": "DIGITAL_ARREST_EXTORTION"
+  },
+  {
+    "content": "telegram-task-recharge@paytm | 15000.0 | Prepaid task deposit level 3. Payout Rs 48000 after transaction confirmation",
+    "label": "fraudulent",
+    "category": "ADVANCE_FEE_FRAUD"
+  },
+  {
+    "content": "electricity-bill-urgent-clear@ybl | 12.0 | Bijli bill arrears update surcharge to prevent power cut tonight",
+    "label": "fraudulent",
+    "category": "BILL_EXTORTION"
+  },
+  {
+    "content": "admin928371@ybl | 8500.0 | Immediate urgent transfer required urgently without invoice",
+    "label": "suspicious",
+    "category": "ANOMALOUS_VPA"
+  },
+  {
+    "content": "randomguy99@postbank | 49000.0 | Government lottery registration fee processing",
+    "label": "suspicious",
+    "category": "ANOMALOUS_VPA"
+  },
+  {
+    "content": "support-verification928@okbizaxis | 1500.0 | Profile KYC fee re-attempt",
+    "label": "suspicious",
+    "category": "ANOMALOUS_VPA"
+  }
+]

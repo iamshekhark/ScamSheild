@@ -1,0 +1,170 @@
+[
+  {
+    "url": "https://paypa1.com/login-verify",
+    "label": "phishing",
+    "category": "TYPOSQUATTING",
+    "domain": "paypa1.com"
+  },
+  {
+    "url": "https://g00gle-security-update.net/auth",
+    "label": "phishing",
+    "category": "TYPOSQUATTING",
+    "domain": "g00gle-security-update.net"
+  },
+  {
+    "url": "https://micros0ft-office365-login.com/checkpoint",
+    "label": "phishing",
+    "category": "TYPOSQUATTING",
+    "domain": "micros0ft-office365-login.com"
+  },
+  {
+    "url": "https://netflix-billing-renew.xyz/portal",
+    "label": "phishing",
+    "category": "BRAND_IMPERSONATION",
+    "domain": "netflix-billing-renew.xyz"
+  },
+  {
+    "url": "https://secure-login.chase.com.evil-bank.top/auth",
+    "label": "phishing",
+    "category": "SUBDOMAIN_DECEPTION",
+    "domain": "evil-bank.top"
+  },
+  {
+    "url": "https://amazon-prime-reward-cash.buzz/claim",
+    "label": "phishing",
+    "category": "BRAND_IMPERSONATION",
+    "domain": "amazon-prime-reward-cash.buzz"
+  },
+  {
+    "url": "http://sbi-yono-kyc-reactivate.top/login",
+    "label": "phishing",
+    "category": "BRAND_IMPERSONATION",
+    "domain": "sbi-yono-kyc-reactivate.top"
+  },
+  {
+    "url": "http://hdfc-bank-rewards-points.click/portal",
+    "label": "phishing",
+    "category": "BRAND_IMPERSONATION",
+    "domain": "hdfc-bank-rewards-points.click"
+  },
+  {
+    "url": "https://xn--pple-43d.com/store",
+    "label": "phishing",
+    "category": "PUNYCODE_HOMOGRAPH",
+    "domain": "xn--pple-43d.com"
+  },
+  {
+    "url": "https://xn--e1awd7f.com/login",
+    "label": "phishing",
+    "category": "PUNYCODE_HOMOGRAPH",
+    "domain": "xn--e1awd7f.com"
+  },
+  {
+    "url": "https://www.xn--microsofte-4pb.com/download",
+    "label": "phishing",
+    "category": "PUNYCODE_HOMOGRAPH",
+    "domain": "xn--microsofte-4pb.com"
+  },
+  {
+    "url": "https://bit.ly/3xXyZ9_sbi_kyc",
+    "label": "phishing",
+    "category": "SHORTENED_URL",
+    "domain": "bit.ly"
+  },
+  {
+    "url": "https://tinyurl.com/paytm-kyc-reactivate",
+    "label": "phishing",
+    "category": "SHORTENED_URL",
+    "domain": "tinyurl.com"
+  },
+  {
+    "url": "https://t.co/fakealert_9921",
+    "label": "phishing",
+    "category": "SHORTENED_URL",
+    "domain": "t.co"
+  },
+  {
+    "url": "http://192.168.1.50/banking/login",
+    "label": "phishing",
+    "category": "RAW_IP_HOST",
+    "domain": "192.168.1.50"
+  },
+  {
+    "url": "http://203.0.113.15:8080/secure/verify",
+    "label": "phishing",
+    "category": "RAW_IP_HOST",
+    "domain": "203.0.113.15"
+  },
+  {
+    "url": "https://www.paypal.com/us/signin",
+    "label": "legitimate",
+    "category": "POPULAR_LEGITIMATE",
+    "domain": "paypal.com"
+  },
+  {
+    "url": "https://accounts.google.com/signin/v2/identifier",
+    "label": "legitimate",
+    "category": "POPULAR_LEGITIMATE",
+    "domain": "google.com"
+  },
+  {
+    "url": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
+    "label": "legitimate",
+    "category": "POPULAR_LEGITIMATE",
+    "domain": "microsoftonline.com"
+  },
+  {
+    "url": "https://appleid.apple.com/sign-in",
+    "label": "legitimate",
+    "category": "POPULAR_LEGITIMATE",
+    "domain": "apple.com"
+  },
+  {
+    "url": "https://netflix.com/youraccount",
+    "label": "legitimate",
+    "category": "POPULAR_LEGITIMATE",
+    "domain": "netflix.com"
+  },
+  {
+    "url": "https://onlinesbi.sbi/personal/welcome.htm",
+    "label": "legitimate",
+    "category": "POPULAR_LEGITIMATE",
+    "domain": "onlinesbi.sbi"
+  },
+  {
+    "url": "https://netbanking.hdfcbank.com/netbanking/",
+    "label": "legitimate",
+    "category": "POPULAR_LEGITIMATE",
+    "domain": "hdfcbank.com"
+  },
+  {
+    "url": "https://www.amazon.in/gp/bestsellers",
+    "label": "legitimate",
+    "category": "POPULAR_LEGITIMATE",
+    "domain": "amazon.in"
+  },
+  {
+    "url": "https://subdomain.service.gov.uk/apply",
+    "label": "legitimate",
+    "category": "MULTI_PART_CCTLD",
+    "domain": "service.gov.uk"
+  },
+  {
+    "url": "https://portal.incometax.gov.in/iec/foservices",
+    "label": "legitimate",
+    "category": "MULTI_PART_CCTLD",
+    "domain": "incometax.gov.in"
+  },
+  {
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API",
+    "label": "legitimate",
+    "category": "LEGITIMATE_UNUSUAL",
+    "domain": "mozilla.org"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/torvalds/linux/master/README",
+    "label": "legitimate",
+    "category": "LEGITIMATE_UNUSUAL",
+    "domain": "githubusercontent.com"
+  }
+]

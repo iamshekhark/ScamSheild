@@ -1,0 +1,348 @@
+{
+  "task": "email",
+  "model_version": "email-model-v1.0.0",
+  "selected_model": "TFIDF_LinearSVM",
+  "candidates": [
+    {
+      "name": "TFIDF_LogisticRegression_Baseline",
+      "train_seconds": 0.28,
+      "val_metrics": {
+        "accuracy": 0.9588,
+        "macro_precision": 0.9516,
+        "macro_recall": 0.9393,
+        "macro_f1": 0.9452,
+        "val_fpr_legitimate": 0.0269
+      }
+    },
+    {
+      "name": "TFIDF_LinearSVM",
+      "train_seconds": 0.062,
+      "val_metrics": {
+        "accuracy": 0.9603,
+        "macro_precision": 0.969,
+        "macro_recall": 0.9256,
+        "macro_f1": 0.9459,
+        "val_fpr_legitimate": 0.0167
+      }
+    },
+    {
+      "name": "Hybrid_TFIDF_Structured_LogisticRegression",
+      "train_seconds": 1.012,
+      "val_metrics": {
+        "accuracy": 0.9558,
+        "macro_precision": 0.941,
+        "macro_recall": 0.9412,
+        "macro_f1": 0.9411,
+        "val_fpr_legitimate": 0.029
+      }
+    },
+    {
+      "name": "Structured_RandomForest",
+      "train_seconds": 0.413,
+      "val_metrics": {
+        "accuracy": 0.8297,
+        "macro_precision": 0.7932,
+        "macro_recall": 0.8421,
+        "macro_f1": 0.8124,
+        "val_fpr_legitimate": 0.1728
+      }
+    }
+  ],
+  "calibration": {
+    "selected_method": "isotonic",
+    "validation_comparison": {
+      "none": {
+        "brier_score": 0.0849,
+        "ece": 0.1089,
+        "nll": 0.2079,
+        "reliability_bins": [
+          {
+            "bin": "0.3-0.4",
+            "count": 2,
+            "avg_confidence": 0.39,
+            "empirical_accuracy": 0.5,
+            "gap": 0.11
+          },
+          {
+            "bin": "0.4-0.5",
+            "count": 37,
+            "avg_confidence": 0.4637,
+            "empirical_accuracy": 0.4865,
+            "gap": 0.0228
+          },
+          {
+            "bin": "0.5-0.6",
+            "count": 66,
+            "avg_confidence": 0.5523,
+            "empirical_accuracy": 0.697,
+            "gap": 0.1446
+          },
+          {
+            "bin": "0.6-0.7",
+            "count": 129,
+            "avg_confidence": 0.6514,
+            "empirical_accuracy": 0.8682,
+            "gap": 0.2168
+          },
+          {
+            "bin": "0.7-0.8",
+            "count": 253,
+            "avg_confidence": 0.7574,
+            "empirical_accuracy": 0.9605,
+            "gap": 0.2031
+          },
+          {
+            "bin": "0.8-0.9",
+            "count": 586,
+            "avg_confidence": 0.857,
+            "empirical_accuracy": 0.9812,
+            "gap": 0.1243
+          },
+          {
+            "bin": "0.9-1.0",
+            "count": 894,
+            "avg_confidence": 0.9425,
+            "empirical_accuracy": 1.0,
+            "gap": 0.0575
+          }
+        ]
+      },
+      "temperature": {
+        "brier_score": 0.0605,
+        "ece": 0.0035,
+        "nll": 0.1187,
+        "reliability_bins": [
+          {
+            "bin": "0.4-0.5",
+            "count": 6,
+            "avg_confidence": 0.4721,
+            "empirical_accuracy": 0.1667,
+            "gap": 0.3055
+          },
+          {
+            "bin": "0.5-0.6",
+            "count": 29,
+            "avg_confidence": 0.5511,
+            "empirical_accuracy": 0.5862,
+            "gap": 0.0352
+          },
+          {
+            "bin": "0.6-0.7",
+            "count": 29,
+            "avg_confidence": 0.6563,
+            "empirical_accuracy": 0.6552,
+            "gap": 0.0011
+          },
+          {
+            "bin": "0.7-0.8",
+            "count": 41,
+            "avg_confidence": 0.7553,
+            "empirical_accuracy": 0.6829,
+            "gap": 0.0724
+          },
+          {
+            "bin": "0.8-0.9",
+            "count": 102,
+            "avg_confidence": 0.8525,
+            "empirical_accuracy": 0.8431,
+            "gap": 0.0094
+          },
+          {
+            "bin": "0.9-1.0",
+            "count": 1760,
+            "avg_confidence": 0.9876,
+            "empirical_accuracy": 0.9875,
+            "gap": 0.0001
+          }
+        ]
+      },
+      "platt": {
+        "brier_score": 0.0615,
+        "ece": 0.0099,
+        "nll": 0.1226,
+        "reliability_bins": [
+          {
+            "bin": "0.4-0.5",
+            "count": 3,
+            "avg_confidence": 0.489,
+            "empirical_accuracy": 0.6667,
+            "gap": 0.1777
+          },
+          {
+            "bin": "0.5-0.6",
+            "count": 30,
+            "avg_confidence": 0.5539,
+            "empirical_accuracy": 0.6,
+            "gap": 0.0461
+          },
+          {
+            "bin": "0.6-0.7",
+            "count": 35,
+            "avg_confidence": 0.6533,
+            "empirical_accuracy": 0.5429,
+            "gap": 0.1104
+          },
+          {
+            "bin": "0.7-0.8",
+            "count": 64,
+            "avg_confidence": 0.7572,
+            "empirical_accuracy": 0.7969,
+            "gap": 0.0397
+          },
+          {
+            "bin": "0.8-0.9",
+            "count": 106,
+            "avg_confidence": 0.8523,
+            "empirical_accuracy": 0.9057,
+            "gap": 0.0534
+          },
+          {
+            "bin": "0.9-1.0",
+            "count": 1729,
+            "avg_confidence": 0.9829,
+            "empirical_accuracy": 0.9861,
+            "gap": 0.0032
+          }
+        ]
+      },
+      "isotonic": {
+        "brier_score": 0.0547,
+        "ece": 0.0036,
+        "nll": 0.1035,
+        "reliability_bins": [
+          {
+            "bin": "0.4-0.5",
+            "count": 11,
+            "avg_confidence": 0.4935,
+            "empirical_accuracy": 0.5455,
+            "gap": 0.0519
+          },
+          {
+            "bin": "0.5-0.6",
+            "count": 22,
+            "avg_confidence": 0.569,
+            "empirical_accuracy": 0.5,
+            "gap": 0.069
+          },
+          {
+            "bin": "0.6-0.7",
+            "count": 35,
+            "avg_confidence": 0.657,
+            "empirical_accuracy": 0.7429,
+            "gap": 0.0858
+          },
+          {
+            "bin": "0.7-0.8",
+            "count": 56,
+            "avg_confidence": 0.7637,
+            "empirical_accuracy": 0.7857,
+            "gap": 0.022
+          },
+          {
+            "bin": "0.8-0.9",
+            "count": 40,
+            "avg_confidence": 0.818,
+            "empirical_accuracy": 0.825,
+            "gap": 0.007
+          },
+          {
+            "bin": "0.9-1.0",
+            "count": 1803,
+            "avg_confidence": 0.987,
+            "empirical_accuracy": 0.9867,
+            "gap": 0.0003
+          }
+        ]
+      }
+    },
+    "selected_validation_metrics": {
+      "brier_score": 0.0547,
+      "ece": 0.0036,
+      "nll": 0.1035,
+      "reliability_bins": [
+        {
+          "bin": "0.4-0.5",
+          "count": 11,
+          "avg_confidence": 0.4935,
+          "empirical_accuracy": 0.5455,
+          "gap": 0.0519
+        },
+        {
+          "bin": "0.5-0.6",
+          "count": 22,
+          "avg_confidence": 0.569,
+          "empirical_accuracy": 0.5,
+          "gap": 0.069
+        },
+        {
+          "bin": "0.6-0.7",
+          "count": 35,
+          "avg_confidence": 0.657,
+          "empirical_accuracy": 0.7429,
+          "gap": 0.0858
+        },
+        {
+          "bin": "0.7-0.8",
+          "count": 56,
+          "avg_confidence": 0.7637,
+          "empirical_accuracy": 0.7857,
+          "gap": 0.022
+        },
+        {
+          "bin": "0.8-0.9",
+          "count": 40,
+          "avg_confidence": 0.818,
+          "empirical_accuracy": 0.825,
+          "gap": 0.007
+        },
+        {
+          "bin": "0.9-1.0",
+          "count": 1803,
+          "avg_confidence": 0.987,
+          "empirical_accuracy": 0.9867,
+          "gap": 0.0003
+        }
+      ]
+    }
+  },
+  "artifact": {
+    "model_version": "email-model-v1.0.0",
+    "task": "email",
+    "model_type": "TFIDF_LinearSVM",
+    "artifact_path": "artifacts/email_model_email-model-v1.0.0.joblib",
+    "artifact_sha256": "8983c41e9423f5c04d02ec9d859ccb6d57ef04dc9b49f1f168074863de3fabbb",
+    "artifact_size_bytes": 259796,
+    "dataset_version": "2.2.0",
+    "preprocessing_version": "email-prep-v1.0.0",
+    "training_config": {
+      "seed": 42,
+      "train_samples": 9185,
+      "val_samples": 1967
+    },
+    "metrics": {
+      "accuracy": 0.9603,
+      "macro_precision": 0.969,
+      "macro_recall": 0.9256,
+      "macro_f1": 0.9459,
+      "val_fpr_legitimate": 0.0167
+    },
+    "calibration": {
+      "method": "isotonic",
+      "temperature": 1.0,
+      "uncertainty_threshold": 0.55,
+      "calibrated": true
+    },
+    "dependencies": {
+      "python_version": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+      "python_version_tuple": [
+        3,
+        14,
+        6
+      ],
+      "sklearn_version": "1.9.1",
+      "joblib_version": "1.6.0"
+    },
+    "trained_at": "2026-11-26T05:54:14.459146+00:00",
+    "production_active": false
+  }
+}

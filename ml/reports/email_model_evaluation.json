@@ -1,0 +1,170 @@
+{
+  "task": "email",
+  "model_version": "email-model-v1.0.0",
+  "model_type": "TFIDF_LinearSVM",
+  "calibration_method": "isotonic",
+  "evaluated_at": "2026-11-26T05:54:17.921307+00:00",
+  "test_samples": 1967,
+  "model_size_mb": 0.2478,
+  "inference_latency_ms_per_sample": 0.1651,
+  "metrics": {
+    "accuracy": 0.9634,
+    "macro_precision": 0.9439,
+    "macro_recall": 0.9401,
+    "macro_f1": 0.942,
+    "roc_auc": 0.9882,
+    "pr_auc": 0.976,
+    "false_positive_rate": 0.0234,
+    "false_negative_rate": 0.0645,
+    "brier_score": 0.0614,
+    "ece": 0.0118
+  },
+  "per_class": {
+    "legitimate": {
+      "precision": 0.9745,
+      "recall": 0.9766,
+      "f1": 0.9755,
+      "support": 1409
+    },
+    "phishing": {
+      "precision": 0.9387,
+      "recall": 0.9346,
+      "f1": 0.9367,
+      "support": 459
+    },
+    "spam": {
+      "precision": 0.9184,
+      "recall": 0.9091,
+      "f1": 0.9137,
+      "support": 99
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "legitimate",
+      "phishing",
+      "spam"
+    ],
+    "matrix": [
+      [
+        1376,
+        27,
+        6
+      ],
+      [
+        28,
+        429,
+        2
+      ],
+      [
+        8,
+        1,
+        90
+      ]
+    ]
+  },
+  "false_positives_sample": [
+    {
+      "sample": "hea sporting clays tournament - august 15 , 2000 hea ' s annual sporting clays tournament is just around the corner , august 15 , 2000 at the american shooting ",
+      "predicted": "phishing",
+      "confidence": 0.6476
+    },
+    {
+      "sample": "> Special Bonus with your order, you will receive > 10 Original 1980 Topps Star Wars/Empire Strikes > Back Collector Cards Absultely Free! > These are Original ",
+      "predicted": "phishing",
+      "confidence": 0.9812
+    },
+    {
+      "sample": "Anyone heard of this law before?> Q. Can I get a playlist? > A. We are unable to offer a playlist. The Digital Performance Right in > Sound Recordings Act of 19",
+      "predicted": "phishing",
+      "confidence": 0.65
+    },
+    {
+      "sample": "The Scotsman - 22 August 2002 Playboy wants to go out with a bang AN AGEING Berlin playboy has come up with an unusual offer to lure women into his bed - by pro",
+      "predicted": "phishing",
+      "confidence": 0.7969
+    },
+    {
+      "sample": "Download Dispatch - PC Edition Downloads All CNET The Web In Utilities: CloneCD 4.0 In Audio: Sound Forge 6.0a build 150 Media Jukebox 8.0.32 In Internet: Accel",
+      "predicted": "phishing",
+      "confidence": 0.7035
+    },
+    {
+      "sample": "Please protect yourself from e-threats. SIB never asks for sensitive information like Passwords,ATM/SMS PIN thru email. Never share your password with anybody.",
+      "predicted": "phishing",
+      "confidence": 0.4638
+    },
+    {
+      "sample": "Amazon India: Your order #[PHONE]-192831 has been dispatched via ATS and will be delivered tomorrow by 8 PM. Track at amazon.in/orders",
+      "predicted": "spam",
+      "confidence": 0.6193
+    },
+    {
+      "sample": "us news archive @ ft . com reliable country intelligence for a challenging world with country reports supporting your decisions , you \u000f ' re working with the be",
+      "predicted": "phishing",
+      "confidence": 1.0
+    },
+    {
+      "sample": "Haven't eaten all day. I'm sitting here staring at this juicy pizza and I can't eat it. These meds are ruining my life.",
+      "predicted": "phishing",
+      "confidence": 0.6667
+    },
+    {
+      "sample": "Life style garments account no please.",
+      "predicted": "phishing",
+      "confidence": 0.65
+    }
+  ],
+  "false_negatives_sample": [
+    {
+      "sample": "we haven ' t been introduced . . . : ) boo : ) ) ) malia goeyoung people do not perceive at once that the giver of wounds is the enemy and the quoted tattle mer",
+      "true": "phishing",
+      "confidence": 0.9499
+    },
+    {
+      "sample": "sitescooper : scoop websites onto your palmpilot - sitescooper automatically retrieves the stories from several news websites , trims off extraneous html , and ",
+      "true": "phishing",
+      "confidence": 0.4944
+    },
+    {
+      "sample": "cvs micros 0 ft for pennies check ' em out duration punctuate atlas caulk perturbate virtuosi greenery knock forthwith tom dairy sumerian dogtooth cannister aus",
+      "true": "phishing",
+      "confidence": 0.9832
+    },
+    {
+      "sample": "forget sp @ m blockers . . . bash honoraria blanchard ammoniac instructor lamprey ladle cocklebur burgeon taffy deerskin airlift quid heliotrope emissivity nowa",
+      "true": "phishing",
+      "confidence": 1.0
+    },
+    {
+      "sample": "we will guide you thru all of the answers to your questions about laser vision correction . there ' s a good chance you could throw your glasses and contacts aw",
+      "true": "phishing",
+      "confidence": 0.9302
+    },
+    {
+      "sample": "buddy , never be ahamed again ! pigskin",
+      "true": "phishing",
+      "confidence": 0.9421
+    },
+    {
+      "sample": "toyota fuel guidelines - starting november 16 th general motors magazine : car fuel reduction advancements do you have a car ? : more information : http : / / b",
+      "true": "phishing",
+      "confidence": 0.7242
+    },
+    {
+      "sample": "Call Germany for only 1 pence per minute! Call from a fixed line via access number 0844 861 85 85. No prepayment. Direct access!",
+      "true": "spam",
+      "confidence": 0.7265
+    },
+    {
+      "sample": "need a laptop ? get a free ibm thinkpad !",
+      "true": "phishing",
+      "confidence": 0.4988
+    },
+    {
+      "sample": "= ? iso - 8859 - 1 ? q ? cial = ecss _ cial = edss _ v = edagrra ? = hello , do you want to spend iess on your p?ils ? vlaggr? v?llum c?alissand many other . sa",
+      "true": "phishing",
+      "confidence": 0.5919
+    }
+  ]
+}

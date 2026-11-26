@@ -1,0 +1,1028 @@
+{
+  "dataset_version": "2.3.0",
+  "url_v2": {
+    "candidates": [
+      {
+        "name": "Structured_LogisticRegression_Baseline",
+        "train_seconds": 0.022,
+        "val_metrics": {
+          "accuracy": 0.9844,
+          "macro_f1": 0.9844,
+          "val_fpr": 0.0116
+        }
+      },
+      {
+        "name": "Structured_RandomForest",
+        "train_seconds": 0.222,
+        "val_metrics": {
+          "accuracy": 0.9942,
+          "macro_f1": 0.9942,
+          "val_fpr": 0.0078
+        }
+      },
+      {
+        "name": "Structured_HistGradientBoosting",
+        "train_seconds": 0.196,
+        "val_metrics": {
+          "accuracy": 0.9981,
+          "macro_f1": 0.9981,
+          "val_fpr": 0.0039
+        }
+      },
+      {
+        "name": "Hybrid_CharTFIDF_Structured_LogisticRegression",
+        "train_seconds": 0.06,
+        "val_metrics": {
+          "accuracy": 0.9883,
+          "macro_f1": 0.9883,
+          "val_fpr": 0.0078
+        }
+      }
+    ],
+    "selected": "Structured_HistGradientBoosting",
+    "calibration_validation": {
+      "selected_method": "isotonic",
+      "validation_comparison": {
+        "none": {
+          "brier_score": 0.0021,
+          "ece": 0.0034,
+          "nll": 0.0042,
+          "reliability_bins": [
+            {
+              "bin": "0.5-0.6",
+              "count": 1,
+              "avg_confidence": 0.5418,
+              "empirical_accuracy": 0.0,
+              "gap": 0.5418
+            },
+            {
+              "bin": "0.6-0.7",
+              "count": 1,
+              "avg_confidence": 0.6181,
+              "empirical_accuracy": 1.0,
+              "gap": 0.3819
+            },
+            {
+              "bin": "0.7-0.8",
+              "count": 1,
+              "avg_confidence": 0.707,
+              "empirical_accuracy": 1.0,
+              "gap": 0.293
+            },
+            {
+              "bin": "0.8-0.9",
+              "count": 1,
+              "avg_confidence": 0.8956,
+              "empirical_accuracy": 1.0,
+              "gap": 0.1044
+            },
+            {
+              "bin": "0.9-1.0",
+              "count": 510,
+              "avg_confidence": 0.9992,
+              "empirical_accuracy": 1.0,
+              "gap": 0.0008
+            }
+          ]
+        },
+        "temperature": {
+          "brier_score": 0.0017,
+          "ece": 0.0017,
+          "nll": 0.0024,
+          "reliability_bins": [
+            {
+              "bin": "0.6-0.7",
+              "count": 1,
+              "avg_confidence": 0.6363,
+              "empirical_accuracy": 0.0,
+              "gap": 0.6363
+            },
+            {
+              "bin": "0.8-0.9",
+              "count": 1,
+              "avg_confidence": 0.8327,
+              "empirical_accuracy": 1.0,
+              "gap": 0.1673
+            },
+            {
+              "bin": "0.9-1.0",
+              "count": 512,
+              "avg_confidence": 0.9999,
+              "empirical_accuracy": 1.0,
+              "gap": 0.0001
+            }
+          ]
+        },
+        "platt": {
+          "brier_score": 0.0018,
+          "ece": 0.0034,
+          "nll": 0.004,
+          "reliability_bins": [
+            {
+              "bin": "0.5-0.6",
+              "count": 1,
+              "avg_confidence": 0.5272,
+              "empirical_accuracy": 0.0,
+              "gap": 0.5272
+            },
+            {
+              "bin": "0.6-0.7",
+              "count": 1,
+              "avg_confidence": 0.6728,
+              "empirical_accuracy": 1.0,
+              "gap": 0.3272
+            },
+            {
+              "bin": "0.7-0.8",
+              "count": 1,
+              "avg_confidence": 0.7821,
+              "empirical_accuracy": 1.0,
+              "gap": 0.2179
+            },
+            {
+              "bin": "0.8-0.9",
+              "count": 1,
+              "avg_confidence": 0.8433,
+              "empirical_accuracy": 1.0,
+              "gap": 0.1567
+            },
+            {
+              "bin": "0.9-1.0",
+              "count": 510,
+              "avg_confidence": 0.999,
+              "empirical_accuracy": 1.0,
+              "gap": 0.001
+            }
+          ]
+        },
+        "isotonic": {
+          "brier_score": 0.0,
+          "ece": 0.0,
+          "nll": 0.0,
+          "reliability_bins": [
+            {
+              "bin": "0.9-1.0",
+              "count": 514,
+              "avg_confidence": 1.0,
+              "empirical_accuracy": 1.0,
+              "gap": 0.0
+            }
+          ]
+        }
+      },
+      "selected_validation_metrics": {
+        "brier_score": 0.0,
+        "ece": 0.0,
+        "nll": 0.0,
+        "reliability_bins": [
+          {
+            "bin": "0.9-1.0",
+            "count": 514,
+            "avg_confidence": 1.0,
+            "empirical_accuracy": 1.0,
+            "gap": 0.0
+          }
+        ]
+      }
+    },
+    "test_evaluation": {
+      "model_version": "url-model-v2.0.0",
+      "model_type": "Structured_HistGradientBoosting",
+      "calibration_method": "isotonic",
+      "test_samples": 517,
+      "model_size_mb": 0.1563,
+      "inference_latency_ms_per_sample": 0.0358,
+      "metrics": {
+        "accuracy": 0.9845,
+        "macro_precision": 0.9841,
+        "macro_recall": 0.985,
+        "macro_f1": 0.9845,
+        "weighted_f1": 0.9845,
+        "roc_auc": 0.985,
+        "pr_auc": 0.9827,
+        "false_positive_rate": 0.0083,
+        "false_negative_rate": 0.0217,
+        "brier_score": 0.0309,
+        "ece": 0.0155,
+        "nll": 0.2494
+      },
+      "test_uncalibrated_calibration": {
+        "brier_score": 0.0279,
+        "ece": 0.0138,
+        "nll": 0.0717,
+        "reliability_bins": [
+          {
+            "bin": "0.5-0.6",
+            "count": 1,
+            "avg_confidence": 0.5856,
+            "empirical_accuracy": 0.0,
+            "gap": 0.5856
+          },
+          {
+            "bin": "0.8-0.9",
+            "count": 1,
+            "avg_confidence": 0.8902,
+            "empirical_accuracy": 1.0,
+            "gap": 0.1098
+          },
+          {
+            "bin": "0.9-1.0",
+            "count": 515,
+            "avg_confidence": 0.9989,
+            "empirical_accuracy": 0.9864,
+            "gap": 0.0125
+          }
+        ]
+      },
+      "confusion_matrix": {
+        "labels": [
+          "legitimate",
+          "malicious"
+        ],
+        "matrix": [
+          [
+            239,
+            2
+          ],
+          [
+            6,
+            270
+          ]
+        ]
+      },
+      "by_source": {
+        "openphish_feed": {
+          "total": 29,
+          "correct": 26,
+          "fp": 0,
+          "fn": 3,
+          "accuracy": 0.8966
+        },
+        "tranco_top_1m": {
+          "total": 230,
+          "correct": 229,
+          "fp": 1,
+          "fn": 0,
+          "accuracy": 0.9957
+        },
+        "mitchellkrogza_phishing": {
+          "total": 239,
+          "correct": 239,
+          "fp": 0,
+          "fn": 0,
+          "accuracy": 1.0
+        },
+        "verified_review": {
+          "total": 3,
+          "correct": 2,
+          "fp": 0,
+          "fn": 1,
+          "accuracy": 0.6667
+        },
+        "human_review_queue": {
+          "total": 2,
+          "correct": 2,
+          "fp": 0,
+          "fn": 0,
+          "accuracy": 1.0
+        },
+        "scamshield_curated_legit_urls": {
+          "total": 8,
+          "correct": 7,
+          "fp": 1,
+          "fn": 0,
+          "accuracy": 0.875
+        },
+        "benchmark_corpus": {
+          "total": 2,
+          "correct": 2,
+          "fp": 0,
+          "fn": 0,
+          "accuracy": 1.0
+        },
+        "scamshield_curated_malicious_urls": {
+          "total": 2,
+          "correct": 1,
+          "fp": 0,
+          "fn": 1,
+          "accuracy": 0.5
+        },
+        "synthetic_seed": {
+          "total": 2,
+          "correct": 1,
+          "fp": 0,
+          "fn": 1,
+          "accuracy": 0.5
+        }
+      },
+      "by_structure": {
+        "http_root": {
+          "total": 18,
+          "correct": 18,
+          "fp": 0,
+          "fn": 0,
+          "accuracy": 1.0
+        },
+        "https_root": {
+          "total": 243,
+          "correct": 240,
+          "fp": 1,
+          "fn": 2,
+          "accuracy": 0.9877
+        },
+        "http_nested": {
+          "total": 239,
+          "correct": 239,
+          "fp": 0,
+          "fn": 0,
+          "accuracy": 1.0
+        },
+        "https_nested": {
+          "total": 17,
+          "correct": 12,
+          "fp": 1,
+          "fn": 4,
+          "accuracy": 0.7059
+        }
+      }
+    },
+    "regression": [
+      {
+        "url": "https://www.irctc.co.in/nget/train-search",
+        "expected": "legitimate",
+        "predicted": "legitimate",
+        "risk_score": 0,
+        "confidence": 100.0,
+        "status": "completed"
+      },
+      {
+        "url": "https://www.irctc.co.in/nget/booking/check-train-schedule?trainNo=12951",
+        "expected": "legitimate",
+        "predicted": "legitimate",
+        "risk_score": 0,
+        "confidence": 100.0,
+        "status": "completed"
+      },
+      {
+        "url": "https://paytm.com/",
+        "expected": "legitimate",
+        "predicted": "legitimate",
+        "risk_score": 0,
+        "confidence": 100.0,
+        "status": "completed"
+      },
+      {
+        "url": "https://secure.paytmpayments.com/theia/api/v1/showPaymentPage?mid=IRCTC123&orderId=ORD998877",
+        "expected": "legitimate",
+        "predicted": "legitimate",
+        "risk_score": 0,
+        "confidence": 100.0,
+        "status": "completed"
+      },
+      {
+        "url": "https://accounts.paytm.com/oauth2/authorize?client_id=paytm-web&redirect_uri=https%3A%2F%2Fpaytm.com%2Fcallback",
+        "expected": "legitimate",
+        "predicted": "legitimate",
+        "risk_score": 0,
+        "confidence": 100.0,
+        "status": "completed"
+      },
+      {
+        "url": "https://www.google.com/search?q=irctc+pnr+status",
+        "expected": "legitimate",
+        "predicted": "legitimate",
+        "risk_score": 0,
+        "confidence": 100.0,
+        "status": "completed"
+      },
+      {
+        "url": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=1234&response_type=code",
+        "expected": "legitimate",
+        "predicted": "legitimate",
+        "risk_score": 0,
+        "confidence": 100.0,
+        "status": "completed"
+      },
+      {
+        "url": "https://github.com/login?return_to=%2Fsettings%2Fprofile",
+        "expected": "legitimate",
+        "predicted": "legitimate",
+        "risk_score": 0,
+        "confidence": 100.0,
+        "status": "completed"
+      },
+      {
+        "url": "https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.in%2F",
+        "expected": "legitimate",
+        "predicted": "legitimate",
+        "risk_score": 0,
+        "confidence": 100.0,
+        "status": "completed"
+      },
+      {
+        "url": "https://retail.onlinesbi.sbi/retail/login.htm",
+        "expected": "legitimate",
+        "predicted": "legitimate",
+        "risk_score": 0,
+        "confidence": 100.0,
+        "status": "completed"
+      },
+      {
+        "url": "https://netbanking.hdfcbank.com/netbanking/",
+        "expected": "legitimate",
+        "predicted": "malicious",
+        "risk_score": 100,
+        "confidence": 100.0,
+        "status": "completed"
+      },
+      {
+        "url": "https://api.razorpay.com/v1/checkout/public?key_id=rzp_live_123456",
+        "expected": "legitimate",
+        "predicted": "legitimate",
+        "risk_score": 0,
+        "confidence": 100.0,
+        "status": "completed"
+      },
+      {
+        "url": "https://xn--pypal-4ve.com/signin",
+        "expected": "malicious",
+        "predicted": "malicious",
+        "risk_score": 100,
+        "confidence": 100.0,
+        "status": "completed"
+      },
+      {
+        "url": "https://paytrn-security.xyz/verify-kyc",
+        "expected": "malicious",
+        "predicted": "malicious",
+        "risk_score": 100,
+        "confidence": 100.0,
+        "status": "completed"
+      },
+      {
+        "url": "http://192.168.1.10/login.php",
+        "expected": "malicious",
+        "predicted": "malicious",
+        "risk_score": 100,
+        "confidence": 100.0,
+        "status": "completed"
+      },
+      {
+        "url": "https://paytm-kyc-update-2026.xyz/",
+        "expected": "malicious",
+        "predicted": "malicious",
+        "risk_score": 100,
+        "confidence": 100.0,
+        "status": "completed"
+      }
+    ],
+    "artifact": {
+      "model_version": "url-model-v2.0.0",
+      "task": "url",
+      "model_type": "Structured_HistGradientBoosting",
+      "artifact_path": "artifacts/url_model_url-model-v2.0.0.joblib",
+      "artifact_sha256": "1cfdf976ab6e9cd49ecfccdf93fa22433f9c2020b7ca6f9e37a90b8eb94be837",
+      "artifact_size_bytes": 163904,
+      "dataset_version": "2.3.0",
+      "preprocessing_version": "url-feat-v1.0.0",
+      "training_config": {
+        "seed": 42,
+        "train_samples": 2399,
+        "val_samples": 514
+      },
+      "metrics": {
+        "accuracy": 0.9981,
+        "macro_f1": 0.9981,
+        "val_fpr": 0.0039
+      },
+      "calibration": {
+        "method": "isotonic",
+        "temperature": 1.0,
+        "uncertainty_threshold": 0.55,
+        "calibrated": true
+      },
+      "dependencies": {
+        "python_version": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+        "python_version_tuple": [
+          3,
+          14,
+          6
+        ],
+        "sklearn_version": "1.9.1",
+        "joblib_version": "1.6.0"
+      },
+      "trained_at": "2026-11-26T06:02:16.572595+00:00",
+      "production_active": false
+    }
+  },
+  "email_v2": {
+    "candidates": [
+      {
+        "name": "TFIDF_LogisticRegression_Baseline",
+        "train_seconds": 0.275,
+        "val_metrics": {
+          "accuracy": 0.9544,
+          "macro_f1": 0.9247,
+          "val_fpr": 0.0261
+        }
+      },
+      {
+        "name": "TFIDF_LinearSVM",
+        "train_seconds": 0.042,
+        "val_metrics": {
+          "accuracy": 0.9551,
+          "macro_f1": 0.918,
+          "val_fpr": 0.0185
+        }
+      },
+      {
+        "name": "Hybrid_TFIDF_Structured_LogisticRegression",
+        "train_seconds": 0.79,
+        "val_metrics": {
+          "accuracy": 0.9491,
+          "macro_f1": 0.9177,
+          "val_fpr": 0.0327
+        }
+      },
+      {
+        "name": "Structured_RandomForest",
+        "train_seconds": 0.274,
+        "val_metrics": {
+          "accuracy": 0.8168,
+          "macro_f1": 0.7898,
+          "val_fpr": 0.1525
+        }
+      }
+    ],
+    "selected": "TFIDF_LogisticRegression_Baseline",
+    "calibration_validation": {
+      "selected_method": "isotonic",
+      "validation_comparison": {
+        "none": {
+          "brier_score": 0.0921,
+          "ece": 0.0892,
+          "nll": 0.203,
+          "reliability_bins": [
+            {
+              "bin": "0.3-0.4",
+              "count": 1,
+              "avg_confidence": 0.3959,
+              "empirical_accuracy": 0.0,
+              "gap": 0.3959
+            },
+            {
+              "bin": "0.4-0.5",
+              "count": 17,
+              "avg_confidence": 0.4702,
+              "empirical_accuracy": 0.5294,
+              "gap": 0.0592
+            },
+            {
+              "bin": "0.5-0.6",
+              "count": 51,
+              "avg_confidence": 0.5431,
+              "empirical_accuracy": 0.7059,
+              "gap": 0.1628
+            },
+            {
+              "bin": "0.6-0.7",
+              "count": 82,
+              "avg_confidence": 0.6542,
+              "empirical_accuracy": 0.8171,
+              "gap": 0.1629
+            },
+            {
+              "bin": "0.7-0.8",
+              "count": 171,
+              "avg_confidence": 0.754,
+              "empirical_accuracy": 0.924,
+              "gap": 0.17
+            },
+            {
+              "bin": "0.8-0.9",
+              "count": 306,
+              "avg_confidence": 0.8556,
+              "empirical_accuracy": 0.9771,
+              "gap": 0.1216
+            },
+            {
+              "bin": "0.9-1.0",
+              "count": 709,
+              "avg_confidence": 0.955,
+              "empirical_accuracy": 0.9972,
+              "gap": 0.0421
+            }
+          ]
+        },
+        "temperature": {
+          "brier_score": 0.0734,
+          "ece": 0.0092,
+          "nll": 0.1466,
+          "reliability_bins": [
+            {
+              "bin": "0.4-0.5",
+              "count": 3,
+              "avg_confidence": 0.4739,
+              "empirical_accuracy": 0.6667,
+              "gap": 0.1927
+            },
+            {
+              "bin": "0.5-0.6",
+              "count": 28,
+              "avg_confidence": 0.5463,
+              "empirical_accuracy": 0.5714,
+              "gap": 0.0251
+            },
+            {
+              "bin": "0.6-0.7",
+              "count": 32,
+              "avg_confidence": 0.64,
+              "empirical_accuracy": 0.7188,
+              "gap": 0.0787
+            },
+            {
+              "bin": "0.7-0.8",
+              "count": 38,
+              "avg_confidence": 0.758,
+              "empirical_accuracy": 0.6842,
+              "gap": 0.0737
+            },
+            {
+              "bin": "0.8-0.9",
+              "count": 99,
+              "avg_confidence": 0.858,
+              "empirical_accuracy": 0.9091,
+              "gap": 0.0511
+            },
+            {
+              "bin": "0.9-1.0",
+              "count": 1137,
+              "avg_confidence": 0.9836,
+              "empirical_accuracy": 0.9842,
+              "gap": 0.0005
+            }
+          ]
+        },
+        "platt": {
+          "brier_score": 0.0786,
+          "ece": 0.0174,
+          "nll": 0.1588,
+          "reliability_bins": [
+            {
+              "bin": "0.4-0.5",
+              "count": 2,
+              "avg_confidence": 0.4928,
+              "empirical_accuracy": 1.0,
+              "gap": 0.5072
+            },
+            {
+              "bin": "0.5-0.6",
+              "count": 35,
+              "avg_confidence": 0.5495,
+              "empirical_accuracy": 0.5429,
+              "gap": 0.0066
+            },
+            {
+              "bin": "0.6-0.7",
+              "count": 36,
+              "avg_confidence": 0.6544,
+              "empirical_accuracy": 0.8333,
+              "gap": 0.179
+            },
+            {
+              "bin": "0.7-0.8",
+              "count": 55,
+              "avg_confidence": 0.7647,
+              "empirical_accuracy": 0.7818,
+              "gap": 0.0171
+            },
+            {
+              "bin": "0.8-0.9",
+              "count": 117,
+              "avg_confidence": 0.8612,
+              "empirical_accuracy": 0.9231,
+              "gap": 0.0619
+            },
+            {
+              "bin": "0.9-1.0",
+              "count": 1092,
+              "avg_confidence": 0.9758,
+              "empirical_accuracy": 0.9826,
+              "gap": 0.0068
+            }
+          ]
+        },
+        "isotonic": {
+          "brier_score": 0.0679,
+          "ece": 0.0083,
+          "nll": 0.1287,
+          "reliability_bins": [
+            {
+              "bin": "0.4-0.5",
+              "count": 2,
+              "avg_confidence": 0.457,
+              "empirical_accuracy": 0.5,
+              "gap": 0.043
+            },
+            {
+              "bin": "0.5-0.6",
+              "count": 19,
+              "avg_confidence": 0.5539,
+              "empirical_accuracy": 0.4737,
+              "gap": 0.0802
+            },
+            {
+              "bin": "0.6-0.7",
+              "count": 33,
+              "avg_confidence": 0.6625,
+              "empirical_accuracy": 0.8182,
+              "gap": 0.1557
+            },
+            {
+              "bin": "0.7-0.8",
+              "count": 44,
+              "avg_confidence": 0.7515,
+              "empirical_accuracy": 0.7045,
+              "gap": 0.047
+            },
+            {
+              "bin": "0.8-0.9",
+              "count": 51,
+              "avg_confidence": 0.8592,
+              "empirical_accuracy": 0.8431,
+              "gap": 0.0161
+            },
+            {
+              "bin": "0.9-1.0",
+              "count": 1188,
+              "avg_confidence": 0.9827,
+              "empirical_accuracy": 0.984,
+              "gap": 0.0013
+            }
+          ]
+        }
+      },
+      "selected_validation_metrics": {
+        "brier_score": 0.0679,
+        "ece": 0.0083,
+        "nll": 0.1287,
+        "reliability_bins": [
+          {
+            "bin": "0.4-0.5",
+            "count": 2,
+            "avg_confidence": 0.457,
+            "empirical_accuracy": 0.5,
+            "gap": 0.043
+          },
+          {
+            "bin": "0.5-0.6",
+            "count": 19,
+            "avg_confidence": 0.5539,
+            "empirical_accuracy": 0.4737,
+            "gap": 0.0802
+          },
+          {
+            "bin": "0.6-0.7",
+            "count": 33,
+            "avg_confidence": 0.6625,
+            "empirical_accuracy": 0.8182,
+            "gap": 0.1557
+          },
+          {
+            "bin": "0.7-0.8",
+            "count": 44,
+            "avg_confidence": 0.7515,
+            "empirical_accuracy": 0.7045,
+            "gap": 0.047
+          },
+          {
+            "bin": "0.8-0.9",
+            "count": 51,
+            "avg_confidence": 0.8592,
+            "empirical_accuracy": 0.8431,
+            "gap": 0.0161
+          },
+          {
+            "bin": "0.9-1.0",
+            "count": 1188,
+            "avg_confidence": 0.9827,
+            "empirical_accuracy": 0.984,
+            "gap": 0.0013
+          }
+        ]
+      }
+    },
+    "test_evaluation": {
+      "model_version": "email-model-v2.0.0",
+      "model_type": "TFIDF_LogisticRegression_Baseline",
+      "calibration_method": "isotonic",
+      "test_samples": 1337,
+      "model_size_mb": 0.2594,
+      "inference_latency_ms_per_sample": 0.1653,
+      "metrics": {
+        "accuracy": 0.9521,
+        "macro_precision": 0.9173,
+        "macro_recall": 0.9018,
+        "macro_f1": 0.9094,
+        "weighted_f1": 0.9519,
+        "roc_auc": 0.9863,
+        "pr_auc": 0.9705,
+        "false_positive_rate": 0.026,
+        "false_negative_rate": 0.0845,
+        "brier_score": 0.0757,
+        "ece": 0.0057,
+        "nll": 0.1616
+      },
+      "test_uncalibrated_calibration": {
+        "brier_score": 0.0946,
+        "ece": 0.0875,
+        "nll": 0.2048,
+        "reliability_bins": [
+          {
+            "bin": "0.4-0.5",
+            "count": 23,
+            "avg_confidence": 0.4676,
+            "empirical_accuracy": 0.5217,
+            "gap": 0.0541
+          },
+          {
+            "bin": "0.5-0.6",
+            "count": 66,
+            "avg_confidence": 0.5539,
+            "empirical_accuracy": 0.6212,
+            "gap": 0.0673
+          },
+          {
+            "bin": "0.6-0.7",
+            "count": 78,
+            "avg_confidence": 0.6486,
+            "empirical_accuracy": 0.8974,
+            "gap": 0.2489
+          },
+          {
+            "bin": "0.7-0.8",
+            "count": 158,
+            "avg_confidence": 0.7565,
+            "empirical_accuracy": 0.9051,
+            "gap": 0.1486
+          },
+          {
+            "bin": "0.8-0.9",
+            "count": 292,
+            "avg_confidence": 0.858,
+            "empirical_accuracy": 0.9829,
+            "gap": 0.1249
+          },
+          {
+            "bin": "0.9-1.0",
+            "count": 720,
+            "avg_confidence": 0.9529,
+            "empirical_accuracy": 0.9972,
+            "gap": 0.0443
+          }
+        ]
+      },
+      "confusion_matrix": {
+        "labels": [
+          "legitimate",
+          "phishing",
+          "spam"
+        ],
+        "matrix": [
+          [
+            899,
+            19,
+            5
+          ],
+          [
+            29,
+            334,
+            2
+          ],
+          [
+            6,
+            3,
+            40
+          ]
+        ]
+      },
+      "by_source": {
+        "uci_sms_spam": {
+          "total": 416,
+          "correct": 401,
+          "fp": 8,
+          "fn": 5,
+          "accuracy": 0.9639
+        },
+        "huggingface_phishing_email": {
+          "total": 896,
+          "correct": 856,
+          "fp": 12,
+          "fn": 26,
+          "accuracy": 0.9554
+        },
+        "human_review_queue": {
+          "total": 19,
+          "correct": 13,
+          "fp": 2,
+          "fn": 4,
+          "accuracy": 0.6842
+        },
+        "scamshield_curated_malicious_emails": {
+          "total": 3,
+          "correct": 2,
+          "fp": 0,
+          "fn": 0,
+          "accuracy": 0.6667
+        },
+        "scamshield_curated_legit_emails": {
+          "total": 2,
+          "correct": 0,
+          "fp": 2,
+          "fn": 0,
+          "accuracy": 0.0
+        },
+        "cert_in_i4c_curated": {
+          "total": 1,
+          "correct": 1,
+          "fp": 0,
+          "fn": 0,
+          "accuracy": 1.0
+        }
+      },
+      "by_structure": {}
+    },
+    "hard_negative_checks": [
+      {
+        "subject": "Bank Advisory",
+        "expected": "legitimate",
+        "predicted": "legitimate",
+        "risk_score": 17,
+        "confidence": 83.19,
+        "status": "completed"
+      },
+      {
+        "subject": "Amazon Order",
+        "expected": "legitimate",
+        "predicted": "legitimate",
+        "risk_score": 5,
+        "confidence": 94.75,
+        "status": "completed"
+      },
+      {
+        "subject": "GitHub Security",
+        "expected": "legitimate",
+        "predicted": "phishing",
+        "risk_score": 77,
+        "confidence": 73.78,
+        "status": "completed"
+      },
+      {
+        "subject": "Phishing KYC",
+        "expected": "phishing",
+        "predicted": "phishing",
+        "risk_score": 98,
+        "confidence": 98.39,
+        "status": "completed"
+      }
+    ],
+    "artifact": {
+      "model_version": "email-model-v2.0.0",
+      "task": "email",
+      "model_type": "TFIDF_LogisticRegression_Baseline",
+      "artifact_path": "artifacts/email_model_email-model-v2.0.0.joblib",
+      "artifact_sha256": "16d716aaec695cbaa487f5d47ad5f8d321e3e3455566bce29c7b9420ba6fb9f1",
+      "artifact_size_bytes": 272033,
+      "dataset_version": "2.3.0",
+      "preprocessing_version": "email-prep-v1.0.0",
+      "training_config": {
+        "seed": 42,
+        "train_samples": 6243,
+        "val_samples": 1337
+      },
+      "metrics": {
+        "accuracy": 0.9544,
+        "macro_f1": 0.9247,
+        "val_fpr": 0.0261
+      },
+      "calibration": {
+        "method": "isotonic",
+        "temperature": 1.0,
+        "uncertainty_threshold": 0.55,
+        "calibrated": true
+      },
+      "dependencies": {
+        "python_version": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+        "python_version_tuple": [
+          3,
+          14,
+          6
+        ],
+        "sklearn_version": "1.9.1",
+        "joblib_version": "1.6.0"
+      },
+      "trained_at": "2026-11-26T06:02:25.082521+00:00",
+      "production_active": false
+    }
+  }
+}

@@ -1,0 +1,670 @@
+{
+  "task": "payment",
+  "samples": [
+    {
+      "content": "refund-desk-googlepay@okaxis | 9999.0 | Enter UPI PIN to receive Rs 9999 cash refund from Google Pay customer care",
+      "vpa": "refund-desk-googlepay@okaxis",
+      "amount": 9999.0,
+      "note": "Enter UPI PIN to receive Rs 9999 cash refund from Google Pay customer care",
+      "label": "fraudulent",
+      "group": "okaxis",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "crypto-bot-binance-earn@okaxis | 50000.0 | VIP trading signal bot deposit. Guaranteed 300% daily profit return",
+      "vpa": "crypto-bot-binance-earn@okaxis",
+      "amount": 50000.0,
+      "note": "VIP trading signal bot deposit. Guaranteed 300% daily profit return",
+      "label": "fraudulent",
+      "group": "okaxis",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "bajaj-finance-noc-fee@okaxis | 3500.0 | Loan cancellation NOC charge. Immediate transfer required to close loan",
+      "vpa": "bajaj-finance-noc-fee@okaxis",
+      "amount": 3500.0,
+      "note": "Loan cancellation NOC charge. Immediate transfer required to close loan",
+      "label": "fraudulent",
+      "group": "okaxis",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "crypto-vip-signals@okaxis | 8000.0 | Lifetime trading group access subscription",
+      "vpa": "crypto-vip-signals@okaxis",
+      "amount": 8000.0,
+      "note": "Lifetime trading group access subscription",
+      "label": "suspicious",
+      "group": "okaxis",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "rohit.sharma@okaxis | 2500.0 | Dinner split weekend cafe",
+      "vpa": "rohit.sharma@okaxis",
+      "amount": 2500.0,
+      "note": "Dinner split weekend cafe",
+      "label": "legitimate",
+      "group": "okaxis",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "phonepe-cashback-claim@ybl | 4999.0 | Pay 4999 to claim 100000 scratch card jackpot reward instantly into bank",
+      "vpa": "phonepe-cashback-claim@ybl",
+      "amount": 4999.0,
+      "note": "Pay 4999 to claim 100000 scratch card jackpot reward instantly into bank",
+      "label": "fraudulent",
+      "group": "ybl",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "electricity-bill-urgent-clear@ybl | 12.0 | Bijli bill arrears update surcharge to prevent power cut tonight",
+      "vpa": "electricity-bill-urgent-clear@ybl",
+      "amount": 12.0,
+      "note": "Bijli bill arrears update surcharge to prevent power cut tonight",
+      "label": "fraudulent",
+      "group": "ybl",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "paytm-nodal-support@ybl | 18000.0 | Security deposit for level 2 clearance task",
+      "vpa": "paytm-nodal-support@ybl",
+      "amount": 18000.0,
+      "note": "Security deposit for level 2 clearance task",
+      "label": "fraudulent",
+      "group": "ybl",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "admin928371@ybl | 8500.0 | Immediate urgent transfer required urgently without invoice",
+      "vpa": "admin928371@ybl",
+      "amount": 8500.0,
+      "note": "Immediate urgent transfer required urgently without invoice",
+      "label": "suspicious",
+      "group": "ybl",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "giftcard-exchange-desk@ybl | 4500.0 | Convert Amazon gift vouchers to instant cash",
+      "vpa": "giftcard-exchange-desk@ybl",
+      "amount": 4500.0,
+      "note": "Convert Amazon gift vouchers to instant cash",
+      "label": "suspicious",
+      "group": "ybl",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "vikram.aditya@ybl | 650.0 | Movie ticket share",
+      "vpa": "vikram.aditya@ybl",
+      "amount": 650.0,
+      "note": "Movie ticket share",
+      "label": "legitimate",
+      "group": "ybl",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "randomguy99@postbank | 49000.0 | Government lottery registration fee processing",
+      "vpa": "randomguy99@postbank",
+      "amount": 49000.0,
+      "note": "Government lottery registration fee processing",
+      "label": "suspicious",
+      "group": "postbank",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "support-refund@okhdfcbank | 4500.0 | Enter UPI PIN to receive Amazon refund credit into bank",
+      "vpa": "support-refund@okhdfcbank",
+      "amount": 4500.0,
+      "note": "Enter UPI PIN to receive Amazon refund credit into bank",
+      "label": "fraudulent",
+      "group": "okhdfcbank",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "flipkart@axisbank | 3499.0 | Electronics purchase FK82910",
+      "vpa": "flipkart@axisbank",
+      "amount": 3499.0,
+      "note": "Electronics purchase FK82910",
+      "label": "legitimate",
+      "group": "axisbank",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "ola@axisbank | 210.0 | Cab trip settlement",
+      "vpa": "ola@axisbank",
+      "amount": 210.0,
+      "note": "Cab trip settlement",
+      "label": "legitimate",
+      "group": "axisbank",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "cred.bill@axisbank | 35200.0 | Credit card bill payment HDFC Regalia",
+      "vpa": "cred.bill@axisbank",
+      "amount": 35200.0,
+      "note": "Credit card bill payment HDFC Regalia",
+      "label": "legitimate",
+      "group": "axisbank",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "apollo.pharmacy@axisbank | 890.0 | Prescription medicines delivery order",
+      "vpa": "apollo.pharmacy@axisbank",
+      "amount": 890.0,
+      "note": "Prescription medicines delivery order",
+      "label": "legitimate",
+      "group": "axisbank",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "bescom@kbl | 2100.0 | Bangalore power utility bill payment",
+      "vpa": "bescom@kbl",
+      "amount": 2100.0,
+      "note": "Bangalore power utility bill payment",
+      "label": "legitimate",
+      "group": "kbl",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "tatapower@yesbank | 1840.0 | Electricity bill CA-891023",
+      "vpa": "tatapower@yesbank",
+      "amount": 1840.0,
+      "note": "Electricity bill CA-891023",
+      "label": "legitimate",
+      "group": "yesbank",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "sbi-kyc-reactivation-fee@barodampay | 5.0 | Bank biometric verification fee. Enter 6-digit MPIN to unlock savings account",
+      "vpa": "sbi-kyc-reactivation-fee@barodampay",
+      "amount": 5.0,
+      "note": "Bank biometric verification fee. Enter 6-digit MPIN to unlock savings account",
+      "label": "fraudulent",
+      "group": "barodampay",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "support-verification928@okbizaxis | 1500.0 | Profile KYC fee re-attempt",
+      "vpa": "support-verification928@okbizaxis",
+      "amount": 1500.0,
+      "note": "Profile KYC fee re-attempt",
+      "label": "suspicious",
+      "group": "okbizaxis",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "rbi-security-vault-audit@icici | 95000.0 | CBI digital arrest bail bond deposit. Fund verification fee refundable",
+      "vpa": "rbi-security-vault-audit@icici",
+      "amount": 95000.0,
+      "note": "CBI digital arrest bail bond deposit. Fund verification fee refundable",
+      "label": "fraudulent",
+      "group": "icici",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "merchant-settlement-temp@icici | 12000.0 | Vendor payout adjustment",
+      "vpa": "merchant-settlement-temp@icici",
+      "amount": 12000.0,
+      "note": "Vendor payout adjustment",
+      "label": "suspicious",
+      "group": "icici",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "swiggy@icici | 450.0 | Food delivery order #482910",
+      "vpa": "swiggy@icici",
+      "amount": 450.0,
+      "note": "Food delivery order #482910",
+      "label": "legitimate",
+      "group": "icici",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "netflix@icici | 649.0 | Monthly subscription auto-debit",
+      "vpa": "netflix@icici",
+      "amount": 649.0,
+      "note": "Monthly subscription auto-debit",
+      "label": "legitimate",
+      "group": "icici",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "make_my_trip@icici | 8450.0 | Flight ticket DEL-BOM booking",
+      "vpa": "make_my_trip@icici",
+      "amount": 8450.0,
+      "note": "Flight ticket DEL-BOM booking",
+      "label": "legitimate",
+      "group": "icici",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "blinkit@icici | 380.0 | Instant delivery snacks & essentials",
+      "vpa": "blinkit@icici",
+      "amount": 380.0,
+      "note": "Instant delivery snacks & essentials",
+      "label": "legitimate",
+      "group": "icici",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "bookmyshow@kotak | 890.0 | Cinema tickets 2x IMAX 3D",
+      "vpa": "bookmyshow@kotak",
+      "amount": 890.0,
+      "note": "Cinema tickets 2x IMAX 3D",
+      "label": "legitimate",
+      "group": "kotak",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "olx-army-officer-buy@oksbi | 25000.0 | Scan QR and accept collect request to receive advance payment for furniture",
+      "vpa": "olx-army-officer-buy@oksbi",
+      "amount": 25000.0,
+      "note": "Scan QR and accept collect request to receive advance payment for furniture",
+      "label": "fraudulent",
+      "group": "oksbi",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "quikr-buyer-advance-scan@oksbi | 12000.0 | Scan QR to receive car deposit advance into Google Pay",
+      "vpa": "quikr-buyer-advance-scan@oksbi",
+      "amount": 12000.0,
+      "note": "Scan QR to receive car deposit advance into Google Pay",
+      "label": "fraudulent",
+      "group": "oksbi",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "priya.nair@oksbi | 12000.0 | Flat rent November share",
+      "vpa": "priya.nair@oksbi",
+      "amount": 12000.0,
+      "note": "Flat rent November share",
+      "label": "legitimate",
+      "group": "oksbi",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "zomato@hdfcbank | 620.0 | Order ZOM-892134",
+      "vpa": "zomato@hdfcbank",
+      "amount": 620.0,
+      "note": "Order ZOM-892134",
+      "label": "legitimate",
+      "group": "hdfcbank",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "uber@hdfcbank | 320.0 | Ride fare Bangalore airport",
+      "vpa": "uber@hdfcbank",
+      "amount": 320.0,
+      "note": "Ride fare Bangalore airport",
+      "label": "legitimate",
+      "group": "hdfcbank",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "cultfit@hdfcbank | 12500.0 | Annual fitness gym membership",
+      "vpa": "cultfit@hdfcbank",
+      "amount": 12500.0,
+      "note": "Annual fitness gym membership",
+      "label": "legitimate",
+      "group": "hdfcbank",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "bigbasket@hdfcbank | 1420.0 | Grocery delivery order BB-90182",
+      "vpa": "bigbasket@hdfcbank",
+      "amount": 1420.0,
+      "note": "Grocery delivery order BB-90182",
+      "label": "legitimate",
+      "group": "hdfcbank",
+      "source": "curated_payments",
+      "split": "train"
+    },
+    {
+      "content": "upi://pay?pa=support-refund@okhdfcbank&pn=Amazon+Customer+Refund&tn=Enter+UPI+PIN+to+receive+Rs+4500+refund",
+      "vpa": "",
+      "amount": 0.0,
+      "note": "",
+      "label": "fraudulent",
+      "group": "generic_payment",
+      "source": "benchmark_corpus",
+      "split": "validation"
+    },
+    {
+      "content": "upi://pay?pa=claim-cashback@ybl&pn=GooglePay+Rewards&tn=Authorize+PIN+to+credit+Rs+2000",
+      "vpa": "",
+      "amount": 0.0,
+      "note": "",
+      "label": "fraudulent",
+      "group": "generic_payment",
+      "source": "synthetic_seed",
+      "split": "validation"
+    },
+    {
+      "content": "paytm-nodal-support@ybl",
+      "vpa": "",
+      "amount": 0.0,
+      "note": "",
+      "label": "fraudulent",
+      "group": "generic_payment",
+      "source": "benchmark_corpus",
+      "split": "validation"
+    },
+    {
+      "content": "sbi-kyc-verification@icici",
+      "vpa": "",
+      "amount": 0.0,
+      "note": "",
+      "label": "fraudulent",
+      "group": "generic_payment",
+      "source": "synthetic_seed",
+      "split": "validation"
+    },
+    {
+      "content": "Electricity bill unpaid! Power will be disconnected tonight at 9:30 PM. Call Electricity Officer immediately and install AnyDesk to verify.",
+      "vpa": "",
+      "amount": 0.0,
+      "note": "",
+      "label": "fraudulent",
+      "group": "generic_payment",
+      "source": "benchmark_corpus",
+      "split": "validation"
+    },
+    {
+      "content": "Urgent: Gas cylinder booking suspended. Send Rs 5 to gas-officer@paytm and share TeamViewer session code to clear block.",
+      "vpa": "",
+      "amount": 0.0,
+      "note": "",
+      "label": "fraudulent",
+      "group": "generic_payment",
+      "source": "synthetic_seed",
+      "split": "validation"
+    },
+    {
+      "content": "upi://pay?pa=9876543210@paytm&pn=Official+PhonePe+Helpdesk&am=1",
+      "vpa": "",
+      "amount": 0.0,
+      "note": "",
+      "label": "fraudulent",
+      "group": "generic_payment",
+      "source": "benchmark_corpus",
+      "split": "validation"
+    },
+    {
+      "content": "upi://pay?pa=8823910293@ibl&pn=Airtel+Customer+Care&am=10",
+      "vpa": "",
+      "amount": 0.0,
+      "note": "",
+      "label": "fraudulent",
+      "group": "generic_payment",
+      "source": "synthetic_seed",
+      "split": "validation"
+    },
+    {
+      "content": "upi://pay?pa=emergency-fund99@axl&pn=Urgent+Hospital+Relief&am=25000",
+      "vpa": "",
+      "amount": 0.0,
+      "note": "",
+      "label": "suspicious",
+      "group": "generic_payment",
+      "source": "synthetic_seed",
+      "split": "validation"
+    },
+    {
+      "content": "https://secure-pay-checkout-fast.site/pay?order=9841",
+      "vpa": "",
+      "amount": 0.0,
+      "note": "",
+      "label": "suspicious",
+      "group": "generic_payment",
+      "source": "synthetic_seed",
+      "split": "validation"
+    },
+    {
+      "content": "upi://pay?pa=quicktrade-p2p@airtel&pn=P2P+Escrow+Agent&am=50000",
+      "vpa": "",
+      "amount": 0.0,
+      "note": "",
+      "label": "suspicious",
+      "group": "generic_payment",
+      "source": "synthetic_seed",
+      "split": "validation"
+    },
+    {
+      "content": "swiggy@axisbank",
+      "vpa": "",
+      "amount": 0.0,
+      "note": "",
+      "label": "legitimate",
+      "group": "generic_payment",
+      "source": "benchmark_corpus",
+      "split": "validation"
+    },
+    {
+      "content": "upi://pay?pa=zomato@icici&pn=Zomato+Limited&am=420&cu=INR",
+      "vpa": "",
+      "amount": 0.0,
+      "note": "",
+      "label": "legitimate",
+      "group": "generic_payment",
+      "source": "benchmark_corpus",
+      "split": "validation"
+    },
+    {
+      "content": "amazonpay@apl",
+      "vpa": "",
+      "amount": 0.0,
+      "note": "",
+      "label": "legitimate",
+      "group": "generic_payment",
+      "source": "synthetic_seed",
+      "split": "validation"
+    },
+    {
+      "content": "rahul.sharma@oksbi",
+      "vpa": "",
+      "amount": 0.0,
+      "note": "",
+      "label": "legitimate",
+      "group": "generic_payment",
+      "source": "benchmark_corpus",
+      "split": "validation"
+    },
+    {
+      "content": "priya.nair@okhdfcbank",
+      "vpa": "",
+      "amount": 0.0,
+      "note": "",
+      "label": "legitimate",
+      "group": "generic_payment",
+      "source": "synthetic_seed",
+      "split": "validation"
+    },
+    {
+      "content": "upi://pay?pa=tatapower@yesbank&pn=Tata+Power+Mumbai&am=1850&cu=INR",
+      "vpa": "",
+      "amount": 0.0,
+      "note": "",
+      "label": "legitimate",
+      "group": "generic_payment",
+      "source": "synthetic_seed",
+      "split": "validation"
+    },
+    {
+      "content": "upi://pay?pa=refund-agent@icici&pn=Refund+Desk&tn=Enter+PIN+to+receive+credit",
+      "vpa": "",
+      "amount": 0.0,
+      "note": "",
+      "label": "fraudulent",
+      "group": "generic_payment",
+      "source": "verified_review",
+      "split": "validation"
+    },
+    {
+      "content": "upi://pay?pa=support-refund@okhdfcbank&pn=Amazon+Refund&tn=Enter+UPI+PIN+to+receive+Rs+4500",
+      "vpa": "",
+      "amount": 0.0,
+      "note": "",
+      "label": "fraudulent",
+      "group": "generic_payment",
+      "source": "verified_review",
+      "split": "validation"
+    },
+    {
+      "content": "swiggy@axisbank | 450.0 | Food delivery order #482910",
+      "vpa": "",
+      "amount": 0.0,
+      "note": "",
+      "label": "legitimate",
+      "group": "generic_payment",
+      "source": "verified_review",
+      "split": "validation"
+    },
+    {
+      "content": "paytm-nodal-support@ybl | 25000.0 | Security deposit for task clearance",
+      "vpa": "",
+      "amount": 0.0,
+      "note": "",
+      "label": "fraudulent",
+      "group": "generic_payment",
+      "source": "verified_review",
+      "split": "validation"
+    },
+    {
+      "content": "rahul.sharma@oksbi | 1500.0 | Dinner split cafe",
+      "vpa": "",
+      "amount": 0.0,
+      "note": "",
+      "label": "legitimate",
+      "group": "generic_payment",
+      "source": "verified_review",
+      "split": "validation"
+    },
+    {
+      "content": "fastag-recharge-failed-refund@airtel | 2999.0 | FASTag balance refund. Approve collect request to get money in wallet",
+      "vpa": "fastag-recharge-failed-refund@airtel",
+      "amount": 2999.0,
+      "note": "FASTag balance refund. Approve collect request to get money in wallet",
+      "label": "fraudulent",
+      "group": "airtel",
+      "source": "curated_payments",
+      "split": "test"
+    },
+    {
+      "content": "airtel.bill@airtel | 799.0 | Broadband postpaid recharge",
+      "vpa": "airtel.bill@airtel",
+      "amount": 799.0,
+      "note": "Broadband postpaid recharge",
+      "label": "legitimate",
+      "group": "airtel",
+      "source": "curated_payments",
+      "split": "test"
+    },
+    {
+      "content": "irctc@sbi | 2150.0 | Train booking PNR 4920194821",
+      "vpa": "irctc@sbi",
+      "amount": 2150.0,
+      "note": "Train booking PNR 4920194821",
+      "label": "legitimate",
+      "group": "sbi",
+      "source": "curated_payments",
+      "split": "test"
+    },
+    {
+      "content": "telegram-task-recharge@paytm | 15000.0 | Prepaid task deposit level 3. Payout Rs 48000 after transaction confirmation",
+      "vpa": "telegram-task-recharge@paytm",
+      "amount": 15000.0,
+      "note": "Prepaid task deposit level 3. Payout Rs 48000 after transaction confirmation",
+      "label": "fraudulent",
+      "group": "paytm",
+      "source": "curated_payments",
+      "split": "test"
+    },
+    {
+      "content": "kbc-lottery-tax-clearance@paytm | 25000.0 | TDS clearance for 25 Lakh KBC lottery reward payout",
+      "vpa": "kbc-lottery-tax-clearance@paytm",
+      "amount": 25000.0,
+      "note": "TDS clearance for 25 Lakh KBC lottery reward payout",
+      "label": "fraudulent",
+      "group": "paytm",
+      "source": "curated_payments",
+      "split": "test"
+    },
+    {
+      "content": "hr-recruitment-onboarding@apl | 3500.0 | Laptop security deposit for home onboarding kit",
+      "vpa": "hr-recruitment-onboarding@apl",
+      "amount": 3500.0,
+      "note": "Laptop security deposit for home onboarding kit",
+      "label": "suspicious",
+      "group": "apl",
+      "source": "curated_payments",
+      "split": "test"
+    },
+    {
+      "content": "amazonpay@apl | 1299.0 | Amazon Prime annual renewal",
+      "vpa": "amazonpay@apl",
+      "amount": 1299.0,
+      "note": "Amazon Prime annual renewal",
+      "label": "legitimate",
+      "group": "apl",
+      "source": "curated_payments",
+      "split": "test"
+    },
+    {
+      "content": "jio.recharge@jio | 349.0 | Prepaid 28-day 2GB daily pack",
+      "vpa": "jio.recharge@jio",
+      "amount": 349.0,
+      "note": "Prepaid 28-day 2GB daily pack",
+      "label": "legitimate",
+      "group": "jio",
+      "source": "curated_payments",
+      "split": "test"
+    },
+    {
+      "content": "customs-duty-release-officer@axl | 28500.0 | Narcotics parcel clearance customs tariff penalty settlement",
+      "vpa": "customs-duty-release-officer@axl",
+      "amount": 28500.0,
+      "note": "Narcotics parcel clearance customs tariff penalty settlement",
+      "label": "fraudulent",
+      "group": "axl",
+      "source": "curated_payments",
+      "split": "test"
+    }
+  ],
+  "metadata": {
+    "split_info": {
+      "fallback_stratified_classes": []
+    }
+  }
+}

@@ -1,0 +1,354 @@
+[
+  {
+    "vpa": "refund-desk-googlepay@okaxis",
+    "amount": 9999.0,
+    "note": "Enter UPI PIN to receive Rs 9999 cash refund from Google Pay customer care",
+    "type": "collect_request",
+    "label": "fraudulent",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "phonepe-cashback-claim@ybl",
+    "amount": 4999.0,
+    "note": "Pay 4999 to claim 100000 scratch card jackpot reward instantly into bank",
+    "type": "collect_request",
+    "label": "fraudulent",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "olx-army-officer-buy@oksbi",
+    "amount": 25000.0,
+    "note": "Scan QR and accept collect request to receive advance payment for furniture",
+    "type": "reverse_collect_lure",
+    "label": "fraudulent",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "rbi-security-vault-audit@icici",
+    "amount": 95000.0,
+    "note": "CBI digital arrest bail bond deposit. Fund verification fee refundable",
+    "type": "extortion_transfer",
+    "label": "fraudulent",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "telegram-task-recharge@paytm",
+    "amount": 15000.0,
+    "note": "Prepaid task deposit level 3. Payout Rs 48000 after transaction confirmation",
+    "type": "advance_fee_fraud",
+    "label": "fraudulent",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "electricity-bill-urgent-clear@ybl",
+    "amount": 12.0,
+    "note": "Bijli bill arrears update surcharge to prevent power cut tonight",
+    "type": "collect_request",
+    "label": "fraudulent",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "customs-duty-release-officer@axl",
+    "amount": 28500.0,
+    "note": "Narcotics parcel clearance customs tariff penalty settlement",
+    "type": "extortion_transfer",
+    "label": "fraudulent",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "fastag-recharge-failed-refund@airtel",
+    "amount": 2999.0,
+    "note": "FASTag balance refund. Approve collect request to get money in wallet",
+    "type": "collect_request",
+    "label": "fraudulent",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "crypto-bot-binance-earn@okaxis",
+    "amount": 50000.0,
+    "note": "VIP trading signal bot deposit. Guaranteed 300% daily profit return",
+    "type": "advance_fee_fraud",
+    "label": "fraudulent",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "sbi-kyc-reactivation-fee@barodampay",
+    "amount": 5.0,
+    "note": "Bank biometric verification fee. Enter 6-digit MPIN to unlock savings account",
+    "type": "collect_request",
+    "label": "fraudulent",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "support-refund@okhdfcbank",
+    "amount": 4500.0,
+    "note": "Enter UPI PIN to receive Amazon refund credit into bank",
+    "type": "collect_request",
+    "label": "fraudulent",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "paytm-nodal-support@ybl",
+    "amount": 18000.0,
+    "note": "Security deposit for level 2 clearance task",
+    "type": "advance_fee_fraud",
+    "label": "fraudulent",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "quikr-buyer-advance-scan@oksbi",
+    "amount": 12000.0,
+    "note": "Scan QR to receive car deposit advance into Google Pay",
+    "type": "reverse_collect_lure",
+    "label": "fraudulent",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "bajaj-finance-noc-fee@okaxis",
+    "amount": 3500.0,
+    "note": "Loan cancellation NOC charge. Immediate transfer required to close loan",
+    "type": "advance_fee_fraud",
+    "label": "fraudulent",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "kbc-lottery-tax-clearance@paytm",
+    "amount": 25000.0,
+    "note": "TDS clearance for 25 Lakh KBC lottery reward payout",
+    "type": "advance_fee_fraud",
+    "label": "fraudulent",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "admin928371@ybl",
+    "amount": 8500.0,
+    "note": "Immediate urgent transfer required urgently without invoice",
+    "type": "unverified_vpa",
+    "label": "suspicious",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "randomguy99@postbank",
+    "amount": 49000.0,
+    "note": "Government lottery registration fee processing",
+    "type": "collect_request",
+    "label": "suspicious",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "support-verification928@okbizaxis",
+    "amount": 1500.0,
+    "note": "Profile KYC fee re-attempt",
+    "type": "collect_request",
+    "label": "suspicious",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "merchant-settlement-temp@icici",
+    "amount": 12000.0,
+    "note": "Vendor payout adjustment",
+    "type": "p2p_transfer",
+    "label": "suspicious",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "hr-recruitment-onboarding@apl",
+    "amount": 3500.0,
+    "note": "Laptop security deposit for home onboarding kit",
+    "type": "unverified_vpa",
+    "label": "suspicious",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "crypto-vip-signals@okaxis",
+    "amount": 8000.0,
+    "note": "Lifetime trading group access subscription",
+    "type": "unverified_vpa",
+    "label": "suspicious",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "giftcard-exchange-desk@ybl",
+    "amount": 4500.0,
+    "note": "Convert Amazon gift vouchers to instant cash",
+    "type": "unverified_vpa",
+    "label": "suspicious",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "swiggy@icici",
+    "amount": 450.0,
+    "note": "Food delivery order #482910",
+    "type": "merchant_payment",
+    "label": "legitimate",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "zomato@hdfcbank",
+    "amount": 620.0,
+    "note": "Order ZOM-892134",
+    "type": "merchant_payment",
+    "label": "legitimate",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "flipkart@axisbank",
+    "amount": 3499.0,
+    "note": "Electronics purchase FK82910",
+    "type": "merchant_payment",
+    "label": "legitimate",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "amazonpay@apl",
+    "amount": 1299.0,
+    "note": "Amazon Prime annual renewal",
+    "type": "merchant_payment",
+    "label": "legitimate",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "irctc@sbi",
+    "amount": 2150.0,
+    "note": "Train booking PNR 4920194821",
+    "type": "merchant_payment",
+    "label": "legitimate",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "tatapower@yesbank",
+    "amount": 1840.0,
+    "note": "Electricity bill CA-891023",
+    "type": "bill_payment",
+    "label": "legitimate",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "airtel.bill@airtel",
+    "amount": 799.0,
+    "note": "Broadband postpaid recharge",
+    "type": "bill_payment",
+    "label": "legitimate",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "uber@hdfcbank",
+    "amount": 320.0,
+    "note": "Ride fare Bangalore airport",
+    "type": "merchant_payment",
+    "label": "legitimate",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "netflix@icici",
+    "amount": 649.0,
+    "note": "Monthly subscription auto-debit",
+    "type": "merchant_payment",
+    "label": "legitimate",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "bescom@kbl",
+    "amount": 2100.0,
+    "note": "Bangalore power utility bill payment",
+    "type": "bill_payment",
+    "label": "legitimate",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "cultfit@hdfcbank",
+    "amount": 12500.0,
+    "note": "Annual fitness gym membership",
+    "type": "merchant_payment",
+    "label": "legitimate",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "bookmyshow@kotak",
+    "amount": 890.0,
+    "note": "Cinema tickets 2x IMAX 3D",
+    "type": "merchant_payment",
+    "label": "legitimate",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "ola@axisbank",
+    "amount": 210.0,
+    "note": "Cab trip settlement",
+    "type": "merchant_payment",
+    "label": "legitimate",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "make_my_trip@icici",
+    "amount": 8450.0,
+    "note": "Flight ticket DEL-BOM booking",
+    "type": "merchant_payment",
+    "label": "legitimate",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "cred.bill@axisbank",
+    "amount": 35200.0,
+    "note": "Credit card bill payment HDFC Regalia",
+    "type": "card_payment",
+    "label": "legitimate",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "jio.recharge@jio",
+    "amount": 349.0,
+    "note": "Prepaid 28-day 2GB daily pack",
+    "type": "bill_payment",
+    "label": "legitimate",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "bigbasket@hdfcbank",
+    "amount": 1420.0,
+    "note": "Grocery delivery order BB-90182",
+    "type": "merchant_payment",
+    "label": "legitimate",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "blinkit@icici",
+    "amount": 380.0,
+    "note": "Instant delivery snacks & essentials",
+    "type": "merchant_payment",
+    "label": "legitimate",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "apollo.pharmacy@axisbank",
+    "amount": 890.0,
+    "note": "Prescription medicines delivery order",
+    "type": "merchant_payment",
+    "label": "legitimate",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "rohit.sharma@okaxis",
+    "amount": 2500.0,
+    "note": "Dinner split weekend cafe",
+    "type": "p2p_transfer",
+    "label": "legitimate",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "priya.nair@oksbi",
+    "amount": 12000.0,
+    "note": "Flat rent November share",
+    "type": "p2p_transfer",
+    "label": "legitimate",
+    "source": "curated_payments"
+  },
+  {
+    "vpa": "vikram.aditya@ybl",
+    "amount": 650.0,
+    "note": "Movie ticket share",
+    "type": "p2p_transfer",
+    "label": "legitimate",
+    "source": "curated_payments"
+  }
+]

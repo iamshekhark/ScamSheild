@@ -1,0 +1,81 @@
+{
+  "task": "url",
+  "model_version": "url-model-v1.0.0",
+  "model_type": "Structured_RandomForest",
+  "calibration_method": "isotonic",
+  "evaluated_at": "2026-11-26T05:54:22.426569+00:00",
+  "test_samples": 1850,
+  "model_size_mb": 0.254,
+  "inference_latency_ms_per_sample": 0.0908,
+  "metrics": {
+    "accuracy": 0.9973,
+    "macro_precision": 0.9973,
+    "macro_recall": 0.9973,
+    "macro_f1": 0.9973,
+    "roc_auc": 0.9978,
+    "pr_auc": 0.9973,
+    "false_positive_rate": 0.0021,
+    "false_negative_rate": 0.0033,
+    "brier_score": 0.0049,
+    "ece": 0.0024
+  },
+  "per_class": {
+    "legitimate": {
+      "precision": 0.9968,
+      "recall": 0.9979,
+      "f1": 0.9973,
+      "support": 932
+    },
+    "malicious": {
+      "precision": 0.9978,
+      "recall": 0.9967,
+      "f1": 0.9973,
+      "support": 918
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "legitimate",
+      "malicious"
+    ],
+    "matrix": [
+      [
+        930,
+        2
+      ],
+      [
+        3,
+        915
+      ]
+    ]
+  },
+  "false_positives_sample": [
+    {
+      "url": "https://administracionelectronica.gob.es/",
+      "predicted": "malicious",
+      "confidence": 1.0
+    },
+    {
+      "url": "https://browser-intake-us5-datadoghq.com/",
+      "predicted": "malicious",
+      "confidence": 0.7097
+    }
+  ],
+  "false_negatives_sample": [
+    {
+      "url": "https://couriersplease.addlik.com/",
+      "true": "malicious",
+      "confidence": 1.0
+    },
+    {
+      "url": "https://tokevim-cdn-hk0.homes/",
+      "true": "malicious",
+      "confidence": 1.0
+    },
+    {
+      "url": "https://client.tkchost.com/",
+      "true": "malicious",
+      "confidence": 1.0
+    }
+  ]
+}

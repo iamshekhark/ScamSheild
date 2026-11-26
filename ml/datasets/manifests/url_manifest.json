@@ -1,0 +1,107 @@
+{
+  "task": "url",
+  "dataset_version": "2.2.0",
+  "random_seed": 42,
+  "created_at": "2026-11-26T05:52:05.205236+00:00",
+  "input_path": "datasets/processed/url_dataset.json",
+  "grouping_strategy": "public_suffix_list_registrable_domain",
+  "split_ratios": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "splits": {
+    "train": {
+      "count": 8635,
+      "classes": {
+        "malicious": 4551,
+        "legitimate": 4084
+      },
+      "file": "datasets/splits/url_train.json"
+    },
+    "validation": {
+      "count": 1850,
+      "classes": {
+        "legitimate": 998,
+        "malicious": 852
+      },
+      "file": "datasets/splits/url_validation.json"
+    },
+    "test": {
+      "count": 1850,
+      "classes": {
+        "legitimate": 932,
+        "malicious": 918
+      },
+      "file": "datasets/splits/url_test.json"
+    }
+  },
+  "validation_stats": {
+    "total_raw": 12335,
+    "valid_deduped": 12335,
+    "trainable_count": 12335,
+    "unknown_excluded_count": 0,
+    "exact_duplicates_removed": 0,
+    "near_duplicates_estimated": 70,
+    "contradictory_labels_detected": 0,
+    "missing_or_empty_fields": 0,
+    "invalid_labels_dropped": 0,
+    "class_distribution": {
+      "malicious": 6321,
+      "legitimate": 6014
+    },
+    "source_distribution": {
+      "openphish_feed": 299,
+      "mitchellkrogza_phishing": 5998,
+      "tranco_top_1m": 6000,
+      "benchmark_corpus": 15,
+      "synthetic_seed": 20,
+      "verified_review": 3
+    }
+  },
+  "leakage_check": {
+    "zero_group_leakage": true,
+    "zero_content_leakage": true,
+    "train_val_group_overlap": 0,
+    "train_test_group_overlap": 0,
+    "val_test_group_overlap": 0
+  },
+  "provenance": {
+    "openphish_feed": {
+      "count": 299,
+      "name": "OpenPhish Community Feed",
+      "license": "CC-BY-NC 4.0",
+      "collection_date": "2026-10-31"
+    },
+    "mitchellkrogza_phishing": {
+      "count": 5998,
+      "name": "Mitchell Krogza Phishing.Database",
+      "license": "MIT",
+      "collection_date": "2026-10-31"
+    },
+    "tranco_top_1m": {
+      "count": 6000,
+      "name": "Tranco Research Top 1M Domains",
+      "license": "Open Research Data",
+      "collection_date": "2026-10-31"
+    },
+    "benchmark_corpus": {
+      "count": 15,
+      "name": "benchmark_corpus",
+      "license": "Verify before commercial use",
+      "collection_date": "unknown"
+    },
+    "synthetic_seed": {
+      "count": 20,
+      "name": "synthetic_seed",
+      "license": "Verify before commercial use",
+      "collection_date": "unknown"
+    },
+    "verified_review": {
+      "count": 3,
+      "name": "verified_review",
+      "license": "Verify before commercial use",
+      "collection_date": "unknown"
+    }
+  }
+}

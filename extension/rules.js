@@ -10,7 +10,7 @@
 })(typeof self !== "undefined" ? self : this, function () {
 
   const BRANDS = [
-    { name: "Paytm", token: "paytm", domains: ["paytm.com", "paytmbank.com"], lookalikes: ["paytrn", "pay-tm", "paytmm", "payt-m"] },
+    { name: "Paytm", token: "paytm", domains: ["paytm.com", "paytmbank.com", "paytmpayments.com"], lookalikes: ["paytrn", "pay-tm", "paytmm", "payt-m"] },
     { name: "Amazon", token: "amazon", domains: ["amazon.com", "amazon.in", "amazon.co.uk", "amazon.de", "amazonaws.com"], lookalikes: ["amaz0n", "amazn", "amazon-security", "amzon"] },
     { name: "PayPal", token: "paypal", domains: ["paypal.com", "paypal.me"], lookalikes: ["paypa1", "pay-pal", "paypai", "paypal-verify"] },
     { name: "SBI / State Bank", token: "sbi", domains: ["onlinesbi.sbi", "sbi.co.in", "sbi.bank.in", "sbi.co"], lookalikes: ["sbi-reward", "onlinesbi-kyc", "sbikyc", "sbi-secure-login"] },
@@ -25,6 +25,12 @@
   function isOfficialHost(host, brand) {
     if (!host || !brand || !brand.domains) return false;
     return brand.domains.some((d) => host === d || host.endsWith("." + d));
+  }
+
+  function isKnownOfficialHost(host) {
+    if (!host) return false;
+    const clean = host.toLowerCase().trim();
+    return BRANDS.some((b) => isOfficialHost(clean, b));
   }
 
   const RISKY_TLDS = new Set([
@@ -213,10 +219,11 @@
     return evidence;
   }
 
-  function analyzeText(rawText) {
+  function analyzeText(rawText, options = {}) {
     if (!rawText || typeof rawText !== "string" || !rawText.trim()) {
       return [];
     }
+    const isWebpageContext = options && options.context === "webpage";
     const text = rawText.toLowerCase();
     const evidence = [];
 
@@ -225,7 +232,10 @@
 
     // 1. OTP Request (English & Hinglish)
     if (!hasOtpNegation) {
-      if (/(share|send|tell|provide|enter|reveal|reply\s+with)\b.{0,25}\b(otp|one[-\s]time\s+password|verification\s+code|6-digit\s+code)\b/i.test(text)) {
+      const otpPattern = isWebpageContext
+        ? /(share|send|tell|reveal|reply\s+with)\b.{0,25}\b(otp|one[-\s]time\s+password|verification\s+code|6-digit\s+code)\b/i
+        : /(share|send|tell|provide|enter|reveal|reply\s+with)\b.{0,25}\b(otp|one[-\s]time\s+password|verification\s+code|6-digit\s+code)\b/i;
+      if (otpPattern.test(text)) {
         evidence.push({
           category: "OTP_REQUEST",
           severity: "HIGH",
@@ -262,14 +272,20 @@
     }
 
     // 4. Prize / Advance-Fee / Lottery Scam (HIGH)
-    if (/\b(?:won|winner|lottery|lucky\s*draw|jackpot|prize|congratulations)\b/i.test(text) &&
-        /\b(?:fee|charges?|tax|processing|deposit|claim|pay)\b/i.test(text)) {
+    const hasAdvanceFeeNegation =
+      /\b(?:no|zero|without|never\s+(?:pay|send|share))\s+(?:advance\s+|processing\s+|convenience\s+)?(?:fee|fees|charges?|deposit|tax)\b/i.test(text) ||
+      /\b(?:how\s+(?:lottery|advance[- ]fee)\s+scams?\s+work|fraudsters?\s+claim\s+you\s+won)\b/i.test(text);
+    const hasContextualPrizeFee =
+      /\b(?:won|winner|lottery|lucky\s*draw|jackpot|prize|congratulations)\b.{0,120}\b(?:pay|deposit|send|transfer|remit)\b.{0,60}\b(?:fee|fees|charges?|tax|processing|deposit)\b/i.test(text) ||
+      /\b(?:pay|deposit|send|transfer|remit)\b.{0,60}\b(?:processing|registration|verification|release|advance)?\s*(?:fee|fees|charges?|tax|deposit)\b.{0,80}\b(?:to\s+(?:claim|release|unlock|receive)\b.{0,30}\b(?:prize|lottery|jackpot|reward|winnings|cashback|gift)|prize|lottery|jackpot|winnings)\b/i.test(text);
+
+    if (!hasAdvanceFeeNegation && hasContextualPrizeFee) {
       evidence.push({
         category: "PRIZE_ADVANCE_FEE",
         severity: "HIGH",
         reason: "Advance-fee or lottery scheme asking for fee/charges to release a prize. Genuine lotteries never demand advance processing payments."
       });
-    } else if (/\byou\s+(?:have\s+)?won\b.{0,40}\b(?:iphone|car|cash|gift|reward|gold|lottery)\b/i.test(text)) {
+    } else if (!hasAdvanceFeeNegation && /\byou\s+(?:have\s+)?won\b.{0,40}\b(?:iphone|car|cash|gift|reward|gold|lottery)\b/i.test(text)) {
       evidence.push({
         category: "PRIZE_ADVANCE_FEE",
         severity: "HIGH",
@@ -288,8 +304,11 @@
     }
 
     // 6. KYC / PAN / Aadhaar Phishing
-    if (/\b(?:kyc|pan|aadhaar|aadhar|bank\s*account)\b.{0,50}\b(?:expire[sd]?|suspend(?:ed)?|block(?:ed)?|update|verify|deactivat(?:ed|e))\b/i.test(text)) {
-      const hasLink = /(?:https?:\/\/|bit\.ly|tinyurl|\.xyz|\.top|\.click|\.site)/i.test(text);
+    const kycActionRegex = isWebpageContext
+      ? /\b(?:kyc|pan|aadhaar|aadhar|bank\s*account)\b.{0,50}\b(?:expire[sd]?|suspend(?:ed)?|block(?:ed)?|deactivat(?:ed|e))\b/i
+      : /\b(?:kyc|pan|aadhaar|aadhar|bank\s*account)\b.{0,50}\b(?:expire[sd]?|suspend(?:ed)?|block(?:ed)?|update|verify|deactivat(?:ed|e))\b/i;
+    if (kycActionRegex.test(text)) {
+      const hasLink = !isWebpageContext && /(?:https?:\/\/|bit\.ly|tinyurl|\.xyz|\.top|\.click|\.site)/i.test(text);
       evidence.push({
         category: "KYC_PHISHING",
         severity: hasLink ? "CRITICAL" : "HIGH",
@@ -301,7 +320,7 @@
     if (/\b(immediately|urgent|act\s+now|within\s+24\s+hours|expires\s+today|final\s+notice|instant\s+action)\b/i.test(text)) {
       evidence.push({
         category: "URGENCY",
-        severity: "MEDIUM",
+        severity: isWebpageContext ? "LOW" : "MEDIUM",
         reason: "Uses high-pressure wording urging immediate action"
       });
     }
@@ -310,13 +329,13 @@
     if (/\b(account\s+suspended|blocked|deactivated|legal\s+action|police\s+complaint|court\s+order|card\s+blocked|frozen)\b/i.test(text)) {
       evidence.push({
         category: "THREAT",
-        severity: "MEDIUM",
+        severity: isWebpageContext ? "LOW" : "MEDIUM",
         reason: "Employs intimidation or claims of account suspension/legal penalties"
       });
     }
 
-    // 9. Financial / Credential bait
-    if (/\b(debit\s+card\s+number|cvv|atm\s+pin|netbanking\s+password|verify\s+pan|update\s+kyc)\b/i.test(text)) {
+    // 9. Financial / Credential bait (skip generic card/CVV labels on webpages; form-action & URL checks handle payment phishing)
+    if (!isWebpageContext && /\b(debit\s+card\s+number|cvv|atm\s+pin|netbanking\s+password|verify\s+pan|update\s+kyc)\b/i.test(text)) {
       evidence.push({
         category: "CREDENTIAL_REQUEST",
         severity: "HIGH",
@@ -324,17 +343,48 @@
       });
     }
 
-    // 10. Embedded URLs
-    const urlMatches = rawText.match(/(https?:\/\/[^\s]+|[a-zA-Z0-9-]+\.(?:com|in|org|net|xyz|top|site|online)\b[^\s]*)/gi) || [];
-    for (const u of urlMatches.slice(0, 3)) {
-      const uEv = analyzeUrl(u);
-      for (const e of uEv) {
-        evidence.push({
-          category: e.category,
-          severity: e.severity,
-          reason: `[Link ${u}] ${e.reason}`
-        });
+    // 10. Embedded URLs (only for message/email text, not full webpage DOM text)
+    if (!isWebpageContext) {
+      const urlMatches = rawText.match(/(https?:\/\/[^\s]+|[a-zA-Z0-9-]+\.(?:com|in|org|net|xyz|top|site|online)\b[^\s]*)/gi) || [];
+      for (const u of urlMatches.slice(0, 3)) {
+        const uEv = analyzeUrl(u);
+        for (const e of uEv) {
+          evidence.push({
+            category: e.category,
+            severity: e.severity,
+            reason: `[Link ${u}] ${e.reason}`
+          });
+        }
       }
+    }
+
+    // 11. UPI/Payment scam patterns in text messages
+    // Reverse Collect Fraud: "Enter PIN to receive money / refund"
+    if (/(?:enter|type|input|share|put|provide)\s+(?:your\s+)?(?:(?:\d+[- ]?digit|secret|4|6)\s+)?(?:upi\s+)?(?:pin|code|password)\s+to\s+(?:receive|claim|accept|credit|get|refund)/i.test(text) ||
+        /(?:enter|type|input|put).*(?:pin|secret\s*code).*(?:receive|claim|get\s*refund|credit|accept)/i.test(text)) {
+      evidence.push({
+        category: "REVERSE_COLLECT_FRAUD",
+        severity: "CRITICAL",
+        reason: "Urges entering UPI PIN to receive money or refund. Entering a UPI PIN always debits your account — it never credits money."
+      });
+    }
+
+    // Remote Access Tool coercion
+    if (/\b(anydesk|teamviewer|rustdesk|quicksupport|airdroid|screenshare|screen\s*share)\b/i.test(text)) {
+      evidence.push({
+        category: "REMOTE_ACCESS_TOOL",
+        severity: "CRITICAL",
+        reason: "Coerces victim to install remote desktop software (e.g., AnyDesk/TeamViewer) to hijack banking credentials"
+      });
+    }
+
+    // Electricity bill disconnection extortion
+    if (/(?:electricity|power|bijli)(?:\s+\S+){0,4}\s+(?:will\s+be\s+)?(?:disconnected|cut|shut\s*off)|(?:electricity|power|bijli)\s+(?:bill\s+)?(?:will\s+be\s+)?(?:disconnected|cut|shut\s*off|disconnected\s+tonight)/i.test(text)) {
+      evidence.push({
+        category: "UTILITY_EXTORTION",
+        severity: "HIGH",
+        reason: "Uses immediate electricity disconnection threat to pressure urgent payment"
+      });
     }
 
     return evidence;
@@ -404,6 +454,13 @@
       risk_score = 45;
     }
 
+    let classification = "safe";
+    if (risk_score >= 90 || risk_level === "CRITICAL") classification = "critical";
+    else if (risk_score >= 70 || risk_level === "HIGH") classification = "high";
+    else if (risk_score >= 40 || risk_level === "MEDIUM") classification = "suspicious";
+    else if (risk_score >= 20 || risk_level === "LOW") classification = "caution";
+    else classification = "safe";
+
     const recommendations = [];
     if (evidence.some((e) => e.category === "REVERSE_COLLECT_FRAUD")) {
       recommendations.push("CRITICAL: In UPI, receiving money or refunds NEVER requires entering your UPI PIN. Entering your PIN will debit your account.");
@@ -427,9 +484,13 @@
       recommendations.push("Verify sender identity through official customer care channels.");
     }
 
+    const confidence = evidence.length > 0 ? (highestSeverity === "CRITICAL" ? 0.95 : 0.85) : 0.9;
+
     return {
       risk_score,
       risk_level,
+      classification,
+      confidence,
       evidence,
       recommendations
     };
@@ -616,14 +677,26 @@
       }
 
       // Name vs VPA Mismatch: Payee claims official corporate identity but VPA is personal
+      // Checks for numeric-looking personal VPAs OR any non-merchant VPA when pn is a support/refund claim
       if (pn && /(?:support|customer\s*care|refund|official|helpdesk|cashback)/i.test(pn)) {
-        if (!pa.includes("merchant") && !pa.includes("corp") && /\d{4,}/.test(pa)) {
+        const isPersonalVpa = /\d{4,}/.test(pa) || (!pa.includes("merchant") && !pa.includes("corp") && !pa.includes("store") && !pa.includes("shop"));
+        if (isPersonalVpa) {
           evidence.push({
             category: "PAYEE_MISMATCH",
             severity: "HIGH",
-            reason: `Payee name claims to be "${pn}" but UPI VPA [${pa}] is an individual personal identifier`
+            reason: `Payee name claims to be "${pn}" but UPI VPA [${pa}] does not match a registered merchant or corporate identifier`
           });
         }
+      }
+
+      // Generic QR fraud: "scan to receive" or "scan QR to get money" is a known deception vector
+      if (/(?:scan|scan\s+this)\s+(?:qr|code|this)\s+to\s+(?:receive|get|claim|accept)/i.test(combinedText) ||
+          /(?:receive\s+money|get\s+paid|claim\s+reward)\s+(?:by\s+)?scanning/i.test(combinedText)) {
+        evidence.push({
+          category: "REVERSE_COLLECT_FRAUD",
+          severity: "HIGH",
+          reason: "QR code instructs scanning 'to receive money'. Scanning a UPI QR code and paying authorizes a debit, not a credit."
+        });
       }
 
       // Analyze the embedded VPA
@@ -663,7 +736,7 @@
     const text = (message || "").toLowerCase();
 
     // 1. Electricity bill disconnection extortion
-    if (/(?:electricity|power|bijli)\s+(?:bill\s+)?(?:will\s+be\s+)?(?:disconnected|cut|shut\s*off|disconnected\s+tonight)/i.test(text)) {
+    if (/(?:electricity|power|bijli)(?:\s+\S+){0,4}\s+(?:will\s+be\s+)?(?:disconnected|cut|shut\s*off)|(?:electricity|power|bijli)\s+(?:bill\s+)?(?:will\s+be\s+)?(?:disconnected|cut|shut\s*off|disconnected\s+tonight)/i.test(text)) {
       evidence.push({
         category: "UTILITY_EXTORTION",
         severity: "HIGH",
@@ -760,7 +833,193 @@
     return evidence;
   }
 
-  function scanPayment(content, inputType = "upi_id") {
+  function getML() {
+    if (typeof ScamML !== "undefined") return ScamML;
+    if (typeof require === "function") {
+      try {
+        return require("./ml_inference");
+      } catch {
+        return null;
+      }
+    }
+    return null;
+  }
+
+  function combineWithMl(task, content, ruleEvidence, options = {}) {
+    const ruleRisk = calculateRisk(ruleEvidence);
+    const ml = getML();
+
+    if (options.mlModel) {
+      if (!ml || !ml.registerModel(task, options.mlModel)) {
+        return {
+          ...ruleRisk,
+          detection_method: "rules",
+          ml_result: null
+        };
+      }
+    }
+
+    if (!ml || !ml.isModelLoaded(task)) {
+      return {
+        ...ruleRisk,
+        detection_method: "rules",
+        ml_result: null
+      };
+    }
+
+    let mlResult = null;
+    try {
+      mlResult = ml.predict(task, content, options);
+    } catch (err) {
+      console.warn(`[ScamEngine] ML prediction error for ${task}:`, err);
+      return {
+        ...ruleRisk,
+        detection_method: "rules",
+        ml_result: null
+      };
+    }
+
+    if (!mlResult || !mlResult.available) {
+      return {
+        ...ruleRisk,
+        detection_method: "rules",
+        ml_result: mlResult
+      };
+    }
+
+    const isGatePassed = mlResult.is_production_ready === true;
+    const isExperimentalAllowed = options.allowExperimental === true;
+
+    // Only allow ML to adjust risk score if production gate passed OR experimental mode explicitly opted in
+    if (!isGatePassed && !isExperimentalAllowed) {
+      return {
+        ...ruleRisk,
+        detection_method: "rules",
+        ml_result: mlResult
+      };
+    }
+
+    const TASK_THREAT_CONFIG = {
+      url: {
+        threats: {
+          phishing: { baseSeverity: "HIGH", highConfSeverity: "CRITICAL", defaultScore: 85 },
+          malicious: { baseSeverity: "HIGH", highConfSeverity: "CRITICAL", defaultScore: 90 },
+          suspicious: { baseSeverity: "MEDIUM", highConfSeverity: "MEDIUM", defaultScore: 60 }
+        },
+        legitimate: "legitimate"
+      },
+      text_email: {
+        threats: {
+          scam: { baseSeverity: "HIGH", highConfSeverity: "CRITICAL", defaultScore: 85 },
+          phishing: { baseSeverity: "HIGH", highConfSeverity: "CRITICAL", defaultScore: 85 },
+          spam: { baseSeverity: "LOW", highConfSeverity: "MEDIUM", defaultScore: 40 }
+        },
+        legitimate: "legitimate"
+      },
+      payment: {
+        threats: {
+          fraudulent: { baseSeverity: "HIGH", highConfSeverity: "CRITICAL", defaultScore: 85 },
+          suspicious: { baseSeverity: "MEDIUM", highConfSeverity: "MEDIUM", defaultScore: 60 }
+        },
+        legitimate: "legitimate"
+      }
+    };
+
+    const ORDER = ["SAFE", "LOW", "MEDIUM", "HIGH", "CRITICAL"];
+    const taskConfig = TASK_THREAT_CONFIG[task] || { threats: {}, legitimate: "legitimate" };
+    const threatSpec = taskConfig.threats[mlResult.predicted_class];
+
+    if (threatSpec) {
+      // Authentic Brand Invariant: Known official brand domains with 0 rule evidence are protected against ML false positives
+      if (task === "url") {
+        try {
+          const parsed = new URL(content.startsWith("http") ? content : "http://" + content);
+          if (isKnownOfficialHost(parsed.hostname) && ruleEvidence.length === 0) {
+            return {
+              ...ruleRisk,
+              detection_method: "rules (brand whitelist protected)",
+              ml_result: {
+                ...mlResult,
+                suppressed: true,
+                reason: "Official brand domain protected against statistical ML false positive"
+              }
+            };
+          }
+        } catch {
+          // ignore url parse failure and proceed
+        }
+      }
+
+      let severity = threatSpec.baseSeverity;
+      if (mlResult.confidence >= 0.85) {
+        severity = threatSpec.highConfSeverity;
+      } else if (mlResult.confidence < 0.60) {
+        severity = "LOW";
+      }
+
+      const coverage = typeof mlResult.feature_coverage === "number" ? mlResult.feature_coverage : 0;
+      const coverageNote = coverage > 0 ? ` (${coverage} matched features)` : "";
+
+      const mlEvidenceItem = {
+        category: "ML_CLASSIFICATION_ALERT",
+        severity,
+        source: "machine_learning",
+        confidence: mlResult.confidence,
+        reason: `Machine learning model flagged ${task} as [${mlResult.predicted_class}] with ${Math.round(mlResult.confidence * 100)}% confidence.${coverageNote}`
+      };
+
+      const combinedEvidence = [...ruleEvidence, mlEvidenceItem];
+      const combinedRisk = calculateRisk(combinedEvidence);
+
+      // Severity floor invariant: ML must NEVER downgrade a HIGH or CRITICAL rule-based finding
+      if (ORDER.indexOf(ruleRisk.risk_level) > ORDER.indexOf(combinedRisk.risk_level)) {
+        combinedRisk.risk_level = ruleRisk.risk_level;
+      }
+      if (ruleRisk.risk_score > combinedRisk.risk_score) {
+        combinedRisk.risk_score = ruleRisk.risk_score;
+      }
+
+      return {
+        ...combinedRisk,
+        detection_method: "hybrid (rules + ml)",
+        model_confidence: mlResult.model_confidence ?? null,
+        confidence_level: mlResult.confidence_level || "unavailable",
+        predicted_class: mlResult.predicted_class || null,
+        ml_result: mlResult
+      };
+    } else {
+      // Predicted legitimate: Check if rules found a threat
+      if (ruleRisk.risk_level === "HIGH" || ruleRisk.risk_level === "CRITICAL") {
+        const mlAuditItem = {
+          category: "ML_SUPERSEDED_BY_RULE",
+          severity: "INFO",
+          source: "machine_learning",
+          confidence: mlResult.confidence,
+          reason: `Machine learning model predicted [${mlResult.predicted_class}] (${mlResult.model_confidence ?? Math.round(mlResult.confidence * 100)}% confidence), but deterministic ${ruleRisk.risk_level} rule finding supersedes it.`
+        };
+        return {
+          ...ruleRisk,
+          evidence: [...ruleRisk.evidence, mlAuditItem],
+          detection_method: "hybrid (rules + ml)",
+          model_confidence: mlResult.model_confidence ?? null,
+          confidence_level: mlResult.confidence_level || "unavailable",
+          predicted_class: mlResult.predicted_class || null,
+          ml_result: mlResult
+        };
+      }
+
+      return {
+        ...ruleRisk,
+        detection_method: "hybrid (rules + ml)",
+        model_confidence: mlResult.model_confidence ?? null,
+        confidence_level: mlResult.confidence_level || "unavailable",
+        predicted_class: mlResult.predicted_class || null,
+        ml_result: mlResult
+      };
+    }
+  }
+
+  function scanPayment(content, inputType = "upi_id", options = {}) {
     if (!content || typeof content !== "string" || !content.trim()) {
       return {
         risk_score: 0,
@@ -771,7 +1030,8 @@
         normalized_payee: null,
         payment_domain: null,
         payment_status: "unverified",
-        detection_method: "rules"
+        detection_method: "rules",
+        ml_result: null
       };
     }
 
@@ -803,19 +1063,18 @@
       evidence = analyzePaymentMessage(cleanContent);
     }
 
-    const risk = calculateRisk(evidence);
+    const hybridResult = combineWithMl("payment", cleanContent, evidence, options);
 
     return {
-      ...risk,
+      ...hybridResult,
       input_type: inputType,
       normalized_payee: normalizedPayee,
       payment_domain: paymentDomain,
-      payment_status: "unverified",
-      detection_method: "rules"
+      payment_status: "unverified"
     };
   }
 
-  function scanEmail(sender = "", subject = "", body = "") {
+  function scanEmail(sender = "", subject = "", body = "", options = {}) {
     const safeSender = (sender && typeof sender === "string") ? sender.trim() : "";
     const safeSubject = (subject && typeof subject === "string") ? subject.trim() : "";
     const safeBody = (body && typeof body === "string") ? body.trim() : "";
@@ -825,10 +1084,13 @@
         risk_level: "SAFE",
         evidence: [],
         recommendations: ["No email content provided."],
-        detection_method: "rules"
+        detection_method: "rules",
+        ml_result: null
       };
     }
-    return calculateRisk(analyzeEmail(safeSender, safeSubject, safeBody));
+    const combinedEmailText = `${safeSubject} ${safeBody}`.trim();
+    const evidence = analyzeEmail(safeSender, safeSubject, safeBody);
+    return combineWithMl("text_email", combinedEmailText, evidence, options);
   }
 
   return {
@@ -840,8 +1102,21 @@
     analyzePaymentMessage,
     analyzePaymentScreenshot,
     calculateRisk,
-    scanUrl: (url) => calculateRisk(analyzeUrl(url)),
-    scanText: (text) => calculateRisk(analyzeText(text)),
+    combineWithMl,
+    getML,
+    scanUrl: (url, options = {}) => combineWithMl("url", url, analyzeUrl(url), options),
+    scanText: (text, options = {}) => {
+      const evidence = analyzeText(text, options);
+      // Enforce strict model-task separation: never invoke text_email ML model on webpage DOM text
+      if (options && options.context === "webpage") {
+        return {
+          ...calculateRisk(evidence),
+          detection_method: "rules",
+          ml_result: null
+        };
+      }
+      return combineWithMl("text_email", text, evidence, options);
+    },
     scanEmail,
     scanPayment
   };

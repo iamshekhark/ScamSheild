@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0.0",
+  "tasks": {
+    "email": {
+      "active_version": null,
+      "previous_version": null,
+      "versions": {
+        "email-model-v1.0.0": {
+          "model_version": "email-model-v1.0.0",
+          "task": "email",
+          "model_type": "TFIDF_LinearSVM",
+          "artifact_path": "artifacts/email_model_email-model-v1.0.0.joblib",
+          "artifact_sha256": "8983c41e9423f5c04d02ec9d859ccb6d57ef04dc9b49f1f168074863de3fabbb",
+          "artifact_size_bytes": 259796,
+          "dataset_version": "2.2.0",
+          "preprocessing_version": "email-prep-v1.0.0",
+          "training_config": {
+            "seed": 42,
+            "train_samples": 9185,
+            "val_samples": 1967
+          },
+          "metrics": {
+            "accuracy": 0.9603,
+            "macro_precision": 0.969,
+            "macro_recall": 0.9256,
+            "macro_f1": 0.9459,
+            "val_fpr_legitimate": 0.0167
+          },
+          "calibration": {
+            "method": "isotonic",
+            "temperature": 1.0,
+            "uncertainty_threshold": 0.55,
+            "calibrated": true
+          },
+          "dependencies": {
+            "python_version": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+            "python_version_tuple": [
+              3,
+              14,
+              6
+            ],
+            "sklearn_version": "1.9.1",
+            "joblib_version": "1.6.0"
+          },
+          "trained_at": "2026-11-26T05:54:14.459146+00:00",
+          "production_active": false
+        },
+        "email-model-v2.0.0": {
+          "model_version": "email-model-v2.0.0",
+          "task": "email",
+          "model_type": "TFIDF_LogisticRegression_Baseline",
+          "artifact_path": "artifacts/email_model_email-model-v2.0.0.joblib",
+          "artifact_sha256": "16d716aaec695cbaa487f5d47ad5f8d321e3e3455566bce29c7b9420ba6fb9f1",
+          "artifact_size_bytes": 272033,
+          "dataset_version": "2.3.0",
+          "preprocessing_version": "email-prep-v1.0.0",
+          "training_config": {
+            "seed": 42,
+            "train_samples": 6243,
+            "val_samples": 1337
+          },
+          "metrics": {
+            "accuracy": 0.9544,
+            "macro_f1": 0.9247,
+            "val_fpr": 0.0261
+          },
+          "calibration": {
+            "method": "isotonic",
+            "temperature": 1.0,
+            "uncertainty_threshold": 0.55,
+            "calibrated": true
+          },
+          "dependencies": {
+            "python_version": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+            "python_version_tuple": [
+              3,
+              14,
+              6
+            ],
+            "sklearn_version": "1.9.1",
+            "joblib_version": "1.6.0"
+          },
+          "trained_at": "2026-11-26T06:02:25.082521+00:00",
+          "production_active": false
+        }
+      },
+      "latest_candidate_version": "email-model-v2.0.0"
+    },
+    "url": {
+      "active_version": null,
+      "previous_version": null,
+      "versions": {
+        "url-model-v1.0.0": {
+          "model_version": "url-model-v1.0.0",
+          "task": "url",
+          "model_type": "Structured_RandomForest",
+          "artifact_path": "artifacts/url_model_url-model-v1.0.0.joblib",
+          "artifact_sha256": "83dce4e63588ee5e08baf0c8ec0972d17fe0dd446dbd8a0c65d5ac88c4c82079",
+          "artifact_size_bytes": 266351,
+          "dataset_version": "2.2.0",
+          "preprocessing_version": "url-feat-v1.0.0",
+          "training_config": {
+            "seed": 42,
+            "train_samples": 8635,
+            "val_samples": 1850
+          },
+          "metrics": {
+            "accuracy": 1.0,
+            "macro_precision": 1.0,
+            "macro_recall": 1.0,
+            "macro_f1": 1.0,
+            "val_fpr_legitimate": 0.0
+          },
+          "calibration": {
+            "method": "isotonic",
+            "temperature": 1.0,
+            "uncertainty_threshold": 0.55,
+            "calibrated": true
+          },
+          "dependencies": {
+            "python_version": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+            "python_version_tuple": [
+              3,
+              14,
+              6
+            ],
+            "sklearn_version": "1.9.1",
+            "joblib_version": "1.6.0"
+          },
+          "trained_at": "2026-11-26T05:54:19.040491+00:00",
+          "production_active": false
+        },
+        "url-model-v2.0.0": {
+          "model_version": "url-model-v2.0.0",
+          "task": "url",
+          "model_type": "Structured_HistGradientBoosting",
+          "artifact_path": "artifacts/url_model_url-model-v2.0.0.joblib",
+          "artifact_sha256": "1cfdf976ab6e9cd49ecfccdf93fa22433f9c2020b7ca6f9e37a90b8eb94be837",
+          "artifact_size_bytes": 163904,
+          "dataset_version": "2.3.0",
+          "preprocessing_version": "url-feat-v1.0.0",
+          "training_config": {
+            "seed": 42,
+            "train_samples": 2399,
+            "val_samples": 514
+          },
+          "metrics": {
+            "accuracy": 0.9981,
+            "macro_f1": 0.9981,
+            "val_fpr": 0.0039
+          },
+          "calibration": {
+            "method": "isotonic",
+            "temperature": 1.0,
+            "uncertainty_threshold": 0.55,
+            "calibrated": true
+          },
+          "dependencies": {
+            "python_version": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+            "python_version_tuple": [
+              3,
+              14,
+              6
+            ],
+            "sklearn_version": "1.9.1",
+            "joblib_version": "1.6.0"
+          },
+          "trained_at": "2026-11-26T06:02:16.572595+00:00",
+          "production_active": false
+        }
+      },
+      "latest_candidate_version": "url-model-v2.0.0"
+    }
+  }
+}

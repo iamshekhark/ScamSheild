@@ -1,0 +1,236 @@
+{
+  "task": "url",
+  "model_version": "url-model-v1.0.0",
+  "selected_model": "Structured_RandomForest",
+  "candidates": [
+    {
+      "name": "Structured_LogisticRegression_Baseline",
+      "train_seconds": 0.027,
+      "val_metrics": {
+        "accuracy": 0.9978,
+        "macro_precision": 0.998,
+        "macro_recall": 0.9977,
+        "macro_f1": 0.9978,
+        "val_fpr_legitimate": 0.0
+      }
+    },
+    {
+      "name": "Structured_RandomForest",
+      "train_seconds": 0.271,
+      "val_metrics": {
+        "accuracy": 1.0,
+        "macro_precision": 1.0,
+        "macro_recall": 1.0,
+        "macro_f1": 1.0,
+        "val_fpr_legitimate": 0.0
+      }
+    },
+    {
+      "name": "Structured_HistGradientBoosting",
+      "train_seconds": 0.243,
+      "val_metrics": {
+        "accuracy": 0.9995,
+        "macro_precision": 0.9995,
+        "macro_recall": 0.9994,
+        "macro_f1": 0.9995,
+        "val_fpr_legitimate": 0.0
+      }
+    },
+    {
+      "name": "Hybrid_CharTFIDF_Structured_LogisticRegression",
+      "train_seconds": 0.073,
+      "val_metrics": {
+        "accuracy": 0.9984,
+        "macro_precision": 0.9985,
+        "macro_recall": 0.9982,
+        "macro_f1": 0.9984,
+        "val_fpr_legitimate": 0.0
+      }
+    }
+  ],
+  "calibration": {
+    "selected_method": "isotonic",
+    "validation_comparison": {
+      "none": {
+        "brier_score": 0.001,
+        "ece": 0.0027,
+        "nll": 0.0031,
+        "reliability_bins": [
+          {
+            "bin": "0.5-0.6",
+            "count": 2,
+            "avg_confidence": 0.5467,
+            "empirical_accuracy": 1.0,
+            "gap": 0.4533
+          },
+          {
+            "bin": "0.6-0.7",
+            "count": 1,
+            "avg_confidence": 0.6933,
+            "empirical_accuracy": 1.0,
+            "gap": 0.3067
+          },
+          {
+            "bin": "0.7-0.8",
+            "count": 5,
+            "avg_confidence": 0.7773,
+            "empirical_accuracy": 1.0,
+            "gap": 0.2227
+          },
+          {
+            "bin": "0.8-0.9",
+            "count": 6,
+            "avg_confidence": 0.8656,
+            "empirical_accuracy": 1.0,
+            "gap": 0.1344
+          },
+          {
+            "bin": "0.9-1.0",
+            "count": 1836,
+            "avg_confidence": 0.999,
+            "empirical_accuracy": 1.0,
+            "gap": 0.001
+          }
+        ]
+      },
+      "temperature": {
+        "brier_score": 0.0003,
+        "ece": 0.0005,
+        "nll": 0.0006,
+        "reliability_bins": [
+          {
+            "bin": "0.5-0.6",
+            "count": 1,
+            "avg_confidence": 0.5443,
+            "empirical_accuracy": 1.0,
+            "gap": 0.4557
+          },
+          {
+            "bin": "0.7-0.8",
+            "count": 1,
+            "avg_confidence": 0.7457,
+            "empirical_accuracy": 1.0,
+            "gap": 0.2543
+          },
+          {
+            "bin": "0.9-1.0",
+            "count": 1848,
+            "avg_confidence": 0.9999,
+            "empirical_accuracy": 1.0,
+            "gap": 0.0001
+          }
+        ]
+      },
+      "platt": {
+        "brier_score": 0.0013,
+        "ece": 0.0021,
+        "nll": 0.0025,
+        "reliability_bins": [
+          {
+            "bin": "0.5-0.6",
+            "count": 3,
+            "avg_confidence": 0.525,
+            "empirical_accuracy": 1.0,
+            "gap": 0.475
+          },
+          {
+            "bin": "0.6-0.7",
+            "count": 2,
+            "avg_confidence": 0.6306,
+            "empirical_accuracy": 1.0,
+            "gap": 0.3694
+          },
+          {
+            "bin": "0.7-0.8",
+            "count": 3,
+            "avg_confidence": 0.7701,
+            "empirical_accuracy": 1.0,
+            "gap": 0.2299
+          },
+          {
+            "bin": "0.8-0.9",
+            "count": 6,
+            "avg_confidence": 0.8706,
+            "empirical_accuracy": 1.0,
+            "gap": 0.1294
+          },
+          {
+            "bin": "0.9-1.0",
+            "count": 1836,
+            "avg_confidence": 0.9999,
+            "empirical_accuracy": 1.0,
+            "gap": 0.0001
+          }
+        ]
+      },
+      "isotonic": {
+        "brier_score": 0.0,
+        "ece": 0.0,
+        "nll": 0.0,
+        "reliability_bins": [
+          {
+            "bin": "0.9-1.0",
+            "count": 1850,
+            "avg_confidence": 1.0,
+            "empirical_accuracy": 1.0,
+            "gap": 0.0
+          }
+        ]
+      }
+    },
+    "selected_validation_metrics": {
+      "brier_score": 0.0,
+      "ece": 0.0,
+      "nll": 0.0,
+      "reliability_bins": [
+        {
+          "bin": "0.9-1.0",
+          "count": 1850,
+          "avg_confidence": 1.0,
+          "empirical_accuracy": 1.0,
+          "gap": 0.0
+        }
+      ]
+    }
+  },
+  "artifact": {
+    "model_version": "url-model-v1.0.0",
+    "task": "url",
+    "model_type": "Structured_RandomForest",
+    "artifact_path": "artifacts/url_model_url-model-v1.0.0.joblib",
+    "artifact_sha256": "83dce4e63588ee5e08baf0c8ec0972d17fe0dd446dbd8a0c65d5ac88c4c82079",
+    "artifact_size_bytes": 266351,
+    "dataset_version": "2.2.0",
+    "preprocessing_version": "url-feat-v1.0.0",
+    "training_config": {
+      "seed": 42,
+      "train_samples": 8635,
+      "val_samples": 1850
+    },
+    "metrics": {
+      "accuracy": 1.0,
+      "macro_precision": 1.0,
+      "macro_recall": 1.0,
+      "macro_f1": 1.0,
+      "val_fpr_legitimate": 0.0
+    },
+    "calibration": {
+      "method": "isotonic",
+      "temperature": 1.0,
+      "uncertainty_threshold": 0.55,
+      "calibrated": true
+    },
+    "dependencies": {
+      "python_version": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+      "python_version_tuple": [
+        3,
+        14,
+        6
+      ],
+      "sklearn_version": "1.9.1",
+      "joblib_version": "1.6.0"
+    },
+    "trained_at": "2026-11-26T05:54:19.040491+00:00",
+    "production_active": false
+  }
+}

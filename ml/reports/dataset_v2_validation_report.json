@@ -1,0 +1,187 @@
+{
+  "dataset_version": "2.3.0",
+  "url": {
+    "task": "url",
+    "dataset_version": "2.3.0",
+    "random_seed": 42,
+    "created_at": "2026-11-26T06:01:37.888347+00:00",
+    "grouping_strategy": "public_suffix_list_registrable_domain",
+    "splits": {
+      "train": {
+        "count": 2399,
+        "classes": {
+          "malicious": 1317,
+          "legitimate": 1082
+        },
+        "sources": {
+          "mitchellkrogza_phishing": 1061,
+          "tranco_top_1m": 1021,
+          "verified_review": 4,
+          "scamshield_curated_legit_urls": 49,
+          "benchmark_corpus": 5,
+          "openphish_feed": 224,
+          "human_review_queue": 6,
+          "scamshield_curated_malicious_urls": 19,
+          "synthetic_seed": 10
+        }
+      },
+      "validation": {
+        "count": 514,
+        "classes": {
+          "legitimate": 258,
+          "malicious": 256
+        },
+        "sources": {
+          "tranco_top_1m": 249,
+          "mitchellkrogza_phishing": 200,
+          "openphish_feed": 46,
+          "scamshield_curated_malicious_urls": 5,
+          "synthetic_seed": 4,
+          "scamshield_curated_legit_urls": 9,
+          "human_review_queue": 1
+        }
+      },
+      "test": {
+        "count": 517,
+        "classes": {
+          "malicious": 276,
+          "legitimate": 241
+        },
+        "sources": {
+          "openphish_feed": 29,
+          "tranco_top_1m": 230,
+          "mitchellkrogza_phishing": 239,
+          "verified_review": 3,
+          "human_review_queue": 2,
+          "scamshield_curated_legit_urls": 8,
+          "benchmark_corpus": 2,
+          "scamshield_curated_malicious_urls": 2,
+          "synthetic_seed": 2
+        }
+      }
+    },
+    "validation_stats": {
+      "total_raw": 3456,
+      "valid_deduped": 3430,
+      "trainable_count": 3430,
+      "unknown_excluded_count": 0,
+      "exact_duplicates_removed": 26,
+      "near_duplicates_estimated": 165,
+      "contradictory_labels_detected": 0,
+      "missing_or_empty_fields": 0,
+      "invalid_labels_dropped": 0,
+      "class_distribution": {
+        "malicious": 1849,
+        "legitimate": 1581
+      },
+      "source_distribution": {
+        "mitchellkrogza_phishing": 1500,
+        "openphish_feed": 300,
+        "tranco_top_1m": 1500,
+        "verified_review": 7,
+        "human_review_queue": 21,
+        "benchmark_corpus": 15,
+        "synthetic_seed": 20,
+        "scamshield_curated_legit_urls": 67,
+        "scamshield_curated_malicious_urls": 26
+      }
+    },
+    "leakage_check": {
+      "zero_group_leakage": true,
+      "zero_content_leakage": true,
+      "train_val_group_overlap": 0,
+      "train_test_group_overlap": 0,
+      "val_test_group_overlap": 0
+    }
+  },
+  "email": {
+    "task": "email",
+    "dataset_version": "2.3.0",
+    "random_seed": 42,
+    "created_at": "2026-11-26T06:01:39.019787+00:00",
+    "grouping_strategy": "normalized_template_prefix",
+    "splits": {
+      "train": {
+        "count": 6243,
+        "classes": {
+          "legitimate": 4383,
+          "phishing": 1608,
+          "spam": 252
+        },
+        "sources": {
+          "uci_sms_spam": 2007,
+          "huggingface_phishing_email": 4114,
+          "human_review_queue": 68,
+          "cert_in_i4c_curated": 33,
+          "verified_review": 6,
+          "scamshield_curated_legit_emails": 10,
+          "scamshield_curated_malicious_emails": 5
+        }
+      },
+      "validation": {
+        "count": 1337,
+        "classes": {
+          "phishing": 352,
+          "legitimate": 918,
+          "spam": 67
+        },
+        "sources": {
+          "huggingface_phishing_email": 892,
+          "uci_sms_spam": 414,
+          "cert_in_i4c_curated": 10,
+          "human_review_queue": 17,
+          "scamshield_curated_malicious_emails": 2,
+          "scamshield_curated_legit_emails": 2
+        }
+      },
+      "test": {
+        "count": 1337,
+        "classes": {
+          "spam": 49,
+          "legitimate": 923,
+          "phishing": 365
+        },
+        "sources": {
+          "uci_sms_spam": 416,
+          "huggingface_phishing_email": 896,
+          "human_review_queue": 19,
+          "scamshield_curated_malicious_emails": 3,
+          "scamshield_curated_legit_emails": 2,
+          "cert_in_i4c_curated": 1
+        }
+      }
+    },
+    "validation_stats": {
+      "total_raw": 9213,
+      "valid_deduped": 8917,
+      "trainable_count": 8917,
+      "unknown_excluded_count": 0,
+      "exact_duplicates_removed": 296,
+      "near_duplicates_estimated": 31,
+      "contradictory_labels_detected": 0,
+      "missing_or_empty_fields": 0,
+      "invalid_labels_dropped": 0,
+      "class_distribution": {
+        "legitimate": 6224,
+        "phishing": 2325,
+        "spam": 368
+      },
+      "source_distribution": {
+        "huggingface_phishing_email": 6000,
+        "uci_sms_spam": 3000,
+        "cert_in_i4c_curated": 44,
+        "verified_review": 8,
+        "human_review_queue": 137,
+        "scamshield_curated_legit_emails": 14,
+        "scamshield_curated_malicious_emails": 10
+      }
+    },
+    "leakage_check": {
+      "zero_group_leakage": true,
+      "zero_content_leakage": true,
+      "train_val_group_overlap": 0,
+      "train_test_group_overlap": 0,
+      "val_test_group_overlap": 0
+    }
+  }
+}

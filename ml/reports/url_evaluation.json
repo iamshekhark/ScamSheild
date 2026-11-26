@@ -1,0 +1,141 @@
+{
+  "task": "url",
+  "generated_at": "2026-11-25T18:57:41.460597+00:00",
+  "train_metrics": {
+    "accuracy": 0.9953,
+    "macro_f1": 0.9968,
+    "train_samples": 8635,
+    "val_samples": 1850
+  },
+  "test_metrics": {
+    "accuracy": 0.993,
+    "macro_f1": 0.6622,
+    "macro_precision": 0.662,
+    "macro_recall": 0.6623,
+    "weighted_f1": 0.9927,
+    "false_positive_rate_legitimate": 0.0021,
+    "roc_auc_malicious": 0.9996,
+    "pr_auc_malicious": 0.9996,
+    "brier_score": 0.0108,
+    "ece": 0.0038,
+    "reliability_bins": [
+      {
+        "bin": "0.6-0.7",
+        "count": 1,
+        "avg_confidence": 0.6114,
+        "accuracy": 0.0
+      },
+      {
+        "bin": "0.7-0.8",
+        "count": 5,
+        "avg_confidence": 0.7393,
+        "accuracy": 0.0
+      },
+      {
+        "bin": "0.8-0.9",
+        "count": 13,
+        "avg_confidence": 0.8597,
+        "accuracy": 0.9231
+      },
+      {
+        "bin": "0.9-1.0",
+        "count": 1831,
+        "avg_confidence": 0.9957,
+        "accuracy": 0.9967
+      }
+    ],
+    "calibration": {
+      "method": "temperature_scaling",
+      "temperature": 0.7315,
+      "val_brier_before": 0.0104,
+      "val_brier_after": 0.0097,
+      "max_confidence_cap": 0.98,
+      "min_feature_coverage": 2
+    },
+    "inference_latency_ms_per_sample": 0.0005,
+    "per_class": {
+      "legitimate": {
+        "precision": 0.9894,
+        "recall": 0.9979,
+        "f1": 0.9936,
+        "support": 932
+      },
+      "malicious": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1
+      },
+      "phishing": {
+        "precision": 0.9967,
+        "recall": 0.9891,
+        "f1": 0.9929,
+        "support": 917
+      },
+      "suspicious": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      }
+    },
+    "confusion_matrix": [
+      [
+        930,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        10,
+        0,
+        907,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "test_samples": 1850,
+    "false_positive_count": 2,
+    "false_negative_count": 11
+  },
+  "production_gate": {
+    "passed": false,
+    "is_production_ready": false,
+    "activation_status": "disabled_insufficient_sample_size",
+    "thresholds": {
+      "min_human_reviewed_samples_per_class": 1000,
+      "min_macro_f1": 0.9,
+      "min_macro_precision": 0.9,
+      "max_false_positive_rate": 0.01,
+      "min_accuracy": 0.9
+    },
+    "human_verified_sample_counts": {
+      "phishing": 19,
+      "legitimate": 7,
+      "malicious": 1,
+      "suspicious": 1
+    },
+    "actual_min_verified_per_class": 1,
+    "zero_leakage_verified": true,
+    "review_queue_cleared": true,
+    "pending_review_queue_count": 0,
+    "security_approved": false,
+    "reasons": [
+      "Insufficient human-reviewed samples: minimum class has 1 reviewed samples in verified_samples.json; production gate strictly requires at least 1000 reviewed samples per class.",
+      "Macro F1 (0.6622) is below threshold (0.90).",
+      "Macro Precision (0.6620) is below threshold (0.90).",
+      "Security sign-off pending: Model requires documented security clearance in security_approvals.json."
+    ]
+  }
+}

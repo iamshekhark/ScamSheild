@@ -191,3 +191,23 @@ test("Payment scanner correctly parses both 'qr' and 'qr_code' input types", () 
   assert.equal(resQrCode.risk_score, resQr.risk_score);
 });
 
+test("PRIZE_ADVANCE_FEE requires contextual payment-to-prize link and avoids IRCTC/promo/advisory FPs", () => {
+  const legitCases = [
+    "IRCTC Next Generation eTicketing System. Book Ticket. Convenience Fee & GST charges apply. Pay via UPI, Netbanking. Congratulations to IRCTC on winning Best Tourism Portal award.",
+    "Tatkal booking charges and cancellation fee details. Claim TDR refund online. Pay using cards or UPI.",
+    "Maharajas Express won World Travel Award. Book now with zero convenience fee on UPI payments.",
+    "Cybersecurity Advisory: How lottery scams work. Fraudsters claim you won a prize and ask for a processing fee. Never pay advance fees to claim a lottery.",
+    "Congratulations! You unlocked a free gift voucher on your next order. No fee or deposit required.",
+    "Annual Coding Competition: First prize is a laptop. Separately, semester tuition fee payment deadline is Friday."
+  ];
+  for (const txt of legitCases) {
+    const res = ScamEngine.scanText(txt, { context: "webpage" });
+    assert.equal(res.evidence.some((e) => e.category === "PRIZE_ADVANCE_FEE"), false, `Unexpected PRIZE_ADVANCE_FEE on: ${txt}`);
+    assert.equal(res.risk_level, "SAFE");
+  }
+
+  const scamRes = ScamEngine.scanText("CONGRATULATIONS! You won Rs 25,00,000 in KBC Lucky Draw. Pay Rs 2,500 processing fee immediately to claim your prize.");
+  assert.ok(scamRes.evidence.some((e) => e.category === "PRIZE_ADVANCE_FEE"));
+  assert.ok(["HIGH", "CRITICAL"].includes(scamRes.risk_level));
+});
+

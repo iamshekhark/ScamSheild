@@ -1,0 +1,90 @@
+{
+  "task": "email",
+  "dataset_version": "2.3.0",
+  "random_seed": 42,
+  "created_at": "2026-11-26T06:01:39.019787+00:00",
+  "grouping_strategy": "normalized_template_prefix",
+  "splits": {
+    "train": {
+      "count": 6243,
+      "classes": {
+        "legitimate": 4383,
+        "phishing": 1608,
+        "spam": 252
+      },
+      "sources": {
+        "uci_sms_spam": 2007,
+        "huggingface_phishing_email": 4114,
+        "human_review_queue": 68,
+        "cert_in_i4c_curated": 33,
+        "verified_review": 6,
+        "scamshield_curated_legit_emails": 10,
+        "scamshield_curated_malicious_emails": 5
+      }
+    },
+    "validation": {
+      "count": 1337,
+      "classes": {
+        "phishing": 352,
+        "legitimate": 918,
+        "spam": 67
+      },
+      "sources": {
+        "huggingface_phishing_email": 892,
+        "uci_sms_spam": 414,
+        "cert_in_i4c_curated": 10,
+        "human_review_queue": 17,
+        "scamshield_curated_malicious_emails": 2,
+        "scamshield_curated_legit_emails": 2
+      }
+    },
+    "test": {
+      "count": 1337,
+      "classes": {
+        "spam": 49,
+        "legitimate": 923,
+        "phishing": 365
+      },
+      "sources": {
+        "uci_sms_spam": 416,
+        "huggingface_phishing_email": 896,
+        "human_review_queue": 19,
+        "scamshield_curated_malicious_emails": 3,
+        "scamshield_curated_legit_emails": 2,
+        "cert_in_i4c_curated": 1
+      }
+    }
+  },
+  "validation_stats": {
+    "total_raw": 9213,
+    "valid_deduped": 8917,
+    "trainable_count": 8917,
+    "unknown_excluded_count": 0,
+    "exact_duplicates_removed": 296,
+    "near_duplicates_estimated": 31,
+    "contradictory_labels_detected": 0,
+    "missing_or_empty_fields": 0,
+    "invalid_labels_dropped": 0,
+    "class_distribution": {
+      "legitimate": 6224,
+      "phishing": 2325,
+      "spam": 368
+    },
+    "source_distribution": {
+      "huggingface_phishing_email": 6000,
+      "uci_sms_spam": 3000,
+      "cert_in_i4c_curated": 44,
+      "verified_review": 8,
+      "human_review_queue": 137,
+      "scamshield_curated_legit_emails": 14,
+      "scamshield_curated_malicious_emails": 10
+    }
+  },
+  "leakage_check": {
+    "zero_group_leakage": true,
+    "zero_content_leakage": true,
+    "train_val_group_overlap": 0,
+    "train_test_group_overlap": 0,
+    "val_test_group_overlap": 0
+  }
+}

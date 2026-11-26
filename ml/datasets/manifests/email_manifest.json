@@ -1,0 +1,118 @@
+{
+  "task": "email",
+  "dataset_version": "2.2.0",
+  "random_seed": 42,
+  "created_at": "2026-11-26T05:52:04.894220+00:00",
+  "input_path": "datasets/processed/text_email_dataset.json",
+  "grouping_strategy": "normalized_template_prefix",
+  "split_ratios": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "splits": {
+    "train": {
+      "count": 9185,
+      "classes": {
+        "phishing": 2082,
+        "legitimate": 6676,
+        "spam": 427
+      },
+      "file": "datasets/splits/email_train.json"
+    },
+    "validation": {
+      "count": 1967,
+      "classes": {
+        "legitimate": 1377,
+        "phishing": 481,
+        "spam": 109
+      },
+      "file": "datasets/splits/email_validation.json"
+    },
+    "test": {
+      "count": 1967,
+      "classes": {
+        "phishing": 459,
+        "legitimate": 1409,
+        "spam": 99
+      },
+      "file": "datasets/splits/email_test.json"
+    }
+  },
+  "validation_stats": {
+    "total_raw": 13121,
+    "valid_deduped": 13119,
+    "trainable_count": 13119,
+    "unknown_excluded_count": 0,
+    "exact_duplicates_removed": 2,
+    "near_duplicates_estimated": 42,
+    "contradictory_labels_detected": 0,
+    "missing_or_empty_fields": 0,
+    "invalid_labels_dropped": 0,
+    "class_distribution": {
+      "phishing": 3022,
+      "legitimate": 9462,
+      "spam": 635
+    },
+    "source_distribution": {
+      "huggingface_phishing_email": 7831,
+      "uci_sms_spam": 5141,
+      "human_review_queue": 77,
+      "cert_in_i4c_curated": 44,
+      "benchmark_corpus": 9,
+      "verified_review": 6,
+      "synthetic_seed": 13
+    }
+  },
+  "leakage_check": {
+    "zero_group_leakage": true,
+    "zero_content_leakage": true,
+    "train_val_group_overlap": 0,
+    "train_test_group_overlap": 0,
+    "val_test_group_overlap": 0
+  },
+  "provenance": {
+    "huggingface_phishing_email": {
+      "count": 7831,
+      "name": "HuggingFace Phishing Email Dataset",
+      "license": "Open Cybersecurity Research",
+      "collection_date": "2026-10-31"
+    },
+    "uci_sms_spam": {
+      "count": 5141,
+      "name": "UCI SMS Spam Collection",
+      "license": "Open Data Commons / CC-BY",
+      "collection_date": "2026-10-31"
+    },
+    "human_review_queue": {
+      "count": 77,
+      "name": "human_review_queue",
+      "license": "Verify before commercial use",
+      "collection_date": "unknown"
+    },
+    "cert_in_i4c_curated": {
+      "count": 44,
+      "name": "cert_in_i4c_curated",
+      "license": "Verify before commercial use",
+      "collection_date": "unknown"
+    },
+    "benchmark_corpus": {
+      "count": 9,
+      "name": "benchmark_corpus",
+      "license": "Verify before commercial use",
+      "collection_date": "unknown"
+    },
+    "verified_review": {
+      "count": 6,
+      "name": "verified_review",
+      "license": "Verify before commercial use",
+      "collection_date": "unknown"
+    },
+    "synthetic_seed": {
+      "count": 13,
+      "name": "synthetic_seed",
+      "license": "Verify before commercial use",
+      "collection_date": "unknown"
+    }
+  }
+}

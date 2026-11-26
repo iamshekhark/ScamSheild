@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-10-31T17:23:45.175821+00:00",
+  "total_items": 169,
+  "status_distribution": {
+    "approved": 161,
+    "rejected": 2,
+    "uncertain": 6
+  },
+  "task_breakdown": {
+    "url": {
+      "approved": 21,
+      "uncertain": 1
+    },
+    "text_email": {
+      "approved": 137,
+      "rejected": 2,
+      "uncertain": 5
+    },
+    "payment": {
+      "approved": 3
+    }
+  }
+}

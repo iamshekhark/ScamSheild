@@ -1,0 +1,4 @@
+# Pinned dependencies for reproducible ScamShield ML training & evaluation
+numpy>=1.26.0,<3.0.0
+scikit-learn==1.9.1
+joblib>=1.3.0

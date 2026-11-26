@@ -1,0 +1,94 @@
+{
+  "task": "url",
+  "dataset_version": "2.3.0",
+  "random_seed": 42,
+  "created_at": "2026-11-26T06:01:37.888347+00:00",
+  "grouping_strategy": "public_suffix_list_registrable_domain",
+  "splits": {
+    "train": {
+      "count": 2399,
+      "classes": {
+        "malicious": 1317,
+        "legitimate": 1082
+      },
+      "sources": {
+        "mitchellkrogza_phishing": 1061,
+        "tranco_top_1m": 1021,
+        "verified_review": 4,
+        "scamshield_curated_legit_urls": 49,
+        "benchmark_corpus": 5,
+        "openphish_feed": 224,
+        "human_review_queue": 6,
+        "scamshield_curated_malicious_urls": 19,
+        "synthetic_seed": 10
+      }
+    },
+    "validation": {
+      "count": 514,
+      "classes": {
+        "legitimate": 258,
+        "malicious": 256
+      },
+      "sources": {
+        "tranco_top_1m": 249,
+        "mitchellkrogza_phishing": 200,
+        "openphish_feed": 46,
+        "scamshield_curated_malicious_urls": 5,
+        "synthetic_seed": 4,
+        "scamshield_curated_legit_urls": 9,
+        "human_review_queue": 1
+      }
+    },
+    "test": {
+      "count": 517,
+      "classes": {
+        "malicious": 276,
+        "legitimate": 241
+      },
+      "sources": {
+        "openphish_feed": 29,
+        "tranco_top_1m": 230,
+        "mitchellkrogza_phishing": 239,
+        "verified_review": 3,
+        "human_review_queue": 2,
+        "scamshield_curated_legit_urls": 8,
+        "benchmark_corpus": 2,
+        "scamshield_curated_malicious_urls": 2,
+        "synthetic_seed": 2
+      }
+    }
+  },
+  "validation_stats": {
+    "total_raw": 3456,
+    "valid_deduped": 3430,
+    "trainable_count": 3430,
+    "unknown_excluded_count": 0,
+    "exact_duplicates_removed": 26,
+    "near_duplicates_estimated": 165,
+    "contradictory_labels_detected": 0,
+    "missing_or_empty_fields": 0,
+    "invalid_labels_dropped": 0,
+    "class_distribution": {
+      "malicious": 1849,
+      "legitimate": 1581
+    },
+    "source_distribution": {
+      "mitchellkrogza_phishing": 1500,
+      "openphish_feed": 300,
+      "tranco_top_1m": 1500,
+      "verified_review": 7,
+      "human_review_queue": 21,
+      "benchmark_corpus": 15,
+      "synthetic_seed": 20,
+      "scamshield_curated_legit_urls": 67,
+      "scamshield_curated_malicious_urls": 26
+    }
+  },
+  "leakage_check": {
+    "zero_group_leakage": true,
+    "zero_content_leakage": true,
+    "train_val_group_overlap": 0,
+    "train_test_group_overlap": 0,
+    "val_test_group_overlap": 0
+  }
+}

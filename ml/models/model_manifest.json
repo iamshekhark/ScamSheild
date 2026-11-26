@@ -1,0 +1,51 @@
+{
+  "pipeline_version": "2.0.0",
+  "updated_at": "2026-11-25T18:57:48.746804+00:00",
+  "tasks": {
+    "url": {
+      "version": "2.1.0",
+      "model_type": "LogisticRegression_CharTfidf_Calibrated",
+      "status": "disabled_insufficient_sample_size",
+      "is_production_ready": false,
+      "macro_f1": 0.6622,
+      "accuracy": 0.993,
+      "train_samples": 8635,
+      "val_samples": 1850,
+      "test_samples": 1850,
+      "total_samples": 12335,
+      "false_positive_rate": 0.0021,
+      "zero_leakage_verified": true,
+      "actual_min_verified_per_class": 1
+    },
+    "text_email": {
+      "version": "2.1.0",
+      "model_type": "LogisticRegression_CharTfidf_Calibrated",
+      "status": "disabled_insufficient_sample_size",
+      "is_production_ready": false,
+      "macro_f1": 0.7878,
+      "accuracy": 0.937,
+      "train_samples": 9185,
+      "val_samples": 1968,
+      "test_samples": 1968,
+      "total_samples": 13121,
+      "false_positive_rate": 0.0624,
+      "zero_leakage_verified": true,
+      "actual_min_verified_per_class": 4
+    },
+    "payment": {
+      "version": "2.1.0",
+      "model_type": "LogisticRegression_CharTfidf_Calibrated",
+      "status": "disabled_insufficient_sample_size",
+      "is_production_ready": false,
+      "macro_f1": 0.3333,
+      "accuracy": 0.4444,
+      "train_samples": 35,
+      "val_samples": 22,
+      "test_samples": 9,
+      "total_samples": 66,
+      "false_positive_rate": 0.75,
+      "zero_leakage_verified": true,
+      "actual_min_verified_per_class": 1
+    }
+  }
+}

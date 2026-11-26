@@ -1,0 +1,317 @@
+[
+  {
+    "id": "url_raw_001",
+    "content": "https://paypa1.com/login-verify",
+    "label": "phishing",
+    "group": "paypa1.com",
+    "source": "benchmark_corpus",
+    "category": "BRAND_IMPERSONATION",
+    "description": "PayPal homoglyph typosquat with 1 instead of l"
+  },
+  {
+    "id": "url_raw_002",
+    "content": "https://paypa1.com/account/security-challenge",
+    "label": "phishing",
+    "group": "paypa1.com",
+    "source": "synthetic_seed",
+    "category": "BRAND_IMPERSONATION",
+    "description": "Secondary path on PayPal homoglyph domain"
+  },
+  {
+    "id": "url_raw_003",
+    "content": "http://192.168.1.100/secure/bank/login",
+    "label": "phishing",
+    "group": "192.168.1.100",
+    "source": "benchmark_corpus",
+    "category": "SUSPICIOUS_IP_URL",
+    "description": "Raw IP address host with banking login path"
+  },
+  {
+    "id": "url_raw_004",
+    "content": "https://amazon.com@attacker-portal.xyz/login",
+    "label": "phishing",
+    "group": "attacker-portal.xyz",
+    "source": "benchmark_corpus",
+    "category": "USERINFO_SPOOFING",
+    "description": "Userinfo credential spoofing with risky TLD"
+  },
+  {
+    "id": "url_raw_005",
+    "content": "https://xn--pple-43a.com/verify-id",
+    "label": "phishing",
+    "group": "xn--pple-43a.com",
+    "source": "benchmark_corpus",
+    "category": "PUNYCODE_LOOKALIKE",
+    "description": "Punycode domain imitating Apple"
+  },
+  {
+    "id": "url_raw_006",
+    "content": "http://sbi-reward-points-claim.xyz/update-kyc",
+    "label": "phishing",
+    "group": "sbi-reward-points-claim.xyz",
+    "source": "benchmark_corpus",
+    "category": "BRAND_IMPERSONATION",
+    "description": "SBI brand lookalike with risky TLD"
+  },
+  {
+    "id": "url_raw_007",
+    "content": "https://netflix-login-billing.click/account",
+    "label": "phishing",
+    "group": "netflix-login-billing.click",
+    "source": "benchmark_corpus",
+    "category": "BRAND_IMPERSONATION",
+    "description": "Netflix brand imitation on click TLD"
+  },
+  {
+    "id": "url_raw_008",
+    "content": "https://hdfc-netbanking-verify.support/login",
+    "label": "phishing",
+    "group": "hdfc-netbanking-verify.support",
+    "source": "benchmark_corpus",
+    "category": "BRAND_IMPERSONATION",
+    "description": "HDFC bank impersonation with hyphens"
+  },
+  {
+    "id": "url_raw_009",
+    "content": "https://g00gle-security-alerts.top/login",
+    "label": "phishing",
+    "group": "g00gle-security-alerts.top",
+    "source": "synthetic_seed",
+    "category": "BRAND_IMPERSONATION",
+    "description": "Google homoglyph phishing"
+  },
+  {
+    "id": "url_raw_010",
+    "content": "https://microsoft-verify-login.online/auth",
+    "label": "phishing",
+    "group": "microsoft-verify-login.online",
+    "source": "synthetic_seed",
+    "category": "BRAND_IMPERSONATION",
+    "description": "Microsoft 365 credential harvester"
+  },
+  {
+    "id": "url_raw_011",
+    "content": "http://paytrn-wallet-claim.icu/kyc",
+    "label": "phishing",
+    "group": "paytrn-wallet-claim.icu",
+    "source": "synthetic_seed",
+    "category": "BRAND_IMPERSONATION",
+    "description": "Paytm lookalike using 'rn' for 'm'"
+  },
+  {
+    "id": "url_raw_012",
+    "content": "https://appleid-apple-support-case98.cyou/verify",
+    "label": "phishing",
+    "group": "appleid-apple-support-case98.cyou",
+    "source": "synthetic_seed",
+    "category": "BRAND_IMPERSONATION",
+    "description": "Apple ID support case phishing"
+  },
+  {
+    "id": "url_raw_013",
+    "content": "javascript:alert(document.cookie)",
+    "label": "malicious",
+    "group": "javascript_scheme",
+    "source": "benchmark_corpus",
+    "category": "UNSAFE_SCHEME",
+    "description": "Direct executable JavaScript URL scheme"
+  },
+  {
+    "id": "url_raw_014",
+    "content": "data:text/html;base64,PHNjcmlwdD53aW5kb3cubG9jYXRpb249Imh0dHA6Ly9ldmlsLmNvbS8iPC9zY3JpcHQ+",
+    "label": "malicious",
+    "group": "data_scheme",
+    "source": "synthetic_seed",
+    "category": "UNSAFE_SCHEME",
+    "description": "Data URI containing obfuscated payload"
+  },
+  {
+    "id": "url_raw_015",
+    "content": "http://185.220.101.5/dropper/payload.exe",
+    "label": "malicious",
+    "group": "185.220.101.5",
+    "source": "synthetic_seed",
+    "category": "MALWARE_DROPPER",
+    "description": "Executable payload hosted directly on raw IP"
+  },
+  {
+    "id": "url_raw_016",
+    "content": "https://cdn-update-installer.xyz/agent.scr",
+    "label": "malicious",
+    "group": "cdn-update-installer.xyz",
+    "source": "synthetic_seed",
+    "category": "MALWARE_DROPPER",
+    "description": "Screen saver disguised malware dropper"
+  },
+  {
+    "id": "url_raw_017",
+    "content": "http://trojan-command-center.biz:8080/sync",
+    "label": "malicious",
+    "group": "trojan-command-center.biz",
+    "source": "synthetic_seed",
+    "category": "COMMAND_AND_CONTROL",
+    "description": "Non-standard high port botnet C2 endpoint"
+  },
+  {
+    "id": "url_raw_018",
+    "content": "http://exploit-kit-landing.top/cve-2024-gate.php",
+    "label": "malicious",
+    "group": "exploit-kit-landing.top",
+    "source": "synthetic_seed",
+    "category": "EXPLOIT_KIT",
+    "description": "Browser exploit kit landing page"
+  },
+  {
+    "id": "url_raw_019",
+    "content": "http://fast-redirect-shortener-01.tk/r/84291",
+    "label": "suspicious",
+    "group": "fast-redirect-shortener-01.tk",
+    "source": "synthetic_seed",
+    "category": "SUSPICIOUS_REDIRECTOR",
+    "description": "Free .tk domain running open redirect"
+  },
+  {
+    "id": "url_raw_020",
+    "content": "http://track-click-campaign.buzz/redirect?target=unknown",
+    "label": "suspicious",
+    "group": "track-click-campaign.buzz",
+    "source": "synthetic_seed",
+    "category": "SUSPICIOUS_REDIRECTOR",
+    "description": "Abuse-prone buzz TLD redirector"
+  },
+  {
+    "id": "url_raw_021",
+    "content": "http://unencrypted-login-portal-temporary.site/auth",
+    "label": "suspicious",
+    "group": "unencrypted-login-portal-temporary.site",
+    "source": "synthetic_seed",
+    "category": "INSECURE_AUTH",
+    "description": "HTTP non-TLS login portal on low-reputation TLD"
+  },
+  {
+    "id": "url_raw_022",
+    "content": "https://free-bonus-promo-zone.club/claim",
+    "label": "suspicious",
+    "group": "free-bonus-promo-zone.club",
+    "source": "synthetic_seed",
+    "category": "SUSPICIOUS_PROMO",
+    "description": "Aggressive incentive lure on club TLD"
+  },
+  {
+    "id": "url_raw_023",
+    "content": "http://103.245.12.98:8888/dashboard",
+    "label": "suspicious",
+    "group": "103.245.12.98",
+    "source": "synthetic_seed",
+    "category": "RAW_IP_SERVICE",
+    "description": "Unencrypted service interface on raw IP with port"
+  },
+  {
+    "id": "url_raw_024",
+    "content": "https://www.google.com/search?q=cybersecurity",
+    "label": "legitimate",
+    "group": "google.com",
+    "source": "benchmark_corpus",
+    "category": "AUTHENTIC_SERVICE",
+    "description": "Official Google HTTPS search"
+  },
+  {
+    "id": "url_raw_025",
+    "content": "https://accounts.google.com/signin/v2/identifier",
+    "label": "legitimate",
+    "group": "google.com",
+    "source": "synthetic_seed",
+    "category": "AUTHENTIC_SERVICE",
+    "description": "Official Google Account authentication portal"
+  },
+  {
+    "id": "url_raw_026",
+    "content": "https://onlinesbi.sbi/portal/login.html",
+    "label": "legitimate",
+    "group": "sbi",
+    "source": "benchmark_corpus",
+    "category": "AUTHENTIC_SERVICE",
+    "description": "Official State Bank of India dot-sbi portal"
+  },
+  {
+    "id": "url_raw_027",
+    "content": "https://sbi.co.in/web/personal-banking",
+    "label": "legitimate",
+    "group": "sbi.co.in",
+    "source": "synthetic_seed",
+    "category": "AUTHENTIC_SERVICE",
+    "description": "Official State Bank of India corporate site"
+  },
+  {
+    "id": "url_raw_028",
+    "content": "https://www.amazon.in/gp/bestsellers",
+    "label": "legitimate",
+    "group": "amazon.in",
+    "source": "benchmark_corpus",
+    "category": "AUTHENTIC_SERVICE",
+    "description": "Official Amazon India regional portal"
+  },
+  {
+    "id": "url_raw_029",
+    "content": "https://www.amazon.com/dp/B08N5WRWNW",
+    "label": "legitimate",
+    "group": "amazon.com",
+    "source": "synthetic_seed",
+    "category": "AUTHENTIC_SERVICE",
+    "description": "Official Amazon US product page"
+  },
+  {
+    "id": "url_raw_030",
+    "content": "https://github.com/torvalds/linux",
+    "label": "legitimate",
+    "group": "github.com",
+    "source": "benchmark_corpus",
+    "category": "AUTHENTIC_SERVICE",
+    "description": "Official GitHub open source repository"
+  },
+  {
+    "id": "url_raw_031",
+    "content": "https://www.hdfcbank.com/personal/ways-to-bank/online-banking",
+    "label": "legitimate",
+    "group": "hdfcbank.com",
+    "source": "benchmark_corpus",
+    "category": "AUTHENTIC_SERVICE",
+    "description": "Official HDFC Bank portal"
+  },
+  {
+    "id": "url_raw_032",
+    "content": "https://www.netflix.com/browse",
+    "label": "legitimate",
+    "group": "netflix.com",
+    "source": "benchmark_corpus",
+    "category": "AUTHENTIC_SERVICE",
+    "description": "Official Netflix streaming site"
+  },
+  {
+    "id": "url_raw_033",
+    "content": "https://apple.com/iphone-16-pro",
+    "label": "legitimate",
+    "group": "apple.com",
+    "source": "benchmark_corpus",
+    "category": "AUTHENTIC_SERVICE",
+    "description": "Official Apple product portal"
+  },
+  {
+    "id": "url_raw_034",
+    "content": "https://microsoft.com/en-us/security",
+    "label": "legitimate",
+    "group": "microsoft.com",
+    "source": "synthetic_seed",
+    "category": "AUTHENTIC_SERVICE",
+    "description": "Official Microsoft security documentation"
+  },
+  {
+    "id": "url_raw_035",
+    "content": "https://paypal.com/signin",
+    "label": "legitimate",
+    "group": "paypal.com",
+    "source": "synthetic_seed",
+    "category": "AUTHENTIC_SERVICE",
+    "description": "Official PayPal secure sign in"
+  }
+]

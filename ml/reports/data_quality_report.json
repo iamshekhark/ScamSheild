@@ -1,0 +1,389 @@
+{
+  "timestamp": "2026-10-31T17:08:30.542231+00:00",
+  "tasks": {
+    "url": {
+      "task": "url",
+      "total_input_records": 12342,
+      "clean_records_count": 12298,
+      "exact_duplicates_removed": 44,
+      "conflicting_labels_detected": 27,
+      "conflicts": [
+        {
+          "sample": "http:///",
+          "labels": [
+            "phishing",
+            "malicious"
+          ],
+          "source": "benchmark_corpus"
+        },
+        {
+          "sample": "http:///",
+          "labels": [
+            "phishing",
+            "malicious"
+          ],
+          "source": "synthetic_seed"
+        },
+        {
+          "sample": "http:///",
+          "labels": [
+            "phishing",
+            "malicious"
+          ],
+          "source": "synthetic_seed"
+        },
+        {
+          "sample": "http:///",
+          "labels": [
+            "phishing",
+            "malicious"
+          ],
+          "source": "synthetic_seed"
+        },
+        {
+          "sample": "http:///",
+          "labels": [
+            "phishing",
+            "malicious"
+          ],
+          "source": "synthetic_seed"
+        },
+        {
+          "sample": "http:///",
+          "labels": [
+            "phishing",
+            "malicious"
+          ],
+          "source": "synthetic_seed"
+        },
+        {
+          "sample": "http:///",
+          "labels": [
+            "phishing",
+            "suspicious"
+          ],
+          "source": "synthetic_seed"
+        },
+        {
+          "sample": "http:///",
+          "labels": [
+            "phishing",
+            "suspicious"
+          ],
+          "source": "synthetic_seed"
+        },
+        {
+          "sample": "http:///",
+          "labels": [
+            "phishing",
+            "suspicious"
+          ],
+          "source": "synthetic_seed"
+        },
+        {
+          "sample": "http:///",
+          "labels": [
+            "phishing",
+            "suspicious"
+          ],
+          "source": "synthetic_seed"
+        }
+      ],
+      "malformed_or_empty": 0,
+      "invalid_labels": 0,
+      "class_distribution": {
+        "phishing": 6298,
+        "legitimate": 6000
+      },
+      "imbalance_ratio_max_to_min": 1.05,
+      "source_distribution": {
+        "benchmark_corpus": 15,
+        "synthetic_seed": 20,
+        "mitchellkrogza_phishing": 6000,
+        "openphish_feed": 300,
+        "tranco_top_1m": 6000,
+        "verified_review": 7
+      },
+      "near_duplicate_examples": [
+        {
+          "sample_a": "http://000o2ba.wcomhost.com/mail/good/customer_center/customer-idpp00c435/myacco",
+          "sample_b": "http://000o2ba.wcomhost.com/mail/good/customer_center/customer-idpp00c443/myacco",
+          "similarity": 0.905,
+          "label_a": "phishing",
+          "label_b": "phishing"
+        },
+        {
+          "sample_a": "http://000o8dc.wcomhost.com/www.santanderbanco.es/bancosantander/es/particulares",
+          "sample_b": "http://000o8dc.wcomhost.com/www.santanderbanco.es/bancosantander/es/particulares",
+          "similarity": 0.829,
+          "label_a": "phishing",
+          "label_b": "phishing"
+        },
+        {
+          "sample_a": "http://000o8dc.wcomhost.com/www.santanderbanco.es/bancosantander/es/particulares",
+          "sample_b": "http://000o8dc.wcomhost.com/www.santanderbanco.es/bancosantander/es/particulares",
+          "similarity": 0.824,
+          "label_a": "phishing",
+          "label_b": "phishing"
+        },
+        {
+          "sample_a": "http://000o8dc.wcomhost.com/www.santanderbanco.es/bancosantander/es/particulares",
+          "sample_b": "http://000o8dc.wcomhost.com/www.santanderbanco.es/bancosantander/es/particulares",
+          "similarity": 0.826,
+          "label_a": "phishing",
+          "label_b": "phishing"
+        },
+        {
+          "sample_a": "http://000o8dc.wcomhost.com/www.santanderbanco.es/bancosantander/es/particulares",
+          "sample_b": "http://000o8dc.wcomhost.com/www.santanderbanco.es/bancosantander/es/particulares",
+          "similarity": 0.829,
+          "label_a": "phishing",
+          "label_b": "phishing"
+        },
+        {
+          "sample_a": "http://000o8dc.wcomhost.com/www.santanderbanco.es/bancosantander/es/particulares",
+          "sample_b": "http://000o8dc.wcomhost.com/www.santanderbanco.es/bancosantander/es/particulares",
+          "similarity": 0.824,
+          "label_a": "phishing",
+          "label_b": "phishing"
+        },
+        {
+          "sample_a": "http://000ogxd.wcomhost.com/loggss/customer_center/customer-idpp00c899/myaccount",
+          "sample_b": "http://000ogxd.wcomhost.com/logssss/customer_center/customer-idpp00c196/myaccoun",
+          "similarity": 0.833,
+          "label_a": "phishing",
+          "label_b": "phishing"
+        },
+        {
+          "sample_a": "http://000ogxd.wcomhost.com/logs/customer_center/customer-idpp00c557/myaccount/s",
+          "sample_b": "http://000ogxd.wcomhost.com/logssss/customer_center/customer-idpp00c196/myaccoun",
+          "similarity": 0.831,
+          "label_a": "phishing",
+          "label_b": "phishing"
+        },
+        {
+          "sample_a": "http://000ogxd.wcomhost.com/tops/customer_center/customer-idpp00c176/myaccount/s",
+          "sample_b": "http://000ogxd.wcomhost.com/tops/customer_center/customer-idpp00c266/myaccount/s",
+          "similarity": 0.899,
+          "label_a": "phishing",
+          "label_b": "phishing"
+        },
+        {
+          "sample_a": "http://000p0d5.wcomhost.com/ameliassurance/remboursement/login/iframe-page1.html",
+          "sample_b": "http://000p4en.wcomhost.com/ameli-assurance/remboursement/login/iframe-page1.htm",
+          "similarity": 0.821,
+          "label_a": "phishing",
+          "label_b": "phishing"
+        },
+        {
+          "sample_a": "http://000p4en.wcomhost.com/ameli-assurance/remboursement/login",
+          "sample_b": "http://000p6vl.wcomhost.com/ameli-assurance/remboursement/login",
+          "similarity": 0.846,
+          "label_a": "phishing",
+          "label_b": "phishing"
+        },
+        {
+          "sample_a": "http://000p4en.wcomhost.com/ameli-assurance/remboursement/login/iframe-page1.htm",
+          "sample_b": "http://000p4en.wcomhost.com/ameli-assurance/remboursement/login/iframe-page2.htm",
+          "similarity": 0.925,
+          "label_a": "phishing",
+          "label_b": "phishing"
+        },
+        {
+          "sample_a": "http://000p4en.wcomhost.com/ameli-assurance/remboursement/login/iframe-page2.htm",
+          "sample_b": "http://000p4en.wcomhost.com/ameli-assurance/remboursement/login/iframe-page3.htm",
+          "similarity": 0.925,
+          "label_a": "phishing",
+          "label_b": "phishing"
+        },
+        {
+          "sample_a": "http://000p4en.wcomhost.com/ameli-assurance/remboursement/login/iframe-page3.htm",
+          "sample_b": "http://000p6vl.wcomhost.com/ameli-assurance/remboursement/login/iframe-page3.htm",
+          "similarity": 0.878,
+          "label_a": "phishing",
+          "label_b": "phishing"
+        },
+        {
+          "sample_a": "http://000p6vl.wcomhost.com/ameli-assurance/remboursement/login",
+          "sample_b": "http://000p7l3.wcomhost.com/ameli-assurance/remboursement/login",
+          "similarity": 0.846,
+          "label_a": "phishing",
+          "label_b": "phishing"
+        },
+        {
+          "sample_a": "http://000p6vl.wcomhost.com/ameli-assurance/remboursement/login/iframe-page1.htm",
+          "sample_b": "http://000p6vl.wcomhost.com/ameli-assurance/remboursement/login/iframe-page2.htm",
+          "similarity": 0.925,
+          "label_a": "phishing",
+          "label_b": "phishing"
+        },
+        {
+          "sample_a": "http://000p6vl.wcomhost.com/ameli-assurance/remboursement/login/iframe-page2.htm",
+          "sample_b": "http://000p6vl.wcomhost.com/ameli-assurance/remboursement/login/iframe-page3.htm",
+          "similarity": 0.925,
+          "label_a": "phishing",
+          "label_b": "phishing"
+        },
+        {
+          "sample_a": "http://000p6vl.wcomhost.com/ameli-assurance/remboursement/login/iframe-page3.htm",
+          "sample_b": "http://000p7l3.wcomhost.com/ameli-assurance/remboursement/login/iframe-page3.htm",
+          "similarity": 0.878,
+          "label_a": "phishing",
+          "label_b": "phishing"
+        },
+        {
+          "sample_a": "http://000p7l3.wcomhost.com/ameli-assurance/remboursement/login",
+          "sample_b": "http://000pbox.wcomhost.com/ameli-assurance/remboursement/login",
+          "similarity": 0.846,
+          "label_a": "phishing",
+          "label_b": "phishing"
+        },
+        {
+          "sample_a": "http://000p7l3.wcomhost.com/ameli-assurance/remboursement/login/iframe-page1.htm",
+          "sample_b": "http://000p7l3.wcomhost.com/ameli-assurance/remboursement/login/iframe-page2.htm",
+          "similarity": 0.925,
+          "label_a": "phishing",
+          "label_b": "phishing"
+        }
+      ]
+    },
+    "text_email": {
+      "task": "text_email",
+      "total_input_records": 13630,
+      "clean_records_count": 13026,
+      "exact_duplicates_removed": 582,
+      "conflicting_labels_detected": 0,
+      "conflicts": [],
+      "malformed_or_empty": 22,
+      "invalid_labels": 0,
+      "class_distribution": {
+        "legitimate": 9410,
+        "spam": 643,
+        "phishing": 2957,
+        "scam": 16
+      },
+      "imbalance_ratio_max_to_min": 588.12,
+      "source_distribution": {
+        "benchmark_corpus": 9,
+        "synthetic_seed": 13,
+        "uci_sms_spam": 5574,
+        "huggingface_phishing_email": 8000,
+        "cert_in_i4c_curated": 26,
+        "verified_review": 8
+      },
+      "near_duplicate_examples": [
+        {
+          "sample_a": "You have 1 new voicemail. Please call 08719181503",
+          "sample_b": "You have 1 new voicemail. Please call 08719181513.",
+          "similarity": 0.9,
+          "label_a": "spam",
+          "label_b": "spam"
+        }
+      ]
+    },
+    "payment": {
+      "task": "payment",
+      "total_input_records": 54,
+      "clean_records_count": 33,
+      "exact_duplicates_removed": 21,
+      "conflicting_labels_detected": 11,
+      "conflicts": [
+        {
+          "sample": "| 0 |",
+          "labels": [
+            "fraudulent",
+            "suspicious"
+          ],
+          "source": "synthetic_seed"
+        },
+        {
+          "sample": "| 0 |",
+          "labels": [
+            "fraudulent",
+            "suspicious"
+          ],
+          "source": "synthetic_seed"
+        },
+        {
+          "sample": "| 0 |",
+          "labels": [
+            "fraudulent",
+            "suspicious"
+          ],
+          "source": "synthetic_seed"
+        },
+        {
+          "sample": "| 0 |",
+          "labels": [
+            "fraudulent",
+            "legitimate"
+          ],
+          "source": "benchmark_corpus"
+        },
+        {
+          "sample": "| 0 |",
+          "labels": [
+            "fraudulent",
+            "legitimate"
+          ],
+          "source": "benchmark_corpus"
+        },
+        {
+          "sample": "| 0 |",
+          "labels": [
+            "fraudulent",
+            "legitimate"
+          ],
+          "source": "synthetic_seed"
+        },
+        {
+          "sample": "| 0 |",
+          "labels": [
+            "fraudulent",
+            "legitimate"
+          ],
+          "source": "benchmark_corpus"
+        },
+        {
+          "sample": "| 0 |",
+          "labels": [
+            "fraudulent",
+            "legitimate"
+          ],
+          "source": "synthetic_seed"
+        },
+        {
+          "sample": "| 0 |",
+          "labels": [
+            "fraudulent",
+            "legitimate"
+          ],
+          "source": "synthetic_seed"
+        },
+        {
+          "sample": "| 0 |",
+          "labels": [
+            "fraudulent",
+            "legitimate"
+          ],
+          "source": "verified_review"
+        }
+      ],
+      "malformed_or_empty": 0,
+      "invalid_labels": 0,
+      "class_distribution": {
+        "fraudulent": 11,
+        "legitimate": 17,
+        "suspicious": 5
+      },
+      "imbalance_ratio_max_to_min": 3.4,
+      "source_distribution": {
+        "benchmark_corpus": 7,
+        "synthetic_seed": 10,
+        "curated_payments": 32,
+        "verified_review": 5
+      },
+      "near_duplicate_examples": []
+    }
+  }
+}

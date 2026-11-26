@@ -1,0 +1,155 @@
+[
+  {
+    "id": "pay_raw_001",
+    "content": "upi://pay?pa=support-refund@okhdfcbank&pn=Amazon+Customer+Refund&tn=Enter+UPI+PIN+to+receive+Rs+4500+refund",
+    "label": "fraudulent payment request",
+    "group": "reverse_collect_refund",
+    "source": "benchmark_corpus",
+    "category": "REVERSE_COLLECT_FRAUD",
+    "description": "Reverse collect fraud urging victim to enter PIN to receive money"
+  },
+  {
+    "id": "pay_raw_002",
+    "content": "upi://pay?pa=claim-cashback@ybl&pn=GooglePay+Rewards&tn=Authorize+PIN+to+credit+Rs+2000",
+    "label": "fraudulent payment request",
+    "group": "reverse_collect_refund",
+    "source": "synthetic_seed",
+    "category": "REVERSE_COLLECT_FRAUD",
+    "description": "Cashback reward reverse collect collect-request"
+  },
+  {
+    "id": "pay_raw_003",
+    "content": "paytm-nodal-support@ybl",
+    "label": "fraudulent payment request",
+    "group": "brand_impersonation_vpa",
+    "source": "benchmark_corpus",
+    "category": "BRAND_IMPERSONATION",
+    "description": "Deceptive UPI handle impersonating Paytm nodal officer"
+  },
+  {
+    "id": "pay_raw_004",
+    "content": "sbi-kyc-verification@icici",
+    "label": "fraudulent payment request",
+    "group": "brand_impersonation_vpa",
+    "source": "synthetic_seed",
+    "category": "BRAND_IMPERSONATION",
+    "description": "Impersonated bank verification VPA"
+  },
+  {
+    "id": "pay_raw_005",
+    "content": "Electricity bill unpaid! Power will be disconnected tonight at 9:30 PM. Call Electricity Officer immediately and install AnyDesk to verify.",
+    "label": "fraudulent payment request",
+    "group": "remote_access_extortion",
+    "source": "benchmark_corpus",
+    "category": "REMOTE_ACCESS_TOOL",
+    "description": "Electricity power cut extortion combined with AnyDesk remote access trap"
+  },
+  {
+    "id": "pay_raw_006",
+    "content": "Urgent: Gas cylinder booking suspended. Send Rs 5 to gas-officer@paytm and share TeamViewer session code to clear block.",
+    "label": "fraudulent payment request",
+    "group": "remote_access_extortion",
+    "source": "synthetic_seed",
+    "category": "REMOTE_ACCESS_TOOL",
+    "description": "Utility verification pretext with TeamViewer remote access trap"
+  },
+  {
+    "id": "pay_raw_007",
+    "content": "upi://pay?pa=9876543210@paytm&pn=Official+PhonePe+Helpdesk&am=1",
+    "label": "fraudulent payment request",
+    "group": "payee_mismatch_vpa",
+    "source": "benchmark_corpus",
+    "category": "PAYEE_MISMATCH",
+    "description": "Official corporate helpdesk name paired with personal phone VPA"
+  },
+  {
+    "id": "pay_raw_008",
+    "content": "upi://pay?pa=8823910293@ibl&pn=Airtel+Customer+Care&am=10",
+    "label": "fraudulent payment request",
+    "group": "payee_mismatch_vpa",
+    "source": "synthetic_seed",
+    "category": "PAYEE_MISMATCH",
+    "description": "Telecom customer care display name with personal numeric VPA"
+  },
+  {
+    "id": "pay_raw_009",
+    "content": "upi://pay?pa=emergency-fund99@axl&pn=Urgent+Hospital+Relief&am=25000",
+    "label": "suspicious payment request",
+    "group": "urgent_unverified_appeal",
+    "source": "synthetic_seed",
+    "category": "UNVERIFIED_COLLECTION",
+    "description": "High-value emergency medical appeal on unverified personal VPA"
+  },
+  {
+    "id": "pay_raw_010",
+    "content": "https://secure-pay-checkout-fast.site/pay?order=9841",
+    "label": "suspicious payment request",
+    "group": "low_reputation_gateway",
+    "source": "synthetic_seed",
+    "category": "SUSPICIOUS_GATEWAY",
+    "description": "Non-standard payment checkout link on high-risk generic TLD"
+  },
+  {
+    "id": "pay_raw_011",
+    "content": "upi://pay?pa=quicktrade-p2p@airtel&pn=P2P+Escrow+Agent&am=50000",
+    "label": "suspicious payment request",
+    "group": "p2p_crypto_escrow",
+    "source": "synthetic_seed",
+    "category": "ESCROW_SUSPICION",
+    "description": "Unregistered P2P escrow transaction claiming high value"
+  },
+  {
+    "id": "pay_raw_012",
+    "content": "swiggy@axisbank",
+    "label": "legitimate payment request",
+    "group": "corporate_merchant",
+    "source": "benchmark_corpus",
+    "category": "AUTHENTIC_MERCHANT",
+    "description": "Authentic corporate merchant handle for food delivery"
+  },
+  {
+    "id": "pay_raw_013",
+    "content": "upi://pay?pa=zomato@icici&pn=Zomato+Limited&am=420&cu=INR",
+    "label": "legitimate payment request",
+    "group": "corporate_merchant",
+    "source": "benchmark_corpus",
+    "category": "AUTHENTIC_MERCHANT",
+    "description": "Authentic standard UPI merchant checkout QR"
+  },
+  {
+    "id": "pay_raw_014",
+    "content": "amazonpay@apl",
+    "label": "legitimate payment request",
+    "group": "corporate_merchant",
+    "source": "synthetic_seed",
+    "category": "AUTHENTIC_MERCHANT",
+    "description": "Official Amazon Pay merchant settlement VPA"
+  },
+  {
+    "id": "pay_raw_015",
+    "content": "rahul.sharma@oksbi",
+    "label": "legitimate payment request",
+    "group": "individual_p2p",
+    "source": "benchmark_corpus",
+    "category": "AUTHENTIC_P2P",
+    "description": "Standard personal P2P handle on authentic SBI PSP"
+  },
+  {
+    "id": "pay_raw_016",
+    "content": "priya.nair@okhdfcbank",
+    "label": "legitimate payment request",
+    "group": "individual_p2p",
+    "source": "synthetic_seed",
+    "category": "AUTHENTIC_P2P",
+    "description": "Standard personal P2P transfer handle on HDFC Bank"
+  },
+  {
+    "id": "pay_raw_017",
+    "content": "upi://pay?pa=tatapower@yesbank&pn=Tata+Power+Mumbai&am=1850&cu=INR",
+    "label": "legitimate payment request",
+    "group": "utility_merchant",
+    "source": "synthetic_seed",
+    "category": "AUTHENTIC_MERCHANT",
+    "description": "Official verified electricity utility merchant billing QR"
+  }
+]

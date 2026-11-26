@@ -1,0 +1,200 @@
+[
+  {
+    "id": "text_raw_001",
+    "content": "Urgent: You are placed under Digital Arrest by CBI. Join Skype interrogation immediately or warrant will be executed.",
+    "label": "scam",
+    "group": "digital_arrest_extortion",
+    "source": "benchmark_corpus",
+    "category": "DIGITAL_ARREST",
+    "description": "Coercive digital arrest legal extortion threat"
+  },
+  {
+    "id": "text_raw_002",
+    "content": "Final Notice from Enforcement Directorate: Digital arrest initiated for money laundering. Contact officer immediately on WhatsApp to avoid police raid.",
+    "label": "scam",
+    "group": "digital_arrest_extortion",
+    "source": "synthetic_seed",
+    "category": "DIGITAL_ARREST",
+    "description": "ED money laundering legal coercion threat"
+  },
+  {
+    "id": "text_raw_003",
+    "content": "Bhai jaldi se otp batao, delivery boy gate pe khada hai, OTP de do please.",
+    "label": "scam",
+    "group": "hinglish_otp_harvesting",
+    "source": "benchmark_corpus",
+    "category": "OTP_THEFT",
+    "description": "Hinglish delivery pretext OTP harvesting"
+  },
+  {
+    "id": "text_raw_004",
+    "content": "Sir parcel return ho jayega, 6 digit code share karo fast delivery complete karne ke liye.",
+    "label": "scam",
+    "group": "hinglish_otp_harvesting",
+    "source": "synthetic_seed",
+    "category": "OTP_THEFT",
+    "description": "Hinglish parcel return urgent OTP lure"
+  },
+  {
+    "id": "text_raw_005",
+    "content": "Congratulations! You have won an iPhone 16 Pro in KBC Lucky Draw. Deposit Rs 1,500 registration fee to claim your prize.",
+    "label": "scam",
+    "group": "advance_fee_lottery",
+    "source": "benchmark_corpus",
+    "category": "ADVANCE_FEE",
+    "description": "KBC lottery fake prize advance fee"
+  },
+  {
+    "id": "text_raw_006",
+    "content": "India Post alert: Your parcel #IN849204 has been seized by customs for duty charges. Pay release fee immediately.",
+    "label": "scam",
+    "group": "courier_customs_fraud",
+    "source": "benchmark_corpus",
+    "category": "CUSTOMS_EXTORTION",
+    "description": "Customs parcel detention fee extortion"
+  },
+  {
+    "id": "text_raw_007",
+    "content": "Work from home part-time job! Like 3 YouTube videos and earn Rs 3500 daily. Join Telegram prepaid task group.",
+    "label": "scam",
+    "group": "prepaid_task_fraud",
+    "source": "benchmark_corpus",
+    "category": "TASK_FRAUD",
+    "description": "Prepaid task fraud and fake part time work"
+  },
+  {
+    "id": "text_raw_008",
+    "content": "Dear Customer, Your SBI YONO Account will be blocked today. Please click http://sbi-kyc.xyz and update your PAN immediately.",
+    "label": "phishing",
+    "group": "banking_kyc_phishing",
+    "source": "benchmark_corpus",
+    "category": "CREDENTIAL_HARVESTING",
+    "description": "KYC account suspension threat with phishing URL"
+  },
+  {
+    "id": "text_raw_009",
+    "content": "HDFC Security Alert: Your NetBanking access is suspended due to suspicious activity. Verify credentials at https://hdfc-security-verify.support to restore access.",
+    "label": "phishing",
+    "group": "banking_kyc_phishing",
+    "source": "synthetic_seed",
+    "category": "CREDENTIAL_HARVESTING",
+    "description": "Suspended netbanking credential harvest"
+  },
+  {
+    "id": "text_raw_010",
+    "content": "From: security@paypal-verify.com. Your PayPal account has been limited. Click here to confirm your identity and credit card details.",
+    "label": "phishing",
+    "group": "email_account_phishing",
+    "source": "synthetic_seed",
+    "category": "EMAIL_PHISHING",
+    "description": "PayPal account limitation phishing email"
+  },
+  {
+    "id": "text_raw_011",
+    "content": "Netflix Billing Warning: Your membership is on hold because your payment failed. Update your card at http://netflix-billing-update.click.",
+    "label": "phishing",
+    "group": "subscription_phishing",
+    "source": "synthetic_seed",
+    "category": "EMAIL_PHISHING",
+    "description": "Streaming payment update credential lure"
+  },
+  {
+    "id": "text_raw_012",
+    "content": "Google Workspace Alert: Your mailbox storage is 99% full. Login at http://storage-google.online/clean to prevent email deletion.",
+    "label": "phishing",
+    "group": "email_account_phishing",
+    "source": "synthetic_seed",
+    "category": "EMAIL_PHISHING",
+    "description": "Mailbox quota exceeded credential harvester"
+  },
+  {
+    "id": "text_raw_013",
+    "content": "Exclusive discount: Get 70% off luxury Swiss replica watches this weekend only! Free shipping worldwide, click here to order.",
+    "label": "spam",
+    "group": "unsolicited_commercial",
+    "source": "synthetic_seed",
+    "category": "COMMERCIAL_SPAM",
+    "description": "Unsolicited promotional replica watch sales pitch"
+  },
+  {
+    "id": "text_raw_014",
+    "content": "Boost your website Google ranking to page 1 in 7 days! SEO backlinks package starting at $29. Reply YES for details.",
+    "label": "spam",
+    "group": "seo_marketing_spam",
+    "source": "synthetic_seed",
+    "category": "COMMERCIAL_SPAM",
+    "description": "Unsolicited B2B marketing SEO blast"
+  },
+  {
+    "id": "text_raw_015",
+    "content": "Pre-approved personal loan up to 10 Lakhs with zero documentation! Instant disbursal in 2 hours. Call 9876543210 to apply.",
+    "label": "spam",
+    "group": "loan_telemarketing",
+    "source": "synthetic_seed",
+    "category": "TELEMARKETING_SPAM",
+    "description": "Generic loan telemarketing spam SMS"
+  },
+  {
+    "id": "text_raw_016",
+    "content": "Earn passive income with automated cryptocurrency trading bots! Sign up for our free webinar this Saturday evening.",
+    "label": "spam",
+    "group": "crypto_webinar_spam",
+    "source": "synthetic_seed",
+    "category": "PROMOTIONAL_SPAM",
+    "description": "Crypto webinar marketing pitch"
+  },
+  {
+    "id": "text_raw_017",
+    "content": "Your one-time password (OTP) is 482910 for transaction on Amazon. NEVER share your OTP with anyone, including bank staff.",
+    "label": "legitimate",
+    "group": "transactional_otp",
+    "source": "benchmark_corpus",
+    "category": "AUTHENTIC_OTP",
+    "description": "Authentic transactional OTP alert with safety negation"
+  },
+  {
+    "id": "text_raw_018",
+    "content": "837192 is your Uber verification code. Do not share this code with anyone.",
+    "label": "legitimate",
+    "group": "transactional_otp",
+    "source": "synthetic_seed",
+    "category": "AUTHENTIC_OTP",
+    "description": "Standard ride share verification code with warning"
+  },
+  {
+    "id": "text_raw_019",
+    "content": "Hi Team, reminder for our project sync meeting tomorrow at 10:30 AM via Google Meet. Agenda is attached.",
+    "label": "legitimate",
+    "group": "workplace_communication",
+    "source": "benchmark_corpus",
+    "category": "ORGANIZATIONAL",
+    "description": "Standard workplace meeting notification"
+  },
+  {
+    "id": "text_raw_020",
+    "content": "Your monthly utility bill of Rs 1,420 has been generated. Payment due date is November 15, 2026. Thank you for using online billing.",
+    "label": "legitimate",
+    "group": "utility_billing",
+    "source": "benchmark_corpus",
+    "category": "BILLING_STATEMENT",
+    "description": "Routine electricity billing statement with future due date"
+  },
+  {
+    "id": "text_raw_021",
+    "content": "Your Amazon order #402-9842109-1928374 has been shipped and will arrive on Friday. Track your delivery in the app.",
+    "label": "legitimate",
+    "group": "shipping_confirmation",
+    "source": "synthetic_seed",
+    "category": "COMMERCE_UPDATE",
+    "description": "Official e-commerce shipping tracking notice"
+  },
+  {
+    "id": "text_raw_022",
+    "content": "GitHub security alert: A new personal access token was generated from IP 198.51.100.22. Review your security settings if this wasn't you.",
+    "label": "legitimate",
+    "group": "security_advisory",
+    "source": "synthetic_seed",
+    "category": "SYSTEM_NOTIFICATION",
+    "description": "Official GitHub security notice"
+  }
+]

@@ -1,0 +1,5565 @@
+{
+  "task": "message",
+  "split": "test",
+  "count": 794,
+  "samples": [
+    {
+      "content": "Dude avatar 3d was imp. At one point i thought there were actually flies in the room and almost tried hittng one as a reflex",
+      "label": "legitimate",
+      "group": "dudeavatar3dwasimpatonepointit",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "For The First Time In The History 'Need' 'Comfort' And 'Luxury' Are Sold At Same Price In India..!! Onion-Rs. &lt;#&gt; Petrol-Rs. &lt;#&gt; Beer-Rs. &lt;#&gt; SHESIL &lt;#&gt;",
+      "label": "legitimate",
+      "group": "forthefirsttimeinthehistorynee",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Thank u!",
+      "label": "legitimate",
+      "group": "thanku",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Double eviction this week - Spiral and Michael and good riddance to them!",
+      "label": "legitimate",
+      "group": "doubleevictionthisweekspiralan",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I'm aight. Wat's happening on your side.",
+      "label": "legitimate",
+      "group": "imaightwatshappeningonyourside",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "What year. And how many miles.",
+      "label": "legitimate",
+      "group": "whatyearandhowmanymiles",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "No did you check? I got his detailed message now",
+      "label": "legitimate",
+      "group": "nodidyoucheckigothisdetailedme",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "money!!! you r a lucky winner ! 2 claim your prize text money 2 88600 over \u00a31million to give away ! ppt150x3+normal text rate box403 w1t1jy",
+      "label": "spam",
+      "group": "moneyyouraluckywinner2claimyou",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Check wid corect speling i.e. Sarcasm",
+      "label": "legitimate",
+      "group": "checkwidcorectspelingiesarcasm",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Thats cool. i liked your photos. You are very sexy!",
+      "label": "legitimate",
+      "group": "thatscoolilikedyourphotosyouar",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "You've always been the brainy one.",
+      "label": "legitimate",
+      "group": "youvealwaysbeenthebrainyone",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I call you later, don't have network. If urgnt, sms me.",
+      "label": "legitimate",
+      "group": "icallyoulaterdonthavenetworkif",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Would me smoking you out help us work through this difficult time",
+      "label": "legitimate",
+      "group": "wouldmesmokingyououthelpuswork",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "You got called a tool?",
+      "label": "legitimate",
+      "group": "yougotcalledatool",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Where do you need to go to get it?",
+      "label": "legitimate",
+      "group": "wheredoyouneedtogotogetit",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yep get with the program. You're slacking.",
+      "label": "legitimate",
+      "group": "yepgetwiththeprogramyoureslack",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "So what did the bank say about the money?",
+      "label": "legitimate",
+      "group": "sowhatdidthebanksayaboutthemon",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yunny... I'm goin to be late",
+      "label": "legitimate",
+      "group": "yunnyimgointobelate",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Do u ever get a song stuck in your head for no reason and it won't go away til u listen to it like 5 times?",
+      "label": "legitimate",
+      "group": "douevergetasongstuckinyourhead",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "emily ' s first pictures just so you can see where my paycheck now goes . what a great way to spend money ! djs here are some pictures from the first roll of film - emily was about 5 or 6 days old . s",
+      "label": "legitimate",
+      "group": "emilysfirstpicturesjustsoyouca",
+      "source": "verified_review",
+      "split": "test"
+    },
+    {
+      "content": "Hi Jon, Pete here, Ive bin 2 Spain recently & hav sum dinero left, Bill said u or ur \u0091rents mayb interested in it, I hav 12,000pes, so around \u00a348, tb, James.",
+      "label": "legitimate",
+      "group": "hijonpetehereivebin2spainrecen",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Smile in Pleasure Smile in Pain Smile when trouble pours like Rain Smile when sum1 Hurts U Smile becoz SOMEONE still Loves to see u Smiling!!",
+      "label": "legitimate",
+      "group": "smileinpleasuresmileinpainsmil",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ok. Not sure what time tho as not sure if can get to library before class. Will try. See you at some point! Have good eve.",
+      "label": "legitimate",
+      "group": "oknotsurewhattimethoasnotsurei",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "This is the 2nd attempt to contract U, you have won this weeks top prize of either \u00a31000 cash or \u00a3200 prize. Just call [PHONE]",
+      "label": "spam",
+      "group": "thisisthe2ndattempttocontractu",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ok u can take me shopping when u get paid =D",
+      "label": "legitimate",
+      "group": "okucantakemeshoppingwhenugetpa",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Im in inperialmusic listening2the weirdest track ever by\u0094leafcutter john\u0094-sounds like insects being molested&someone plumbing,remixed by evil men on acid!",
+      "label": "legitimate",
+      "group": "imininperialmusiclistening2the",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "And that's fine, I got enough bud to last most of the night at least",
+      "label": "legitimate",
+      "group": "andthatsfineigotenoughbudtolas",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "The guy (kadeem) hasn't been selling since the break, I know one other guy but he's paranoid as fuck and doesn't like selling without me there and I can't be up there til late tonight",
+      "label": "legitimate",
+      "group": "theguykadeemhasntbeensellingsi",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Fantasy Football is back on your TV. Go to Sky Gamestar on Sky Active and play \u00a3250k Dream Team. Scoring starts on Saturday, so register now!SKY OPT OUT to 88088",
+      "label": "spam",
+      "group": "fantasyfootballisbackonyourtvg",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hey mate. Spoke to the mag people. We\u2018re on. the is deliver by the end of the month. Deliver on the 24th sept. Talk later.",
+      "label": "legitimate",
+      "group": "heymatespoketothemagpeoplewere",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Pls send me your address sir.",
+      "label": "legitimate",
+      "group": "plssendmeyouraddresssir",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "He also knows about lunch menu only da. . I know",
+      "label": "legitimate",
+      "group": "healsoknowsaboutlunchmenuonlyd",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hey, I missed you tm of last night as my phone was on the charge ... *smiles* ... I am meeting a friend shortly",
+      "label": "legitimate",
+      "group": "heyimissedyoutmoflastnightasmy",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ok. I only ask abt e movie. U wan ktv oso?",
+      "label": "legitimate",
+      "group": "okionlyaskabtemovieuwanktvoso",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "One day a crab was running on the sea shore..The waves came n cleared the footprints of the crab.. Crab asked: being my frnd y r u clearing my beautiful footprints? Waves replied: A fox was following ur footprints to catch you! thats y i cleared it off:) frndsship never lets u dwn :-) GUD nyt..",
+      "label": "legitimate",
+      "group": "onedayacrabwasrunningontheseas",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "ALRITE SAM ITS NIC JUST CHECKIN THAT THIS IS UR NUMBER-SO IS IT?T.B*",
+      "label": "legitimate",
+      "group": "alritesamitsnicjustcheckinthat",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "From 5 to 2 only my work timing.",
+      "label": "legitimate",
+      "group": "from5to2onlymyworktiming",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Text me when you get off, don't call, my phones having problems",
+      "label": "legitimate",
+      "group": "textmewhenyougetoffdontcallmyp",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Where you. What happen",
+      "label": "legitimate",
+      "group": "whereyouwhathappen",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Do you want a New Nokia 3510i colour phone DeliveredTomorrow? With 300 free minutes to any mobile + 100 free texts + Free Camcorder reply or call [PHONE]",
+      "label": "spam",
+      "group": "doyouwantanewnokia3510icolourp",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Do you want a New Nokia 3510i Colour Phone Delivered Tomorrow? With 200 FREE minutes to any mobile + 100 FREE text + FREE camcorder Reply or Call [PHONE]",
+      "label": "spam",
+      "group": "doyouwantanewnokia3510icolourp",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Do you want a New Nokia 3510i colour phone DeliveredTomorrow? With 300 free minutes to any mobile + 100 free texts + Free Camcorder reply or call [PHONE].",
+      "label": "spam",
+      "group": "doyouwantanewnokia3510icolourp",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Merry Christmas to you too babe, i love ya *kisses*",
+      "label": "legitimate",
+      "group": "merrychristmastoyoutoobabeilov",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Double mins and txts 4 6months FREE Bluetooth on Orange. Available on Sony, Nokia Motorola phones. Call MobileUpd8 on [PHONE] or call2optout/N9DX",
+      "label": "spam",
+      "group": "doubleminsandtxts46monthsfreeb",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "So i'm doing a list of buyers.",
+      "label": "legitimate",
+      "group": "soimdoingalistofbuyers",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Orh i tot u say she now still dun believe.",
+      "label": "legitimate",
+      "group": "orhitotusayshenowstilldunbelie",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Well I wasn't available as I washob nobbing with last night so they had to ask Nickey Platt instead of me!;",
+      "label": "legitimate",
+      "group": "welliwasntavailableasiwashobno",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Nope. Since ayo travelled, he has forgotten his guy",
+      "label": "legitimate",
+      "group": "nopesinceayotravelledhehasforg",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ya:)going for restaurant..",
+      "label": "legitimate",
+      "group": "yagoingforrestaurant",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yeah I think my usual guy's still passed out from last night, if you get ahold of anybody let me know and I'll throw down",
+      "label": "legitimate",
+      "group": "yeahithinkmyusualguysstillpass",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "It is only yesterday true true.",
+      "label": "legitimate",
+      "group": "itisonlyyesterdaytruetrue",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Did u got that persons story",
+      "label": "legitimate",
+      "group": "didugotthatpersonsstory",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Jay wants to work out first, how's 4 sound?",
+      "label": "legitimate",
+      "group": "jaywantstoworkoutfirsthows4sou",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "How about getting in touch with folks waiting for company? Just txt back your NAME and AGE to opt in! Enjoy the community (150p/SMS)",
+      "label": "spam",
+      "group": "howaboutgettingintouchwithfolk",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "U definitely need a module from e humanities dis sem izzit? U wan 2 take other modules 1st?",
+      "label": "legitimate",
+      "group": "udefinitelyneedamodulefromehum",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Haha yeah, 2 oz is kind of a shitload",
+      "label": "legitimate",
+      "group": "hahayeah2oziskindofashitload",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Evry Emotion dsn't hav Words.Evry Wish dsn't hav Prayrs.. If u Smile,D World is wit u.Othrwise even d Drop of Tear dsn't lik 2 Stay wit u.So b happy.. Good morning, keep smiling:-)",
+      "label": "legitimate",
+      "group": "evryemotiondsnthavwordsevrywis",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Wif my family booking tour package.",
+      "label": "legitimate",
+      "group": "wifmyfamilybookingtourpackage",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Reply with your name and address and YOU WILL RECEIVE BY POST a weeks completely free accommodation at various global locations www.phb1.com ph:[PHONE]p",
+      "label": "spam",
+      "group": "replywithyournameandaddressand",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Studying. But i.ll be free next weekend.",
+      "label": "legitimate",
+      "group": "studyingbutillbefreenextweeken",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Oh... I was thkin of goin yogasana at 10 den no nd to go at 3 den can rush to parco 4 nb... Okie lor, u call me when ready...",
+      "label": "legitimate",
+      "group": "ohiwasthkinofgoinyogasanaat10d",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Call [PHONE] to use ur mins! Calls cast 10p/min (mob vary). Service provided by AOM, just GBP5/month. AOM Box61,M60 1ER until u stop. Ages 18+ only!",
+      "label": "spam",
+      "group": "callphonetouseurminscallscast1",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yes. They replied my mail. I'm going to the management office later. Plus will in to bank later also.or on wednesday.",
+      "label": "legitimate",
+      "group": "yestheyrepliedmymailimgoingtot",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Not planned yet :)going to join company on jan 5 only.don know what will happen after that.",
+      "label": "legitimate",
+      "group": "notplannedyetgoingtojoincompan",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Lol! Oops sorry! Have fun.",
+      "label": "legitimate",
+      "group": "loloopssorryhavefun",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "No it will reach by 9 only. She telling she will be there. I dont know",
+      "label": "legitimate",
+      "group": "noitwillreachby9onlyshetelling",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Promotion Number: 8714714 - UR awarded a City Break and could WIN a \u00a3200 Summer Shopping spree every WK. Txt STORE to 88039 . SkilGme. TsCs[PHONE]Winawk!Age16 \u00a31.50perWKsub",
+      "label": "spam",
+      "group": "promotionnumber8714714urawarde",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Jus finish bathing...",
+      "label": "legitimate",
+      "group": "jusfinishbathing",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Well at this right I'm gonna have to get up and check today's steam sales/pee so text me when you want me to come get you",
+      "label": "legitimate",
+      "group": "wellatthisrightimgonnahavetoge",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "K.:)you are the only girl waiting in reception ah?",
+      "label": "legitimate",
+      "group": "kyouaretheonlygirlwaitinginrec",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "This weekend is fine (an excuse not to do too much decorating)",
+      "label": "legitimate",
+      "group": "thisweekendisfineanexcusenotto",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hello, my love. What are you doing? Did you get to that interview today? Are you you happy? Are you being a good boy? Do you think of me?Are you missing me ?",
+      "label": "legitimate",
+      "group": "hellomylovewhatareyoudoingdidy",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Good. No swimsuit allowed :)",
+      "label": "legitimate",
+      "group": "goodnoswimsuitallowed",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "That's a shame! Maybe cld meet for few hrs tomo?",
+      "label": "legitimate",
+      "group": "thatsashamemaybecldmeetforfewh",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Today's Offer! Claim ur \u00a3150 worth of discount vouchers! Text YES to 85023 now! SavaMob, member offers mobile! T Cs [PHONE]. \u00a33.00 Sub. 16 . Unsub reply X",
+      "label": "spam",
+      "group": "todaysofferclaimur150worthofdi",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I said its okay. Sorry",
+      "label": "legitimate",
+      "group": "isaiditsokaysorry",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ok thanx... Take care then...",
+      "label": "legitimate",
+      "group": "okthanxtakecarethen",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "2 laptop... I noe infra but too slow lar... I wan fast one",
+      "label": "legitimate",
+      "group": "2laptopinoeinfrabuttooslowlari",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ya had just now.onion roast.",
+      "label": "legitimate",
+      "group": "yahadjustnowonionroast",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "4 oclock at mine. Just to bash out a flat plan.",
+      "label": "legitimate",
+      "group": "4oclockatminejusttobashoutafla",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I got a call from a landline number. . . I am asked to come to anna nagar . . . I will go in the afternoon",
+      "label": "legitimate",
+      "group": "igotacallfromalandlinenumberia",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Buy one egg for me da..please:)",
+      "label": "legitimate",
+      "group": "buyoneeggformedaplease",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "And maybe some pressies",
+      "label": "legitimate",
+      "group": "andmaybesomepressies",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I accidentally brought em home in the box",
+      "label": "legitimate",
+      "group": "iaccidentallybroughtemhomeinth",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "How much would it cost to hire a hitman",
+      "label": "legitimate",
+      "group": "howmuchwoulditcosttohireahitma",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Your opinion about me? 1. Over 2. Jada 3. Kusruthi 4. Lovable 5. Silent 6. Spl character 7. Not matured 8. Stylish 9. Simple Pls reply..",
+      "label": "legitimate",
+      "group": "youropinionaboutme1over2jada3k",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I.ll post her out l8r. In class",
+      "label": "legitimate",
+      "group": "illpostheroutl8rinclass",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Jus came back fr lunch wif my sis only. U leh?",
+      "label": "legitimate",
+      "group": "juscamebackfrlunchwifmysisonly",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "U don't know how stubborn I am. I didn't even want to go to the hospital. I kept telling Mark I'm not a weak sucker. Hospitals are for weak suckers.",
+      "label": "legitimate",
+      "group": "udontknowhowstubborniamididnte",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hello, As per request from &lt;#&gt; Rs.5 has been transfered to you",
+      "label": "legitimate",
+      "group": "helloasperrequestfromltgtrs5ha",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "A famous quote : when you develop the ability to listen to 'anything' unconditionally without losing your temper or self confidence, it means you are ......... 'MARRIED'",
+      "label": "legitimate",
+      "group": "afamousquotewhenyoudevelopthea",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yes we are chatting too.",
+      "label": "legitimate",
+      "group": "yeswearechattingtoo",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "jay says he'll put in &lt;#&gt;",
+      "label": "legitimate",
+      "group": "jaysayshellputinltgt",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "yeah sure thing mate haunt got all my stuff sorted but im going sound anyway promoting hex for .by the way who is this? dont know number. Joke",
+      "label": "legitimate",
+      "group": "yeahsurethingmatehauntgotallmy",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I\u2018m parked next to a MINI!!!! When are you coming in today do you think?",
+      "label": "legitimate",
+      "group": "imparkednexttoaminiwhenareyouc",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Are you going to write ccna exam this week??",
+      "label": "legitimate",
+      "group": "areyougoingtowriteccnaexamthis",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Are u coming to the funeral home",
+      "label": "legitimate",
+      "group": "areucomingtothefuneralhome",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I just saw ron burgundy captaining a party boat so yeah",
+      "label": "legitimate",
+      "group": "ijustsawronburgundycaptaininga",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Of cos can lar i'm not so ba dao ok... 1 pm lor... Y u never ask where we go ah... I said u would ask on fri but he said u will ask today...",
+      "label": "legitimate",
+      "group": "ofcoscanlarimnotsobadaook1pmlo",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hurry home. Soup is DONE!",
+      "label": "legitimate",
+      "group": "hurryhomesoupisdone",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "This is wishing you a great day. Moji told me about your offer and as always i was speechless. You offer so easily to go to great lengths on my behalf and its stunning. My exam is next friday. After that i will keep in touch more. Sorry.",
+      "label": "legitimate",
+      "group": "thisiswishingyouagreatdaymojit",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "[ none ] craving for a luxury wwatch ? check ours . paying only a fraction of what you have to pay otherwise . comprehend the preference of automatic , winding battery quartz before buying one . disti",
+      "label": "phishing",
+      "group": "nonecravingforaluxurywwatchche",
+      "source": "verified_review",
+      "split": "test"
+    },
+    {
+      "content": "Why don't you wait 'til at least wednesday to see if you get your .",
+      "label": "legitimate",
+      "group": "whydontyouwaittilatleastwednes",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ee msg na poortiyagi odalebeku: Hanumanji 7 name 1-Hanuman 2-Bajarangabali 3-Maruti 4-Pavanaputra 5-Sankatmochan 6-Ramaduth 7-Mahaveer ee 7 name &lt;#&gt; janarige ivatte kalisidare next saturday olage ondu good news keluviri...! Maretare inde 1 dodda problum nalli siguviri idu matra &lt;#&gt; % true.. Don't neglet.",
+      "label": "legitimate",
+      "group": "eemsgnapoortiyagiodalebekuhanu",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "\"GRAN ONLYFOUND OUT AFEW DAYS AGO.CUSOON HONI\"",
+      "label": "legitimate",
+      "group": "granonlyfoundoutafewdaysagocus",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Kind of. Took it to garage. Centre part of exhaust needs replacing. Part ordered n taking it to be fixed tomo morning.",
+      "label": "legitimate",
+      "group": "kindoftookittogaragecentrepart",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Idk. I'm sitting here in a stop and shop parking lot right now bawling my eyes out because i feel like i'm a failure in everything. Nobody wants me and now i feel like i'm failing you.",
+      "label": "legitimate",
+      "group": "idkimsittinghereinastopandshop",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Rofl. Its true to its name",
+      "label": "legitimate",
+      "group": "roflitstruetoitsname",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Pls come quick cant bare this.",
+      "label": "legitimate",
+      "group": "plscomequickcantbarethis",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I cant keep talking to people if am not sure i can pay them if they agree to price. So pls tell me what you want to really buy and how much you are willing to pay",
+      "label": "legitimate",
+      "group": "icantkeeptalkingtopeopleifamno",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "COME BACK TO TAMPA FFFFUUUUUUU",
+      "label": "legitimate",
+      "group": "comebacktotampaffffuuuuuuu",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Jane babes not goin 2 wrk, feel ill after lst nite. Foned in already cover 4 me chuck.:-)",
+      "label": "legitimate",
+      "group": "janebabesnotgoin2wrkfeelillaft",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "What do U want for Xmas? How about 100 free text messages & a new video phone with half price line rental? Call free now on [PHONE] to find out more!",
+      "label": "spam",
+      "group": "whatdouwantforxmashowabout100f",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Did he just say somebody is named tampa",
+      "label": "legitimate",
+      "group": "didhejustsaysomebodyisnamedtam",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Theyre doing it to lots of places. Only hospitals and medical places are safe.",
+      "label": "legitimate",
+      "group": "theyredoingittolotsofplacesonl",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "In which place i can get rooms cheap:-)",
+      "label": "legitimate",
+      "group": "inwhichplaceicangetroomscheap",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Did you stitch his trouser",
+      "label": "legitimate",
+      "group": "didyoustitchhistrouser",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yes baby! We can study all the positions of the kama sutra ;)",
+      "label": "legitimate",
+      "group": "yesbabywecanstudyallthepositio",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yup but not studying surfing lor. I'm in e lazy mode today.",
+      "label": "legitimate",
+      "group": "yupbutnotstudyingsurfinglorimi",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Can do lor...",
+      "label": "legitimate",
+      "group": "candolor",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Wah lucky man... Then can save money... Hee...",
+      "label": "legitimate",
+      "group": "wahluckymanthencansavemoneyhee",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Dude while were makin those weirdy brownies my sister made awesome cookies. I took pics.",
+      "label": "legitimate",
+      "group": "dudewhileweremakinthoseweirdyb",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "URGENT! You have won a 1 week FREE membership in our \u00a3100,000 Prize Jackpot! Txt the word: CLAIM to No: 81010 T&C www.dbuk.net LCCLTD POBOX 4403LDNW1A7RW18",
+      "label": "spam",
+      "group": "urgentyouhavewona1weekfreememb",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Nt yet chikku..simple habba..hw abt u?",
+      "label": "legitimate",
+      "group": "ntyetchikkusimplehabbahwabtu",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Kothi print out marandratha.",
+      "label": "legitimate",
+      "group": "kothiprintoutmarandratha",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "A Boy loved a gal. He propsd bt she didnt mind. He gv lv lttrs, Bt her frnds threw thm. Again d boy decided 2 aproach d gal , dt time a truck was speeding towards d gal. Wn it was about 2 hit d girl,d boy ran like hell n saved her. She asked 'hw cn u run so fast?' D boy replied \"Boost is d secret of my energy\" n instantly d girl shouted \"our energy\" n Thy lived happily 2gthr drinking boost evrydy Moral of d story:- I hv free msgs:D;): gud ni8",
+      "label": "legitimate",
+      "group": "aboylovedagalhepropsdbtshedidn",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "soon you will have the real thing princess! Do i make you wet? :)",
+      "label": "legitimate",
+      "group": "soonyouwillhavetherealthingpri",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "U repeat e instructions again. Wat's e road name of ur house?",
+      "label": "legitimate",
+      "group": "urepeateinstructionsagainwatse",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Maybe westshore or hyde park village, the place near my house?",
+      "label": "legitimate",
+      "group": "maybewestshoreorhydeparkvillag",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Can a not?",
+      "label": "legitimate",
+      "group": "cananot",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Sez, hows u & de arab boy? Hope u r all good give my love 2 evry1 love ya eshxxxxxxxxxxx",
+      "label": "legitimate",
+      "group": "sezhowsudearabboyhopeurallgood",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I think u have the wrong number.",
+      "label": "legitimate",
+      "group": "ithinkuhavethewrongnumber",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "My friends use to call the same.",
+      "label": "legitimate",
+      "group": "myfriendsusetocallthesame",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Tell me they're female :V how're you throwing in? We're deciding what all to get now",
+      "label": "legitimate",
+      "group": "tellmetheyrefemalevhowreyouthr",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Bring tat cd don forget",
+      "label": "legitimate",
+      "group": "bringtatcddonforget",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I'm awake oh. What's up.",
+      "label": "legitimate",
+      "group": "imawakeohwhatsup",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "No, I decided that only people who care about stuff vote and caring about stuff is for losers",
+      "label": "legitimate",
+      "group": "noidecidedthatonlypeoplewhocar",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yeah do! Don\u2018t stand to close tho- you\u2018ll catch something!",
+      "label": "legitimate",
+      "group": "yeahdodontstandtoclosethoyoull",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "You are right. Meanwhile how's project twins comin up",
+      "label": "legitimate",
+      "group": "youarerightmeanwhilehowsprojec",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Security Alert from Federal Police: Illegal contraband found in package #9941. Pay settlement to avoid imprisonment.",
+      "label": "phishing",
+      "group": "securityalertfromfederalpolice",
+      "source": "verified_review",
+      "split": "test"
+    },
+    {
+      "content": "complimentary 4 STAR Ibiza Holiday or \u00a310,000 cash needs your URGENT collection. [PHONE] NOW from Landline not to lose out! Box434SK38WP150PPM18+",
+      "label": "spam",
+      "group": "complimentary4staribizaholiday",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Poyyarikatur,kolathupalayam,unjalur post,erode dis, &lt;#&gt; .",
+      "label": "legitimate",
+      "group": "poyyarikaturkolathupalayamunja",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I want to tell you how bad I feel that basically the only times I text you lately are when I need drugs",
+      "label": "legitimate",
+      "group": "iwanttotellyouhowbadifeelthatb",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "My planning usually stops at \"find hella weed, smoke hella weed\"",
+      "label": "legitimate",
+      "group": "myplanningusuallystopsatfindhe",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Is ur paper today in e morn or aft?",
+      "label": "legitimate",
+      "group": "isurpapertodayinemornoraft",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Aft i finish my lunch then i go str down lor. Ard 3 smth lor. U finish ur lunch already?",
+      "label": "legitimate",
+      "group": "aftifinishmylunchthenigostrdow",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Die... Now i have e toot fringe again...",
+      "label": "legitimate",
+      "group": "dienowihaveetootfringeagain",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Sorry! U can not unsubscribe yet. THE MOB offer package has a min term of 54 weeks> pls resubmit request after expiry. Reply THEMOB HELP 4 more info",
+      "label": "spam",
+      "group": "sorryucannotunsubscribeyetthem",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Its on in engalnd! But telly has decided it won't let me watch it and mia and elliot were kissing! Damn it!",
+      "label": "legitimate",
+      "group": "itsoninengalndbuttellyhasdecid",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Call me when u finish then i come n pick u.",
+      "label": "legitimate",
+      "group": "callmewhenufinishthenicomenpic",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Spook up your mob with a Halloween collection of a logo & pic message plus a free eerie tone, txt CARD SPOOK to 8007 zed [PHONE]p per logo/pic",
+      "label": "spam",
+      "group": "spookupyourmobwithahalloweenco",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "My slave! I want you to take 2 or 3 pictures of yourself today in bright light on your cell phone! Bright light!",
+      "label": "legitimate",
+      "group": "myslaveiwantyoutotake2or3pictu",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Aight, let me know when you're gonna be around usf",
+      "label": "legitimate",
+      "group": "aightletmeknowwhenyouregonnabe",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ok both our days. So what are you making for dinner tonite? Am I invited?",
+      "label": "legitimate",
+      "group": "okbothourdayssowhatareyoumakin",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hey, iouri gave me your number, I'm wylie, ryan's friend",
+      "label": "legitimate",
+      "group": "heyiourigavemeyournumberimwyli",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Sorry, was in the bathroom, sup",
+      "label": "legitimate",
+      "group": "sorrywasinthebathroomsup",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "You do your studies alone without anyones help. If you cant no need to study.",
+      "label": "legitimate",
+      "group": "youdoyourstudiesalonewithoutan",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yeah, probably here for a while",
+      "label": "legitimate",
+      "group": "yeahprobablyhereforawhile",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I'm going for bath will msg you next &lt;#&gt; min..",
+      "label": "legitimate",
+      "group": "imgoingforbathwillmsgyounextlt",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yes i have. So that's why u texted. Pshew...missing you so much",
+      "label": "legitimate",
+      "group": "yesihavesothatswhyutextedpshew",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "18 days to Euro2004 kickoff! U will be kept informed of all the latest news and results daily. Unsubscribe send GET EURO STOP to 83222.",
+      "label": "spam",
+      "group": "18daystoeuro2004kickoffuwillbe",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yes.he have good crickiting mind",
+      "label": "legitimate",
+      "group": "yeshehavegoodcrickitingmind",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "You didnt complete your gist oh.",
+      "label": "legitimate",
+      "group": "youdidntcompleteyourgistoh",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "This message is from a great Doctor in India:-): 1) Do not drink APPY FIZZ. It contains Cancer causing age",
+      "label": "legitimate",
+      "group": "thismessageisfromagreatdoctori",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I am waiting for your call sir.",
+      "label": "legitimate",
+      "group": "iamwaitingforyourcallsir",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "S.i think he is waste for rr..",
+      "label": "legitimate",
+      "group": "sithinkheiswasteforrr",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Pls i wont belive god.not only jesus.",
+      "label": "legitimate",
+      "group": "plsiwontbelivegodnotonlyjesus",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "twenty past five he said will this train have been to durham already or not coz i am in a reserved seat",
+      "label": "legitimate",
+      "group": "twentypastfivehesaidwillthistr",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I am in hospital da. . I will return home in evening",
+      "label": "legitimate",
+      "group": "iaminhospitaldaiwillreturnhome",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "\"CHEERS FOR CALLIN BABE.SOZI CULDNT TALKBUT I WANNATELL U DETAILS LATER WENWECAN CHAT PROPERLY X\"",
+      "label": "legitimate",
+      "group": "cheersforcallinbabesoziculdntt",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "\u00dc all write or wat..",
+      "label": "legitimate",
+      "group": "allwriteorwat",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "You are not bothering me but you have to trust my answers. Pls.",
+      "label": "legitimate",
+      "group": "youarenotbotheringmebutyouhave",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hope ur head doesn't hurt 2 much ! Am ploughing my way through a pile of ironing ! Staying in with a chinky tonight come round if you like.",
+      "label": "legitimate",
+      "group": "hopeurheaddoesnthurt2muchamplo",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yes:)from last week itself i'm taking live call.",
+      "label": "legitimate",
+      "group": "yesfromlastweekitselfimtakingl",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "HMV BONUS SPECIAL 500 pounds of genuine HMV vouchers to be won. Just answer 4 easy questions. Play Now! Send HMV to 86688 More info:www.100percent-real.com",
+      "label": "spam",
+      "group": "hmvbonusspecial500poundsofgenu",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Its a part of checking IQ",
+      "label": "legitimate",
+      "group": "itsapartofcheckingiq",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Would really appreciate if you call me. Just need someone to talk to.",
+      "label": "legitimate",
+      "group": "wouldreallyappreciateifyoucall",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I had a good time too. Its nice to do something a bit different with my weekends for a change. See ya soon",
+      "label": "legitimate",
+      "group": "ihadagoodtimetooitsnicetodosom",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Good day to You too.Pray for me.Remove the teeth as its painful maintaining other stuff.",
+      "label": "legitimate",
+      "group": "gooddaytoyoutooprayformeremove",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ha... Both of us doing e same thing. But i got tv 2 watch. U can thk of where 2 go tonight or u already haf smth in mind...",
+      "label": "legitimate",
+      "group": "habothofusdoingesamethingbutig",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Sunshine Quiz Wkly Q! Win a top Sony DVD player if u know which country the Algarve is in? Txt ansr to 82277. \u00a31.50 SP:Tyrone",
+      "label": "spam",
+      "group": "sunshinequizwklyqwinatopsonydv",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Sunshine Quiz Wkly Q! Win a top Sony DVD player if u know which country Liverpool played in mid week? Txt ansr to 82277. \u00a31.50 SP:Tyrone",
+      "label": "spam",
+      "group": "sunshinequizwklyqwinatopsonydv",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "TRAI NOTICE: All mobile outgoing and incoming services on this number will be permanently disconnected within 2 hours due to illegal advertising and obscene broadcasts. Press 9 for DOT officer.",
+      "label": "phishing",
+      "group": "trainoticeallmobileoutgoingand",
+      "source": "cert_in_i4c_curated",
+      "split": "test"
+    },
+    {
+      "content": "May b approve panalam...but it should have more posts..",
+      "label": "legitimate",
+      "group": "maybapprovepanalambutitshouldh",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Omg you can make a wedding chapel in frontierville? Why do they get all the good stuff?",
+      "label": "legitimate",
+      "group": "omgyoucanmakeaweddingchapelinf",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Howz pain.it will come down today.do as i said ystrday.ice and medicine.",
+      "label": "legitimate",
+      "group": "howzpainitwillcomedowntodaydoa",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Die... I accidentally deleted e msg i suppose 2 put in e sim archive. Haiz... I so sad...",
+      "label": "legitimate",
+      "group": "dieiaccidentallydeletedemsgisu",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hmmm...k...but i want to change the field quickly da:-)i wanna get system administrator or network administrator..",
+      "label": "legitimate",
+      "group": "hmmmkbutiwanttochangethefieldq",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "So i asked how's anthony. Dad. And your bf",
+      "label": "legitimate",
+      "group": "soiaskedhowsanthonydadandyourb",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "When/where do I pick you up",
+      "label": "legitimate",
+      "group": "whenwheredoipickyouup",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "3 FREE TAROT TEXTS! Find out about your love life now! TRY 3 FOR FREE! Text CHANCE to 85555 16 only! After 3 Free, Msgs \u00a31.50 each",
+      "label": "spam",
+      "group": "3freetarottextsfindoutaboutyou",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Oh yah... We never cancel leh... Haha",
+      "label": "legitimate",
+      "group": "ohyahwenevercancellehhaha",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Not much, just some textin'. How bout you?",
+      "label": "legitimate",
+      "group": "notmuchjustsometextinhowboutyo",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Free tones Hope you enjoyed your new content. text stop to 61610 to unsubscribe. help:[PHONE]p Provided by tones2you.co.uk",
+      "label": "spam",
+      "group": "freetoneshopeyouenjoyedyournew",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Thanks for sending this mental ability question..",
+      "label": "legitimate",
+      "group": "thanksforsendingthismentalabil",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Just making dinner, you ?",
+      "label": "legitimate",
+      "group": "justmakingdinneryou",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Then what about further plan?",
+      "label": "legitimate",
+      "group": "thenwhataboutfurtherplan",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "They have a thread on the wishlist section of the forums where ppl post nitro requests. Start from the last page and collect from the bottom up.",
+      "label": "legitimate",
+      "group": "theyhaveathreadonthewishlistse",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Love has one law; Make happy the person you love. In the same way friendship has one law; Never make ur friend feel alone until you are alive.... Gud night",
+      "label": "legitimate",
+      "group": "lovehasonelawmakehappytheperso",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "And that is the problem. You walk around in \"julianaland\" oblivious to what is going on around you. I say the same things constantly and they go in one ear and out the other while you go off doing whatever you want to do. It's not that you don't know why I'm upset--it's that you don't listen when i tell you WHAT is going to upset me. Then you want to be surprised when I'm mad.",
+      "label": "legitimate",
+      "group": "andthatistheproblemyouwalkarou",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Take care and sleep well.you need to learn to change in life.you only need to get CONVINCED on that.i will wait but no more conversations between us.GET CONVINCED by that time.Your family is over for you in many senses.respect them but not overemphasise.or u have no role in my life.",
+      "label": "legitimate",
+      "group": "takecareandsleepwellyouneedtol",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "My house here e sky quite dark liao... If raining then got excuse not 2 run already rite... Hee...",
+      "label": "legitimate",
+      "group": "myhousehereeskyquitedarkliaoif",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I AM AT THE GAS STATION. GO THERE.",
+      "label": "legitimate",
+      "group": "iamatthegasstationgothere",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yeah I imagine he would be really gentle. Unlike the other docs who treat their patients like turkeys.",
+      "label": "legitimate",
+      "group": "yeahiimaginehewouldbereallygen",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I'm at work. Please call",
+      "label": "legitimate",
+      "group": "imatworkpleasecall",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I am not sure about night menu. . . I know only about noon menu",
+      "label": "legitimate",
+      "group": "iamnotsureaboutnightmenuiknowo",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "(I should add that I don't really care and if you can't I can at least get this dude to fuck off but hey, your money if you want it)",
+      "label": "legitimate",
+      "group": "ishouldaddthatidontreallycarea",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "FreeMsg: Txt: CALL to No: 86888 & claim your reward of 3 hours talk time to use from your phone now! Subscribe6GBP/mnth inc 3hrs 16 stop?txtStop",
+      "label": "spam",
+      "group": "freemsgtxtcalltono86888claimyo",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hui xin is in da lib.",
+      "label": "legitimate",
+      "group": "huixinisindalib",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Allo! We have braved the buses and taken on the trains and triumphed. I mean we\u2018re in b\u2018ham. Have a jolly good rest of week",
+      "label": "legitimate",
+      "group": "allowehavebravedthebusesandtak",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Guess what! Somebody you know secretly fancies you! Wanna find out who it is? Give us a call on [PHONE] From Landline DATEBox1282EssexCM61XN 150p/min 18",
+      "label": "spam",
+      "group": "guesswhatsomebodyyouknowsecret",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Guess what! Somebody you know secretly fancies you! Wanna find out who it is? Give us a call on [PHONE] from Landline DATEBox1282EssexCM61XN 150p/min 18",
+      "label": "spam",
+      "group": "guesswhatsomebodyyouknowsecret",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Jus finish watching tv... U?",
+      "label": "legitimate",
+      "group": "jusfinishwatchingtvu",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "BSES Rajdhani notice: Electricity supply disconnection notice generated for CA 100982345. Call power controller [PHONE] or your power supply will be cut off within 1 hour.",
+      "label": "phishing",
+      "group": "bsesrajdhaninoticeelectricitys",
+      "source": "cert_in_i4c_curated",
+      "split": "test"
+    },
+    {
+      "content": "Great. Never been better. Each day gives even more reasons to thank God",
+      "label": "legitimate",
+      "group": "greatneverbeenbettereachdaygiv",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Er, hello, things didn\u2018t quite go to plan \u2013 is limping slowly home followed by aa and with exhaust hanging off",
+      "label": "legitimate",
+      "group": "erhellothingsdidntquitegotopla",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "It's ok i wun b angry. Msg u aft i come home tonight.",
+      "label": "legitimate",
+      "group": "itsokiwunbangrymsguafticomehom",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "A few people are at the game, I'm at the mall with iouri and kaila",
+      "label": "legitimate",
+      "group": "afewpeopleareatthegameimatthem",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Networking job is there.",
+      "label": "legitimate",
+      "group": "networkingjobisthere",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "First has she gained more than &lt;#&gt; kg since she took in. Second has she done the blood sugar tests. If she has and its ok and her blood pressure is within normal limits then no worries",
+      "label": "legitimate",
+      "group": "firsthasshegainedmorethanltgtk",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Do u noe how 2 send files between 2 computers?",
+      "label": "legitimate",
+      "group": "dounoehow2sendfilesbetween2com",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hi mate its RV did u hav a nice hol just a message 3 say hello coz haven\u0092t sent u 1 in ages started driving so stay off roads!RVx",
+      "label": "legitimate",
+      "group": "himateitsrvdiduhavaniceholjust",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Pls send me the correct name da.",
+      "label": "legitimate",
+      "group": "plssendmethecorrectnameda",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hey gals.. Anyone of u going down to e driving centre tmr?",
+      "label": "legitimate",
+      "group": "heygalsanyoneofugoingdowntoedr",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "By the way, make sure u get train to worc foregate street not shrub hill. Have fun night x",
+      "label": "legitimate",
+      "group": "bythewaymakesureugettraintowor",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yeah whatever lol",
+      "label": "legitimate",
+      "group": "yeahwhateverlol",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "When did dad get back.",
+      "label": "legitimate",
+      "group": "whendiddadgetback",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Anything lor if they all go then i go lor...",
+      "label": "legitimate",
+      "group": "anythingloriftheyallgothenigol",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Call me when u're done...",
+      "label": "legitimate",
+      "group": "callmewhenuredone",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "At what time are you coming.",
+      "label": "legitimate",
+      "group": "atwhattimeareyoucoming",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Welp apparently he retired",
+      "label": "legitimate",
+      "group": "welpapparentlyheretired",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Give me a sec to think think about it",
+      "label": "legitimate",
+      "group": "givemeasectothinkthinkaboutit",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Alright omw, gotta change my order to a half8th",
+      "label": "legitimate",
+      "group": "alrightomwgottachangemyorderto",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "That's good, because I need drugs",
+      "label": "legitimate",
+      "group": "thatsgoodbecauseineeddrugs",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Meet after lunch la...",
+      "label": "legitimate",
+      "group": "meetafterlunchla",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Happy or sad , one thing about past is- \"Its no more\" GOOD MORNING :-):-).",
+      "label": "legitimate",
+      "group": "happyorsadonethingaboutpastisi",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Do you want a new Video phone? 600 anytime any network mins 400 Inclusive Video calls AND downloads 5 per week Free delTOMORROW call [PHONE] or reply NOW",
+      "label": "spam",
+      "group": "doyouwantanewvideophone600anyt",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hahaha..use your brain dear",
+      "label": "legitimate",
+      "group": "hahahauseyourbraindear",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hmm...my uncle just informed me that he's paying the school directly. So pls buy food.",
+      "label": "legitimate",
+      "group": "hmmmyunclejustinformedmethathe",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "DO U WANT 2 MEET UP 2MORRO",
+      "label": "legitimate",
+      "group": "douwant2meetup2morro",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Got what it takes 2 take part in the WRC Rally in Oz? U can with Lucozade Energy! Text RALLY LE to 61200 (25p), see packs or lucozade.co.uk/wrc & itcould be u!",
+      "label": "spam",
+      "group": "gotwhatittakes2takepartinthewr",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "If i said anything wrong sorry de:-)",
+      "label": "legitimate",
+      "group": "ifisaidanythingwrongsorryde",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "FREE MESSAGE Activate your 500 FREE Text Messages by replying to this message with the word FREE For terms & conditions, visit www.[PHONE].com",
+      "label": "spam",
+      "group": "freemessageactivateyour500free",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hey i booked the kb on sat already... what other lessons are we going for ah? Keep your sat night free we need to meet and confirm our lodging",
+      "label": "legitimate",
+      "group": "heyibookedthekbonsatalreadywha",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "No b4 Thursday",
+      "label": "legitimate",
+      "group": "nob4thursday",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "As per your request 'Maangalyam (Alaipayuthe)' has been set as your callertune for all Callers. Press *9 to copy your friends Callertune",
+      "label": "legitimate",
+      "group": "asperyourrequestmaangalyamalai",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hey babe, my friend had to cancel, still up for a visit ?",
+      "label": "legitimate",
+      "group": "heybabemyfriendhadtocancelstil",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I'll text you when I drop x off",
+      "label": "legitimate",
+      "group": "illtextyouwhenidropxoff",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Nan sonathaya soladha. Why boss?",
+      "label": "legitimate",
+      "group": "nansonathayasoladhawhyboss",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Nope... Juz off from work...",
+      "label": "legitimate",
+      "group": "nopejuzofffromwork",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Darren was saying dat if u meeting da ge den we dun meet 4 dinner. Cos later u leave xy will feel awkward. Den u meet him 4 lunch lor.",
+      "label": "legitimate",
+      "group": "darrenwassayingdatifumeetingda",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I've got it down to a tea. not sure which flavour",
+      "label": "legitimate",
+      "group": "ivegotitdowntoateanotsurewhich",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Send to someone else :-)",
+      "label": "legitimate",
+      "group": "sendtosomeoneelse",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I'm not sure if its still available though",
+      "label": "legitimate",
+      "group": "imnotsureifitsstillavailableth",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Am going to take bath ill place the key in window:-)",
+      "label": "legitimate",
+      "group": "amgoingtotakebathillplacetheke",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Your weekly Cool-Mob tones are ready to download !This weeks new Tones include: 1) Crazy Frog-AXEL F>>> 2) Akon-Lonely>>> 3) Black Eyed-Dont P >>>More info in n",
+      "label": "spam",
+      "group": "yourweeklycoolmobtonesareready",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "K come to nordstrom when you're done",
+      "label": "legitimate",
+      "group": "kcometonordstromwhenyouredone",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Arms fine, how's Cardiff and uni?",
+      "label": "legitimate",
+      "group": "armsfinehowscardiffanduni",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Congratulations! Thanks to a good friend U have WON the \u00a32,000 Xmas prize. 2 claim is easy, just call [PHONE] NOW! Only 10p per minute. BT-national-rate.",
+      "label": "spam",
+      "group": "congratulationsthankstoagoodfr",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Congratulations - Thanks to a good friend U have WON the \u00a32,000 Xmas prize. 2 claim is easy, just call [PHONE] NOW! Only 10p per minute. BT-national-rate",
+      "label": "spam",
+      "group": "congratulationsthankstoagoodfr",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Congratulations! Thanks to a good friend U have WON the \u00a32,000 Xmas prize. 2 claim is easy, just call [PHONE] NOW! Only 10p per minute. BT-national-rate",
+      "label": "spam",
+      "group": "congratulationsthankstoagoodfr",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Just dropped em off, omw back now",
+      "label": "legitimate",
+      "group": "justdroppedemoffomwbacknow",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Save money on wedding lingerie at www.bridal.petticoatdreams.co.uk Choose from a superb selection with national delivery. Brought to you by WeddingFriend",
+      "label": "spam",
+      "group": "savemoneyonweddinglingerieatww",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "By the way, i've put a skip right outside the front of the house so you can see which house it is. Just pull up before it.",
+      "label": "legitimate",
+      "group": "bythewayiveputaskiprightoutsid",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Come to me, slave. Your doing it again ... Going into your shell and unconsciously avoiding me ... You are making me unhappy :-(",
+      "label": "legitimate",
+      "group": "cometomeslaveyourdoingitagaing",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I tot it's my group mate... Lucky i havent reply... Wat time do \u00fc need to leave...",
+      "label": "legitimate",
+      "group": "itotitsmygroupmateluckyihavent",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "URGENT! We are trying to contact you. Last weekends draw shows that you have won a \u00a3900 prize GUARANTEED. Call [PHONE]. Claim code S89. Valid 12hrs only",
+      "label": "spam",
+      "group": "urgentwearetryingtocontactyoul",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "URGENT! We are trying to contact you. Last weekends draw shows that you have won a \u00a3900 prize GUARANTEED. Call [PHONE]. Claim code K61. Valid 12hours only",
+      "label": "spam",
+      "group": "urgentwearetryingtocontactyoul",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "URGENT We are trying to contact you Last weekends draw shows u have won a \u00a31000 prize GUARANTEED Call [PHONE] Claim code K52 Valid 12hrs 150p pm",
+      "label": "spam",
+      "group": "urgentwearetryingtocontactyoul",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "WELL DONE! Your 4* Costa Del Sol Holiday or \u00a35000 await collection. Call [PHONE] Now toClaim. SAE, TCs, POBox334, Stockport, SK38xh, Cost\u00a31.50/pm, Max10mins",
+      "label": "spam",
+      "group": "welldoneyour4costadelsolholida",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I'm gonna rip out my uterus.",
+      "label": "legitimate",
+      "group": "imgonnaripoutmyuterus",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "O ic lol. Should play 9 doors sometime yo",
+      "label": "legitimate",
+      "group": "oiclolshouldplay9doorssometime",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I'm turning off my phone. My moms telling everyone I have cancer. And my sister won't stop calling. It hurts to talk. Can't put up with it. See u when u get home. Love u",
+      "label": "legitimate",
+      "group": "imturningoffmyphonemymomstelli",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ill be there on &lt;#&gt; ok.",
+      "label": "legitimate",
+      "group": "illbethereonltgtok",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hey gorgeous man. My work mobile number is. Have a good one babe. Squishy Mwahs.",
+      "label": "legitimate",
+      "group": "heygorgeousmanmyworkmobilenumb",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "My phone",
+      "label": "legitimate",
+      "group": "myphone",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Pandy joined 4w technologies today.he got job..",
+      "label": "legitimate",
+      "group": "pandyjoined4wtechnologiestoday",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ok.. \u00dc finishing soon?",
+      "label": "legitimate",
+      "group": "okfinishingsoon",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Only once then after ill obey all yours.",
+      "label": "legitimate",
+      "group": "onlyoncethenafterillobeyallyou",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I sent lanre fakeye's Eckankar details to the mail box",
+      "label": "legitimate",
+      "group": "isentlanrefakeyeseckankardetai",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Meeting u is my work. . . Tel me when shall i do my work tomorrow",
+      "label": "legitimate",
+      "group": "meetinguismyworktelmewhenshall",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Mm umma ask vava also to come tell him can play later together",
+      "label": "legitimate",
+      "group": "mmummaaskvavaalsotocometellhim",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "And miss vday the parachute and double coins??? U must not know me very well...",
+      "label": "legitimate",
+      "group": "andmissvdaytheparachuteanddoub",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Well the weather in cali's great. But its complexities are great. You need a car to move freely, its taxes are outrageous. But all in all its a great place. The sad part is i missing home.",
+      "label": "legitimate",
+      "group": "welltheweatherincalisgreatbuti",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Greetings me, ! Consider yourself excused.",
+      "label": "legitimate",
+      "group": "greetingsmeconsideryourselfexc",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "How are you enjoying this semester? Take care brother.",
+      "label": "legitimate",
+      "group": "howareyouenjoyingthissemestert",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Are you ok. What happen to behave like this",
+      "label": "legitimate",
+      "group": "areyouokwhathappentobehavelike",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "DO NOT B LATE LOVE MUM",
+      "label": "legitimate",
+      "group": "donotblatelovemum",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Thinkin about someone is all good. No drugs for that",
+      "label": "legitimate",
+      "group": "thinkinaboutsomeoneisallgoodno",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Any pain on urination any thing else?",
+      "label": "legitimate",
+      "group": "anypainonurinationanythingelse",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hello.How u doing?What u been up 2?When will u b moving out of the flat, cos I will need to arrange to pick up the lamp, etc. Take care. Hello caroline!",
+      "label": "legitimate",
+      "group": "hellohowudoingwhatubeenup2when",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Text her. If she doesnt reply let me know so i can have her log in",
+      "label": "legitimate",
+      "group": "textherifshedoesntreplyletmekn",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Two teams waiting for some players",
+      "label": "legitimate",
+      "group": "twoteamswaitingforsomeplayers",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "There are many company. Tell me the language.",
+      "label": "legitimate",
+      "group": "therearemanycompanytellmethela",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Sir, I am waiting for your mail.",
+      "label": "legitimate",
+      "group": "siriamwaitingforyourmail",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "HI DARLIN I HOPE YOU HAD A NICE NIGHT I WISH I HAD COME CANT WAIT TO SEE YOU LOVE FRAN PS I WANT DIRTY ANAL SEX AND I WANT A 10 MAN GANG BANG",
+      "label": "legitimate",
+      "group": "hidarlinihopeyouhadanicenighti",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I don,t think so. You don't need to be going out that late on a school night. ESPECIALLY when the one class you have is the one you missed last wednesday and probably failed a test in on friday",
+      "label": "legitimate",
+      "group": "idontthinksoyoudontneedtobegoi",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Oh for fuck's sake she's in like tallahassee",
+      "label": "legitimate",
+      "group": "ohforfuckssakeshesinliketallah",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Today my system sh get ready.all is well and i am also in the deep well",
+      "label": "legitimate",
+      "group": "todaymysystemshgetreadyalliswe",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "So what about you. What do you remember",
+      "label": "legitimate",
+      "group": "sowhataboutyouwhatdoyouremembe",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hi Chikku, send some nice msgs",
+      "label": "legitimate",
+      "group": "hichikkusendsomenicemsgs",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "How would my ip address test that considering my computer isn't a minecraft server",
+      "label": "legitimate",
+      "group": "howwouldmyipaddresstestthatcon",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Cps is causing the outages to conserve energy.",
+      "label": "legitimate",
+      "group": "cpsiscausingtheoutagestoconser",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hiya, had a good day? Have you spoken to since the weekend?",
+      "label": "legitimate",
+      "group": "hiyahadagooddayhaveyouspokento",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I always chat with you. In fact i need money can you raise me?",
+      "label": "legitimate",
+      "group": "ialwayschatwithyouinfactineedm",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hey!!! I almost forgot ... Happy B-day babe ! I love ya!!",
+      "label": "legitimate",
+      "group": "heyialmostforgothappybdaybabei",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ahhh. Work. I vaguely remember that! What does it feel like? Lol",
+      "label": "legitimate",
+      "group": "ahhhworkivaguelyrememberthatwh",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Thought praps you meant another one. Goodo! I'll look tomorrow",
+      "label": "legitimate",
+      "group": "thoughtprapsyoumeantanotherone",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Oh! Shit, I thought that was your trip! Loooooool ... That just makes SO much more sense now ... *grins* and the sofa reference was ... The \"sleep on a couch\" link you sent me ... Wasn't that how you went on your trip ? Oh ... And didn't your babe go with you for that celebration with your rents?",
+      "label": "legitimate",
+      "group": "ohshitithoughtthatwasyourtripl",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yes! I am a one woman man! Please tell me your likes and dislikes in bed...",
+      "label": "legitimate",
+      "group": "yesiamaonewomanmanpleasetellme",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Dear Subscriber ur draw 4 \u00a3100 gift voucher will b entered on receipt of a correct ans. When was Elvis Presleys Birthday? TXT answer to 80062",
+      "label": "spam",
+      "group": "dearsubscriberurdraw4100giftvo",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Sorry light turned green, I meant another friend wanted &lt;#&gt; worth but he may not be around",
+      "label": "legitimate",
+      "group": "sorrylightturnedgreenimeantano",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Not really dude, have no friends i'm afraid :(",
+      "label": "legitimate",
+      "group": "notreallydudehavenofriendsimaf",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Noice. Text me when you're here",
+      "label": "legitimate",
+      "group": "noicetextmewhenyourehere",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Have a nice day my dear.",
+      "label": "legitimate",
+      "group": "haveanicedaymydear",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "That's y u haf 2 keep me busy...",
+      "label": "legitimate",
+      "group": "thatsyuhaf2keepmebusy",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "A little. Meds say take once every 8 hours. It's only been 5 but pain is back. So I took another. Hope I don't die",
+      "label": "legitimate",
+      "group": "alittlemedssaytakeonceevery8ho",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "We don call like &lt;#&gt; times oh. No give us hypertension oh.",
+      "label": "legitimate",
+      "group": "wedoncalllikeltgttimesohnogive",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "XCLUSIVE@CLUBSAISAI 2MOROW 28/5 SOIREE SPECIALE ZOUK WITH NICHOLS FROM PARIS.FREE ROSES 2 ALL LADIES !!! info: [PHONE]/[PHONE]",
+      "label": "spam",
+      "group": "xclusiveclubsaisai2morow285soi",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "U should make a fb list",
+      "label": "legitimate",
+      "group": "ushouldmakeafblist",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Nothin comes to my mind. \u00dc help me buy hanger lor. Ur laptop not heavy?",
+      "label": "legitimate",
+      "group": "nothincomestomymindhelpmebuyha",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Erm... Woodland avenue somewhere. Do you get the parish magazine, his telephone number will be in there.",
+      "label": "legitimate",
+      "group": "ermwoodlandavenuesomewheredoyo",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Waaaat?? Lololo ok next time then!",
+      "label": "legitimate",
+      "group": "waaaatlololooknexttimethen",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I'm not coming over, do whatever you want",
+      "label": "legitimate",
+      "group": "imnotcomingoverdowhateveryouwa",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Huh y lei...",
+      "label": "legitimate",
+      "group": "huhylei",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Wait 2 min..stand at bus stop",
+      "label": "legitimate",
+      "group": "wait2minstandatbusstop",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Miles and smiles r made frm same letters but do u know d difference..? smile on ur face keeps me happy even though I am miles away from u.. :-)keep smiling.. Good nyt",
+      "label": "legitimate",
+      "group": "milesandsmilesrmadefrmsamelett",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "U coming 2 pick me?",
+      "label": "legitimate",
+      "group": "ucoming2pickme",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Sorry i missed your call. Can you please call back.",
+      "label": "legitimate",
+      "group": "sorryimissedyourcallcanyouplea",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Huh so late... Fr dinner?",
+      "label": "legitimate",
+      "group": "huhsolatefrdinner",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Dont search love, let love find U. Thats why its called falling in love, bcoz U dont force yourself, U just fall and U know there is smeone to hold U... BSLVYL",
+      "label": "legitimate",
+      "group": "dontsearchloveletlovefinduthat",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ur TONEXS subscription has been renewed and you have been charged \u00a34.50. You can choose 10 more polys this month. www.clubzed.co.uk *BILLING MSG*",
+      "label": "spam",
+      "group": "urtonexssubscriptionhasbeenren",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "K k:) sms chat with me.",
+      "label": "legitimate",
+      "group": "kksmschatwithme",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Wishing you and your family Merry \"X\" mas and HAPPY NEW Year in advance..",
+      "label": "legitimate",
+      "group": "wishingyouandyourfamilymerryxm",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Aight, I'll hit you up when I get some cash",
+      "label": "legitimate",
+      "group": "aightillhityouupwhenigetsomeca",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "No. Its not specialisation. Can work but its slave labor. Will look for it this month sha cos no shakara 4 beggar.",
+      "label": "legitimate",
+      "group": "noitsnotspecialisationcanworkb",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Bill, as in: Are there any letters for me. i\u2019m expecting one from orange that isn\u2019t a bill but may still say orange on it.",
+      "label": "legitimate",
+      "group": "billasinarethereanylettersform",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Can i meet \u00fc at 5.. As 4 where depends on where \u00fc wan 2 in lor..",
+      "label": "legitimate",
+      "group": "canimeetat5as4wheredependsonwh",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Lol great now im getting hungry.",
+      "label": "legitimate",
+      "group": "lolgreatnowimgettinghungry",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hey I am really horny want to chat or see me naked text hot to 69698 text charged at 150pm to unsubscribe text stop 69698",
+      "label": "spam",
+      "group": "heyiamreallyhornywanttochators",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hi Harish's rent has been transfred to ur Acnt.",
+      "label": "legitimate",
+      "group": "hiharishsrenthasbeentransfredt",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yeah, that's fine! It's \u00a36 to get in, is that ok?",
+      "label": "legitimate",
+      "group": "yeahthatsfineits6togetinisthat",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Kallis wont bat in 2nd innings.",
+      "label": "legitimate",
+      "group": "kalliswontbatin2ndinnings",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Beautiful Truth against Gravity.. Read carefully: \"Our heart feels light when someone is in it.. But it feels very heavy when someone leaves it..\" GOOD NIGHT",
+      "label": "legitimate",
+      "group": "beautifultruthagainstgravityre",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Beautiful Truth against Gravity.. Read carefully: \"Our heart feels light when someone is in it.. But it feels very heavy when someone leaves it..\" GOODMORNING",
+      "label": "legitimate",
+      "group": "beautifultruthagainstgravityre",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Just so that you know,yetunde hasn't sent money yet. I just sent her a text not to bother sending. So its over, you dont have to involve yourself in anything. I shouldn't have imposed anything on you in the first place so for that, i apologise.",
+      "label": "legitimate",
+      "group": "justsothatyouknowyetundehasnts",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Wish u many many returns of the day.. Happy birthday vikky..",
+      "label": "legitimate",
+      "group": "wishumanymanyreturnsofthedayha",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Talk sexy!! Make new friends or fall in love in the worlds most discreet text dating service. Just text VIP to 83110 and see who you could meet.",
+      "label": "spam",
+      "group": "talksexymakenewfriendsorfallin",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Xmas & New Years Eve tickets are now on sale from the club, during the day from 10am till 8pm, and on Thurs, Fri & Sat night this week. They're selling fast!",
+      "label": "spam",
+      "group": "xmasnewyearseveticketsarenowon",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "U reach orchard already? U wan 2 go buy tickets first?",
+      "label": "legitimate",
+      "group": "ureachorchardalreadyuwan2gobuy",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I want to show you the world, princess :) how about europe?",
+      "label": "legitimate",
+      "group": "iwanttoshowyoutheworldprincess",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Probably gonna swing by in a wee bit",
+      "label": "legitimate",
+      "group": "probablygonnaswingbyinaweebit",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I am on the way to ur home",
+      "label": "legitimate",
+      "group": "iamonthewaytourhome",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Your gonna be the death if me. I'm gonna leave a note that says its all robs fault. Avenge me.",
+      "label": "legitimate",
+      "group": "yourgonnabethedeathifmeimgonna",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I did. One slice and one breadstick. Lol",
+      "label": "legitimate",
+      "group": "ididonesliceandonebreadsticklo",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I need an 8th but I'm off campus atm, could I pick up in an hour or two?",
+      "label": "legitimate",
+      "group": "ineedan8thbutimoffcampusatmcou",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ok i found dis pierre cardin one which looks normal costs 20 its on sale.",
+      "label": "legitimate",
+      "group": "okifounddispierrecardinonewhic",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "do u think that any girl will propose u today by seing ur bloody funky shit fucking face...............asssssholeeee................",
+      "label": "legitimate",
+      "group": "douthinkthatanygirlwillpropose",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hello- thanx for taking that call. I got a job! Starts on monday!",
+      "label": "legitimate",
+      "group": "hellothanxfortakingthatcalligo",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "semantics 1 ) p . m . bertinetto , v . bianchi , j . higginbotham , m . squartini ( eds . ) : temporal reference , aspect , and actionality . vol . 1 : semantic and syntactic perspectives . pb : 250pp",
+      "label": "legitimate",
+      "group": "semantics1pmbertinettovbianchi",
+      "source": "verified_review",
+      "split": "test"
+    },
+    {
+      "content": "Yeah I'll try to scrounge something up",
+      "label": "legitimate",
+      "group": "yeahilltrytoscroungesomethingu",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Haha yeah I see that now, be there in a sec",
+      "label": "legitimate",
+      "group": "hahayeahiseethatnowbethereinas",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "if you aren't here in the next &lt;#&gt; hours imma flip my shit",
+      "label": "legitimate",
+      "group": "ifyouarenthereinthenextltgthou",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "No drama Pls.i have had enough from you and family while i am struggling in the hot sun in a strange place.No reason why there should be an ego of not going 'IF NOT INVITED' when actually its necessity to go.wait for very serious reppurcussions.",
+      "label": "legitimate",
+      "group": "nodramaplsihavehadenoughfromyo",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Designation is software developer and may be she get chennai:)",
+      "label": "legitimate",
+      "group": "designationissoftwaredeveloper",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Thanx 4 the time we\u0092ve spent 2geva, its bin mint! Ur my Baby and all I want is u!xxxx",
+      "label": "legitimate",
+      "group": "thanx4thetimewevespent2gevaits",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Dnt worry...use ice pieces in a cloth pack.also take 2 tablets.",
+      "label": "legitimate",
+      "group": "dntworryuseicepiecesinaclothpa",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Nothing really, just making sure everybody's up to speed",
+      "label": "legitimate",
+      "group": "nothingreallyjustmakingsureeve",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Are you planning to come chennai?",
+      "label": "legitimate",
+      "group": "areyouplanningtocomechennai",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "She ran off with a younger man. we will make pretty babies together :)",
+      "label": "legitimate",
+      "group": "sheranoffwithayoungermanwewill",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "No. I dont want to hear anything",
+      "label": "legitimate",
+      "group": "noidontwanttohearanything",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "You have been specially selected to receive a 2000 pound award! Call [PHONE] BEFORE the lines close. Cost 10ppm. 16+. T&Cs apply. AG Promo",
+      "label": "spam",
+      "group": "youhavebeenspeciallyselectedto",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "You have been specially selected to receive a \"3000 award! Call [PHONE] BEFORE the lines close. Cost 10ppm. 16+. T&Cs apply. AG Promo",
+      "label": "spam",
+      "group": "youhavebeenspeciallyselectedto",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Babe ? I lost you ... Will you try rebooting ?",
+      "label": "legitimate",
+      "group": "babeilostyouwillyoutryrebootin",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Are you up for the challenge? I know i am :)",
+      "label": "legitimate",
+      "group": "areyouupforthechallengeiknowia",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "And now electricity just went out fml.",
+      "label": "legitimate",
+      "group": "andnowelectricityjustwentoutfm",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yes princess! I want to please you every night. Your wish is my command...",
+      "label": "legitimate",
+      "group": "yesprincessiwanttopleaseyoueve",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hey. What happened? U switch off ur cell d whole day. This isnt good. Now if u do care, give me a call tomorrow.",
+      "label": "legitimate",
+      "group": "heywhathappeneduswitchoffurcel",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Thursday night? Yeah, sure thing, we'll work it out then",
+      "label": "legitimate",
+      "group": "thursdaynightyeahsurethingwell",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "My friend just got here and says he's upping his order by a few grams (he's got $ &lt;#&gt; ), when can you get here?",
+      "label": "legitimate",
+      "group": "myfriendjustgothereandsayshesu",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Boo I'm on my way to my moms. She's making tortilla soup. Yummmm",
+      "label": "legitimate",
+      "group": "booimonmywaytomymomsshesmaking",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Carlos says he'll be at mu in &lt;#&gt; minutes",
+      "label": "legitimate",
+      "group": "carlossayshellbeatmuinltgtminu",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Networking technical support associate.",
+      "label": "legitimate",
+      "group": "networkingtechnicalsupportasso",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Sent me ur email id soon",
+      "label": "legitimate",
+      "group": "sentmeuremailidsoon",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ron say fri leh. N he said ding tai feng cant make reservations. But he said wait lor.",
+      "label": "legitimate",
+      "group": "ronsayfrilehnhesaiddingtaifeng",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Dear where you. Call me",
+      "label": "legitimate",
+      "group": "dearwhereyoucallme",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Just looked it up and addie goes back Monday, sucks to be her",
+      "label": "legitimate",
+      "group": "justlookeditupandaddiegoesback",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yupz... I've oredi booked slots 4 my weekends liao...",
+      "label": "legitimate",
+      "group": "yupziveoredibookedslots4myweek",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "How come she can get it? Should b quite diff to guess rite...",
+      "label": "legitimate",
+      "group": "howcomeshecangetitshouldbquite",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I'm ok wif it cos i like 2 try new things. But i scared u dun like mah. Cos u said not too loud.",
+      "label": "legitimate",
+      "group": "imokwifitcosilike2trynewthings",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "How to Make a girl Happy? It's not at all difficult to make girls happy. U only need to be... 1. A friend 2. Companion 3. Lover 4. Chef . . . &lt;#&gt; . Good listener &lt;#&gt; . Organizer &lt;#&gt; . Good boyfriend &lt;#&gt; . Very clean &lt;#&gt; . Sympathetic &lt;#&gt; . Athletic &lt;#&gt; . Warm . . . &lt;#&gt; . Courageous &lt;#&gt; . Determined &lt;#&gt; . True &lt;#&gt; . Dependable &lt;#&gt; . Intelligent . . . &lt;#&gt; . Psychologist &lt;#&gt; . Pest exterminator &lt;#&gt; . Psychiatrist &lt;#&gt; . Healer . . &lt;#&gt; . Stylist &lt;#&gt; . Driver . . Aaniye pudunga venaam..",
+      "label": "legitimate",
+      "group": "howtomakeagirlhappyitsnotatall",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Wat makes u thk i'll fall down. But actually i thk i'm quite prone 2 falls. Lucky my dad at home i ask him come n fetch me already.",
+      "label": "legitimate",
+      "group": "watmakesuthkillfalldownbutactu",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Get down in gandhipuram and walk to cross cut road. Right side &lt;#&gt; street road and turn at first right.",
+      "label": "legitimate",
+      "group": "getdowningandhipuramandwalktoc",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "It does it on its own. Most of the time it fixes my spelling. But sometimes it gets a completely diff word. Go figure",
+      "label": "legitimate",
+      "group": "itdoesitonitsownmostofthetimei",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "You all ready for * big day tomorrow?",
+      "label": "legitimate",
+      "group": "youallreadyforbigdaytomorrow",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Is avatar supposed to have subtoitles",
+      "label": "legitimate",
+      "group": "isavatarsupposedtohavesubtoitl",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Where u been hiding stranger?",
+      "label": "legitimate",
+      "group": "whereubeenhidingstranger",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "naughty little thought: 'its better to flirt, flirt n flirt, rather than loving someone n gettin hurt, hurt n hurt...:-) Gud nyt",
+      "label": "legitimate",
+      "group": "naughtylittlethoughtitsbettert",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Then i buy.",
+      "label": "legitimate",
+      "group": "thenibuy",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Wow so healthy. Old airport rd lor. Cant thk of anything else. But i'll b bathing my dog later.",
+      "label": "legitimate",
+      "group": "wowsohealthyoldairportrdlorcan",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Is ur changes 2 da report big? Cos i've already made changes 2 da previous report.",
+      "label": "legitimate",
+      "group": "isurchanges2dareportbigcosivea",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hurry up, I've been weed-deficient for like three days",
+      "label": "legitimate",
+      "group": "hurryupivebeenweeddeficientfor",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Is ur lecture over?",
+      "label": "legitimate",
+      "group": "isurlectureover",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Its not the same here. Still looking for a job. How much do Ta's earn there.",
+      "label": "legitimate",
+      "group": "itsnotthesameherestilllookingf",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Lol, oh you got a friend for the dog ?",
+      "label": "legitimate",
+      "group": "lolohyougotafriendforthedog",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hey babe! I saw you came online for a second and then you disappeared, what happened ?",
+      "label": "legitimate",
+      "group": "heybabeisawyoucameonlineforase",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I'm home. Ard wat time will u reach?",
+      "label": "legitimate",
+      "group": "imhomeardwattimewillureach",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Urgent UR awarded a complimentary trip to EuroDisinc Trav, Aco&Entry41 Or \u00a31000. To claim txt DIS to 87121 18+6*\u00a31.50(moreFrmMob. ShrAcomOrSglSuplt)10, LS1 3AJ",
+      "label": "spam",
+      "group": "urgenturawardedacomplimentaryt",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Just sent it. So what type of food do you like?",
+      "label": "legitimate",
+      "group": "justsentitsowhattypeoffooddoyo",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "SBI Alert: OTP for login to SBI NetBanking is 482910. Valid for 3 mins. Never share OTP with anyone including bank officials. SBI never asks for OTP.",
+      "label": "spam",
+      "group": "sbialertotpforlogintosbinetban",
+      "source": "cert_in_i4c_curated",
+      "split": "test"
+    },
+    {
+      "content": "All e best 4 ur driving tmr :-)",
+      "label": "legitimate",
+      "group": "allebest4urdrivingtmr",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Free video camera phones with Half Price line rental for 12 mths and 500 cross ntwk mins 100 txts. Call MobileUpd[PHONE] or Call2OptOut/674&",
+      "label": "spam",
+      "group": "freevideocameraphoneswithhalfp",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Free video camera phones with Half Price line rental for 12 mths and 500 cross ntwk mins 100 txts. Call MobileUpd[PHONE] or Call2OptOut/674",
+      "label": "spam",
+      "group": "freevideocameraphoneswithhalfp",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "HEY THERE BABE, HOW U DOIN? WOT U UP 2 2NITE LOVE ANNIE X.",
+      "label": "legitimate",
+      "group": "heytherebabehowudoinwotuup22ni",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Sorry to trouble u again. Can buy 4d for my dad again? 1405, 1680, 1843. All 2 big 1 small, sat n sun. Thanx.",
+      "label": "legitimate",
+      "group": "sorrytotroubleuagaincanbuy4dfo",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ok ill tell the company",
+      "label": "legitimate",
+      "group": "okilltellthecompany",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Your one-time password (OTP) is 482910 for transaction on Amazon. NEVER share your OTP with anyone. Bank officials will never ask for your OTP.",
+      "label": "spam",
+      "group": "youronetimepasswordotpis482910",
+      "source": "cert_in_i4c_curated",
+      "split": "test"
+    },
+    {
+      "content": "Pathaya enketa maraikara pa'",
+      "label": "legitimate",
+      "group": "pathayaenketamaraikarapa",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Printer is cool. I mean groovy. Wine is groovying",
+      "label": "legitimate",
+      "group": "printeriscoolimeangroovywineis",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Sounds like something that someone testing me would sayy",
+      "label": "legitimate",
+      "group": "soundslikesomethingthatsomeone",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Full heat pa:-) i have applyed oil pa.",
+      "label": "legitimate",
+      "group": "fullheatpaihaveapplyedoilpa",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "1 in cbe. 2 in chennai.",
+      "label": "legitimate",
+      "group": "1incbe2inchennai",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Aight, call me once you're close",
+      "label": "legitimate",
+      "group": "aightcallmeonceyoureclose",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Please sen :)my kind advice :-)please come here and try:-)",
+      "label": "legitimate",
+      "group": "pleasesenmykindadvicepleasecom",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Shop till u Drop, IS IT YOU, either 10K, 5K, \u00a3500 Cash or \u00a3100 Travel voucher, Call now, [PHONE]. NTT PO Box CR01327BT fixedline Cost 150ppm mobile vary",
+      "label": "spam",
+      "group": "shoptilludropisityoueither10k5",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hey... Very inconvenient for your sis a not huh?",
+      "label": "legitimate",
+      "group": "heyveryinconvenientforyoursisa",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Sure but since my parents will be working on Tuesday I don't really need a cover story",
+      "label": "legitimate",
+      "group": "surebutsincemyparentswillbewor",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Buzzzz! *grins* Did I buzz your ass? Buzz your chest ? Buzz your cock ? Where do you keep your phone ? Is the vibrator on ? Did you feel it shake ?",
+      "label": "legitimate",
+      "group": "buzzzzgrinsdidibuzzyourassbuzz",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Edison has rightly said, \"A fool can ask more questions than a wise man can answer\" Now you know why all of us are speechless during ViVa.. GM,GN,GE,GNT:-)",
+      "label": "legitimate",
+      "group": "edisonhasrightlysaidafoolcanas",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hmmm:)how many players selected?",
+      "label": "legitimate",
+      "group": "hmmmhowmanyplayersselected",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hello hun how ru? Its here by the way. Im good. Been on 2 dates with that guy i met in walkabout so far. We have to meet up soon. Hows everyone else?",
+      "label": "legitimate",
+      "group": "hellohunhowruitsherebythewayim",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hi Chachi tried calling u now unable to reach u .. Pl give me a missed cal once u c tiz msg Kanagu",
+      "label": "legitimate",
+      "group": "hichachitriedcallingunowunable",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "S but not able to sleep.",
+      "label": "legitimate",
+      "group": "sbutnotabletosleep",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yo you guys ever figure out how much we need for alcohol? Jay and I are trying to figure out how much we can safely spend on weed",
+      "label": "legitimate",
+      "group": "yoyouguyseverfigureouthowmuchw",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Sorry,in meeting I'll call later",
+      "label": "legitimate",
+      "group": "sorryinmeetingillcalllater",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "on a Tuesday night r u 4 real",
+      "label": "legitimate",
+      "group": "onatuesdaynightru4real",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hey... Why dont we just go watch x men and have lunch... Haha",
+      "label": "legitimate",
+      "group": "heywhydontwejustgowatchxmenand",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Bloomberg -Message center [PHONE] Why wait? Apply for your future http://careers. bloomberg.com",
+      "label": "spam",
+      "group": "bloombergmessagecenterphonewhy",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "URL: http://www.newsisfree.com/click/-4,8279860,215/ Date: 2002-09-26T15:44:55+01:00*The Northerner:* Subscribe to our free email round-up of the best of the northern English press.",
+      "label": "legitimate",
+      "group": "urlhttpwwwnewsisfreecomclick48",
+      "source": "verified_review",
+      "split": "test"
+    },
+    {
+      "content": "You intrepid duo you! Have a great time and see you both soon.",
+      "label": "legitimate",
+      "group": "youintrepidduoyouhaveagreattim",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I'm in class. Did you get my text.",
+      "label": "legitimate",
+      "group": "iminclassdidyougetmytext",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Both :) i shoot big loads so get ready!",
+      "label": "legitimate",
+      "group": "bothishootbigloadssogetready",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Fuck babe ... What happened to you ? How come you never came back?",
+      "label": "legitimate",
+      "group": "fuckbabewhathappenedtoyouhowco",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Its posible dnt live in &lt;#&gt; century cm frwd n thnk different",
+      "label": "legitimate",
+      "group": "itsposibledntliveinltgtcentury",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hi here. have birth at on the to at 8lb 7oz. Mother and baby doing brilliantly.",
+      "label": "legitimate",
+      "group": "hiherehavebirthatonthetoat8lb7",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "U 2.",
+      "label": "legitimate",
+      "group": "u2",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Good afternoon my boytoy. How goes that walking here and there day ? Did you get that police abstract? Are you still out and about? I wake and miss you babe",
+      "label": "legitimate",
+      "group": "goodafternoonmyboytoyhowgoesth",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Tmr then \u00fc brin lar... Aiya later i come n c lar... Mayb \u00fc neva set properly \u00fc got da help sheet wif \u00fc...",
+      "label": "legitimate",
+      "group": "tmrthenbrinlaraiyalatericomenc",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Msgs r not time pass.They silently say that I am thinking of U right now and also making U think of me at least 4 a moment. Gd nt.swt drms @Shesil",
+      "label": "legitimate",
+      "group": "msgsrnottimepasstheysilentlysa",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Please leave this topic..sorry for telling that..",
+      "label": "legitimate",
+      "group": "pleaseleavethistopicsorryforte",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I shall book chez jules for half eight, if that's ok with you?",
+      "label": "legitimate",
+      "group": "ishallbookchezjulesforhalfeigh",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hiya do u like the hlday pics looked horrible in them so took mo out! Hows the camp Amrca thing? Speak soon Serena:)",
+      "label": "legitimate",
+      "group": "hiyadoulikethehldaypicslookedh",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Lol! U drunkard! Just doing my hair at d moment. Yeah still up 4 tonight. Wats the plan?",
+      "label": "legitimate",
+      "group": "loludrunkardjustdoingmyhairatd",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I'll text now! All creepy like so he won't think that we forgot",
+      "label": "legitimate",
+      "group": "illtextnowallcreepylikesohewon",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I can't speak, bcaz mobile have problem. I can listen you but you cann't listen my voice. So i calls you later.",
+      "label": "legitimate",
+      "group": "icantspeakbcazmobilehaveproble",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Cbe is really good nowadays:)lot of shop and showrooms:)city is shaping good.",
+      "label": "legitimate",
+      "group": "cbeisreallygoodnowadayslotofsh",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I'm on my way home. Went to change batt 4 my watch then go shop a bit lor.",
+      "label": "legitimate",
+      "group": "imonmywayhomewenttochangebatt4",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Can you talk with me..",
+      "label": "legitimate",
+      "group": "canyoutalkwithme",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ok i've sent u da latest version of da project.",
+      "label": "legitimate",
+      "group": "okivesentudalatestversionofdap",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Come to my home for one last time i wont do anything. Trust me.",
+      "label": "legitimate",
+      "group": "cometomyhomeforonelasttimeiwon",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I am literally in bed and have been up for like &lt;#&gt; hours",
+      "label": "legitimate",
+      "group": "iamliterallyinbedandhavebeenup",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Good afternoon loverboy ! How goes you day ? Any luck come your way? I think of you, sweetie and send my love across the sea to make you smile and happy",
+      "label": "legitimate",
+      "group": "goodafternoonloverboyhowgoesyo",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Aiya we discuss later lar... Pick \u00fc up at 4 is it?",
+      "label": "legitimate",
+      "group": "aiyawediscusslaterlarpickupat4",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Glad to see your reply.",
+      "label": "legitimate",
+      "group": "gladtoseeyourreply",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Tonight? Yeah, I'd be down for that",
+      "label": "legitimate",
+      "group": "tonightyeahidbedownforthat",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "If I get there before you after your ten billion calls and texts so help me god",
+      "label": "legitimate",
+      "group": "ifigettherebeforeyouafteryourt",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Your account has been credited with 500 FREE Text Messages. To activate, just txt the word: CREDIT to No: 80488 T&Cs www.80488.biz",
+      "label": "spam",
+      "group": "youraccounthasbeencreditedwith",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ok lor... But buy wat?",
+      "label": "legitimate",
+      "group": "oklorbutbuywat",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Eh den sat u book e kb liao huh...",
+      "label": "legitimate",
+      "group": "ehdensatubookekbliaohuh",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I thk \u00fc gotta go home by urself. Cos i'll b going out shopping 4 my frens present.",
+      "label": "legitimate",
+      "group": "ithkgottagohomebyurselfcosillb",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yeah I can still give you a ride",
+      "label": "legitimate",
+      "group": "yeahicanstillgiveyouaride",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ta-Daaaaa! I am home babe, are you still up ?",
+      "label": "legitimate",
+      "group": "tadaaaaaiamhomebabeareyoustill",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Guess he wants alone time. We could just show up and watch when they do..",
+      "label": "legitimate",
+      "group": "guesshewantsalonetimewecouldju",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ur HMV Quiz cash-balance is currently \u00a3500 - to maximize ur cash-in now send HMV1 to 86688 only 150p/msg",
+      "label": "spam",
+      "group": "urhmvquizcashbalanceiscurrentl",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Are you driving or training?",
+      "label": "legitimate",
+      "group": "areyoudrivingortraining",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Urgent! Please call [PHONE] from a landline. \u00a35000 cash or a 4* holiday await collection. T &Cs SAE PO Box 177 M227XY. 16+",
+      "label": "spam",
+      "group": "urgentpleasecallphonefromaland",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ok thanx...",
+      "label": "legitimate",
+      "group": "okthanx",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Do you still have the grinder?",
+      "label": "legitimate",
+      "group": "doyoustillhavethegrinder",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Thank you, winner notified by sms. Good Luck! No future marketing reply STOP to 84122 customer services [PHONE]",
+      "label": "spam",
+      "group": "thankyouwinnernotifiedbysmsgoo",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "its cool but tyler had to take off so we're gonna buy for him and drop it off at his place later tonight. Our total order is a quarter, you got enough?",
+      "label": "legitimate",
+      "group": "itscoolbuttylerhadtotakeoffsow",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Was the actual exam harder than NBME",
+      "label": "legitimate",
+      "group": "wastheactualexamharderthannbme",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hey ! Don't forget ... You are MINE ... For ME ... My possession ... MY property ... MMM ... *childish smile* ...",
+      "label": "legitimate",
+      "group": "heydontforgetyouaremineformemy",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I am taking half day leave bec i am not well",
+      "label": "legitimate",
+      "group": "iamtakinghalfdayleavebeciamnot",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "U guys never invite me anywhere :(",
+      "label": "legitimate",
+      "group": "uguysneverinvitemeanywhere",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hungry gay guys feeling hungry and up 4 it, now. Call [PHONE] just 10p/min. To stop texts call [PHONE] (10p/min)",
+      "label": "spam",
+      "group": "hungrygayguysfeelinghungryandu",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "\"Its Ur luck to Love someone. Its Ur fortune to Love the one who Loves U. But, its a miracle to Love a person who can't Love anyone except U...\" Gud nyt...",
+      "label": "legitimate",
+      "group": "itsurlucktolovesomeoneitsurfor",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "want a nintendo ds ?",
+      "label": "phishing",
+      "group": "wantanintendods",
+      "source": "verified_review",
+      "split": "test"
+    },
+    {
+      "content": "Now get step 2 outta the way. Congrats again.",
+      "label": "legitimate",
+      "group": "nowgetstep2outtathewaycongrats",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "You are right though. I can't give you the space you want and need. This is really starting to become an issue. I was going to suggest setting a definite move out--if i'm still there-- after greece. But maybe you are ready and should do it now.",
+      "label": "legitimate",
+      "group": "youarerightthoughicantgiveyout",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Now, whats your house # again ? And do you have any beer there ?",
+      "label": "legitimate",
+      "group": "nowwhatsyourhouseagainanddoyou",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "S:-)if we have one good partnership going we will take lead:)",
+      "label": "legitimate",
+      "group": "sifwehaveonegoodpartnershipgoi",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "One small prestige problem now.",
+      "label": "legitimate",
+      "group": "onesmallprestigeproblemnow",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "We are hoping to get away by 7, from Langport. You still up for town tonight?",
+      "label": "legitimate",
+      "group": "wearehopingtogetawayby7fromlan",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "hi baby im sat on the bloody bus at the mo and i wont be home until about 7:30 wanna do somethin later? call me later ortxt back jess xx",
+      "label": "legitimate",
+      "group": "hibabyimsatonthebloodybusatthe",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Could you not read me, my Love ? I answered you",
+      "label": "legitimate",
+      "group": "couldyounotreadmemyloveianswer",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Aight should I just plan to come up later tonight?",
+      "label": "legitimate",
+      "group": "aightshouldijustplantocomeupla",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Dear umma she called me now :-)",
+      "label": "legitimate",
+      "group": "dearummashecalledmenow",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ya i knw u vl giv..its ok thanks kano..anyway enjoy wit ur family wit 1st salary..:-);-)",
+      "label": "legitimate",
+      "group": "yaiknwuvlgivitsokthankskanoany",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yo, call me when you get the chance, a friend of mine wanted me to ask you about a big order",
+      "label": "legitimate",
+      "group": "yocallmewhenyougetthechanceafr",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "You'll never believe this but i have actually got off at taunton. Wow",
+      "label": "legitimate",
+      "group": "youllneverbelievethisbutihavea",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "SUPREME COURT OF INDIA: Legal summons #SC-9281 issued against you for contraband smuggling. Non-appearance within 3 hours will result in asset seizure and non-bailable imprisonment.",
+      "label": "phishing",
+      "group": "supremecourtofindialegalsummon",
+      "source": "cert_in_i4c_curated",
+      "split": "test"
+    },
+    {
+      "content": "Yeah, where's your class at?",
+      "label": "legitimate",
+      "group": "yeahwheresyourclassat",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Very hurting n meaningful lines ever: \"I compromised everything for my love, But at d end my love compromised me for everything:-(\".. Gud mornin:-)",
+      "label": "legitimate",
+      "group": "veryhurtingnmeaningfullineseve",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Boo what time u get out? U were supposed to take me shopping today. :(",
+      "label": "legitimate",
+      "group": "boowhattimeugetoutuweresuppose",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "U still havent got urself a jacket ah?",
+      "label": "legitimate",
+      "group": "ustillhaventgoturselfajacketah",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Reply to win \u00a3100 weekly! Where will the 2006 FIFA World Cup be held? Send STOP to 87239 to end service",
+      "label": "spam",
+      "group": "replytowin100weeklywherewillth",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Do \u00fc noe if ben is going?",
+      "label": "legitimate",
+      "group": "donoeifbenisgoing",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Well if I'm that desperate I'll just call armand again",
+      "label": "legitimate",
+      "group": "wellifimthatdesperateilljustca",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Did u turn on the heater? The heater was on and set to &lt;#&gt; degrees.",
+      "label": "legitimate",
+      "group": "diduturnontheheatertheheaterwa",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I couldn't say no as he is a dying man and I feel sad for him so I will go and I just wanted you to know I would probably be gone late into your night",
+      "label": "legitimate",
+      "group": "icouldntsaynoasheisadyingmanan",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "There's no point hangin on to mr not right if he's not makin u happy",
+      "label": "legitimate",
+      "group": "theresnopointhanginontomrnotri",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Do u knw dis no. &lt;#&gt; ?",
+      "label": "legitimate",
+      "group": "douknwdisnoltgt",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Rose needs water, season needs change, poet needs imagination..My phone needs ur sms and i need ur lovely frndship forever....",
+      "label": "legitimate",
+      "group": "roseneedswaterseasonneedschang",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hi the way I was with u 2day, is the normal way&this is the real me. UR unique&I hope I know u 4 the rest of mylife. Hope u find wot was lost.",
+      "label": "legitimate",
+      "group": "hithewayiwaswithu2dayisthenorm",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Dear how is chechi. Did you talk to her",
+      "label": "legitimate",
+      "group": "dearhowischechididyoutalktoher",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Just arrived, see you in a couple days &lt;3",
+      "label": "legitimate",
+      "group": "justarrivedseeyouinacoupledays",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Uncle Abbey! Happy New Year. Abiola",
+      "label": "legitimate",
+      "group": "uncleabbeyhappynewyearabiola",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Nah man, my car is meant to be crammed full of people",
+      "label": "legitimate",
+      "group": "nahmanmycarismeanttobecrammedf",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hey do you want anything to buy:)",
+      "label": "legitimate",
+      "group": "heydoyouwantanythingtobuy",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "From next month get upto 50% More Calls 4 Ur standard network charge 2 activate Call [PHONE] C Wire3.net 1st4Terms PoBox84 M26 3UZ Cost \u00a31.50 min MobcudB more",
+      "label": "spam",
+      "group": "fromnextmonthgetupto50morecall",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Daddy, shu shu is looking 4 u... U wan me 2 tell him u're not in singapore or wat?",
+      "label": "legitimate",
+      "group": "daddyshushuislooking4uuwanme2t",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Internship Selection Notice: Congratulations you are hired as Remote Cybersecurity Intern at Tech Corp. Pay mandatory background verification fee of Rs 1,499 to confirm your offer letter.",
+      "label": "phishing",
+      "group": "internshipselectionnoticecongr",
+      "source": "cert_in_i4c_curated",
+      "split": "test"
+    },
+    {
+      "content": "would u fuckin believe it they didnt know i had thurs pre booked off so they re cancelled me AGAIN! that needs to b sacked",
+      "label": "legitimate",
+      "group": "wouldufuckinbelieveittheydidnt",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "i dnt wnt to tlk wid u",
+      "label": "legitimate",
+      "group": "idntwnttotlkwidu",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Chinatown got porridge, claypot rice, yam cake, fishhead beehoon... Either we eat cheap den go cafe n tok or go nydc or somethin...",
+      "label": "legitimate",
+      "group": "chinatowngotporridgeclaypotric",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "You made my day. Do have a great day too.",
+      "label": "legitimate",
+      "group": "youmademydaydohaveagreatdaytoo",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Then u better go sleep.. Dun disturb u liao.. U wake up then msg me lor..",
+      "label": "legitimate",
+      "group": "thenubettergosleepdundisturbul",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Try to do something dear. You read something for exams",
+      "label": "legitimate",
+      "group": "trytodosomethingdearyoureadsom",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Open rebtel with firefox. When it loads just put plus sign in the user name place, and it will show you two numbers. The lower number is my number. Once you pick that number the pin will display okay!",
+      "label": "legitimate",
+      "group": "openrebtelwithfirefoxwhenitloa",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Block Breaker now comes in deluxe format with new features and great graphics from T-Mobile. Buy for just \u00a35 by replying GET BBDELUXE and take the challenge",
+      "label": "spam",
+      "group": "blockbreakernowcomesindeluxefo",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ya very nice. . .be ready on thursday",
+      "label": "legitimate",
+      "group": "yaverynicebereadyonthursday",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yes I posted a couple of pics on fb. There's still snow outside too. I'm just waking up :)",
+      "label": "legitimate",
+      "group": "yesipostedacoupleofpicsonfbthe",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I'm reaching home in 5 min.",
+      "label": "legitimate",
+      "group": "imreachinghomein5min",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "You tell what happen dont behave like this to me. Ok no need to say",
+      "label": "legitimate",
+      "group": "youtellwhathappendontbehavelik",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Where is that one day training:-)",
+      "label": "legitimate",
+      "group": "whereisthatonedaytraining",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yup ok...",
+      "label": "legitimate",
+      "group": "yupok",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Anything lar then \u00fc not going home 4 dinner?",
+      "label": "legitimate",
+      "group": "anythinglarthennotgoinghome4di",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Dont kick coco when he's down",
+      "label": "legitimate",
+      "group": "dontkickcocowhenhesdown",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "augias , linguistic special issue the recent number 52 of the journal augias has just appeared . it is the first linguistic special issue , edited by volkmar engerer , and contains 3 papers : - volkma",
+      "label": "legitimate",
+      "group": "augiaslinguisticspecialissueth",
+      "source": "verified_review",
+      "split": "test"
+    },
+    {
+      "content": "Ok ill send you with in &lt;DECIMAL&gt; ok.",
+      "label": "legitimate",
+      "group": "okillsendyouwithinltdecimalgto",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I plane to give on this month end.",
+      "label": "legitimate",
+      "group": "iplanetogiveonthismonthend",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "But that's on ebay it might be less elsewhere.",
+      "label": "legitimate",
+      "group": "butthatsonebayitmightbelessels",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "No break time one... How... I come out n get my stuff fr \u00fc?",
+      "label": "legitimate",
+      "group": "nobreaktimeonehowicomeoutngetm",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "\"AH POOR BABY!HOPE URFEELING BETTERSN LUV! PROBTHAT OVERDOSE OF WORK HEY GO CAREFUL SPK 2 U SN LOTS OF LOVEJEN XXX.\"",
+      "label": "legitimate",
+      "group": "ahpoorbabyhopeurfeelingbetters",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ever thought about living a good life with a perfect partner? Just txt back NAME and AGE to join the mobile community. (100p/SMS)",
+      "label": "spam",
+      "group": "everthoughtaboutlivingagoodlif",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Sure, whenever you show the fuck up &gt;:(",
+      "label": "legitimate",
+      "group": "surewheneveryoushowthefuckupgt",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "2nd intl symposium on bilingualism reminder reminder reminder reminder 2nd international symposium on bilingualism ( april , 1999 , newcastle , uk ) details of the symposium and registration form now",
+      "label": "legitimate",
+      "group": "2ndintlsymposiumonbilingualism",
+      "source": "verified_review",
+      "split": "test"
+    },
+    {
+      "content": "Also are you bringing galileo or dobby",
+      "label": "legitimate",
+      "group": "alsoareyoubringinggalileoordob",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Wat would u like 4 ur birthday?",
+      "label": "legitimate",
+      "group": "watwouldulike4urbirthday",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "How much r \u00fc willing to pay?",
+      "label": "legitimate",
+      "group": "howmuchrwillingtopay",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "You call him and tell now infront of them. Call him now.",
+      "label": "legitimate",
+      "group": "youcallhimandtellnowinfrontoft",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Friendship poem: Dear O Dear U R Not Near But I Can Hear Dont Get Fear Live With Cheer No More Tear U R Always my Dear. Gud ni8",
+      "label": "legitimate",
+      "group": "friendshippoemdearodearurnotne",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Jason says it's cool if we pick some up from his place in like an hour",
+      "label": "legitimate",
+      "group": "jasonsaysitscoolifwepicksomeup",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Oic cos me n my sis got no lunch today my dad went out... So dunno whether 2 eat in sch or wat...",
+      "label": "legitimate",
+      "group": "oiccosmenmysisgotnolunchtodaym",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hi i'm Rita !!! READ MY LIPStick !LIVE From Amsterdam !\u00c2 \u00c2 \u00c2 \u00c2 \u00c2 This mail is NEVER sent unsolicited, Got it by error ?[ CLICK HERE ] to be removed from our subscribers List !fuclcxlequtkbfuoeseysgfu",
+      "label": "phishing",
+      "group": "hiimritareadmylipsticklivefrom",
+      "source": "verified_review",
+      "split": "test"
+    },
+    {
+      "content": "K then 2marrow are you coming to class.",
+      "label": "legitimate",
+      "group": "kthen2marrowareyoucomingtoclas",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hi. Hope ur day * good! Back from walk, table booked for half eight. Let me know when ur coming over.",
+      "label": "legitimate",
+      "group": "hihopeurdaygoodbackfromwalktab",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yes.i'm in office da:)",
+      "label": "legitimate",
+      "group": "yesiminofficeda",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Lol I know! They're so dramatic. Schools already closed for tomorrow. Apparently we can't drive in the inch of snow were supposed to get.",
+      "label": "legitimate",
+      "group": "loliknowtheyresodramaticschool",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "XXXMobileMovieClub: To use your credit, click the WAP link in the next txt message or click here>> http://wap. xxxmobilemovieclub.com?n=QJKGIGHJJGCBL",
+      "label": "spam",
+      "group": "xxxmobilemovieclubtouseyourcre",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Well done and ! luv ya all",
+      "label": "legitimate",
+      "group": "welldoneandluvyaall",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Haha awesome, I might need to take you up on that, what you doin tonight?",
+      "label": "legitimate",
+      "group": "hahaawesomeimightneedtotakeyou",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Actually getting ready to leave the house.",
+      "label": "legitimate",
+      "group": "actuallygettingreadytoleavethe",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "U too...",
+      "label": "legitimate",
+      "group": "utoo",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Your gonna have to pick up a $1 burger for yourself on your way home. I can't even move. Pain is killing me.",
+      "label": "legitimate",
+      "group": "yourgonnahavetopickupa1burgerf",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Macha dont feel upset.i can assume your mindset.believe me one evening with me and i have some wonderful plans for both of us.LET LIFE BEGIN AGAIN.call me anytime",
+      "label": "legitimate",
+      "group": "machadontfeelupseticanassumeyo",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "U should have made an appointment",
+      "label": "legitimate",
+      "group": "ushouldhavemadeanappointment",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Am i that much dirty fellow?",
+      "label": "legitimate",
+      "group": "amithatmuchdirtyfellow",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Still i have not checked it da. . .",
+      "label": "legitimate",
+      "group": "stillihavenotcheckeditda",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yay can't wait to party together!",
+      "label": "legitimate",
+      "group": "yaycantwaittopartytogether",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "S:)8 min to go for lunch:)",
+      "label": "legitimate",
+      "group": "s8mintogoforlunch",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "BangBabes Ur order is on the way. U SHOULD receive a Service Msg 2 download UR content. If U do not, GoTo wap. bangb. tv on UR mobile internet/service menu",
+      "label": "spam",
+      "group": "bangbabesurorderisonthewayusho",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "So check your errors and if you had difficulties, do correction.",
+      "label": "legitimate",
+      "group": "socheckyourerrorsandifyouhaddi",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Oh k k:)but he is not a big hitter.anyway good",
+      "label": "legitimate",
+      "group": "ohkkbutheisnotabighitteranyway",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Lol I know! Hey someone did a great inpersonation of flea on the forums. I love it!",
+      "label": "legitimate",
+      "group": "loliknowheysomeonedidagreatinp",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Is that seriously how you spell his name?",
+      "label": "legitimate",
+      "group": "isthatseriouslyhowyouspellhisn",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Forgot you were working today! Wanna chat, but things are ok so drop me a text when you're free / bored etc and i'll ring. Hope all is well, nose essay and all xx",
+      "label": "legitimate",
+      "group": "forgotyouwereworkingtodaywanna",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Do we have any spare power supplies",
+      "label": "legitimate",
+      "group": "dowehaveanysparepowersupplies",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "And do you have any one that can teach me how to ship cars.",
+      "label": "legitimate",
+      "group": "anddoyouhaveanyonethatcanteach",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Sos! Any amount i can get pls.",
+      "label": "legitimate",
+      "group": "sosanyamounticangetpls",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Nite nite pocay wocay luv u more than n e thing 4eva I promise ring u 2morrowxxxx",
+      "label": "legitimate",
+      "group": "nitenitepocaywocayluvumorethan",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "FREE entry into our \u00a3250 weekly competition just text the word WIN to 80086 NOW. 18 T&C www.txttowin.co.uk",
+      "label": "spam",
+      "group": "freeentryintoour250weeklycompe",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Does cinema plus drink appeal tomo? * Is a fr thriller by director i like on at mac at 8.30.",
+      "label": "legitimate",
+      "group": "doescinemaplusdrinkappealtomoi",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "TBS/PERSOLVO. been chasing us since Sept for\u00a338 definitely not paying now thanks to your information. We will ignore them. Kath. Manchester.",
+      "label": "spam",
+      "group": "tbspersolvobeenchasingussinces",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "U buy newspapers already?",
+      "label": "legitimate",
+      "group": "ubuynewspapersalready",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I'm going out to buy mum's present ar.",
+      "label": "legitimate",
+      "group": "imgoingouttobuymumspresentar",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "May i call You later Pls",
+      "label": "legitimate",
+      "group": "mayicallyoulaterpls",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "When u wana see it then",
+      "label": "legitimate",
+      "group": "whenuwanaseeitthen",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "\"ALRITE HUNNY!WOT U UP 2 2NITE? DIDNT END UP GOIN DOWN TOWN JUS DA PUB INSTEAD! JUS CHILLIN AT DA MO IN ME BEDROOM!LOVE JEN XXX.\"",
+      "label": "legitimate",
+      "group": "alritehunnywotuup22nitedidnten",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "There the size of elephant tablets & u shove um up ur ass!!",
+      "label": "legitimate",
+      "group": "therethesizeofelephanttabletsu",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Dear,regret i cudnt pick call.drove down frm ctla now at cochin home.left mobile in car..ente style ishtamayoo?happy bakrid!",
+      "label": "legitimate",
+      "group": "dearregreticudntpickcalldroved",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Good morning pookie pie! Lol hope I didn't wake u up",
+      "label": "legitimate",
+      "group": "goodmorningpookiepielolhopeidi",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Where @",
+      "label": "legitimate",
+      "group": "where",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Stop the story. I've told him i've returned it and he's saying i should not re order it.",
+      "label": "legitimate",
+      "group": "stopthestoryivetoldhimiveretur",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Me not waking up until 4 in the afternoon, sup",
+      "label": "legitimate",
+      "group": "menotwakingupuntil4intheaftern",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I only work from mon to thurs but Sat i cant leh... Booked liao... Which other day u free?",
+      "label": "legitimate",
+      "group": "ionlyworkfrommontothursbutsati",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Jay is snickering and tells me that x is totally fucking up the chords as we speak",
+      "label": "legitimate",
+      "group": "jayissnickeringandtellsmethatx",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hello darlin ive finished college now so txt me when u finish if u can love Kate xxx",
+      "label": "legitimate",
+      "group": "hellodarlinivefinishedcollegen",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": ";-( oh well, c u later",
+      "label": "legitimate",
+      "group": "ohwellculater",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "* FREE* POLYPHONIC RINGTONE Text SUPER to 87131 to get your FREE POLY TONE of the week now! 16 SN PoBox202 NR31 7ZS subscription 450pw",
+      "label": "spam",
+      "group": "freepolyphonicringtonetextsupe",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Thk shld b can... Ya, i wana go 4 lessons... Haha, can go for one whole stretch...",
+      "label": "legitimate",
+      "group": "thkshldbcanyaiwanago4lessonsha",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Not a lot has happened here. Feels very quiet. Beth is at her aunts and charlie is working lots. Just me and helen in at the mo. How have you been?",
+      "label": "legitimate",
+      "group": "notalothashappenedherefeelsver",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Sounds great! Are you home now?",
+      "label": "legitimate",
+      "group": "soundsgreatareyouhomenow",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "If you can make it any time tonight or whenever you can it's cool, just text me whenever you're around",
+      "label": "legitimate",
+      "group": "ifyoucanmakeitanytimetonightor",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "How are you. Just checking up on you",
+      "label": "legitimate",
+      "group": "howareyoujustcheckinguponyou",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Now am free call me pa.",
+      "label": "legitimate",
+      "group": "nowamfreecallmepa",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "It's not that you make me cry. It's just that when all our stuff happens on top of everything else, it pushes me over the edge. You don't underdtand how often i cry over my sorry, sorry life.",
+      "label": "legitimate",
+      "group": "itsnotthatyoumakemecryitsjustt",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "So \u00fc pay first lar... Then when is da stock comin...",
+      "label": "legitimate",
+      "group": "sopayfirstlarthenwhenisdastock",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Sorry, got a late start, we're on the way",
+      "label": "legitimate",
+      "group": "sorrygotalatestartwereontheway",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Oh yes I can speak txt 2 u no! Hmm. Did u get email?",
+      "label": "legitimate",
+      "group": "ohyesicanspeaktxt2unohmmdiduge",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "This is all just creepy and crazy to me.",
+      "label": "legitimate",
+      "group": "thisisalljustcreepyandcrazytom",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Urgent Ur \u00a3500 guaranteed award is still unclaimed! Call [PHONE] NOW closingdate04/09/02 claimcode M39M51 \u00a31.50pmmorefrommobile2Bremoved-MobyPOBox734LS27YF",
+      "label": "spam",
+      "group": "urgentur500guaranteedawardisst",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "And by when you're done I mean now",
+      "label": "legitimate",
+      "group": "andbywhenyouredoneimeannow",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I need to come home and give you some good lovin...",
+      "label": "legitimate",
+      "group": "ineedtocomehomeandgiveyousomeg",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "TELL HER I SAID EAT SHIT.",
+      "label": "legitimate",
+      "group": "tellherisaideatshit",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Come to medical college at 7pm ......forward it da",
+      "label": "legitimate",
+      "group": "cometomedicalcollegeat7pmforwa",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "\u00dc still got lessons? \u00dc in sch?",
+      "label": "legitimate",
+      "group": "stillgotlessonsinsch",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I've sent \u00fc my part..",
+      "label": "legitimate",
+      "group": "ivesentmypart",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "7 lor... Change 2 suntec... Wat time u coming?",
+      "label": "legitimate",
+      "group": "7lorchange2suntecwattimeucomin",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Am only searching for good dual sim mobile pa.",
+      "label": "legitimate",
+      "group": "amonlysearchingforgooddualsimm",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Don no da:)whats you plan?",
+      "label": "legitimate",
+      "group": "donnodawhatsyouplan",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Awesome, I'll see you in a bit",
+      "label": "legitimate",
+      "group": "awesomeillseeyouinabit",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Get ur 1st RINGTONE FREE NOW! Reply to this msg with TONE. Gr8 TOP 20 tones to your phone every week just \u00a31.50 per wk 2 opt out send STOP [PHONE] 16",
+      "label": "spam",
+      "group": "getur1stringtonefreenowreplyto",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Which channel:-):-):):-).",
+      "label": "legitimate",
+      "group": "whichchannel",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "In fact when do you leave? I think addie goes back to school tues or wed",
+      "label": "legitimate",
+      "group": "infactwhendoyouleaveithinkaddi",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Haha... Really oh no... How? Then will they deduct your lesson tmr?",
+      "label": "legitimate",
+      "group": "hahareallyohnohowthenwilltheyd",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Baaaaabe! I misss youuuuu ! Where are you ? I have to go and teach my class at 5 ...",
+      "label": "legitimate",
+      "group": "baaaaabeimisssyouuuuuwherearey",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Sometimes Heart Remembrs someone Very much... Forgets someone soon... Bcoz Heart will not like everyone. But liked ones will be Remembered Everytime... BSLVYL",
+      "label": "legitimate",
+      "group": "sometimesheartremembrssomeonev",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Tell me pa. How is pain de.",
+      "label": "legitimate",
+      "group": "tellmepahowispainde",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Remember on that day..",
+      "label": "legitimate",
+      "group": "rememberonthatday",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Aiyo... Her lesson so early... I'm still sleepin, haha... Okie, u go home liao den confirm w me lor...",
+      "label": "legitimate",
+      "group": "aiyoherlessonsoearlyimstillsle",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "It's wylie, you in tampa or sarasota?",
+      "label": "legitimate",
+      "group": "itswylieyouintampaorsarasota",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "83039 62735=\u00a3450 UK Break AccommodationVouchers terms & conditions apply. 2 claim you mustprovide your claim number which is 15541",
+      "label": "spam",
+      "group": "8303962735450ukbreakaccommodat",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Thanks for your ringtone order, ref number K718. Your mobile will be charged \u00a34.50. Should your tone not arrive please call customer services on [PHONE]",
+      "label": "spam",
+      "group": "thanksforyourringtoneorderrefn",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Thanks for your ringtone order, ref number R836. Your mobile will be charged \u00a34.50. Should your tone not arrive please call customer services on [PHONE]",
+      "label": "spam",
+      "group": "thanksforyourringtoneorderrefn",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Oh k...i'm watching here:)",
+      "label": "legitimate",
+      "group": "ohkimwatchinghere",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Wish i were with you now!",
+      "label": "legitimate",
+      "group": "wishiwerewithyounow",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I dont thnk its a wrong calling between us",
+      "label": "legitimate",
+      "group": "idontthnkitsawrongcallingbetwe",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Oh... Haha... Den we shld had went today too... Gee, nvm la... Kaiez, i dun mind goin jazz oso... Scared hiphop open cant catch up...",
+      "label": "legitimate",
+      "group": "ohhahadenweshldhadwenttodaytoo",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "The Xmas story is peace.. The Xmas msg is love.. The Xmas miracle is jesus.. Hav a blessed month ahead &amp; wish U Merry Xmas...",
+      "label": "legitimate",
+      "group": "thexmasstoryispeacethexmasmsgi",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "You should change your fb to jaykwon thuglyfe falconerf",
+      "label": "legitimate",
+      "group": "youshouldchangeyourfbtojaykwon",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Abeg, make profit. But its a start. Are you using it to get sponsors for the next event?",
+      "label": "legitimate",
+      "group": "abegmakeprofitbutitsastartarey",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yar lor actually we quite fast... Cos da ge slow wat... Haha...",
+      "label": "legitimate",
+      "group": "yarloractuallywequitefastcosda",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "\u00dc neva tell me how i noe... I'm not at home in da aft wat...",
+      "label": "legitimate",
+      "group": "nevatellmehowinoeimnotathomein",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Aight do you still want to get money",
+      "label": "legitimate",
+      "group": "aightdoyoustillwanttogetmoney",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I sent you &lt;#&gt; bucks",
+      "label": "legitimate",
+      "group": "isentyoultgtbucks",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Call FREEPHONE [PHONE] now!",
+      "label": "spam",
+      "group": "callfreephonephonenow",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I don't want you to leave. But i'm barely doing what i can to stay sane. fighting with you constantly isn't helping.",
+      "label": "legitimate",
+      "group": "idontwantyoutoleavebutimbarely",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "U meet other fren dun wan meet me ah... Muz b a guy rite...",
+      "label": "legitimate",
+      "group": "umeetotherfrendunwanmeetmeahmu",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "We live in the next &lt;#&gt; mins",
+      "label": "legitimate",
+      "group": "weliveinthenextltgtmins",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Spoke with uncle john today. He strongly feels that you need to sacrifice to keep me here. He's going to call you. When he does, i beg you to just listen. Dont make any promises or make it clear things are not easy. And i need you to please let us work things out. As long as i keep expecting help, my creativity will be stifled so pls just keep him happy, no promises on your part.",
+      "label": "legitimate",
+      "group": "spokewithunclejohntodayhestron",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "We have new local dates in your area - Lots of new people registered in YOUR AREA. Reply DATE to start now! 18 only www.flirtparty.us REPLYS150",
+      "label": "spam",
+      "group": "wehavenewlocaldatesinyourareal",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hey no I ad a crap nite was borin without ya 2 boggy with me u boring biatch! Thanx but u wait til nxt time il ave ya",
+      "label": "legitimate",
+      "group": "heynoiadacrapnitewasborinwitho",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Nite...",
+      "label": "legitimate",
+      "group": "nite",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I will see in half an hour",
+      "label": "legitimate",
+      "group": "iwillseeinhalfanhour",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "As a valued customer, I am pleased to advise you that following recent review of your Mob No. you are awarded with a \u00a31500 Bonus Prize, call [PHONE]",
+      "label": "spam",
+      "group": "asavaluedcustomeriampleasedtoa",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Please attend the phone:)",
+      "label": "legitimate",
+      "group": "pleaseattendthephone",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "He says hi and to get your ass back to south tampa (preferably at a kegger)",
+      "label": "legitimate",
+      "group": "hesayshiandtogetyourassbacktos",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Its too late:)but its k.wish you the same.",
+      "label": "legitimate",
+      "group": "itstoolatebutitskwishyouthesam",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Da my birthdate in certificate is in april but real date is today. But dont publish it. I shall give you a special treat if you keep the secret. Any way thanks for the wishes",
+      "label": "legitimate",
+      "group": "damybirthdateincertificateisin",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "If I die I want u to have all my stuffs.",
+      "label": "legitimate",
+      "group": "ifidieiwantutohaveallmystuffs",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Sorry sir, i will call you tomorrow. senthil.hsbc",
+      "label": "legitimate",
+      "group": "sorrysiriwillcallyoutomorrowse",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I accidentally deleted the message. Resend please.",
+      "label": "legitimate",
+      "group": "iaccidentallydeletedthemessage",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "You have an important customer service announcement. Call FREEPHONE [PHONE] now!",
+      "label": "spam",
+      "group": "youhaveanimportantcustomerserv",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "You have an important customer service announcement from PREMIER.",
+      "label": "spam",
+      "group": "youhaveanimportantcustomerserv",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "You have an important customer service announcement from PREMIER. Call FREEPHONE [PHONE] now!",
+      "label": "spam",
+      "group": "youhaveanimportantcustomerserv",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hai ana tomarrow am coming on morning. &lt;DECIMAL&gt; ill be there in sathy then we ll go to RTO office. Reply me after came to home.",
+      "label": "legitimate",
+      "group": "haianatomarrowamcomingonmornin",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ok lor. I'm in town now lei.",
+      "label": "legitimate",
+      "group": "oklorimintownnowlei",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Are you happy baby ? Are you alright ? Did you take that job ? I hope your fine. I send you a kiss to make you smile from across the sea ... *kiss* *kiss*",
+      "label": "legitimate",
+      "group": "areyouhappybabyareyoualrightdi",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ya tel, wats ur problem..",
+      "label": "legitimate",
+      "group": "yatelwatsurproblem",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "PRIVATE! Your 2003 Account Statement for [PHONE] shows 800 un-redeemed S.I.M. points. Call [PHONE] Identifier Code 41782 Expires 18/11/04",
+      "label": "spam",
+      "group": "privateyour2003accountstatemen",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "PRIVATE! Your 2003 Account Statement for [PHONE] shows 800 un-redeemed S. I. M. points. Call [PHONE] Identifier Code: 42478 Expires 24/10/04",
+      "label": "spam",
+      "group": "privateyour2003accountstatemen",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "PRIVATE! Your 2003 Account Statement for shows 800 un-redeemed S. I. M. points. Call [PHONE] Identifier Code: 40533 Expires 31/10/04",
+      "label": "spam",
+      "group": "privateyour2003accountstatemen",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "PRIVATE! Your 2003 Account Statement for 07808 XXXXXX shows 800 un-redeemed S. I. M. points. Call [PHONE] Identifier Code: 41685 Expires 07/11/04",
+      "label": "spam",
+      "group": "privateyour2003accountstatemen",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "PRIVATE! Your 2003 Account Statement for shows 800 un-redeemed S. I. M. points. Call [PHONE] Identifier Code: 41685 Expires 07/11/04",
+      "label": "spam",
+      "group": "privateyour2003accountstatemen",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "PRIVATE! Your 2003 Account Statement for [PHONE] shows 800 un-redeemed S. I. M. points. Call [PHONE] Identifier Code: 40533 Expires 31/10/04",
+      "label": "spam",
+      "group": "privateyour2003accountstatemen",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "PRIVATE! Your 2003 Account Statement for shows 800 un-redeemed S. I. M. points. Call [PHONE] Identifier Code: 48922 Expires 21/11/04",
+      "label": "spam",
+      "group": "privateyour2003accountstatemen",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "PRIVATE! Your 2003 Account Statement for shows 800 un-redeemed S. I. M. points. Call [PHONE] Identifier Code: 42810 Expires 29/10/0",
+      "label": "spam",
+      "group": "privateyour2003accountstatemen",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "PRIVATE! Your 2003 Account Statement for shows 800 un-redeemed S.I.M. points. Call [PHONE] Identifier Code:4xx26 Expires 13/10/04",
+      "label": "spam",
+      "group": "privateyour2003accountstatemen",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "PRIVATE! Your 2003 Account Statement for 078",
+      "label": "spam",
+      "group": "privateyour2003accountstatemen",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "PRIVATE! Your 2003 Account Statement for <fone no> shows 800 un-redeemed S. I. M. points. Call [PHONE] Identifier Code: 42049 Expires 26/10/04",
+      "label": "spam",
+      "group": "privateyour2003accountstatemen",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "PRIVATE! Your 2003 Account Statement for [PHONE] shows 800 un-redeemed S. I. M. points. Call [PHONE] Identifier Code: 40411 Expires 06/11/04",
+      "label": "spam",
+      "group": "privateyour2003accountstatemen",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "PRIVATE! Your 2003 Account Statement for shows 800 un-redeemed S.I.M. points. Call [PHONE] Identifier Code: 49557 Expires 26/11/04",
+      "label": "spam",
+      "group": "privateyour2003accountstatemen",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Captain is in our room:)",
+      "label": "legitimate",
+      "group": "captainisinourroom",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Isn't frnd a necesity in life? imagine urself witout a frnd.. hw'd u feel at ur colleg? wat'll u do wth ur cell? wat abt functions? thnk abt events espe'll cared, missed &amp; irritated u? 4wrd it to all those dear-loving frnds wthout whom u cant live.. I jst did it.. Takecare..:) GOODMORNING",
+      "label": "legitimate",
+      "group": "isntfrndanecesityinlifeimagine",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Mum say we wan to go then go... Then she can shun bian watch da glass exhibition...",
+      "label": "legitimate",
+      "group": "mumsaywewantogothengothensheca",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Paytm Wallet suspended! Share your 6-digit OTP at http://paytrn-kyc.xyz/verify within 2 hours.",
+      "label": "phishing",
+      "group": "paytmwalletsuspendedshareyour6",
+      "source": "scamshield_message_curated",
+      "split": "test"
+    },
+    {
+      "content": "Gudnite....tc...practice going on",
+      "label": "legitimate",
+      "group": "gudnitetcpracticegoingon",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I can take you at like noon",
+      "label": "legitimate",
+      "group": "icantakeyouatlikenoon",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Dear 0776xxxxxxx U've been invited to XCHAT. This is our final attempt to contact u! Txt CHAT to 86688 150p/MsgrcvdHG/Suite342/2Lands/Row/W1J6HL LDN 18yrs",
+      "label": "spam",
+      "group": "dear0776xxxxxxxuvebeeninvitedt",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Lol wtf random. Btw is that your lunch break",
+      "label": "legitimate",
+      "group": "lolwtfrandombtwisthatyourlunch",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Please reserve ticket on saturday eve from chennai to thirunelvali and again from tirunelvali to chennai on sunday eve...i already see in net..no ticket available..i want to book ticket through tackle ..",
+      "label": "legitimate",
+      "group": "pleasereserveticketonsaturdaye",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "How much for an eighth?",
+      "label": "legitimate",
+      "group": "howmuchforaneighth",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "You always make things bigger than they are",
+      "label": "legitimate",
+      "group": "youalwaysmakethingsbiggerthant",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Bored of speed dating? Try SPEEDCHAT, txt SPEEDCHAT to 80155, if you don't like em txt SWAP and get a new chatter! Chat80155 POBox36504W45WQ 150p/msg rcd 16",
+      "label": "spam",
+      "group": "boredofspeeddatingtryspeedchat",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I am thinking of going down to reg for pract lessons.. Flung my advance.. Haha wat time u going?",
+      "label": "legitimate",
+      "group": "iamthinkingofgoingdowntoregfor",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Nt only for driving even for many reasons she is called BBD..thts it chikku, then hw abt dvg cold..heard tht vinobanagar violence hw is the condition..and hw ru ? Any problem?",
+      "label": "legitimate",
+      "group": "ntonlyfordrivingevenformanyrea",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "K..i deleted my contact that why?",
+      "label": "legitimate",
+      "group": "kideletedmycontactthatwhy",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "haha but no money leh... Later got to go for tuition... Haha and looking for empty slots for driving lessons",
+      "label": "legitimate",
+      "group": "hahabutnomoneylehlatergottogof",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I'm hungry buy smth home...",
+      "label": "legitimate",
+      "group": "imhungrybuysmthhome",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Nice line said by a broken heart- Plz don't cum 1 more times infront of me... Other wise once again I ll trust U... Good 9t:)",
+      "label": "legitimate",
+      "group": "nicelinesaidbyabrokenheartplzd",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Did u find out what time the bus is at coz i need to sort some stuff out.",
+      "label": "legitimate",
+      "group": "didufindoutwhattimethebusisatc",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Thanks. It was only from tescos but quite nice. All gone now. Speak soon",
+      "label": "legitimate",
+      "group": "thanksitwasonlyfromtescosbutqu",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "K, can that happen tonight?",
+      "label": "legitimate",
+      "group": "kcanthathappentonight",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Im done. Just studyn in library",
+      "label": "legitimate",
+      "group": "imdonejuststudyninlibrary",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Of course. I guess god's just got me on hold right now.",
+      "label": "legitimate",
+      "group": "ofcourseiguessgodsjustgotmeonh",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Well, i'm gonna finish my bath now. Have a good...fine night.",
+      "label": "legitimate",
+      "group": "wellimgonnafinishmybathnowhave",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yes I know the cheesy songs from frosty the snowman :)",
+      "label": "legitimate",
+      "group": "yesiknowthecheesysongsfromfros",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "\"NONE!NOWHERE IKNO DOESDISCOUNT!SHITINNIT\"",
+      "label": "legitimate",
+      "group": "nonenowhereiknodoesdiscountshi",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hi ....My engagement has been fixd on &lt;#&gt; th of next month. I know its really shocking bt....hmm njan vilikkam....t ws al of a sudn;-(.",
+      "label": "legitimate",
+      "group": "himyengagementhasbeenfixdonltg",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Ok pa. Nothing problem:-)",
+      "label": "legitimate",
+      "group": "okpanothingproblem",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "When I was born, GOD said, \"Oh No! Another IDIOT\". When you were born, GOD said, \"OH No! COMPETITION\". Who knew, one day these two will become FREINDS FOREVER!",
+      "label": "legitimate",
+      "group": "wheniwasborngodsaidohnoanother",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "your valpak . com \" print later \" link below is the link to the print - ready valpak . com savings page you requested . this link will remain active for the next 48 hours so that you may print at your",
+      "label": "legitimate",
+      "group": "yourvalpakcomprintlaterlinkbel",
+      "source": "verified_review",
+      "split": "test"
+    },
+    {
+      "content": "Does uncle timi help in clearing cars",
+      "label": "legitimate",
+      "group": "doesuncletimihelpinclearingcar",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hanging out with my brother and his family",
+      "label": "legitimate",
+      "group": "hangingoutwithmybrotherandhisf",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "K.then any other special?",
+      "label": "legitimate",
+      "group": "kthenanyotherspecial",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yeah that'd pretty much be the best case scenario",
+      "label": "legitimate",
+      "group": "yeahthatdprettymuchbethebestca",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "K, can I pick up another 8th when you're done?",
+      "label": "legitimate",
+      "group": "kcanipickupanother8thwhenyoure",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "[PHONE] between 10am-7pm Cost 10p",
+      "label": "spam",
+      "group": "phonebetween10am7pmcost10p",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Having lunch:)you are not in online?why?",
+      "label": "legitimate",
+      "group": "havinglunchyouarenotinonlinewh",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "that would be good ... I'll phone you tomo lunchtime, shall I, to organise something?",
+      "label": "legitimate",
+      "group": "thatwouldbegoodillphoneyoutomo",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I've told him that i've returned it. That should i re order it.",
+      "label": "legitimate",
+      "group": "ivetoldhimthativereturnedittha",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "opportunity for you to be interviewed by authors of a deloitte i work for epmi in nepool with john llodra and report to ed baughman . i am writing to ask if you would speak with my brother - in - law",
+      "label": "legitimate",
+      "group": "opportunityforyoutobeinterview",
+      "source": "verified_review",
+      "split": "test"
+    },
+    {
+      "content": "\u00dc go home liao? Ask dad to pick me up at 6...",
+      "label": "legitimate",
+      "group": "gohomeliaoaskdadtopickmeupat6",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Aight, I'm chillin in a friend's room so text me when you're on the way",
+      "label": "legitimate",
+      "group": "aightimchillininafriendsroomso",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "So how are you really. What are you up to. How's the masters. And so on.",
+      "label": "legitimate",
+      "group": "sohowareyoureallywhatareyouupt",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Was it something u ate?",
+      "label": "legitimate",
+      "group": "wasitsomethinguate",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Probably not, I'm almost out of gas and I get some cash tomorrow",
+      "label": "legitimate",
+      "group": "probablynotimalmostoutofgasand",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I HAVE A DATE ON SUNDAY WITH WILL!!",
+      "label": "legitimate",
+      "group": "ihaveadateonsundaywithwill",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Why she wants to talk to me",
+      "label": "legitimate",
+      "group": "whyshewantstotalktome",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I though we shd go out n have some fun so bar in town or something \u2013 sound ok?",
+      "label": "legitimate",
+      "group": "ithoughweshdgooutnhavesomefuns",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Actually I decided I was too hungry so I haven't left yet :V",
+      "label": "legitimate",
+      "group": "actuallyidecidediwastoohungrys",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "S:)s.nervous &lt;#&gt; :)",
+      "label": "legitimate",
+      "group": "ssnervousltgt",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "WINNER!! As a valued network customer you have been selected to receivea \u00a3900 prize reward! To claim call [PHONE]. Claim code KL341. Valid 12 hours only.",
+      "label": "spam",
+      "group": "winnerasavaluednetworkcustomer",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "WINNER! As a valued network customer you hvae been selected to receive a \u00a3900 reward! To collect call [PHONE]. Valid 24 hours only. ACL03530150PM",
+      "label": "spam",
+      "group": "winnerasavaluednetworkcustomer",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Is fujitsu s series lifebook good?",
+      "label": "legitimate",
+      "group": "isfujitsusserieslifebookgood",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I like dis sweater fr mango but no more my size already so irritating.",
+      "label": "legitimate",
+      "group": "ilikedissweaterfrmangobutnomor",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Please call our customer service representative on [PHONE] between 10am-9pm as you have WON a guaranteed \u00a31000 cash or \u00a35000 prize!",
+      "label": "spam",
+      "group": "pleasecallourcustomerservicere",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Please call our customer service representative on FREEPHONE [PHONE] between 9am-11pm as you have WON a guaranteed \u00a31000 cash or \u00a35000 prize!",
+      "label": "spam",
+      "group": "pleasecallourcustomerservicere",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Good evening! How are you?",
+      "label": "legitimate",
+      "group": "goodeveninghowareyou",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Gud gud..k, chikku tke care.. sleep well gud nyt",
+      "label": "legitimate",
+      "group": "gudgudkchikkutkecaresleepwellg",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "free marketing & money secrets / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /",
+      "label": "phishing",
+      "group": "freemarketingmoneysecrets",
+      "source": "verified_review",
+      "split": "test"
+    },
+    {
+      "content": "Mm you ask him to come its enough :-)",
+      "label": "legitimate",
+      "group": "mmyouaskhimtocomeitsenough",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Well the general price is &lt;#&gt; /oz, let me know if/when/how much you want",
+      "label": "legitimate",
+      "group": "wellthegeneralpriceisltgtozlet",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I'm so in love with you. I'm excited each day i spend with you. You make me so happy.",
+      "label": "legitimate",
+      "group": "imsoinlovewithyouimexcitedeach",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "There'll be a minor shindig at my place later tonight, you interested?",
+      "label": "legitimate",
+      "group": "therellbeaminorshindigatmyplac",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Talk With Yourself Atleast Once In A Day...!!! Otherwise You Will Miss Your Best FRIEND In This WORLD...!!! -Shakespeare- SHESIL &lt;#&gt;",
+      "label": "legitimate",
+      "group": "talkwithyourselfatleastonceina",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hey come online! Use msn... We are all there",
+      "label": "legitimate",
+      "group": "heycomeonlineusemsnweareallthe",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Sorry i now then c ur msg... Yar lor so poor thing... But only 4 one night... Tmr u'll have a brand new room 2 sleep in...",
+      "label": "legitimate",
+      "group": "sorryinowthencurmsgyarlorsopoo",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "They said if its gonna snow, it will start around 8 or 9 pm tonite! They are predicting an inch of accumulation.",
+      "label": "legitimate",
+      "group": "theysaidifitsgonnasnowitwillst",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Wherre's my boytoy ? :-(",
+      "label": "legitimate",
+      "group": "wherresmyboytoy",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "K:)i will give my kvb acc details:)",
+      "label": "legitimate",
+      "group": "kiwillgivemykvbaccdetails",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "\u00dc got wat to buy tell us then \u00fc no need to come in again.",
+      "label": "legitimate",
+      "group": "gotwattobuytellusthennoneedtoc",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Talk to g and x about that",
+      "label": "legitimate",
+      "group": "talktogandxaboutthat",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Sorry I missed you babe. I was up late and slept in. I hope you enjoy your driving lesson, boytoy. I miss you too ... *teasing kiss*",
+      "label": "legitimate",
+      "group": "sorryimissedyoubabeiwasuplatea",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Goodmorning, today i am late for 1hr.",
+      "label": "legitimate",
+      "group": "goodmorningtodayiamlatefor1hr",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "That's my honeymoon outfit. :)",
+      "label": "legitimate",
+      "group": "thatsmyhoneymoonoutfit",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "ELLO BABE U OK?",
+      "label": "legitimate",
+      "group": "ellobabeuok",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I'll pick you up at about 5.15pm to go to taunton if you still want to come.",
+      "label": "legitimate",
+      "group": "illpickyouupatabout515pmtogoto",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "\"URGENT! This is the 2nd attempt to contact U!U have WON \u00a31000CALL [PHONE] b4 300603t&csBCM4235WC1N3XX.callcost150ppmmobilesvary. max\u00a37. 50\"",
+      "label": "spam",
+      "group": "urgentthisisthe2ndattempttocon",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "We're done...",
+      "label": "legitimate",
+      "group": "weredone",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "If u laugh really loud.. If u talk spontaneously.. If u dont care what others feel.. U are probably with your dear &amp; best friends.. GOODEVENING Dear..:)",
+      "label": "legitimate",
+      "group": "ifulaughreallyloudifutalkspont",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Babe ! What are you doing ? Where are you ? Who are you talking to ? Do you think of me ? Are you being a good boy? Are you missing me? Do you love me ?",
+      "label": "legitimate",
+      "group": "babewhatareyoudoingwhereareyou",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Get a FREE mobile video player FREE movie. To collect text GO to 89105. Its free! Extra films can be ordered t's and c's apply. 18 yrs only",
+      "label": "spam",
+      "group": "getafreemobilevideoplayerfreem",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "We have pizza if u want",
+      "label": "legitimate",
+      "group": "wehavepizzaifuwant",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "MOON has come to color your dreams, STARS to make them musical and my SMS to give you warm and Peaceful Sleep. Good Night",
+      "label": "legitimate",
+      "group": "moonhascometocoloryourdreamsst",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "staff.science.nus.edu.sg/~phyhcmk/teaching/pc1323",
+      "label": "legitimate",
+      "group": "staffsciencenusedusgphyhcmktea",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Might ax well im there.",
+      "label": "legitimate",
+      "group": "mightaxwellimthere",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I hate when she does this. She turns what should be a fun shopping trip into an annoying day of how everything would look in her house.",
+      "label": "legitimate",
+      "group": "ihatewhenshedoesthissheturnswh",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Go until jurong point, crazy.. Available only in bugis n great world la e buffet... Cine there got amore wat...",
+      "label": "legitimate",
+      "group": "gountiljurongpointcrazyavailab",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "S.s:)i thinl role is like sachin.just standing. Others have to hit.",
+      "label": "legitimate",
+      "group": "ssithinlroleislikesachinjustst",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "What about this one then.",
+      "label": "legitimate",
+      "group": "whataboutthisonethen",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "And pls pls drink plenty plenty water",
+      "label": "legitimate",
+      "group": "andplsplsdrinkplentyplentywate",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I WILL CAL YOU SIR. In meeting",
+      "label": "legitimate",
+      "group": "iwillcalyousirinmeeting",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "OH RITE. WELL IM WITH MY BEST MATE PETE, WHO I WENT OUT WITH 4 A WEEK+ NOW WERE 2GEVA AGAIN. ITS BEEN LONGER THAN A WEEK.",
+      "label": "legitimate",
+      "group": "ohritewellimwithmybestmatepete",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Which is weird because I know I had it at one point",
+      "label": "legitimate",
+      "group": "whichisweirdbecauseiknowihadit",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Yes fine",
+      "label": "legitimate",
+      "group": "yesfine",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "cud u tell ppl im gona b a bit l8 cos 2 buses hav gon past cos they were full & im still waitin 4 1. Pete x",
+      "label": "legitimate",
+      "group": "cudutellpplimgonababitl8cos2bu",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I also thk too fast... Xy suggest one not me. U dun wan it's ok. Going 2 rain leh where got gd.",
+      "label": "legitimate",
+      "group": "ialsothktoofastxysuggestonenot",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Bloody hell, cant believe you forgot my surname Mr . Ill give u a clue, its spanish and begins with m...",
+      "label": "legitimate",
+      "group": "bloodyhellcantbelieveyouforgot",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Hi, can i please get a &lt;#&gt; dollar loan from you. I.ll pay you back by mid february. Pls.",
+      "label": "legitimate",
+      "group": "hicanipleasegetaltgtdollarloan",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I don't know jack shit about anything or i'd say/ask something helpful but if you want you can pretend that I did and just text me whatever in response to the hypotheticalhuagauahahuagahyuhagga",
+      "label": "legitimate",
+      "group": "idontknowjackshitaboutanything",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "That's cause your old. I live to be high.",
+      "label": "legitimate",
+      "group": "thatscauseyouroldilivetobehigh",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Lmao but its so fun...",
+      "label": "legitimate",
+      "group": "lmaobutitssofun",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "U ned to convince him tht its not possible witot hurting his feeling its the main",
+      "label": "legitimate",
+      "group": "unedtoconvincehimthtitsnotposs",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Thats cool. How was your day?",
+      "label": "legitimate",
+      "group": "thatscoolhowwasyourday",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "That means get the door",
+      "label": "legitimate",
+      "group": "thatmeansgetthedoor",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Er yep sure. Props?",
+      "label": "legitimate",
+      "group": "eryepsureprops",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "2/2 146tf150p",
+      "label": "spam",
+      "group": "22146tf150p",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Have you started in skye",
+      "label": "legitimate",
+      "group": "haveyoustartedinskye",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "I don't think he has spatula hands!",
+      "label": "legitimate",
+      "group": "idontthinkhehasspatulahands",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Is it ok if I stay the night here? Xavier has a sleeping bag and I'm getting tired",
+      "label": "legitimate",
+      "group": "isitokifistaythenightherexavie",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "We know someone who you know that fancies you. Call [PHONE] to find out who. POBox 6, LS15HB 150p",
+      "label": "spam",
+      "group": "weknowsomeonewhoyouknowthatfan",
+      "source": "uci_sms_spam",
+      "split": "test"
+    },
+    {
+      "content": "Congrats. That's great. I wanted to tell you not to tell me your score cos it might make me relax. But its motivating me so thanks for sharing",
+      "label": "legitimate",
+      "group": "congratsthatsgreatiwantedtotel",
+      "source": "uci_sms_spam",
+      "split": "test"
+    }
+  ]
+}

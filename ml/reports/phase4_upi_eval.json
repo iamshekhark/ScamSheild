@@ -1,0 +1,248 @@
+{
+  "total_cases": 18,
+  "passed": 15,
+  "accuracy": 0.8333,
+  "single_unverified_report_protected": true,
+  "corroborated_report_flagged": true,
+  "recipient_verified_always_false_offline": false,
+  "latency_ms_per_check": 0.3355,
+  "cases": [
+    {
+      "vpa": "grocery.store@okhdfcbank",
+      "expected_format": true,
+      "expected_supported": true,
+      "expected_suspicious": false,
+      "cat": "legit_known",
+      "ok": true,
+      "states": [
+        "FORMAT_VALID",
+        "HANDLE_SUPPORTED"
+      ],
+      "risk_assessment": "format_valid_unverified_recipient"
+    },
+    {
+      "vpa": "irctc@paytm",
+      "expected_format": true,
+      "expected_supported": true,
+      "expected_suspicious": false,
+      "cat": "legit_known",
+      "ok": true,
+      "states": [
+        "FORMAT_VALID",
+        "HANDLE_SUPPORTED"
+      ],
+      "risk_assessment": "format_valid_unverified_recipient"
+    },
+    {
+      "vpa": "swiggy.order@icici",
+      "expected_format": true,
+      "expected_supported": true,
+      "expected_suspicious": false,
+      "cat": "legit_known",
+      "ok": true,
+      "states": [
+        "FORMAT_VALID",
+        "HANDLE_SUPPORTED"
+      ],
+      "risk_assessment": "format_valid_unverified_recipient"
+    },
+    {
+      "vpa": "bookshop@okaxis",
+      "expected_format": true,
+      "expected_supported": true,
+      "expected_suspicious": false,
+      "cat": "legit_known",
+      "ok": true,
+      "states": [
+        "FORMAT_VALID",
+        "HANDLE_SUPPORTED"
+      ],
+      "risk_assessment": "format_valid_unverified_recipient"
+    },
+    {
+      "vpa": "merchant.123@ybl",
+      "expected_format": true,
+      "expected_supported": true,
+      "expected_suspicious": false,
+      "cat": "legit_known",
+      "ok": true,
+      "states": [
+        "FORMAT_VALID",
+        "HANDLE_SUPPORTED"
+      ],
+      "risk_assessment": "format_valid_unverified_recipient"
+    },
+    {
+      "vpa": "merchant@newbankpsp",
+      "expected_format": true,
+      "expected_supported": false,
+      "expected_suspicious": false,
+      "cat": "unknown_valid",
+      "ok": true,
+      "states": [
+        "FORMAT_VALID",
+        "UNKNOWN"
+      ],
+      "risk_assessment": "unverified_unknown_handle"
+    },
+    {
+      "vpa": "shop42@fintechupi",
+      "expected_format": true,
+      "expected_supported": false,
+      "expected_suspicious": false,
+      "cat": "unknown_valid",
+      "ok": true,
+      "states": [
+        "FORMAT_VALID",
+        "UNKNOWN"
+      ],
+      "risk_assessment": "unverified_unknown_handle"
+    },
+    {
+      "vpa": "user@pingpay",
+      "expected_format": true,
+      "expected_supported": false,
+      "expected_suspicious": false,
+      "cat": "deprecated_handle",
+      "ok": true,
+      "states": [
+        "FORMAT_VALID",
+        "UNKNOWN"
+      ],
+      "risk_assessment": "unverified_unknown_handle"
+    },
+    {
+      "vpa": "not-a-upi-id",
+      "expected_format": false,
+      "expected_supported": false,
+      "expected_suspicious": true,
+      "cat": "malformed",
+      "ok": true,
+      "states": [
+        "SUSPICIOUS_PATTERN"
+      ],
+      "risk_assessment": "invalid_format"
+    },
+    {
+      "vpa": "user@@ybl",
+      "expected_format": false,
+      "expected_supported": false,
+      "expected_suspicious": true,
+      "cat": "malformed",
+      "ok": true,
+      "states": [
+        "SUSPICIOUS_PATTERN"
+      ],
+      "risk_assessment": "invalid_format"
+    },
+    {
+      "vpa": "@okhdfcbank",
+      "expected_format": false,
+      "expected_supported": false,
+      "expected_suspicious": true,
+      "cat": "malformed",
+      "ok": false,
+      "states": [
+        "SUSPICIOUS_PATTERN",
+        "HANDLE_SUPPORTED"
+      ],
+      "risk_assessment": "suspicious"
+    },
+    {
+      "vpa": "a@ybl",
+      "expected_format": false,
+      "expected_supported": false,
+      "expected_suspicious": true,
+      "cat": "malformed",
+      "ok": false,
+      "states": [
+        "SUSPICIOUS_PATTERN",
+        "HANDLE_SUPPORTED"
+      ],
+      "risk_assessment": "suspicious"
+    },
+    {
+      "vpa": "paytm-refund-desk@ybl",
+      "expected_format": true,
+      "expected_supported": true,
+      "expected_suspicious": true,
+      "cat": "impersonation",
+      "ok": true,
+      "states": [
+        "FORMAT_VALID",
+        "HANDLE_SUPPORTED",
+        "SUSPICIOUS_PATTERN"
+      ],
+      "risk_assessment": "high_risk_suspicious"
+    },
+    {
+      "vpa": "sbi-kyc-verify@okhdfcbank",
+      "expected_format": true,
+      "expected_supported": true,
+      "expected_suspicious": true,
+      "cat": "impersonation",
+      "ok": true,
+      "states": [
+        "FORMAT_VALID",
+        "HANDLE_SUPPORTED",
+        "SUSPICIOUS_PATTERN"
+      ],
+      "risk_assessment": "high_risk_suspicious"
+    },
+    {
+      "vpa": "phonepe-cashback-support@ibl",
+      "expected_format": true,
+      "expected_supported": true,
+      "expected_suspicious": true,
+      "cat": "impersonation",
+      "ok": true,
+      "states": [
+        "FORMAT_VALID",
+        "HANDLE_SUPPORTED",
+        "SUSPICIOUS_PATTERN"
+      ],
+      "risk_assessment": "high_risk_suspicious"
+    },
+    {
+      "vpa": "lottery-winner@okaxis",
+      "expected_format": true,
+      "expected_supported": true,
+      "expected_suspicious": true,
+      "cat": "lure",
+      "ok": true,
+      "states": [
+        "FORMAT_VALID",
+        "HANDLE_SUPPORTED",
+        "SUSPICIOUS_PATTERN"
+      ],
+      "risk_assessment": "suspicious"
+    },
+    {
+      "vpa": "scammer@evil.xyz",
+      "expected_format": true,
+      "expected_supported": false,
+      "expected_suspicious": true,
+      "cat": "anomalous_psp",
+      "ok": true,
+      "states": [
+        "FORMAT_VALID",
+        "UNKNOWN",
+        "SUSPICIOUS_PATTERN"
+      ],
+      "risk_assessment": "suspicious"
+    },
+    {
+      "vpa": "paytm\u0430@ybl",
+      "expected_format": false,
+      "expected_supported": false,
+      "expected_suspicious": true,
+      "cat": "unicode_homoglyph",
+      "ok": false,
+      "states": [
+        "SUSPICIOUS_PATTERN",
+        "HANDLE_SUPPORTED"
+      ],
+      "risk_assessment": "suspicious"
+    }
+  ]
+}

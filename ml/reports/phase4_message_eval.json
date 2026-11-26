@@ -1,0 +1,189 @@
+{
+  "splits": {
+    "train": 3709,
+    "val": 794,
+    "test": 794,
+    "classes": {
+      "legitimate": 4578,
+      "spam": 643,
+      "phishing": 76
+    }
+  },
+  "candidates": [
+    {
+      "name": "Hybrid_WordCharTFIDF_Structured_LR",
+      "train_seconds": 1.078,
+      "val_metrics": {
+        "accuracy": 0.9773,
+        "macro_f1": 0.8296,
+        "val_fpr": 0.0073
+      }
+    },
+    {
+      "name": "Hybrid_WordCharTFIDF_Structured_LinearSVM",
+      "train_seconds": 0.048,
+      "val_metrics": {
+        "accuracy": 0.9811,
+        "macro_f1": 0.8906,
+        "val_fpr": 0.0044
+      }
+    },
+    {
+      "name": "Structured_HistGradientBoosting",
+      "train_seconds": 0.584,
+      "val_metrics": {
+        "accuracy": 0.961,
+        "macro_f1": 0.7361,
+        "val_fpr": 0.0131
+      }
+    }
+  ],
+  "selected": "Hybrid_WordCharTFIDF_Structured_LinearSVM",
+  "calibration_val": "isotonic",
+  "test_metrics": {
+    "accuracy": 0.9773,
+    "macro_precision": 0.7651,
+    "macro_recall": 0.709,
+    "macro_f1": 0.7313,
+    "pr_auc": 0.9463,
+    "fpr": 0.0044,
+    "fpr_95_upper_bound": 0.0129,
+    "fp_count": 3,
+    "legit_test_count": 682,
+    "fnr": 0.1071,
+    "latency_ms_per_sample": 0.158,
+    "model_size_mb": 0.285,
+    "per_class": {
+      "legitimate": {
+        "precision": 0.9826,
+        "recall": 0.9956,
+        "f1": 0.9891,
+        "support": 682
+      },
+      "phishing": {
+        "precision": 0.3333,
+        "recall": 0.2,
+        "f1": 0.25,
+        "support": 10
+      },
+      "spam": {
+        "precision": 0.9794,
+        "recall": 0.9314,
+        "f1": 0.9548,
+        "support": 102
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "legitimate",
+        "phishing",
+        "spam"
+      ],
+      "matrix": [
+        [
+          679,
+          2,
+          1
+        ],
+        [
+          7,
+          2,
+          1
+        ],
+        [
+          5,
+          2,
+          95
+        ]
+      ]
+    },
+    "calibration": {
+      "brier_score": 0.0434,
+      "ece": 0.0099,
+      "nll": 0.1471,
+      "reliability_bins": [
+        {
+          "bin": "0.4-0.5",
+          "count": 4,
+          "avg_confidence": 0.4789,
+          "empirical_accuracy": 0.5,
+          "gap": 0.0211
+        },
+        {
+          "bin": "0.5-0.6",
+          "count": 4,
+          "avg_confidence": 0.5499,
+          "empirical_accuracy": 1.0,
+          "gap": 0.4501
+        },
+        {
+          "bin": "0.6-0.7",
+          "count": 6,
+          "avg_confidence": 0.6396,
+          "empirical_accuracy": 0.8333,
+          "gap": 0.1938
+        },
+        {
+          "bin": "0.7-0.8",
+          "count": 6,
+          "avg_confidence": 0.7488,
+          "empirical_accuracy": 0.8333,
+          "gap": 0.0845
+        },
+        {
+          "bin": "0.8-0.9",
+          "count": 24,
+          "avg_confidence": 0.8785,
+          "empirical_accuracy": 0.7917,
+          "gap": 0.0869
+        },
+        {
+          "bin": "0.9-1.0",
+          "count": 750,
+          "avg_confidence": 0.9909,
+          "empirical_accuracy": 0.988,
+          "gap": 0.0029
+        }
+      ]
+    }
+  },
+  "artifact": {
+    "model_version": "message-model-v1.0.0",
+    "task": "message",
+    "model_type": "Hybrid_WordCharTFIDF_Structured_LinearSVM",
+    "artifact_path": "artifacts/message_model_message-model-v1.0.0.joblib",
+    "artifact_sha256": "846a0863595df2862774f5d484b123b3859bd78084586989444dd2a28b67d720",
+    "artifact_size_bytes": 298875,
+    "dataset_version": "4.0.0-alpha",
+    "preprocessing_version": "msg-prep-v1.0.0",
+    "training_config": {
+      "seed": 42,
+      "train": 3709,
+      "val": 794,
+      "test": 794
+    },
+    "metrics": {
+      "accuracy": 0.9811,
+      "macro_f1": 0.8906,
+      "val_fpr": 0.0044
+    },
+    "calibration": {
+      "method": "isotonic",
+      "temperature": 1.0,
+      "uncertainty_threshold": 0.55,
+      "calibrated": true
+    },
+    "dependencies": {
+      "python_version": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+      "python_version_tuple": [
+        3,
+        14,
+        6
+      ],
+      "sklearn_version": "1.9.1",
+      "joblib_version": "1.6.0"
+    },
+    "trained_at": "2026-11-26T10:02:25.942530+00:00",
+    "production_active": false
+  }
+}

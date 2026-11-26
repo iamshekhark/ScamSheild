@@ -1,0 +1,33 @@
+{
+  "manifest_version": "4.0.0-alpha",
+  "created_at": "2026-11-26T15:38:00Z",
+  "random_seed": 42,
+  "tasks": {
+    "ocr": {
+      "splits_dir": "datasets/splits_v4",
+      "files": ["ocr_train.json", "ocr_validation.json", "ocr_test.json"],
+      "counts": {"train": 80, "validation": 16, "test": 17, "total": 113},
+      "classes": {"legitimate": 36, "scam": 77},
+      "grouping_strategy": "normalized_template_prefix",
+      "sources": {
+        "scamshield_ocr_curated": "Curated payment/scam screenshots (ScamShield Open Source)",
+        "synthetic_ocr_noise": "Simulated blur/low-res OCR character perturbations (explicitly tagged synthetic)",
+        "curated_payments": "Curated UPI & payment fraud patterns (ScamShield Open Source)",
+        "cert_in_i4c_curated": "CERT-In / I4C documented Indian scam patterns"
+      }
+    },
+    "message": {
+      "splits_dir": "datasets/splits_v4",
+      "files": ["message_train.json", "message_validation.json", "message_test.json"],
+      "counts": {"train": 3709, "validation": 794, "test": 794, "total": 5297},
+      "classes": {"legitimate": 4578, "spam": 643, "phishing": 76},
+      "grouping_strategy": "normalized_template_prefix",
+      "sources": {
+        "uci_sms_spam": "UCI SMS Spam Collection (Open Data Commons / CC-BY)",
+        "cert_in_i4c_curated": "CERT-In / I4C documented Indian scam patterns",
+        "verified_review": "Human-reviewed verified_samples.json",
+        "scamshield_message_curated": "Curated SMS/WhatsApp legitimate & scam hard-negatives"
+      }
+    }
+  }
+}

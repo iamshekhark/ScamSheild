@@ -1,0 +1,135 @@
+{
+  "task": "ocr",
+  "split": "validation",
+  "count": 16,
+  "samples": [
+    {
+      "content": "Prepaid 28-day 2GB daily pack",
+      "label": "legitimate",
+      "group": "prepaid28day2gbdailypack",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "validation"
+    },
+    {
+      "content": "Electronics purchase FK82910",
+      "label": "legitimate",
+      "group": "electronicspurchasefk82910",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "validation"
+    },
+    {
+      "content": "Battery 84% Wi-Fi Connected 11:30 AM. Settings > Display > Dark Mode enabled.",
+      "label": "legitimate",
+      "group": "battery84wificonnected1130amse",
+      "source": "scamshield_ocr_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "validation"
+    },
+    {
+      "content": "CUSTOMS CLEARANCE DEPARTMENT: High value parcel #IN-9921 from UK held at IGI Airport. Pay customs clearance tariff of Rs 28,500 to reserve account 50100492100 to release parcel.",
+      "label": "scam",
+      "group": "customsclearancedepartmenthigh",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "validation"
+    },
+    {
+      "content": "URGENT POWER UPDATE: Power supply will be disconnected at 10 PM. Download Mahavitaran Quick Support APK from http://bijli-bill-support.top to clear unpaid Rs 12.00 surcharge.",
+      "label": "scam",
+      "group": "urgentpowerupdatepowersupplywi",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "validation"
+    },
+    {
+      "content": "India Post Tracking: Your consignment package ID-IN892341 could not be delivered due to missing house number and address proof. Pay re-delivery fee of Rs 48 at http://indiapost-parcel-redelivery.top",
+      "label": "scam",
+      "group": "indiaposttrackingyourconsignme",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "validation"
+    },
+    {
+      "content": "CONGRATULATIONS! Cashback Rs 2,500 approved. Scan QR & Enter your 6-digit UPI PIN to receive money into bank account.",
+      "label": "scam",
+      "group": "congratulationscashbackrs2500a",
+      "source": "scamshield_ocr_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "validation"
+    },
+    {
+      "content": "Paytm Customer Support Desk: Refund of Rs 4,999 pending. Pay via paytm-refund-desk@ybl and share OTP.",
+      "label": "scam",
+      "group": "paytmcustomersupportdeskrefund",
+      "source": "scamshield_ocr_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "validation"
+    },
+    {
+      "content": "Government lottery registration fee processing",
+      "label": "scam",
+      "group": "governmentlotteryregistrationf",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "validation"
+    },
+    {
+      "content": "Paid Rs 499.00 to Swiggy via Google Pay. UPI Transaction ID: 431928471209. Debited from SBI A/C XX4821 on 26-Nov-2026.",
+      "label": "legitimate",
+      "group": "paidrs49900toswiggyviagooglepa",
+      "source": "scamshield_ocr_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "validation"
+    },
+    {
+      "content": "Paid Rs 499.00 to Swiggy via Google Pay. UPI Transaction ID: 43192847l209. Debited from SBI A/C XX4821 on 26-Nov-2026.",
+      "label": "legitimate",
+      "group": "paidrs49900toswiggyviagooglepa",
+      "source": "synthetic_ocr_noise",
+      "provenance_type": "synthetic_augmentation",
+      "split": "validation"
+    },
+    {
+      "content": "Bijli bill arrears update surcharge to prevent power cut tonight",
+      "label": "scam",
+      "group": "bijlibillarrearsupdatesurcharg",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "validation"
+    },
+    {
+      "content": "Food delivery order #482910",
+      "label": "legitimate",
+      "group": "fooddeliveryorder482910",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "validation"
+    },
+    {
+      "content": "Flat rent November share",
+      "label": "legitimate",
+      "group": "flatrentnovembershare",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "validation"
+    },
+    {
+      "content": "Bangalore power utility bill payment",
+      "label": "legitimate",
+      "group": "bangalorepowerutilitybillpayme",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "validation"
+    },
+    {
+      "content": "SBI Alert: OTP for login to SBI NetBanking is 482910. Valid for 3 mins. Never share OTP with anyone including bank officials. SBI never asks for OTP.",
+      "label": "scam",
+      "group": "sbialertotpforlogintosbinetban",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "validation"
+    }
+  ]
+}

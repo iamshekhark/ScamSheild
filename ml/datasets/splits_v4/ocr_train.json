@@ -1,0 +1,647 @@
+{
+  "task": "ocr",
+  "split": "train",
+  "count": 80,
+  "samples": [
+    {
+      "content": "Bank of Baroda: Dear Customer your account is in dormant status. Provide 6-digit OTP code to unfreeze your debit card and restore UPI transaction limits.",
+      "label": "scam",
+      "group": "bankofbarodadearcustomeryourac",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "YouTube Review Job: Earn Rs 3,000 to Rs 8,000 daily by simply liking YouTube videos and rating hotels on Google Maps. No experience needed. Payout every 30 mins via UPI. Contact HR on WhatsApp +917029812345.",
+      "label": "scam",
+      "group": "youtubereviewjobearnrs3000tors",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "PhonePe Lottery Winner! Claim Rs 25,000 cashback. Send Rs 500 processing fee to phonepe-cashback@ibl",
+      "label": "scam",
+      "group": "phonepelotterywinnerclaimrs250",
+      "source": "scamshield_ocr_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Header 11:42 AM LTE\nPhonePe Lottery Winner! C1aim Rs 25,000 cashback. Send Rs 500 processing fee to phonepe-cashback@ibl\nHome Back Recents",
+      "label": "scam",
+      "group": "phonepelotterywinnerclaimrs250",
+      "source": "synthetic_ocr_noise",
+      "provenance_type": "synthetic_augmentation",
+      "split": "train"
+    },
+    {
+      "content": "Dear Customer, your electricity bill for CA No 102938491 for Rs 2,410 is due on 05-NOV-2026. Pay online via Tata Power portal or BSES Delhi app.",
+      "label": "scam",
+      "group": "dearcustomeryourelectricitybil",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "PhonePe Payment Successful Rs 150.00 Paid to Metro Rail Corp. UTR 829104756123.",
+      "label": "legitimate",
+      "group": "phonepepaymentsuccessfulrs1500",
+      "source": "scamshield_ocr_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Header 11:42 AM LTE\nPhonePe Payment Successfu1 Rs 150.00 Paid to Metro Rail Corp. UTR 829104756123.\nHome Back Recents",
+      "label": "legitimate",
+      "group": "phonepepaymentsuccessfulrs1500",
+      "source": "synthetic_ocr_noise",
+      "provenance_type": "synthetic_augmentation",
+      "split": "train"
+    },
+    {
+      "content": "Amazon Part-Time Hiring: Congratulations! You are shortlisted for Amazon product review specialist. Salary Rs 45,000/month. Join our official Telegram task group: https://t.me/amazon_task_india",
+      "label": "scam",
+      "group": "amazonparttimehiringcongratula",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Laptop security deposit for home onboarding kit",
+      "label": "scam",
+      "group": "laptopsecuritydepositforhomeon",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Instagram Follower Job: Earn Rs 250 for every Instagram account you follow. Guaranteed daily earnings Rs 4,500. Work 1 hour from your phone. Register now on Telegram @task_director_in",
+      "label": "scam",
+      "group": "instagramfollowerjobearnrs250f",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "FedEx Delivery Alert: Delivery failed as door was locked. Confirm alternate delivery date and pay Rs 18 reschedule fee at http://fedex-express-delivery.site",
+      "label": "scam",
+      "group": "fedexdeliveryalertdeliveryfail",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Enter UPI PIN to receive Amazon refund credit into bank",
+      "label": "scam",
+      "group": "enterupipintoreceiveamazonrefu",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "BlueDart Express: Package #BD98231 held at airport warehouse. Clearance fee Rs 25 pending. Click http://bluedart-tracking-support.link to confirm delivery address.",
+      "label": "scam",
+      "group": "bluedartexpresspackagebd98231h",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Movie ticket share",
+      "label": "legitimate",
+      "group": "movieticketshare",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "ENFORCEMENT DIRECTORATE (ED): PMLA summons issued against your PAN. Transfer assets into National Cyber Security reserve account to obtain clean financial clearance certificate.",
+      "label": "scam",
+      "group": "enforcementdirectorateedpmlasu",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Annual fitness gym membership",
+      "label": "legitimate",
+      "group": "annualfitnessgymmembership",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "GAIL Gas Pipeline: Your piped natural gas meter connection is suspended for pending inspection fee of Rs 45. Pay immediately via http://gailgas-meter-recharge.xyz or supply cut off.",
+      "label": "scam",
+      "group": "gailgaspipelineyourpipednatura",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Myntra Big Fashion Festival is LIVE! Get 50-80% off on top brands + extra 10% off on HDFC credit cards. Shop now on Myntra app.",
+      "label": "scam",
+      "group": "myntrabigfashionfestivalislive",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Namaskar, main Bank Manager bol raha hoon. Aapke account se Rs 25,000 deduct hone wala hai. Agar cancel karna hai toh abhi aaya hua 6-digit verification code turant share karein.",
+      "label": "scam",
+      "group": "namaskarmainbankmanagerbolraha",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Dear consumer, your electricity power connection will be disconnected tonight at 9:30 PM from the sub-station because your previous month bill was not updated. Contact electricity officer Mr. Sharma 9823145678 immediately.",
+      "label": "scam",
+      "group": "dearconsumeryourelectricitypow",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Cab trip settlement",
+      "label": "legitimate",
+      "group": "cabtripsettlement",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Ride fare Bangalore airport",
+      "label": "legitimate",
+      "group": "ridefarebangaloreairport",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Crypto Trading Signal VIP Task: Deposit Rs 10,000 in level 2 trading bot. Receive guaranteed 400% profit withdrawal of Rs 40,000 within 20 minutes. Send transaction screenshot to admin.",
+      "label": "scam",
+      "group": "cryptotradingsignalviptaskdepo",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Pay 4999 to claim 100000 scratch card jackpot reward instantly into bank",
+      "label": "scam",
+      "group": "pay4999toclaim100000scratchcar",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "HDFC Bank Alert: Rs 2,500.00 debited from A/C 4821 on 26/11/2026 via UPI Ref 618273645510 to grocer@okhdfcbank.",
+      "label": "legitimate",
+      "group": "hdfcbankalertrs250000debitedfr",
+      "source": "scamshield_ocr_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "BESCOM Alert: Dear consumer your power line will be disconnected today at 21:00 hrs due to bill arrears. Call sub-divisional executive 9448102934 immediately to avoid blackout.",
+      "label": "scam",
+      "group": "bescomalertdearconsumeryourpow",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Credit card bill payment HDFC Regalia",
+      "label": "legitimate",
+      "group": "creditcardbillpaymenthdfcregal",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Amazon India: Your order #402-9182374-192831 has been dispatched via ATS and will be delivered tomorrow by 8 PM. Track at amazon.in/orders",
+      "label": "scam",
+      "group": "amazonindiayourorder4029182374",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Broadband postpaid recharge",
+      "label": "legitimate",
+      "group": "broadbandpostpaidrecharge",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "FASTag balance refund. Approve collect request to get money in wallet",
+      "label": "scam",
+      "group": "fastagbalancerefundapprovecoll",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Axis Bank: Your OTP is 849201 for card txn of Rs 320.00. Never share OTP with anyone.",
+      "label": "legitimate",
+      "group": "axisbankyourotpis849201forcard",
+      "source": "scamshield_ocr_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Axis Bank: Your OTP is 849201 for card txn of Rs 320.0O. Never share OTP with anyone.",
+      "label": "legitimate",
+      "group": "axisbankyourotpis849201forcard",
+      "source": "synthetic_ocr_noise",
+      "provenance_type": "synthetic_augmentation",
+      "split": "train"
+    },
+    {
+      "content": "Prepaid task deposit level 3. Payout Rs 48000 after transaction confirmation",
+      "label": "scam",
+      "group": "prepaidtaskdepositlevel3payout",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Amazon Prime annual renewal",
+      "label": "legitimate",
+      "group": "amazonprimeannualrenewal",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "MUMBAI POLICE CYBER CELL: An illegal parcel containing 140g MDMA narcotics and 5 fake passports seized at Mumbai customs booked under your mobile number. Contact officer at wa.me/+919876543210 immediately.",
+      "label": "scam",
+      "group": "mumbaipolicecybercellanillegal",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Enter UPI PIN to receive Rs 9999 cash refund from Google Pay customer care",
+      "label": "scam",
+      "group": "enterupipintoreceivers9999cash",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Security deposit for level 2 clearance task",
+      "label": "scam",
+      "group": "securitydepositforlevel2cleara",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Profile KYC fee re-attempt",
+      "label": "scam",
+      "group": "profilekycfeereattempt",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Immediate urgent transfer required urgently without invoice",
+      "label": "scam",
+      "group": "immediateurgenttransferrequire",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "HDFC Bank Alert: Update PAN immediately at https://hdfc-pan-verify.top/auth or netbanking suspended.",
+      "label": "scam",
+      "group": "hdfcbankalertupdatepanimmediat",
+      "source": "scamshield_ocr_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Header 11:42 AM LTE\nHDFC Bank Alert: Update PAN immediately at https://hdfc-pan-verify.top/auth or netbanking suspended.\nHome Back Recents",
+      "label": "scam",
+      "group": "hdfcbankalertupdatepanimmediat",
+      "source": "synthetic_ocr_noise",
+      "provenance_type": "synthetic_augmentation",
+      "split": "train"
+    },
+    {
+      "content": "Narcotics parcel clearance customs tariff penalty settlement",
+      "label": "scam",
+      "group": "narcoticsparcelclearancecustom",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "HDFC Alert: Your HDFC Debit Card reward points worth Rs 9,850 are expiring today at 23:59. Redeem cash directly to your savings account by submitting card details at http://hdfc-rewards-cash.xyz",
+      "label": "scam",
+      "group": "hdfcalertyourhdfcdebitcardrewa",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Vendor payout adjustment",
+      "label": "scam",
+      "group": "vendorpayoutadjustment",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "IRCTC Refund Pending: Your cancelled train ticket refund of Rs 1,840 is pending. Click http://irctc-ticket-refund.online to enter your UPI VPA and claim refund instantly.",
+      "label": "scam",
+      "group": "irctcrefundpendingyourcancelle",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "VIP trading signal bot deposit. Guaranteed 300% daily profit return",
+      "label": "scam",
+      "group": "viptradingsignalbotdepositguar",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Uber receipt: Your trip with driver Ramesh on 31-Oct-26 was Rs 340.00. Paid via Amazon Pay balance. Thank you for riding with Uber.",
+      "label": "scam",
+      "group": "uberreceiptyourtripwithdriverr",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Flight ticket DEL-BOM booking",
+      "label": "legitimate",
+      "group": "flightticketdelbombooking",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Internship Selection Notice: Congratulations you are hired as Remote Cybersecurity Intern at Tech Corp. Pay mandatory background verification fee of Rs 1,499 to confirm your offer letter.",
+      "label": "scam",
+      "group": "internshipselectionnoticecongr",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "HDFC Bank Alert: Rs 1,450.00 debited from a/c **4092 on 31-OCT-26 14:22 via UPI to SWIGGY. Info: UPI/109283749102. If not done by you, call 18002026161.",
+      "label": "scam",
+      "group": "hdfcbankalertrs145000debitedfr",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Scan QR to receive car deposit advance into Google Pay",
+      "label": "scam",
+      "group": "scanqrtoreceivecardepositadvan",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Instant delivery snacks & essentials",
+      "label": "legitimate",
+      "group": "instantdeliverysnacksessential",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Payment Successful! Sent Rs 50,000.00 to Store Manager. Transfer Complete. (No UTR reference)",
+      "label": "scam",
+      "group": "paymentsuccessfulsentrs5000000",
+      "source": "scamshield_ocr_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Electricity bill CA-891023",
+      "label": "legitimate",
+      "group": "electricitybillca891023",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "URGENT CBI ARREST NOTICE: Your Aadhaar card is implicated in 16 money laundering cases with Jet Airways founder. Join Skype interrogation immediately to avoid non-bailable warrant.",
+      "label": "scam",
+      "group": "urgentcbiarrestnoticeyouraadha",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "IRCTC eTicketing Payment Receipt. Amount Rs 1,427.25 paid to irctc@paytm. UTR: 519283746510. Status: Payment Successful.",
+      "label": "legitimate",
+      "group": "irctceticketingpaymentreceipta",
+      "source": "scamshield_ocr_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "IRCTC eTicketing Payment Receipt. Amount Rs l,427.25 paid to irctc@paytm. UTR: 519283746510. Status: Payment Successful.",
+      "label": "legitimate",
+      "group": "irctceticketingpaymentreceipta",
+      "source": "synthetic_ocr_noise",
+      "provenance_type": "synthetic_augmentation",
+      "split": "train"
+    },
+    {
+      "content": "Lifetime trading group access subscription",
+      "label": "scam",
+      "group": "lifetimetradinggroupaccesssubs",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Your one-time password (OTP) is 482910 for transaction on Amazon. NEVER share your OTP with anyone. Bank officials will never ask for your OTP.",
+      "label": "scam",
+      "group": "youronetimepasswordotpis482910",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Exclusive discount: Get 70% off luxury Swiss replica watches this weekend only! Buy direct with international express shipping.",
+      "label": "scam",
+      "group": "exclusivediscountget70offluxur",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "DELHI POLICE CYBER CRIME: You are under 24 hour digital arrest. Do not disconnect this call or video stream. Liquidate your fixed deposits and transfer to RBI verification vault account.",
+      "label": "scam",
+      "group": "delhipolicecybercrimeyouareund",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Aapka SIM card 2 ghante me block ho jayega. Turant WhatsApp par apna Aadhaar aur OTP bhej kar e-KYC complete karein: wa.me/+919876500123",
+      "label": "scam",
+      "group": "aapkasimcard2ghantemeblockhoja",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "ICICI Bank: OTP for online purchase of Rs 2,340.00 at FLIPKART is 109283. Do not share OTP with anyone. ICICI Bank never calls for OTP.",
+      "label": "scam",
+      "group": "icicibankotpforonlinepurchaseo",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Cinema tickets 2x IMAX 3D",
+      "label": "legitimate",
+      "group": "cinematickets2ximax3d",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Aapke SBI account me KYC pending hai. Agar aapne turant update nahi kiya toh aapka account freeze ho jayega. Click kare: http://sbi-kyc-verification.in",
+      "label": "scam",
+      "group": "aapkesbiaccountmekycpendinghai",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Convert Amazon gift vouchers to instant cash",
+      "label": "scam",
+      "group": "convertamazongiftvoucherstoins",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "SBI YONO Alert: Dear customer your SBI NetBanking profile password and YONO account has been blocked today. Please click http://sbi-yono-kyc-update.online to re-activate your netbanking immediately.",
+      "label": "scam",
+      "group": "sbiyonoalertdearcustomeryoursb",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Train booking PNR 4920194821",
+      "label": "legitimate",
+      "group": "trainbookingpnr4920194821",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Payment of Rs 1,250.00 to DMart Retail Store Successful. UPI Ref / UTR: 426819284712. Txn ID: T261019284712918. Paid via HDFC Bank.",
+      "label": "legitimate",
+      "group": "paymentofrs125000todmartretail",
+      "source": "scamshield_ocr_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Header 11:42 AM LTE\nPayment of Rs 1,250.00 to DMart Retail Store Successful. UPI Ref / UTR: 426819284712. Txn ID: T261019284712918. Paid via HDFC Bank.\nHome Back Recents",
+      "label": "legitimate",
+      "group": "paymentofrs125000todmartretail",
+      "source": "synthetic_ocr_noise",
+      "provenance_type": "synthetic_augmentation",
+      "split": "train"
+    },
+    {
+      "content": "SBI Reward Points Rs 9,850 expiring today. Install AnyDesk and send Rs 10 verification to sbi-kyc@okaxis",
+      "label": "scam",
+      "group": "sbirewardpointsrs9850expiringt",
+      "source": "scamshield_ocr_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Prescription medicines delivery order",
+      "label": "legitimate",
+      "group": "prescriptionmedicinesdeliveryo",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "CBI digital arrest bail bond deposit. Fund verification fee refundable",
+      "label": "scam",
+      "group": "cbidigitalarrestbailbonddeposi",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "IRCTC: PNR 2849102948 Train 12952 TEJAS RAJ EXP, 31-OCT-26, 3A - B4/42 (CNF). Charting done. Please carry original government ID during journey.",
+      "label": "scam",
+      "group": "irctcpnr2849102948train12952te",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Order ZOM-892134",
+      "label": "legitimate",
+      "group": "orderzom892134",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "BESCOM Power Alert: Electricity will be disconnected tonight. Pay Rs 1,450 immediately to billdesk-support@ybl",
+      "label": "scam",
+      "group": "bescompoweralertelectricitywil",
+      "source": "scamshield_ocr_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "BESCOM Power Alert: Electricity wi1l be disconnected tonight. Pay Rs 1,45O immediately to billdesk-support@ybl",
+      "label": "scam",
+      "group": "bescompoweralertelectricitywil",
+      "source": "synthetic_ocr_noise",
+      "provenance_type": "synthetic_augmentation",
+      "split": "train"
+    },
+    {
+      "content": "SUPREME COURT OF INDIA: Legal summons #SC-9281 issued against you for contraband smuggling. Non-appearance within 3 hours will result in asset seizure and non-bailable imprisonment.",
+      "label": "scam",
+      "group": "supremecourtofindialegalsummon",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Hotel Rating Work From Home: Earn Rs 500 per hotel review. Prepaid tasks available. Invest Rs 5,000 to unlock VIP merchant commission of Rs 18,000. Contact supervisor on Telegram.",
+      "label": "scam",
+      "group": "hotelratingworkfromhomeearnrs5",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    },
+    {
+      "content": "Your Swiggy delivery partner Rahul is on the way with your order #928341. Expected delivery time 18 minutes. Enjoy your meal!",
+      "label": "scam",
+      "group": "yourswiggydeliverypartnerrahul",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "train"
+    }
+  ]
+}

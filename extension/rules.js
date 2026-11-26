@@ -580,10 +580,47 @@
   // ============================================================================
 
   const LEGIT_PSP_HANDLES = new Set([
-    "okhdfcbank", "okaxis", "oksbi", "okicici", "paytm", "ybl", "ibl", "axl",
-    "postbank", "barodampay", "fbl", "federal", "airtel", "pingpay", "jupiteraxis",
+    "okhdfcbank", "okaxis", "oksbi", "okicici", "paytm", "pthdfc", "ptaxis", "ptsbi", "ptyes",
+    "ybl", "ibl", "axl", "apl", "rapl", "upi", "sbi", "icici", "hdfcbank", "axisbank",
+    "postbank", "barodampay", "fbl", "federal", "airtel", "jupiteraxis",
     "aubank", "kotak", "indus", "idfcbank", "dlb", "yesbank", "rbl", "cnrb", "boi", "iob", "pnb"
   ]);
+
+  const DEPRECATED_PSP_HANDLES = new Set(["pingpay"]);
+
+  function evaluateUpiStates(rawVpa, evidence) {
+    const vpa = String(rawVpa || "").trim().toLowerCase();
+    const parts = vpa.split("@");
+    const hasAt = parts.length === 2 && Boolean(parts[0]) && Boolean(parts[1]);
+    const userOk = hasAt && /^[a-zA-Z0-9.\-_]{2,64}$/.test(parts[0]);
+    const pspOk = hasAt && /^[a-zA-Z0-9.\-]{2,32}$/.test(parts[1]);
+    const formatValid = hasAt && userOk && pspOk;
+    const psp = hasAt ? parts[1] : "";
+    const handleSupported = formatValid && LEGIT_PSP_HANDLES.has(psp);
+    const handleStatus = !formatValid
+      ? "invalid_syntax"
+      : handleSupported
+        ? "supported"
+        : DEPRECATED_PSP_HANDLES.has(psp)
+          ? "deprecated"
+          : "unknown";
+    const suspiciousPattern = !formatValid || (evidence || []).some((e) => e.severity === "HIGH" || e.severity === "CRITICAL");
+    const states = [];
+    if (formatValid) states.push("FORMAT_VALID");
+    if (handleSupported) states.push("HANDLE_SUPPORTED");
+    else if (formatValid) states.push("UNKNOWN");
+    if (suspiciousPattern) states.push("SUSPICIOUS_PATTERN");
+    return {
+      verification_states: states,
+      format_valid: formatValid,
+      handle_supported: handleSupported,
+      handle_status: handleStatus,
+      provider_lookup_available: false,
+      recipient_verified: false,
+      reputation_signal_available: false,
+      suspicious_pattern: suspiciousPattern
+    };
+  }
 
   const PAYMENT_BRANDS = ["paytm", "phonepe", "gpay", "googlepay", "sbi", "hdfc", "icici", "axis", "amazonpay", "bhim"];
 
@@ -1064,9 +1101,13 @@
     }
 
     const hybridResult = combineWithMl("payment", cleanContent, evidence, options);
+    const upiMeta = (inputType === "upi_id" || ((inputType === "qr_code" || inputType === "qr") && normalizedPayee))
+      ? evaluateUpiStates(normalizedPayee || cleanContent, evidence)
+      : null;
 
     return {
       ...hybridResult,
+      ...(upiMeta || {}),
       input_type: inputType,
       normalized_payee: normalizedPayee,
       payment_domain: paymentDomain,

@@ -1,0 +1,143 @@
+{
+  "task": "ocr",
+  "split": "test",
+  "count": 17,
+  "samples": [
+    {
+      "content": "Dinner split weekend cafe",
+      "label": "legitimate",
+      "group": "dinnersplitweekendcafe",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "test"
+    },
+    {
+      "content": "Monthly subscription auto-debit",
+      "label": "legitimate",
+      "group": "monthlysubscriptionautodebit",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "test"
+    },
+    {
+      "content": "Loan cancellation NOC charge. Immediate transfer required to close loan",
+      "label": "scam",
+      "group": "loancancellationnocchargeimmed",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "test"
+    },
+    {
+      "content": "ICICI Bank: Your ICICI internet banking access is temporarily suspended due to missing PAN linking. Complete biometric verification here: http://icici-pan-link.biz",
+      "label": "scam",
+      "group": "icicibankyouriciciinternetbank",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "test"
+    },
+    {
+      "content": "Grocery delivery order BB-90182",
+      "label": "legitimate",
+      "group": "grocerydeliveryorderbb90182",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "test"
+    },
+    {
+      "content": "TDS clearance for 25 Lakh KBC lottery reward payout",
+      "label": "scam",
+      "group": "tdsclearancefor25lakhkbclotter",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "test"
+    },
+    {
+      "content": "STATE BANK NOTICE: Your SBI KYC expired. Account blocked in 24 hours. Verify at http://sbi-kyc-update.xyz",
+      "label": "scam",
+      "group": "statebanknoticeyoursbikycexpir",
+      "source": "scamshield_ocr_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "test"
+    },
+    {
+      "content": "HDFC Bank: 938201 is the OTP to login to NetBanking. Do NOT share OTP or password with anyone, even bank staff.",
+      "label": "scam",
+      "group": "hdfcbank938201istheotptologint",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "test"
+    },
+    {
+      "content": "Bank biometric verification fee. Enter 6-digit MPIN to unlock savings account",
+      "label": "scam",
+      "group": "bankbiometricverificationfeeen",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "test"
+    },
+    {
+      "content": "Aadhaar authentication successful for PAN verification at Income Tax portal on 31-10-2026 16:30:12 IST. If this was not you, lock biometrics via mAadhaar app.",
+      "label": "scam",
+      "group": "aadhaarauthenticationsuccessfu",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "test"
+    },
+    {
+      "content": "BSES Rajdhani notice: Electricity supply disconnection notice generated for CA 100982345. Call power controller 9711098234 or your power supply will be cut off within 1 hour.",
+      "label": "scam",
+      "group": "bsesrajdhaninoticeelectricitys",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "test"
+    },
+    {
+      "content": "Domino's Pizza: Feast weekend! Flat 40% OFF on all gourmet pizzas using code FEAST40 on Domino's app. Valid till Sunday.",
+      "label": "scam",
+      "group": "dominospizzafeastweekendflat40",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "test"
+    },
+    {
+      "content": "Scan QR and accept collect request to receive advance payment for furniture",
+      "label": "scam",
+      "group": "scanqrandacceptcollectrequestt",
+      "source": "curated_payments",
+      "provenance_type": "curated_hard_negative",
+      "split": "test"
+    },
+    {
+      "content": "TRAI NOTICE: All mobile outgoing and incoming services on this number will be permanently disconnected within 2 hours due to illegal advertising and obscene broadcasts. Press 9 for DOT officer.",
+      "label": "scam",
+      "group": "trainoticeallmobileoutgoingand",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "test"
+    },
+    {
+      "content": "Paytm Wallet Alert: Your wallet is suspended as per RBI guidelines. Complete video KYC and share MPIN verification code with customer agent to unlock balance.",
+      "label": "scam",
+      "group": "paytmwalletalertyourwalletissu",
+      "source": "cert_in_i4c_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "test"
+    },
+    {
+      "content": "Amazon.in Order #402-192831. Paid Rs 899.00 via Amazon Pay UPI. Ref No: 718293041234. Delivery tomorrow.",
+      "label": "legitimate",
+      "group": "amazoninorder402192831paidrs89",
+      "source": "scamshield_ocr_curated",
+      "provenance_type": "curated_hard_negative",
+      "split": "test"
+    },
+    {
+      "content": "Amazon.in Order #402-192831. Paid Rs 899.00 via Amazon Pay UPI. Ref No: 718293O41234. Delivery tomorrow.",
+      "label": "legitimate",
+      "group": "amazoninorder402192831paidrs89",
+      "source": "synthetic_ocr_noise",
+      "provenance_type": "synthetic_augmentation",
+      "split": "test"
+    }
+  ]
+}

@@ -110,12 +110,24 @@ function mergeLayeredResults(urlResult, textResult, domSignals, url) {
 
   let combinedScore = Math.max(urlScore, textScore);
   let combinedLevel = (levelRank[txtLvl] || 0) > (levelRank[urlLvl] || 0) ? txtLvl : urlLvl;
-  const indicators = [
+  const rawIndicators = [
     ...(urlResult?.indicators || urlResult?.evidence || []),
     ...(textResult?.indicators || textResult?.evidence || [])
   ]
     .map(normalizeIndicator)
     .filter(Boolean);
+
+  // Deduplicate correlated cross-modal indicators, keeping highest severity
+  const sevRank = { info: 0, low: 1, medium: 2, high: 3, critical: 4 };
+  const dedupMap = new Map();
+  for (const ind of rawIndicators) {
+    const key = `${ind.indicator_type}:${ind.description}`;
+    const existing = dedupMap.get(key);
+    if (!existing || (sevRank[ind.severity] || 0) > (sevRank[existing.severity] || 0)) {
+      dedupMap.set(key, ind);
+    }
+  }
+  const indicators = Array.from(dedupMap.values());
 
   let host = "";
   try { host = new URL(url).hostname.toLowerCase(); } catch {}

@@ -170,6 +170,97 @@
         }
       },
       "latest_candidate_version": "url-model-v2.0.0"
+    },
+    "ocr": {
+      "active_version": null,
+      "previous_version": null,
+      "versions": {
+        "ocr-scam-model-v1.0.0": {
+          "model_version": "ocr-scam-model-v1.0.0",
+          "task": "ocr",
+          "model_type": "CharTFIDF_LinearSVM",
+          "artifact_path": "artifacts/ocr_model_ocr-scam-model-v1.0.0.joblib",
+          "artifact_sha256": "ae24da09a6ff2a0a5aaccf97a8a81bd03cce1bd6a39aa0d760bb0a94ea1bdc34",
+          "artifact_size_bytes": 32756,
+          "dataset_version": "4.0.0-alpha",
+          "preprocessing_version": "ocr-prep-v1.0.0",
+          "training_config": {
+            "seed": 42,
+            "train": 80,
+            "val": 16,
+            "test": 17
+          },
+          "metrics": {
+            "val_acc": 0.875,
+            "val_macro_f1": 0.875
+          },
+          "calibration": {
+            "method": "none",
+            "temperature": 1.0,
+            "uncertainty_threshold": 0.55,
+            "calibrated": false
+          },
+          "dependencies": {
+            "python_version": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+            "python_version_tuple": [
+              3,
+              14,
+              6
+            ],
+            "sklearn_version": "1.9.1",
+            "joblib_version": "1.6.0"
+          },
+          "trained_at": "2026-11-26T10:02:14.595963+00:00",
+          "production_active": false
+        }
+      },
+      "latest_candidate_version": "ocr-scam-model-v1.0.0"
+    },
+    "message": {
+      "active_version": null,
+      "previous_version": null,
+      "versions": {
+        "message-model-v1.0.0": {
+          "model_version": "message-model-v1.0.0",
+          "task": "message",
+          "model_type": "Hybrid_WordCharTFIDF_Structured_LinearSVM",
+          "artifact_path": "artifacts/message_model_message-model-v1.0.0.joblib",
+          "artifact_sha256": "846a0863595df2862774f5d484b123b3859bd78084586989444dd2a28b67d720",
+          "artifact_size_bytes": 298875,
+          "dataset_version": "4.0.0-alpha",
+          "preprocessing_version": "msg-prep-v1.0.0",
+          "training_config": {
+            "seed": 42,
+            "train": 3709,
+            "val": 794,
+            "test": 794
+          },
+          "metrics": {
+            "accuracy": 0.9811,
+            "macro_f1": 0.8906,
+            "val_fpr": 0.0044
+          },
+          "calibration": {
+            "method": "isotonic",
+            "temperature": 1.0,
+            "uncertainty_threshold": 0.55,
+            "calibrated": true
+          },
+          "dependencies": {
+            "python_version": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+            "python_version_tuple": [
+              3,
+              14,
+              6
+            ],
+            "sklearn_version": "1.9.1",
+            "joblib_version": "1.6.0"
+          },
+          "trained_at": "2026-11-26T10:02:25.942530+00:00",
+          "production_active": false
+        }
+      },
+      "latest_candidate_version": "message-model-v1.0.0"
     }
   }
 }

@@ -90,3 +90,22 @@ test("Payment status is always unverified without authoritative bank settlement 
   assert.ok(res.evidence.some((e) => e.category === "STATUS_DISCLAIMER"));
   assert.ok(res.evidence.some((e) => e.category === "SUSPICIOUS_PAYMENT_CONFIRMATION"));
 });
+
+test("UPI verifier exposes 7-state contract and never marks valid/unknown handles as recipient_verified", () => {
+  const knownRes = ScamEngine.scanPayment("merchant@okhdfcbank", "upi_id");
+  assert.strictEqual(knownRes.format_valid, true);
+  assert.strictEqual(knownRes.handle_supported, true);
+  assert.strictEqual(knownRes.handle_status, "supported");
+  assert.strictEqual(knownRes.provider_lookup_available, false);
+  assert.strictEqual(knownRes.recipient_verified, false);
+  assert.ok(knownRes.verification_states.includes("FORMAT_VALID"));
+  assert.ok(knownRes.verification_states.includes("HANDLE_SUPPORTED"));
+
+  const unknownRes = ScamEngine.scanPayment("shop@newfintechpsp", "upi_id");
+  assert.strictEqual(unknownRes.format_valid, true);
+  assert.strictEqual(unknownRes.handle_supported, false);
+  assert.strictEqual(unknownRes.handle_status, "unknown");
+  assert.strictEqual(unknownRes.recipient_verified, false);
+  assert.strictEqual(unknownRes.risk_level, "SAFE");
+  assert.ok(unknownRes.verification_states.includes("UNKNOWN"));
+});
